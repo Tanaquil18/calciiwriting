@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <macros>
+      \newcommand{\R}{\mathbb R}
+    </macros>
+    <latax-image-preamble>
+      \usepackage{tikz}
+    </latax-image-preamble>
+  </docinfo>
+
+  <book xml:id="my-great-book">
+    <title>Calc II Extra Material</title>
+    <subtitle>Not included in Active Calculus</subtitle>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>Chrissy Safranski</personname>
+          <department>Mathematics and Physical Sciences</department>
+          <institution>Franciscan University of Steubenville</institution>
+        </author>
+        <date>
+          <today />
+        </date>
+      </titlepage>
+
+      <colophon>
+
+        <website>
+          <name>
+            <c>example.org</c>
+          </name>
+          <address>https://example.org</address>
+        </website>
+
+        <copyright>
+          <year>2023<ndash />2023</year>
+          <holder>You</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
+      </colophon>
+    </frontmatter>
+
+    <chapter xml:id="chap-extra-material">
+      <title>Extra Material</title>
+
+      <xi:include  href="./sec-partial-fractions.ptx" />
+
+      <section xml:id="testing-partial-fracs">
+        <title>Testing Partial Fractions</title>
+        <p>Hello</p>
+      </section>
+
+      <section xml:id="sec-trigonometric-integrals">
+        <title>Trigonometric Integrals</title>
+        <p>Nothing here, yet.</p>
+      </section>
+
+      <section xml:id="sec-parametric">
+        <title>Parametric Functions: Derivatives, Area, and Arclength</title>
+        <p>Nothing here, yet.</p>
+      </section>
+
+      <section xml:id="sec-polar">
+        <title>Polar Functions: Derivatives, Area, and Arclength</title>
+        <p>Nothing here, yet.</p>
+      </section>
+
+    </chapter>
+
+    <backmatter xml:id="backmatter">
+      <title>Backmatter</title>
+
+      <colophon>
+        <p> This book was authored in <pretext />. </p>
+      </colophon>
+
+    </backmatter>
+
+  </book>
+</pretext>
