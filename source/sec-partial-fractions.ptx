@@ -185,41 +185,95 @@
       conclusions or guesses about what the conditions are? Do linear ones, ones with numerator also a quadratic.
       Do any quadratic ones? Or repeated linear terms? Have them try a constant over a quadratic that doesn't work.
     </p>
-
+  </subsection>
+  <subsection xml:id="subsec-part-frac-2">
+    <title>Method of Partial Fractions</title>
+    
     <assemblage>
       <title>Partial Fraction Decomposition</title>
       <p>
         Given any rational function with the degree of the numerator strictly less than the degree 
-        of the denominator, we can rewrite the function as a sum of terms of the form
-        <me>
-          \frac{A}{ax+b},\ \frac{A}{(ax+b)^n},\ \frac{Ax+B}{ax^2 + bx+c},\ \text{or }\frac{Ax+B}{\left(ax^2 + bx +c \right)^n}
-        </me>
-        where <m>A</m>, <m>B</m>,
-        and <m>c</m> are real numbers,
-        and <m>k</m> is a positive real number.
+        of the denominator, we can rewrite the function as a sum of simpler terms. 
       </p>
-      <p>
-        Moreover, the form depends precisely on the factored form of the denominator of the given rational function.
-      </p>
+            <tabular>
+              <row bottom="minor" halign="center">
+                <cell>Denominator Contains</cell>
+                <cell>Partial Fraction Decomposition Contains</cell>
+              </row>
+              <row>
+                <cell><m>(ax+b)</m></cell>
+                <cell><m>\frac{A}{ax+b}</m></cell>
+              </row>
+              <row>
+                <cell><m>(ax+b)^n</m></cell>
+                <cell><m>\frac{A_1}{ax+b}+\frac{A_2}{(ax+b)^2}+\cdots + \frac{A_n}{(ax+b)^n}</m></cell>
+              </row>
+              <row>
+                <cell><m>(ax^2+bx+c)</m></cell>
+                <cell><m>\frac{Ax+B}{ax^2+bx+c}</m></cell>
+              </row>
+              <row>
+                <cell><m>(ax^2+bx+c)^n</m></cell>
+                <cell><m>\frac{A_1x+B_1}{ax^2+bx+c}+\frac{A_2x+B_2}{(ax^2+bx+c)^2}+\cdots + \frac{A_nx+B_n}{(ax^2+bx+c)^n}</m></cell>
+              </row>
+            </tabular>
       <!-- Make a table with this... denominator contains term | partial fraction decomposition contains -->
     </assemblage>
-
+      
+    <p>
+      This can be summarized in the following way. 
+      <ul>
+        <li>
+          <p>
+            When the factored form of the denominator contains a linear term, the partial fraction decomposition
+      contains a constant over that linear term.
+          </p>
+        </li>
+        <li>
+          <p>
+            When the factored form of the denominator contains a power
+      of a linear term, the partial fraction decomposition contains a constant over every power of that linear term
+      up to the max power.
+          </p>
+        </li>
+        <li>
+          <p>
+            When the factored form of the denominator contains a quadratic term, the partial fraction
+      decomposition contains a linear term divided by the quadratic term.
+          </p>
+        </li>
+        <li>
+          <p>
+            When the factored form of the denominator contains a power
+      of a quadratic term, the partial fraction decomposition contains a linear term over every power of that quadratic term
+      up to the max power.
+          </p>
+        </li>
+      </ul>      
+    </p>
+  
+<!-- would be great to have a multiple choice or two or three here as an interactive example. 
+maybe culminate with 1/(x+2)^3? because students in this section don't realize that's already simplified? -->
     <p>
       Do another example, including a quadratic and setting coefficients of like terms equal.
     </p>
     <p>
       Do next 2 actitivities.
     </p>
+  </subsection>
 
+  <subsection xml:id="subsec-part-frac-3">
+    <title>Final Considerations</title>
+    
     <p>
       An astute reader might notice that we said that the denominator can contain terms of the form
       <m>ax^2+bx+c</m> but we only considered terms of the form <m>x^2+k</m> in our examples and activities.
       The reason is that every <m>ax^2+bx+c</m> can be written as <m>a\left( \left(x-\frac{b}{2a}\right)^2+k\right)</m>
-      if we recall how to <em>complete the square</em> from algebra class, and then using a substitution
-      can turn this into some constant number multiplied by <m>y^2+k</m>.
+      if we recall how to <em>complete the square</em> from algebra class, and then using a substitution <fn><m>y=x-\frac{b}{2a}</m>
+      so that <m>dy=dx</m></fn> turns this into some constant number multiplied by <m>y^2+k</m>.
     </p>
     <p>
-      But this turns a calculus problem even more of an algebra problem, and the focus of this material 
+      But this turns a calculus problem into even more of an algebra problem, and the focus of this material 
       is integration, not algebra.
     </p>
     <p>
@@ -229,6 +283,12 @@
       <!-- Is it really the FTA or is there another theorem for the real case? -->
     </p>
 
+    <p>
+      The result is that every rational function, regardless of the degree of the numerator or denominator,
+      or how the denominator factors, can be integrated using some combination of the techniques
+      described in this section.  Putting that theory into practice, however, is very often no trivial matter!
+    </p>
+
     <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
     <!-- <xi:include href="./activities/act-1-1-2.xml" /> -->
      <!-- <xi:include href="./activities/act-1-1-3.xml" /> -->
@@ -236,28 +296,40 @@
 
   <subsection>
     <title>Summary</title>
-    <!-- The first list item is split from the others; fine in practice as long as the list is not used as a knowl. -->
     <p>
       <ul>
         <li>
-          For an object moving in a straight line with position function <m>s(t)</m>, the
-              <idx><h>average velocity</h></idx>
-          <em>average velocity of the object on the interval from <m>t = a</m> to <m>t = b</m></em>,
-          denoted <m>AV_{[a,b]}</m>, is given by the formula
-          <me>
-            AV_{[a,b]} = \frac{s(b)-s(a)}{b-a}
-          </me>.
+          <p>
+            Given any rational function with the degree of the numerator strictly less than the degree 
+            of the denominator, we can rewrite the function as a sum of terms of the form
+              <me>
+                \frac{A}{ax+b},\ \frac{A}{(ax+b)^n},\ \frac{Ax+B}{ax^2 + bx+c},\ \text{or }\frac{Ax+B}{\left(ax^2 + bx +c \right)^n}
+              </me>
+            where <m>A</m>, <m>B</m>,
+            and <m>c</m> are real numbers,
+            and <m>k</m> is a positive real number.
+          </p>
         </li>
 
         <li>
-          Given a moving object whose position at time <m>t</m> is given by a function <m>s</m>,
-          the average velocity of the object on the time interval <m>[a,b]</m> is given by <m>AV_{[a,b]} = \frac{s(b) - s(a)}{b-a}</m>.
-          Viewing the interval <m>[a,b]</m> as having the form <m>[a,a+h]</m>,
-          we equivalently compute average velocity by the formula <m>AV_{[a,a+h]} = \frac{s(a+h) - s(a)}{h}</m>.
+          <p>
+            Which of the forms are included in the decomposition of a rational function depends entirely on the factored form of the denominator,
+            and each of those forms can be integrated using basic integrals, substitution, and/or trigonometric substitution, possibly requiring some algebra.
+          </p>
         </li>
 
         <li>
-          The instantaneous velocity of a moving object at a fixed time is estimated by considering average velocities on shorter and shorter time intervals that contain the instant of interest.
+          <p>
+            Similar to how every improper fraction can be expressed as an integer plus a proper fraction, every rational function with the degree of the numerator greater than or equal to the degree 
+            of the denominator can be expressed as <m>p(x)+\frac{q(x)}{r(x)}</m> where <m>p(x)</m> is a polynomial
+            and the degree of <m>q(x)</m> is strictly less than the degree of <m>r(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            This means that every rational function has an antiderivative function we can express without an integral.
+          </p>
         </li>
       </ul>
     </p>
