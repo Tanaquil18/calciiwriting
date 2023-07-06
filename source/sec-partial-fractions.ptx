@@ -174,7 +174,7 @@
       <me>
         \int \frac{A}{ax+b} \, dx = \frac{A}{a}\ln|ax+b|+C
       </me>
-      So the question is, when can we rewrite a rational function into terms like this?
+      So the question to explore in the next activity is: When can we integrate a rational function by rewriting into terms like this?
 
       <!-- A similar method can be used whenever the denominator factors into distinct linear terms, as long
       as the numerator meets some conditions.   -->
@@ -188,7 +188,134 @@
   </subsection>
   <subsection xml:id="subsec-part-frac-2">
     <title>Method of Partial Fractions</title>
-    
+    <p>
+      As we saw in the activity, we have to be careful with the form of our partial fraction decomposition
+      if factoring the denominator results in anything other than distinct linear terms.  
+    </p>
+    <p>
+      For example, when we had a numerator of <m>x^2+x+4</m>, there are <m>3</m> numbers: the coefficient
+      of the <m>x^2</m> term, the coefficient of the <m>x</m> term, and the constant term.  Using
+      <m>\frac{A}{x-1}+\frac{B}{x^2+1}</m> gave us <m>2</m> numbers to solve for, <m>A</m> and <m>B</m>,
+      and in this case, it is impossible to find values of <m>A</m> and <m>B</m> to make the equality hold.  But we can
+      modify the partial fraction form to introduce a third number.
+    </p>
+    <example><title>Integrating A Rational Function with Substitution</title>
+      <statement>
+        <p>
+          Evaluate
+          <me>
+            \int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We suppose that
+            <me>
+            \frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1} + \frac{Bx+D}{x^2+1}
+            </me>
+          and note that this gives us <m>3</m> constants to work with.<fn>We avoid using <m>C</m> as a coefficient because we
+          don't want to get it confused with the <m>+C</m> at the end of an indefinite integral.</fn>  Before we look for the values
+           of the constants <m>A</m>, <m>B</m> and <m>D</m>, we will integrate to make sure this is a better
+           form than the one we started with.  
+        </p>
+        <p>
+          An antiderivative of <m>\frac{A}{x-1}</m> is <m>A\ln|x-1|</m>. We can calculate
+          <me>
+            \int \frac{Bx+D}{x^2+1} \, dx = \int \frac{Bx}{x^2+1} \, dx + \int \frac{D}{x^2+1} \, dx
+          </me>
+          and note that the second integral is one of our basic forms, <m>D\arctan(x)</m>, while the first
+          can be evaluated with substitution taking <m>u=x^2+1</m> so that <m>du=2x\, dx</m>.
+        </p>
+        <p>
+          Thus we see that if we can find such numbers <m>A</m>, <m>B</m> and <m>D</m>, then we can integrate
+          <md>
+            <mrow> \int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx \amp = \int \left(\frac{A}{x-1} + \frac{Bx+D}{x^2+1}\right) dx</mrow>
+            <mrow> \amp = \int \frac{A}{x-1} dx + \int \frac{Bx}{x^2+1}dx + \int \frac{D}{x^2+1}dx</mrow>
+            <mrow> \amp = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C </mrow>
+          </md>
+        </p>
+        <p>
+          Now that we've done the calculus part, we turn our attention to the algebra.  
+          Multiplying both sides of the integrand by <m>(x-1)(x^2+1)</m>,
+          we find that
+          <me>
+            \frac{(x^2+x+4)\cancel{(x-1)(x^2+1)}}{\cancel{(x-1)(x^2+1)}}= \frac{A(x^2+1)\cancel{(x-1)}}{\cancel{x-1}} + \frac{(Bx+D)\cancel{(x^2+1)}(x-1)}{\cancel{x^2+1}}
+          </me>
+          which means
+          <me>
+            x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)
+          </me>.
+        </p>
+        <p>
+          We have several tools in our toolbox for solving for the unknown numbers.
+          We could... 
+          <ul>
+            <li>
+              <p>
+                ... use the black box method.  Use a solver like Wolfram Alpha or another computational tool.
+              </p>
+            </li>
+            <li>
+              <p>
+                ... set <m>x</m> equal to different values like we've done before.  
+                This is slightly more complicated than when the denominator factored into linear terms, 
+                but we can still do it, taking <m>x=1</m>, then <m>x=0</m>, then <m>x=-1</m>, or any three
+                values of <m>x</m> you choose and find easiest to work with.
+              </p>
+            </li>
+            <li>
+              <p>
+                ... compare coefficients of both sides of the equation and get a system of equations to solve.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          Since the other two methods don't give us anything new to discuss, we choose to 
+          demonstrate the last method here.  Recall that we are trying to solve
+          <me>
+            x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)
+          </me>
+          for the unknown values of <m>A</m>, <m>B</m> and <m>D</m> so that the two sides are equal
+          for all possible values of <m>x</m>.  This means the two sides must really be the same function
+          of <m>x</m>, or the same polynomial of <m>x</m>.  Multiplying out the right-hand side and grouping
+          like terms together gives
+          <md>
+            <mrow> x^2+x+4 \amp = A(x^2+1) + (Bx+D)(x-1) </mrow>
+            <mrow> \amp = Ax^2+A + Bx^2-Bx+Dx-D</mrow>
+            <mrow> \amp = (A+B)x^2+(-B+D)x+(A-D)</mrow>
+          </md>
+          Setting like coefficients equal means that <m>A+B=1</m>, and <m>-B+D=1</m> and <m>A-D=4</m>
+        </p>
+        <p>
+          This gives us a system of linear equations, three equations and three unknowns.  Combining this
+          with the second method, of setting <m>x=1</m> to find that <m>1^2+1+4=A(1^2+1)+(Bx+D)(1-1)</m> and so
+          <m>A=3</m> would reduce this to two unknowns and often be the fastest to solve by hand. (Since <m>A=3</m>
+          and <m>A+B=1</m>, this means that <m>B=-2</m>; similarly, since <m>A-D=4</m>, this means that <m>D=-1</m>.)
+        </p>
+        <p>
+          But it's worth noting that we can use matrices to solve a system of linear equations, and that would give us
+          <md>
+            <mrow>A \amp+ B \amp \amp=1 </mrow>
+            <mrow> \amp- B \amp+D \amp=1 </mrow>
+            <mrow>A \amp \amp-D \amp=4 </mrow>
+          </md>
+          which becomes <m>\begin{bmatrix} 1 \amp 1 \amp 0 \amp 1 \\ 0 \amp -1 \amp 1 \amp 1 \\1 \amp 0 \amp -1 \amp 4 \end{bmatrix}</m>.
+          Solving this using Gaussian elimination results in <m>\begin{bmatrix} 1 \amp 0 \amp 0 \amp 3 \\ 0 \amp 1 \amp 0 \amp -2 \\0 \amp 0 \amp 1 \amp -1 \end{bmatrix}</m>,
+          which does give us the same values of <m>A=3</m>, <m>B=-2</m>, and <m>D=-1</m>.  But doing this tells us something more:
+          that this system of equations will have a unique solution <alert>regardless of the starting coefficients of the quadratic in the numerator.</alert>
+        </p>
+        <p>
+          This bears repeating:  as long as the numerator is less than or equal to degree <m>2</m>, and the denominator factors into a linear and an irreducible quadratic,
+          we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor
+          and a linear term over the quadratic factor.  
+        </p>
+      </solution>
+    </example>
+    <p>
+        Let's summarize what we have so far about forms of partial fraction decompositions.
+      </p>
     <assemblage>
       <title>Partial Fraction Decomposition</title>
       <p>
