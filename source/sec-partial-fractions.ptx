@@ -175,9 +175,6 @@
         \int \frac{A}{ax+b} \, dx = \frac{A}{a}\ln|ax+b|+C
       </me>
       So the question to explore in the next activity is: When can we integrate a rational function by rewriting into terms like this?
-
-      <!-- A similar method can be used whenever the denominator factors into distinct linear terms, as long
-      as the numerator meets some conditions.   -->
     </p>
 
     
@@ -194,12 +191,7 @@
                 <ol marker="i.">
                   <li>
                     <p>
-                      Factor the denominator.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Use that factorization to write the general form of the partial fraction decomposition
+                      Factor the denominator, and use that factorization to write the general form of the partial fraction decomposition
                        of the integrand, using letters like <m>A, B, D</m> etc., or <m>A_1, A_2, A_3</m>, etc.
                     </p>
                   </li>
@@ -263,12 +255,8 @@
                 <ol marker="i.">
                   <li>
                     <p>
-                      <m>x^3+x^2-2x=x(x^2+x-2)=x(x+2)(x-1)</m>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <m>\frac{2x^2+3x+4}{x^3+x^2-2x} = \frac{A_1}{x}+\frac{A_2}{x+2}+\frac{A_3}{x-1}</m>
+                      <m>x^3+x^2-2x=x(x^2+x-2)=x(x+2)(x-1)</m>, which means that
+                      <me>\frac{2x^2+3x+4}{x^3+x^2-2x} = \frac{A_1}{x}+\frac{A_2}{x+2}+\frac{A_3}{x-1}</me>
                     </p>
                   </li>
                   <li>
@@ -431,6 +419,11 @@
           with the second method, of setting <m>x=1</m> to find that <m>1^2+1+4=A(1^2+1)+(Bx+D)(1-1)</m> and so
           <m>A=3</m> would reduce this to two unknowns and often be the fastest to solve by hand. (Since <m>A=3</m>
           and <m>A+B=1</m>, this means that <m>B=-2</m>; similarly, since <m>A-D=4</m>, this means that <m>D=-1</m>.)
+          Since we already integrated to find that
+          <me>\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C</me>
+          we can substitute the values we've found and calculate that
+          <me>\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = 3\ln|x-1|+\frac{-2}{2}\ln|x^2+1|-1\arctan(x) +C</me>
+          which answers the question we were attempting to solve.
         </p>
         <p>
           But it's worth noting that if we've had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us
@@ -443,14 +436,34 @@
         </p>
         <p>
           Solving this using Gaussian elimination results in <m>\begin{bmatrix} 1 \amp 0 \amp 0 \amp 3 \\ 0 \amp 1 \amp 0 \amp -2 \\0 \amp 0 \amp 1 \amp -1 \end{bmatrix}</m>,
-          which does give us the same values of <m>A=3</m>, <m>B=-2</m>, and <m>D=-1</m>.  But doing this tells us something more:
+          which does give us the same values of <m>A=3</m>, <m>B=-2</m>, and <m>D=-1</m>.
+        </p>
+        <p>
+            However, this matrix form tells us something more:
           that this system of equations will have a unique solution <alert>regardless of the starting coefficients of the quadratic in the numerator of the integrand.</alert>
         </p>
         <p>
           Note that we don't have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: 
            <alert>as long as the numerator of the integrand is less than or equal to degree <m>2</m>, and the denominator factors into a linear and an irreducible quadratic,
           we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor
-          and a linear term over the quadratic factor.  </alert>
+          and a linear term over the quadratic factor.</alert>
+        </p>
+        <p>
+          Furthermore, we can see the problem that occurred when we had the wrong form of the partial fraction
+          decomposition.  When we attempted to set <m>\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}</m> and
+          cleared the denominators, we got <me>x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.</me>
+          Setting corresponding coefficients equal gives us
+          <md>
+            <mrow>\amp A \amp \amp \amp \amp \ \amp \amp=1 </mrow>
+            <mrow>\amp  \amp \amp B \amp \amp \amp \amp=1 </mrow>
+            <mrow>\amp A \amp \amp-B \amp \amp \amp \amp=4 </mrow>
+          </md>
+          which becomes <m>\begin{bmatrix} 1 \amp 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \amp 1 \\1 \amp -1 \amp 0 \amp 4 \end{bmatrix}</m>.
+          And this row reduces to <m>\begin{bmatrix} 1 \amp 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \amp 1 \\0 \amp 0 \amp 0 \amp 1 \end{bmatrix}</m>, 
+          an inconsistent system (no possible solutions for <m>A</m> and <m>B</m>.)  
+        </p>
+        <p>
+          One of the important takeaways from this is that the form of the partial fraction decomposition matters.
         </p>
       </statement>
     </example>
@@ -458,8 +471,8 @@
     <subsection xml:id="subsec-part-frac-3">
     <title>General Method of Partial Fractions</title>
     <p>
-        Let's collect and summarize what we can say about the forms of partial fraction decompositions.
-      </p>
+        Let's collect and summarize what we can say about the possible forms of partial fraction decompositions.
+    </p>
     <assemblage>
       <title>Partial Fraction Decomposition</title>
       <p>
@@ -524,9 +537,98 @@
   
 <!-- would be great to have a multiple choice or two or three here as an interactive example. 
 maybe culminate with 1/(x+2)^3? because students in this section don't realize that's already simplified? -->
-    <p>
-      Do next 2 actitivities.
-    </p>
+    <activity>
+      <statement>
+        <p>
+          Consider
+          <ol marker="a." cols="2">
+            <li><m>\int \frac{-x^2-x-3}{x^3+x} \, dx</m></li>
+            <li><m>\int \frac{x^4+1}{x^5+x^4} \, dx</m></li>
+          </ol>
+        </p>
+        <p>
+          For each of the integrals above, 
+          <ol marker="i.">
+            <li>
+              <p>
+                Factor the denominator, and use that factorization to write the general form of the partial fraction decomposition
+                 of the integrand, using letters like <m>A, B, D</m> etc., or <m>A_1, A_2, A_3</m>, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                Calculate the antiderivatives of the partial fraction decomposition while still using 
+                letters like <m>A, B, D</m> etc., or <m>A_1, A_2, A_3</m>, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                Finally, the least important step for calculus but often the most algebraically intense to do by hand, 
+                solve for the values of the letters you used, and write the final answer to the given integral.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                <ol marker="i.">
+                  <li>
+                    <p>
+                      <m>x^3+x=x(x^2+1)</m>, so <m>\frac{-x^2-x-3}{x^3+x}=\frac{A_1}{x}+\frac{A_2x+A_3}{x^2+1}</m>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <me>
+                        \int \frac{-x^2-x-3}{x^3+x}\, dx = A_1\ln|x|+\frac{A_2}{2}\ln|x^2+1|+A_3\arctan(x)+C
+                      </me>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <m>
+                         -3\ln|x|+\ln|x^2+1|-\arctan(x)+C
+                      </m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+            <li>
+              <p>
+                <ol marker="i.">
+                  <li>
+                    <p>
+                      <m>x^5+x^4=x^4(x+1)</m>, so <m>\frac{x^4+1}{x^5+x^4}=\frac{A_1}{x}+\frac{A_2}{x^2}+\frac{A_3}{x^3} + \frac{A_4}{x^4}+\frac{A_5}{x+1}</m>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <me>
+                        \int \frac{x^4+1}{x^5+x^4}\, dx = A_1\ln|x|+\frac{-A_2}{x}+\frac{-A_3}{2x^2} + \frac{-A_4}{3x^3}+A_5\ln|x+1| + C
+                      </me>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      We highly recommend substituting <m>x=0</m> and <m>x=-1</m> and then comparing like coefficients.
+                      <m>
+                         -\ln|x|+\frac{-1}{x}+\frac{1}{2x^2} + \frac{-1}{3x^3}+2\ln|x+1| + C
+                      </m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </answer>
+      
+    </activity>
   </subsection>
 
   <subsection xml:id="subsec-part-frac-4">
@@ -570,11 +672,11 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
             Given any rational function with the degree of the numerator strictly less than the degree 
             of the denominator, we can rewrite the function as a sum of terms of the form
               <me>
-                \frac{A}{ax+b},\ \frac{A}{(ax+b)^n},\ \frac{Ax+B}{ax^2 + bx+c},\ \text{or }\frac{Ax+B}{\left(ax^2 + bx +c \right)^n}
+                \frac{A}{(ax+b)^n}\ \text{or }\frac{Ax+B}{\left(ax^2 + bx +c \right)^n}
               </me>
-            where <m>A</m>, <m>B</m>,
+            where <m>A</m>, <m>B</m>, <m>a</m>, <m>b</m>,
             and <m>c</m> are real numbers,
-            and <m>k</m> is a positive real number.
+            and <m>n</m> is a natural number.
           </p>
         </li>
 

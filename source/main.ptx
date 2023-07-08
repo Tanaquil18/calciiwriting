@@ -49,17 +49,12 @@
     <chapter xml:id="chap-extra-material">
       <title>Extra Material</title>
 
-      <xi:include  href="./sec-partial-fractions.ptx" />
-
-      <section xml:id="testing-partial-fracs">
-        <title>Testing Partial Fractions</title>
-        <p>Hello</p>
-      </section>
-
       <section xml:id="sec-trigonometric-integrals">
         <title>Trigonometric Integrals</title>
         <p>Nothing here, yet.</p>
       </section>
+
+      <xi:include  href="./sec-partial-fractions.ptx" />
 
       <section xml:id="sec-parametric">
         <title>Parametric Functions: Derivatives, Area, and Arclength</title>
