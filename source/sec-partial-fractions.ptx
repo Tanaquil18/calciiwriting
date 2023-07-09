@@ -53,19 +53,89 @@
   </exercise>-->
 
     <!-- Also do a non-WeBWorK version? -->
+    <activity>
+      <p>
+        Do preview activity, at least the first problem with answering whether the integrals are basic, u-sub, combination, or neither.
+      </p>
+      
+
+    </activity>
+    <!--<exercise xml:id="multiple-choice-one" label="multiple-choice-not-randomized">
+    <title>Multiple-Choice, Not Randomized, One Answer</title>
+    <statement>
+      <p>
+        What color is a stop sign?
+      </p>
+    </statement>
+    <choices>
+    <choice>
+    <statement>
+      <p>
+        Green
+      </p>
+    </statement>
+    <feedback>
+      <p>
+        Green means
+        <q>go!</q>.
+      </p>
+    </feedback>
+    </choice>
+    <choice correct="yes">
+    <statement>
+      <p>
+        Red
+      </p>
+    </statement>
+    <feedback>
+      <p>
+        Red is universally used for prohibited activities or serious warnings.
+      </p>
+    </feedback>
+    </choice>
+    <choice>
+    <statement>
+      <p>
+        White
+      </p>
+    </statement>
+    <feedback>
+      <p>
+        White might be hard to see.
+      </p>
+    </feedback>
+    </choice>
+    </choices>
+    <hint>
+      <p>
+        What did you see last time you went driving?
+      </p>
+    </hint>
+    <hint>
+      <p>
+        Maybe go out for a drive?
+      </p>
+    </hint>
+  </exercise> -->
 
     <example><title>Integrating A Rational Function with Substitution</title>
       <statement>
         <p>
           Evaluate
           <me>
-            \int \frac{5x}{x^2-1} \, dx
+            \int \frac{5x}{x^2+1} \, dx
           </me>.
         </p>
       </statement>
       <solution>
         <p>
-          Placeholder for solution.
+          We see a function-derivative pair (up to a constant), since if <m>u=x^2+1</m> then <m>du=2x\, dx</m>.
+          So we rewrite 
+          <md>
+            <mrow> \int \frac{5x}{x^2+1} \, dx \amp = \frac{5}{2}\int \frac{1}{u}\, du </mrow>
+            <mrow>  \amp = \frac{5}{2}\ln|u|+C </mrow>
+            <mrow>  \amp = \frac{5}{2}\ln|x^2+1|+C </mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -109,7 +179,7 @@
       </md>
     </p>
     <p>
-      But how did we come up with
+      The question is: how did we come up with
       <me>
         \frac{5x}{x^2-x-2} = \frac{10/3}{x-2} + \frac{5/3}{x+1}
       </me>
@@ -138,8 +208,6 @@
           <me>
             \frac{5x\cancel{(x-2)(x+1)}}{\cancel{(x-2)(x+1)}}= \frac{A(x+1)\cancel{(x-2)}}{\cancel{x-2}} + \frac{B\cancel{(x+1)}(x-2)}{\cancel{x+1}}
           </me>
-          
-
           which means
           <me>
             5x = A(x+1) + B(x-2)
@@ -167,7 +235,7 @@
   </introduction>
 
   <subsection>
-    <title>Distinct Linear Terms (Or Factor the Denominator), or when can this be used?</title>
+    <title>When Can The Methods In This Example Be Used?</title>
     <p>
       Notice that any terms of the form <m>\frac{A}{ax+b}</m>, a number in the numerator divided by a linear term
       in the denominator, would be similarly easy to integrate, using <m>u=ax+b</m> so that <m>du=a\, dx</m>. Then
@@ -177,7 +245,6 @@
       So the question to explore in the next activity is: When can we integrate a rational function by rewriting into terms like this?
     </p>
 
-    
       <!-- Do activity now?  Explore how to combine various partial fraction decompositions and have them make 
       conclusions or guesses about what the conditions are? Do linear ones, ones with numerator also a quadratic.
       Do any quadratic ones? Or repeated linear terms? Have them try a constant over a quadratic that doesn't work. -->
@@ -426,7 +493,7 @@
           which answers the question we were attempting to solve.
         </p>
         <p>
-          But it's worth noting that if we've had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us
+          However, it's worth noting that if we've had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us
           <md>
             <mrow>\amp A \amp \amp+ B \amp \amp \ \amp \amp=1 </mrow>
             <mrow>\amp  \amp \amp- B \amp \amp+ D \amp \amp=1 </mrow>
@@ -439,14 +506,14 @@
           which does give us the same values of <m>A=3</m>, <m>B=-2</m>, and <m>D=-1</m>.
         </p>
         <p>
-            However, this matrix form tells us something more:
+          However, this matrix form tells us something more:
           that this system of equations will have a unique solution <alert>regardless of the starting coefficients of the quadratic in the numerator of the integrand.</alert>
         </p>
         <p>
           Note that we don't have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: 
            <alert>as long as the numerator of the integrand is less than or equal to degree <m>2</m>, and the denominator factors into a linear and an irreducible quadratic,
           we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor
-          and a linear term over the quadratic factor.</alert>
+          and a linear term over the quadratic factor.</alert><fn>See later for what to do if the degree is greater than or equal to <m>3</m> with this same factored form of the denominator.</fn>
         </p>
         <p>
           Furthermore, we can see the problem that occurred when we had the wrong form of the partial fraction
@@ -454,12 +521,12 @@
           cleared the denominators, we got <me>x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.</me>
           Setting corresponding coefficients equal gives us
           <md>
-            <mrow>\amp A \amp \amp \amp \amp \ \amp \amp=1 </mrow>
-            <mrow>\amp  \amp \amp B \amp \amp \amp \amp=1 </mrow>
-            <mrow>\amp A \amp \amp-B \amp \amp \amp \amp=4 </mrow>
+            <mrow>\amp A \amp \amp \amp \amp=1 </mrow>
+            <mrow>\amp  \amp \amp B \amp  \amp=1 </mrow>
+            <mrow>\amp A \amp \amp-B \amp \amp=4 </mrow>
           </md>
-          which becomes <m>\begin{bmatrix} 1 \amp 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \amp 1 \\1 \amp -1 \amp 0 \amp 4 \end{bmatrix}</m>.
-          And this row reduces to <m>\begin{bmatrix} 1 \amp 0 \amp 0 \amp 1 \\ 0 \amp 1 \amp 0 \amp 1 \\0 \amp 0 \amp 0 \amp 1 \end{bmatrix}</m>, 
+          which becomes <m>\begin{bmatrix} 1 \amp 0  \amp 1 \\ 0 \amp 1  \amp 1 \\1 \amp -1  \amp 4 \end{bmatrix}</m>,
+          which row reduces to <m>\begin{bmatrix} 1 \amp 0  \amp 1 \\ 0 \amp 1  \amp 1 \\0 \amp 0  \amp 1 \end{bmatrix}</m>, 
           an inconsistent system (no possible solutions for <m>A</m> and <m>B</m>.)  
         </p>
         <p>
@@ -632,6 +699,85 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
   </subsection>
 
   <subsection xml:id="subsec-part-frac-4">
+    <title>When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator</title>
+    <p>
+      Insert stuff about long division, and maybe an example or reminder (if trig integrals including trig sub activity have been covered first) of how <me>\int \frac{1}{x^2+a^2}dx = \frac{1}{a}\arctan\left(\frac{x}{a}\right)+C</me>
+    </p>
+
+    <activity>
+      <statement>
+        <p>
+          In this activity, we will calculate
+          <me> \int \frac{x^6-2x^5+3x^4+3x^3-11x^2+44x-52}{x^4-16} \, dx
+          </me>
+        </p>
+        <p> 
+          <ol marker="a.">
+            <li>
+              <p>
+                Write a senctence giving the reason why partial fraction decomposition can not be performed on the integrand above in its current form.
+              </p>
+            </li>
+            <li>
+              <p>
+                Perform polynomial division to rewrite the integrand.
+              </p>
+            </li>
+            <li>
+              <p>
+                Integrate the terms that can be integrated, and write the general form of the partial fraction decomposition of the rest, using letters 
+                like <m>A, B, C</m> etc, or <m>A_1, A_2, A_3</m>, etc.  Calculate the integral of the partial fraction decomposition while still using 
+                letters like <m>A, B, C</m> etc, or <m>A_1, A_2, A_3</m>, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                Finally, the least important step for calculus but often the most algebraically intense to do by hand, 
+                solve for the values of the letters you used, and write the final answer to the given integral.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Partial fraction decomposition can only be performed when the degree of the numerator is strictly less than the degree of the denominator.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\int x^2 - 2 x + 3 +\frac{3 x^3 + 5 x^2 + 12 x - 4}{x^4-16} \ dx</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>
+                  \frac{x^3}{3} - x^2 + 3x + \int \frac{A_1}{x+2}+\frac{A_2}{x-2}+\frac{A_3x+A_4}{x^2+4}\ dx
+                </me>
+                which integrates to
+                <me>
+                  \frac{x^3}{3} - x^2 + 3x + A_1\ln|x+2|+A_2\ln|x-2|+\frac{A_3}{2}\ln|x^2+4|+ \frac{A_4}{2}\arctan\left(\frac{x}{2}\right)+C
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>
+                  \frac{x^3}{3} - x^2 + 3x + \ln|x+2|+2\ln|x-2|+ \frac{3}{2}\arctan\left(\frac{x}{2}\right)+C
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </answer>
+      
+    </activity>
+  </subsection>
+
+  <subsection xml:id="subsec-part-frac-5">
     <title>Final Considerations</title>
     
     <p>
