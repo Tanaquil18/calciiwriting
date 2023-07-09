@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Integrating A Rational Function with Substitution.</span>
+</h4>
+<div class="para logical">
+<div class="para">Evaluate</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">We suppose that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1} + \frac{Bx+D}{x^2+1}
+\end{equation*}
+</div>
+<div class="para">and note that this gives us <span class="process-math">\(3\)</span> constants to work with.<a href="" class="fn-knowl original" data-knowl="./knowl/fn-2-hidden.html" title="Footnote 1.2.1"><sup> 1 </sup></a>  Before we look for the values of the constants <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\text{,}\)</span> we will integrate to make sure this is a better form than the one we started with.</div>
+</div> <div class="para logical">
+<div class="para">An antiderivative of <span class="process-math">\(\frac{A}{x-1}\)</span> is <span class="process-math">\(A\ln|x-1|\text{.}\)</span> We can calculate</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{Bx+D}{x^2+1} \, dx = \int \frac{Bx}{x^2+1} \, dx + \int \frac{D}{x^2+1} \, dx
+\end{equation*}
+</div>
+<div class="para">and note that the second integral is one of our basic forms, <span class="process-math">\(D\arctan(x)\text{,}\)</span> while the first can be evaluated with substitution taking <span class="process-math">\(u=x^2+1\)</span> so that <span class="process-math">\(du=2x\, dx\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Thus we see that if we can find such numbers <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\text{,}\)</span> then we can integrate</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx \amp = \int \left(\frac{A}{x-1} + \frac{Bx+D}{x^2+1}\right) dx\\
+\amp = \int \frac{A}{x-1} dx + \int \frac{Bx}{x^2+1}dx + \int \frac{D}{x^2+1}dx\\
+\amp = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C 
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">Now that we’ve done the calculus part, we turn our attention to the algebra. Multiplying both sides of the integrand by <span class="process-math">\((x-1)(x^2+1)\text{,}\)</span> we find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{(x^2+x+4)\cancel{(x-1)(x^2+1)}}{\cancel{(x-1)(x^2+1)}}= \frac{A(x^2+1)\cancel{(x-1)}}{\cancel{x-1}} + \frac{(Bx+D)\cancel{(x^2+1)}(x-1)}{\cancel{x^2+1}}
+\end{equation*}
+</div>
+<div class="para">which means</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">We have several tools in our toolbox for solving for the unknown numbers. We could...</div>
+<ul class="disc">
+<li><div class="para">... use the black box method.  Use a solver like Wolfram Alpha or another computational tool.</div></li>
+<li><div class="para">... set <span class="process-math">\(x\)</span> equal to different values like we’ve done before. This is slightly more complicated than when the denominator factored into linear terms, but we can still do it, taking <span class="process-math">\(x=1\text{,}\)</span> then <span class="process-math">\(x=0\text{,}\)</span> then <span class="process-math">\(x=-1\text{,}\)</span> or any three values of <span class="process-math">\(x\)</span> you choose and find easiest to work with.</div></li>
+<li><div class="para">... compare coefficients of both sides of the equation and get a system of equations to solve.</div></li>
+</ul>
+</div> <div class="para logical">
+<div class="para">Since the first two methods don’t give us anything new to discuss, we choose to demonstrate the last method here.  Recall that we are trying to solve</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)
+\end{equation*}
+</div>
+<div class="para">for the unknown values of <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\)</span> so that the two sides are equal for all possible values of <span class="process-math">\(x\text{.}\)</span>  This means the two sides must really be the same function of <span class="process-math">\(x\text{,}\)</span> or the same polynomial of <span class="process-math">\(x\text{.}\)</span>  Multiplying out the right-hand side and grouping like terms together gives</div>
+<div class="displaymath process-math">
+\begin{align*}
+x^2+x+4 \amp = A(x^2+1) + (Bx+D)(x-1) \\
+\amp = Ax^2+A + Bx^2-Bx+Dx-D\\
+\amp = (A+B)x^2+(-B+D)x+(A-D)
+\end{align*}
+</div>
+<div class="para">Setting like coefficients equal means that <span class="process-math">\(A+B=1\)</span> (because those are the corresponding coefficients of the <span class="process-math">\(x^2\)</span> term) and <span class="process-math">\(-B+D=1\)</span> (because those are the corresponding coefficients of the <span class="process-math">\(x\)</span> term) and <span class="process-math">\(A-D=4\)</span> (because those are the constant terms).</div>
+</div> <div class="para logical">
+<div class="para">This gives us a system of linear equations, three equations and three unknowns.  Combining this with the second method, of setting <span class="process-math">\(x=1\)</span> to find that <span class="process-math">\(1^2+1+4=A(1^2+1)+(Bx+D)(1-1)\)</span> and so <span class="process-math">\(A=3\)</span> would reduce this to two unknowns and often be the fastest to solve by hand. (Since <span class="process-math">\(A=3\)</span> and <span class="process-math">\(A+B=1\text{,}\)</span> this means that <span class="process-math">\(B=-2\text{;}\)</span> similarly, since <span class="process-math">\(A-D=4\text{,}\)</span> this means that <span class="process-math">\(D=-1\text{.}\)</span>) Since we already integrated to find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C
+\end{equation*}
+</div>
+<div class="para">we can substitute the values we’ve found and calculate that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = 3\ln|x-1|+\frac{-2}{2}\ln|x^2+1|-1\arctan(x) +C
+\end{equation*}
+</div>
+<div class="para">which answers the question we were attempting to solve.</div>
+</div> <div class="para logical">
+<div class="para">However, it’s worth noting that if we’ve had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp A \amp \amp+ B \amp \amp \ \amp \amp=1 \\
+\amp  \amp \amp- B \amp \amp+ D \amp \amp=1 \\
+\amp A \amp \amp \amp \amp-D \amp \amp=4 
+\end{align*}
+</div>
+<div class="para">which becomes <span class="process-math">\(\begin{bmatrix} 1 \amp 1 \amp 0 \amp 1 \\ 0 \amp -1 \amp 1 \amp 1 \\1 \amp 0 \amp -1 \amp 4 \end{bmatrix}\text{.}\)</span>
+</div>
+</div> <div class="para">Solving this using Gaussian elimination results in <span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 0 \amp 3 \\ 0 \amp 1 \amp 0 \amp -2 \\0 \amp 0 \amp 1 \amp -1 \end{bmatrix}\text{,}\)</span> which does give us the same values of <span class="process-math">\(A=3\text{,}\)</span> <span class="process-math">\(B=-2\text{,}\)</span> and <span class="process-math">\(D=-1\text{.}\)</span>
+</div> <div class="para">However, this matrix form tells us something more: that this system of equations will have a unique solution <em class="alert">regardless of the starting coefficients of the quadratic in the numerator of the integrand.</em>
+</div> <div class="para">Note that we don’t have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: <em class="alert">as long as the numerator of the integrand is less than or equal to degree <span class="process-math">\(2\text{,}\)</span> and the denominator factors into a linear and an irreducible quadratic, we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor and a linear term over the quadratic factor.</em><a href="" class="fn-knowl original" data-knowl="./knowl/fn-3-hidden.html" title="Footnote 1.2.2"><sup> 2 </sup></a>
+</div> <div class="para logical">
+<div class="para">Furthermore, we can see the problem that occurred when we had the wrong form of the partial fraction decomposition.  When we attempted to set <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> and cleared the denominators, we got</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.
+\end{equation*}
+</div>
+<div class="para">Setting corresponding coefficients equal gives us</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp A \amp \amp \amp \amp=1 \\
+\amp  \amp \amp B \amp  \amp=1 \\
+\amp A \amp \amp-B \amp \amp=4 
+\end{align*}
+</div>
+<div class="para">which becomes <span class="process-math">\(\begin{bmatrix} 1 \amp 0  \amp 1 \\ 0 \amp 1  \amp 1 \\1 \amp -1  \amp 4 \end{bmatrix}\text{,}\)</span> which row reduces to <span class="process-math">\(\begin{bmatrix} 1 \amp 0  \amp 1 \\ 0 \amp 1  \amp 1 \\0 \amp 0  \amp 1 \end{bmatrix}\text{,}\)</span> an inconsistent system (no possible solutions for <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span>)</div>
+</div> <div class="para">One of the important takeaways from this is that the form of the partial fraction decomposition matters.</div></article><span class="incontext"><a href="sec-partial-fractions.html#example-2" class="internal">in-context</a></span>
+</body>
+</html>
