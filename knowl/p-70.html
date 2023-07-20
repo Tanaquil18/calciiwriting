@@ -12,7 +12,17 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">Calculate the antiderivatives of the partial fraction decomposition while still using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.</div>
+<div class="para logical">
+<div class="para">Consider the integral <span class="process-math">\(\displaystyle \int \frac{x^2+x+4}{(x^2+1)(x-1)}\, dx\text{.}\)</span> The denominator is already factored, so we see what happens if we proceed like we did in part a.</div>
+<ol class="lower-roman">
+<li><div class="para">Calculate <span class="process-math">\(\int \frac{A}{x-1}dx+\int\frac{B}{x^2+1}dx\text{.}\)</span>
+</div></li>
+<li><div class="para">Suppose that <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> and multiply both sides of the equation by <span class="process-math">\((x^2+1)(x-1)\)</span> to obtain an equality with no fractions.</div></li>
+<li><div class="para">Substitute <span class="process-math">\(x=1\)</span> to solve for the value of <span class="process-math">\(A\text{,}\)</span> and then substitute <span class="process-math">\(x=0\)</span> to solve for the value of <span class="process-math">\(B\text{.}\)</span>  Does this result in an actual equality of the two sides? What equation involving <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> do you get if you substituted <span class="process-math">\(x=-1\text{?}\)</span>
+</div></li>
+<li><div class="para">Why does this show that <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} \neq \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> for any values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{?}\)</span>  How might we change the partial fraction decomposition form to fix this?</div></li>
+</ol>
+</div>
 <span class="incontext"><a href="sec-partial-fractions.html#p-70" class="internal">in-context</a></span>
 </body>
 </html>

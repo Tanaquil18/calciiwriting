@@ -12,20 +12,8 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">This gives us a system of linear equations, three equations and three unknowns.  Combining this with the second method, of setting <span class="process-math">\(x=1\)</span> to find that <span class="process-math">\(1^2+1+4=A(1^2+1)+(Bx+D)(1-1)\)</span> and so <span class="process-math">\(A=3\)</span> would reduce this to two unknowns and often be the fastest to solve by hand. (Since <span class="process-math">\(A=3\)</span> and <span class="process-math">\(A+B=1\text{,}\)</span> this means that <span class="process-math">\(B=-2\text{;}\)</span> similarly, since <span class="process-math">\(A-D=4\text{,}\)</span> this means that <span class="process-math">\(D=-1\text{.}\)</span>) Since we already integrated to find that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C
-\end{equation*}
-</div>
-<div class="para">we can substitute the values we’ve found and calculate that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = 3\ln|x-1|+\frac{-2}{2}\ln|x^2+1|-1\arctan(x) +C
-\end{equation*}
-</div>
-<div class="para">which answers the question we were attempting to solve.</div>
+<div class="para">
+<span class="process-math">\(\displaystyle \int \frac{e^x}{1+(e^x)^2} \, dx\)</span> can be solved with u-substitution, letting <span class="process-math">\(u=e^x\)</span> so that <span class="process-math">\(du = e^x \, dx\text{,}\)</span> which turns the integral into <span class="process-math">\(\displaystyle \int \frac{1}{1+u^2} \, du\text{,}\)</span> which integrates to <span class="process-math">\(\arctan(u)\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec-partial-fractions.html#p-53" class="internal">in-context</a></span>
 </body>

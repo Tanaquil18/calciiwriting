@@ -11,8 +11,26 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">Note that we don’t have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: <em class="alert">as long as the numerator of the integrand is less than or equal to degree <span class="process-math">\(2\text{,}\)</span> and the denominator factors into a linear and an irreducible quadratic, we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor and a linear term over the quadratic factor.</em><a href="" class="fn-knowl original" data-knowl="./knowl/fn-3-hidden.html" title="Footnote 1.2.2"><sup> 2 </sup></a>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Instead, we try a completely different strategy.  If we somehow knew that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{5x}{x^2-x-2} = \frac{10/3}{x-2} + \frac{5/3}{x+1}\text{,}
+\end{equation*}
+</div>
+<div class="para">then we could integrate both sides of the equation to get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{5x}{x^2-x-2} \, dx = \int \frac{10/3}{x-2} + \frac{5/3}{x+1} \, dx\text{,}
+\end{equation*}
+</div>
+<div class="para">and the integral on the right is straightforward, giving us</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3} \ln|x-2| + \frac{5}{3}\ln|x+1| + C\text{.}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec-partial-fractions.html#p-57" class="internal">in-context</a></span>
 </body>

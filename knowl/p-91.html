@@ -13,16 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
+<div class="para">An antiderivative of <span class="process-math">\(\frac{A}{x-1}\)</span> is <span class="process-math">\(A\ln|x-1|\text{.}\)</span> We can calculate</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{x^3}{3} - x^2 + 3x + \int \frac{A_1}{x+2}+\frac{A_2}{x-2}+\frac{A_3x+A_4}{x^2+4}\ dx
+\int \frac{Bx+D}{x^2+1} \, dx = \int \frac{Bx}{x^2+1} \, dx + \int \frac{D}{x^2+1} \, dx
 \end{equation*}
 </div>
-<div class="para">which integrates to</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{x^3}{3} - x^2 + 3x + A_1\ln|x+2|+A_2\ln|x-2|+\frac{A_3}{2}\ln|x^2+4|+ \frac{A_4}{2}\arctan\left(\frac{x}{2}\right)+C
-\end{equation*}
+<div class="para">and note that the second integral is one of our basic forms, <span class="process-math">\(D\arctan(x)\text{,}\)</span> while the first can be evaluated with substitution taking <span class="process-math">\(u=x^2+1\)</span> so that <span class="process-math">\(du=2x\, dx\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec-partial-fractions.html#p-91" class="internal">in-context</a></span>

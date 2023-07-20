@@ -12,23 +12,8 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">Since the first two methods don’t give us anything new to discuss, we choose to demonstrate the last method here.  Recall that we are trying to solve</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)
-\end{equation*}
-</div>
-<div class="para">for the unknown values of <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\)</span> so that the two sides are equal for all possible values of <span class="process-math">\(x\text{.}\)</span>  This means the two sides must really be the same function of <span class="process-math">\(x\text{,}\)</span> or the same polynomial of <span class="process-math">\(x\text{.}\)</span>  Multiplying out the right-hand side and grouping like terms together gives</div>
-<div class="displaymath process-math">
-\begin{align*}
-x^2+x+4 \amp = A(x^2+1) + (Bx+D)(x-1) \\
-\amp = Ax^2+A + Bx^2-Bx+Dx-D\\
-\amp = (A+B)x^2+(-B+D)x+(A-D)
-\end{align*}
-</div>
-<div class="para">Setting like coefficients equal means that <span class="process-math">\(A+B=1\)</span> (because those are the corresponding coefficients of the <span class="process-math">\(x^2\)</span> term) and <span class="process-math">\(-B+D=1\)</span> (because those are the corresponding coefficients of the <span class="process-math">\(x\)</span> term) and <span class="process-math">\(A-D=4\)</span> (because those are the constant terms).</div>
-</div>
+<div class="para">
+<span class="process-math">\(\displaystyle \int \frac{2x+3}{1+x^2} \, dx\)</span> The substitution from the previous problem doesn’t cancel out the <span class="process-math">\(2x+3\text{.}\)</span>  We could split the integral up into <span class="process-math">\(\displaystyle \int \frac{2x}{1+x^2} \, dx + \int \frac{3}{1+x^2} \, dx\text{,}\)</span> and the first is u-sub, while the second is a basic integral involving <span class="process-math">\(\arctan (x)\)</span>  OR, we could do integration by parts twice.  The first time, let <span class="process-math">\(u=2x+3\)</span> while <span class="process-math">\(dv = \frac{1}{1+x^2} \, dx\text{,}\)</span> which gets us an answer involving <span class="process-math">\(\displaystyle \int \arctan(x) \, dx\text{,}\)</span> which can itself be done with integration by parts, letting <span class="process-math">\(u= \arctan(x)\)</span> and <span class="process-math">\(dv=dx\text{,}\)</span> giving an integral of <span class="process-math">\(\displaystyle \int \frac{x}{1+x^2} \, dx\text{,}\)</span> which is solved with u-sub.</div>
 <span class="incontext"><a href="sec-partial-fractions.html#p-52" class="internal">in-context</a></span>
 </body>
 </html>
