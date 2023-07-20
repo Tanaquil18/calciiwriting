@@ -43,82 +43,7 @@
       but sometimes neither of those methods can be used.  
     </p>
 
-    <!-- <xi:include href="./previews/PA-1-1.xml" />-->
-    <!-- Put preview here.  A webwork version, needs to go in a separate file eventually. 
-      Also needs to be rewritten as 1 ww problem instead of 4?-->
-
-    <!-- <title>Preview Activity</title>
-  <exercise label="csafranski__5-_5aPreview_prob1">
-    <webwork source="csafranski/5.5aPreview_prob1.pg"/>
-  </exercise>-->
-
-    <!-- Also do a non-WeBWorK version? -->
-    <activity>
-      <p>
-        Do preview activity, at least the first problem with answering whether the integrals are basic, u-sub, combination, or neither.
-      </p>
-      
-
-    </activity>
-    <!--<exercise xml:id="multiple-choice-one" label="multiple-choice-not-randomized">
-    <title>Multiple-Choice, Not Randomized, One Answer</title>
-    <statement>
-      <p>
-        What color is a stop sign?
-      </p>
-    </statement>
-    <choices>
-    <choice>
-    <statement>
-      <p>
-        Green
-      </p>
-    </statement>
-    <feedback>
-      <p>
-        Green means
-        <q>go!</q>.
-      </p>
-    </feedback>
-    </choice>
-    <choice correct="yes">
-    <statement>
-      <p>
-        Red
-      </p>
-    </statement>
-    <feedback>
-      <p>
-        Red is universally used for prohibited activities or serious warnings.
-      </p>
-    </feedback>
-    </choice>
-    <choice>
-    <statement>
-      <p>
-        White
-      </p>
-    </statement>
-    <feedback>
-      <p>
-        White might be hard to see.
-      </p>
-    </feedback>
-    </choice>
-    </choices>
-    <hint>
-      <p>
-        What did you see last time you went driving?
-      </p>
-    </hint>
-    <hint>
-      <p>
-        Maybe go out for a drive?
-      </p>
-    </hint>
-  </exercise> -->
-
-    <example><title>Integrating A Rational Function with Substitution</title>
+    <example xml:id="int-with-sub-ex"><title>Integrating A Rational Function with Substitution</title>
       <statement>
         <p>
           Evaluate
@@ -139,20 +64,37 @@
         </p>
       </solution>
     </example>
+    <!-- <xi:include href="./previews/PA-1-1.xml" />-->
+    <!-- Put preview here.  A webwork version, needs to go in a separate file eventually. 
+      Also needs to be rewritten as 1 ww problem instead of 4?-->
+
+    <!-- <title>Preview Activity</title>  -->
+  
+
+    <!-- Also do a non-WeBWorK version? -->
+    <exploration xml:id="PA-5-5a-1">
+      <exercise label="csafranski__5-_5aPreview_prob1">
+        <webwork source="csafranski/5.5aPreview_prob1.pg"/>
+      </exercise>
+    </exploration>
+  </introduction>
+  
+    <subsection xml:id="subsec-start-method-part-frac">
+      <title>Starting the Method of Partial Fractions</title>
 
     <p>
-      In this case, the derivative of the function in the denominator was sitting in the numerator 
+      In <xref ref="int-with-sub-ex"/>, the derivative of the function in the denominator was sitting in the numerator 
       (up to a constant multiple).  What if we needed to integrate this instead?
       <me>
         \int \frac{5x}{x^2-x-2} \, dx
       </me>?
     </p>
     <p>
-      If we try to pick <m>u=x^2-x-2</m>, then we calculate that <m>du=(2x-1)\, dx</m>, which does not help
+      We could try what we did before and pick <m>u=x^2-x-2</m>, but then we calculate that <m>du=(2x-1)\, dx</m>, which does not help
       us in the numerator.  
     </p>
     <p>
-      So we try a different strategy.  If we somehow knew that 
+      Instead, we try a completely different strategy.  If we somehow knew that 
       <me>
         \frac{5x}{x^2-x-2} = \frac{10/3}{x-2} + \frac{5/3}{x+1}
       </me>, 
@@ -215,7 +157,7 @@
     </p>
 
     <p>
-          Since we want this equation to hold for <em>every value</em> of <m>x</m>,
+          Because this equation should hold for <em>every value</em> of <m>x</m>,
           we can use inspired choices of <em>specific</em> <m>x</m>-values to help us find <m>A</m> and <m>B</m>.
           Taking <m>x = -1</m>, we have
           <me>
@@ -232,9 +174,8 @@
             \int \frac{5x}{x^2-x-2} \, dx = \int \frac{10/3}{x-2} + \frac{5/3}{x+1} \, dx
           </me>.
     </p>
-  </introduction>
-
-  <subsection>
+    </subsection>
+    <subsection xml:id="subsec-when-method-used">
     <title>When Can The Methods In This Example Be Used?</title>
     <p>
       Notice that any terms of the form <m>\frac{A}{ax+b}</m>, a number in the numerator divided by a linear term
@@ -242,8 +183,9 @@
       <me>
         \int \frac{A}{ax+b} \, dx = \frac{A}{a}\ln|ax+b|+C
       </me>
-      So the question to explore in the next activity is: When can we integrate a rational function by rewriting into terms like this?
+      The main question to explore in the next activity is: When can we integrate a rational function by rewriting into terms like this?
     </p>
+
 
       <!-- Do activity now?  Explore how to combine various partial fraction decompositions and have them make 
       conclusions or guesses about what the conditions are? Do linear ones, ones with numerator also a quadratic.
@@ -254,7 +196,7 @@
           <ol marker="a.">
             <li>
               <p>
-                Calculate the integral <m>\int \frac{2x^2+3x+4}{x^3+x^2-2x}\, dx</m> using the steps below.
+                Calculate the integral <m>\displaystyle \int  \frac{2x^2+3x+4}{x^3+x^2-2x}\, dx</m> using the steps below.
                 <ol marker="i.">
                   <li>
                     <p>
@@ -280,7 +222,7 @@
             <!-- do a repeated linear example or activity? -->
             <li>
               <p>
-                Consider the integral <m>\int \frac{x^2+x+4}{(x^2+1)(x-1)}\, dx</m>. The denominator is 
+                Consider the integral <m>\displaystyle \int \frac{x^2+x+4}{(x^2+1)(x-1)}\, dx</m>. The denominator is 
                 already factored, so we see what happens if we proceed like we did in part a.
                 <ol marker="i.">
                   <li>
@@ -602,6 +544,144 @@
       </ul>      
     </p>
   
+    <exercise xml:id="multiple-choice-one" label="multiple-choice-not-randomized">
+      <title>Don't Forget to Factor</title>
+      <statement>
+        <p>
+          What is the partial fraction decomposition of <m>\frac{5x-2}{x^2-1}</m>?
+        </p>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <p>
+              <m>\frac{A}{x^2-1}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This would be true if the denominator was linear instead of quadratic.
+            </p>
+          </feedback>
+          </choice>
+      <choice>
+        <statement>
+          <p>
+            <m>\frac{Ax+B}{x^2-1}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            This would be true if the denominator was an unfactorable quadratic, but the denominator can be factored.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>\frac{A}{x+1}+\frac{B}{x-1}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! 
+            </p>
+          </feedback>
+          </choice>
+      </choices>
+    </exercise> 
+    <exercise xml:id="multiple-choice-two" label="multiple-choice-not-randomized-two">
+      <title>Powers</title>
+      <statement>
+        <p>
+          What is the partial fraction decomposition of <m>\frac{5x-2}{(x+2)^2}</m>?
+        </p>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <p>
+              <m>\frac{B}{x+2}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This would be true if the exponent of the original denominator was 1 instead of 2.
+            </p>
+          </feedback>
+          </choice>
+      <choice>
+        <statement>
+          <p>
+            <m>\frac{Ax+B}{(x+2)^2}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            This would be true if the denominator was an unfactorable quadratic instead of a power of a linear term.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              <m>\frac{A}{(x+2)^2}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This is not enough terms to account for all the possible original numerators when the denominator has a power of a linear term.
+            </p>
+          </feedback>
+          </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>\frac{A}{x+2}+\frac{B}{(x+2)^2}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! 
+            </p>
+          </feedback>
+          </choice>
+      </choices>
+    </exercise>
+    <exercise xml:id="multiple-choice-three" label="multiple-choice-not-randomized-three">
+      <title>Powers again</title>
+      <statement>
+        <p>
+          What is the partial fraction decomposition of <m>\frac{5}{(x+2)^3}</m>?
+        </p>
+      </statement>
+      <choices>
+          <choice>
+            <statement>
+              <p>
+                <m>\frac{A}{x+2}+\frac{B}{(x+2)^2}+\frac{D}{(x+2)^3}</m>
+              </p>
+            </statement>
+            <feedback>
+              <p>
+                Technically correct, but not the best choice here.  Look at the original numerator again. 
+              </p>
+            </feedback>
+            </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>\frac{A}{(x+2)^3}</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct! And in fact, A=5.  (If this needed to be integrated, we can use the power rule straightaway, no partial fractions work is required.)
+            </p>
+          </feedback>
+          </choice>
+      </choices>
+    </exercise>
 <!-- would be great to have a multiple choice or two or three here as an interactive example. 
 maybe culminate with 1/(x+2)^3? because students in this section don't realize that's already simplified? -->
     <activity>
@@ -726,8 +806,8 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
             <li>
               <p>
                 Integrate the terms that can be integrated, and write the general form of the partial fraction decomposition of the rest, using letters 
-                like <m>A, B, C</m> etc, or <m>A_1, A_2, A_3</m>, etc.  Calculate the integral of the partial fraction decomposition while still using 
-                letters like <m>A, B, C</m> etc, or <m>A_1, A_2, A_3</m>, etc.
+                like <m>A, B, D</m> etc, or <m>A_1, A_2, A_3</m>, etc.  Calculate the integral of the partial fraction decomposition while still using 
+                letters like <m>A, B, D</m> etc, or <m>A_1, A_2, A_3</m>, etc.
               </p>
             </li>
             <li>
