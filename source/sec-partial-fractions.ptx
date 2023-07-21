@@ -544,7 +544,7 @@
       </ul>      
     </p>
   
-    <exercise xml:id="multiple-choice-one" label="multiple-choice-not-randomized">
+    <exercise xml:id="multiple-choice-one" label="multiple-choice-factor">
       <title>Don't Forget to Factor</title>
       <statement>
         <p>
@@ -590,42 +590,42 @@
           </choice>
       </choices>
     </exercise> 
-    <exercise xml:id="multiple-choice-two" label="multiple-choice-not-randomized-two">
+    <exercise xml:id="multiple-choice-two" label="multiple-choice-powers">
       <title>Powers</title>
       <statement>
         <p>
-          What is the partial fraction decomposition of <m>\frac{5x-2}{(x+2)^2}</m>?
+          What is the partial fraction decomposition of <m>\frac{5x-2}{(x+1)(x+2)^2}</m>?
         </p>
       </statement>
       <choices>
         <choice>
           <statement>
             <p>
-              <m>\frac{B}{x+2}</m>
+              <m>\frac{A}{x+1}+\frac{B}{x+2}</m>
             </p>
           </statement>
           <feedback>
             <p>
-              This would be true if the exponent of the original denominator was 1 instead of 2.
+              This would be true if both exponents of the original denominator were 1, but there's an exponent of 2.
             </p>
           </feedback>
           </choice>
       <choice>
         <statement>
           <p>
-            <m>\frac{Ax+B}{(x+2)^2}</m>
+            <m>\frac{A}{x+1}+\frac{Bx+D}{(x+2)^2}</m>
           </p>
         </statement>
         <feedback>
           <p>
-            This would be true if the denominator was an unfactorable quadratic instead of a power of a linear term.
+            This would be true if the denominator had an unfactorable quadratic instead of a power of a linear term.
           </p>
         </feedback>
         </choice>
         <choice>
           <statement>
             <p>
-              <m>\frac{A}{(x+2)^2}</m>
+              <m>\frac{A}{x+1}+\frac{B}{(x+2)^2}</m>
             </p>
           </statement>
           <feedback>
@@ -637,18 +637,18 @@
         <choice correct="yes">
           <statement>
             <p>
-              <m>\frac{A}{x+2}+\frac{B}{(x+2)^2}</m>
+              <m>\frac{A}{x+1}+\frac{B}{x+2}+\frac{D}{(x+2)^2}</m>
             </p>
           </statement>
           <feedback>
             <p>
-              Correct! 
+              Correct!
             </p>
           </feedback>
           </choice>
       </choices>
     </exercise>
-    <exercise xml:id="multiple-choice-three" label="multiple-choice-not-randomized-three">
+    <exercise xml:id="multiple-choice-three" label="multiple-choice-powers-again">
       <title>Powers again</title>
       <statement>
         <p>
@@ -664,7 +664,7 @@
             </statement>
             <feedback>
               <p>
-                Technically correct, but not the best choice here.  Look at the original numerator again. 
+                Technically correct, but not the best choice for this particular example.  Look at the original numerator again. 
               </p>
             </feedback>
             </choice>
@@ -676,7 +676,7 @@
           </statement>
           <feedback>
             <p>
-              Correct! And in fact, A=5.  (If this needed to be integrated, we can use the power rule straightaway, no partial fractions work is required.)
+              Correct! Because the original numerator was a constant, and thus in fact, A=5.  (If this needed to be integrated, we can use the power rule straightaway, no partial fractions work is required.)
             </p>
           </feedback>
           </choice>
