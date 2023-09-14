@@ -72,11 +72,36 @@
   
 
     <!-- Also do a non-WeBWorK version? -->
-    <exploration xml:id="PA-5-5a-1">
+    <!-- <exploration xml:id="PA-5-5a-1">
       <exercise label="csafranski__5-_5aPreview_prob1">
         <webwork source="csafranski/5.5aPreview_prob1.pg"/>
       </exercise>
+    </exploration> -->
+
+    <exploration xml:id="PA-5-5a-1">
+      <p>
+        For each of the indefinite integrals below, decide whether the integral can be evaluated: 
+        immediately because it’s a basic integral, using 
+<m>u</m>-substitution, integration by parts, with multiple techniques, or if none of those will work.
+      </p>
+      <p>
+        <ul>
+          <li>
+            <me>\int \frac{1}{1+x^2}dx</me>
+          </li>
+          <li>
+            <me>\int \frac{x}{1+x^2}dx</me>
+          </li>
+          <li>
+            <me>\int \frac{2x+3}{1+x^2}dx</me>
+          </li>
+          <li>
+            <me>\int \frac{1}{x^2-1}dx</me>
+          </li>
+        </ul>
+      </p>
     </exploration>
+    
   </introduction>
   
     <subsection xml:id="subsec-start-method-part-frac">
@@ -781,7 +806,19 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
   <subsection xml:id="subsec-part-frac-4">
     <title>When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator</title>
     <p>
-      Insert stuff about long division, and maybe an example or reminder (if trig integrals including trig sub activity have been covered first) of how <me>\int \frac{1}{x^2+a^2}dx = \frac{1}{a}\arctan\left(\frac{x}{a}\right)+C</me>
+      We noted above that these partial fraction decomposition forms have enough constants to solve for every possible numerator only when
+      the degree of the numerator is strictly less than the degree of the denominator.  What if the degree of the numerator is too large?
+    </p>
+    <p>
+      In that case, we use polynomial division to rewrite the original integrand as the sum of a polynomial and a fraction whose numerator does
+      have smaller degree than the denominator.  This is not unlike rewriting <m>\frac{15}{4}</m> (where the numerator is bigger than the denominator) as <m> 3+\frac{3}{4} </m> (where not the numerator is smaller than the denominator.)
+      The hard part is figuring out how many times the denominator goes into the numerator evenly. 
+    </p>
+    <video xml:id="yt-poly-div" label="youtube-poly-div" youtube="smsKMWf8ZCs" />
+    <p>
+      One final reminder is that trigonometric substitution can be used to calculate that
+      <me>\int \frac{1}{x^2+a^2}dx = \frac{1}{a}\arctan\left(\frac{x}{a}\right)+C</me>
+      We can just use this a formula now within partial fractions problems. 
     </p>
 
     <activity>

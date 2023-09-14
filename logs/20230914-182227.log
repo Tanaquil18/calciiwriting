@@ -1,0 +1,16 @@
+INFO    : PreTeXt project found in `/workspaces/calciiwriting`.
+WARNING : Using CLI version 2.0.1 but project's `requirements.txt`
+WARNING : is configured to use 1.6.0. Consider either installing
+WARNING : CLI version 1.6.0 or changing `requirements.txt` to match 2.0.1.
+INFO    : Since no target was supplied, we will use "web".
+
+ERROR   : XInclude Error caused build to fail:
+ERROR   : /workspaces/calciiwriting/source/sec-partial-fractions.ptx:791:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 789 and p
+/workspaces/calciiwriting/source/sec-partial-fractions.ptx:869:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 789 and subsection
+/workspaces/calciiwriting/source/sec-partial-fractions.ptx:945:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 787 and section
+/workspaces/calciiwriting/source/sec-partial-fractions.ptx:946:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag subsection line 781
+/workspaces/calciiwriting/source/main.ptx:58:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /workspaces/calciiwriting/source/sec-partial-fractions.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+

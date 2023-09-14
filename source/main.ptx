@@ -9,7 +9,8 @@
     <latex-image-preamble>
       \usepackage{tikz}
     </latex-image-preamble>
-    <rename element="exploration">Activity</rename>
+    <!-- <rename element="exploration">Activity</rename> -->
+    <rename element="exploration" xml:lang="en-US">Preview Activity</rename>
   </docinfo>
 
   <book xml:id="my-great-book">
