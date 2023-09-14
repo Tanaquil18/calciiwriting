@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,14 +12,31 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">We have several tools in our toolbox for solving for the unknown numbers. We could...</div>
-<ul class="disc">
-<li><div class="para">... use the black box method.  Use a solver like Wolfram Alpha or another computational tool.</div></li>
-<li><div class="para">... set <span class="process-math">\(x\)</span> equal to different values like we’ve done before. This is slightly more complicated than when the denominator factored into linear terms, but we can still do it, taking <span class="process-math">\(x=1\text{,}\)</span> then <span class="process-math">\(x=0\text{,}\)</span> then <span class="process-math">\(x=-1\text{,}\)</span> or any three values of <span class="process-math">\(x\)</span> you choose and find easiest to work with.</div></li>
-<li><div class="para">... compare coefficients of both sides of the equation and get a system of equations to solve.</div></li>
-</ul>
-</div>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para logical"><ol class="lower-roman">
+<li><div class="para">
+<span class="process-math">\(x^3+x=x(x^2+1)\text{,}\)</span> so <span class="process-math">\(\frac{-x^2-x-3}{x^3+x}=\frac{A_1}{x}+\frac{A_2x+A_3}{x^2+1}\)</span>
+</div></li>
+<li><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{-x^2-x-3}{x^3+x}\, dx = A_1\ln|x|+\frac{A_2}{2}\ln|x^2+1|+A_3\arctan(x)+C
+\end{equation*}
+</div></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle -3\ln|x|+\ln|x^2+1|-\arctan(x)+C\)</span></div></li>
+</ol></div></li>
+<li><div class="para logical"><ol class="lower-roman">
+<li><div class="para">
+<span class="process-math">\(x^5+x^4=x^4(x+1)\text{,}\)</span> so <span class="process-math">\(\frac{x^4+1}{x^5+x^4}=\frac{A_1}{x}+\frac{A_2}{x^2}+\frac{A_3}{x^3} + \frac{A_4}{x^4}+\frac{A_5}{x+1}\)</span>
+</div></li>
+<li><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\int \frac{x^4+1}{x^5+x^4}\, dx = A_1\ln|x|+\frac{-A_2}{x}+\frac{-A_3}{2x^2} + \frac{-A_4}{3x^3}+A_5\ln|x+1| + C
+\end{equation*}
+</div></div></li>
+<li><div class="para">We highly recommend substituting <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=-1\)</span> and then comparing like coefficients. <span class="process-math">\(-\ln|x|+\frac{-1}{x}+\frac{1}{2x^2} + \frac{-1}{3x^3}+2\ln|x+1| + C\)</span>
+</div></li>
+</ol></div></li>
+</ol></div>
 <span class="incontext"><a href="sec-partial-fractions.html#p-94" class="internal">in-context</a></span>
 </body>
 </html>

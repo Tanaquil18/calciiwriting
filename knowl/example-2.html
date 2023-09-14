@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -28,7 +28,7 @@
 \frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1} + \frac{Bx+D}{x^2+1}
 \end{equation*}
 </div>
-<div class="para">and note that this gives us <span class="process-math">\(3\)</span> constants to work with.<a href="" class="fn-knowl original" data-knowl="./knowl/fn-2-hidden.html" title="Footnote 1.2.1"><sup> 1 </sup></a>  Before we look for the values of the constants <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\text{,}\)</span> we will integrate to make sure this is a better form than the one we started with.</div>
+<div class="para">and note that this gives us <span class="process-math">\(3\)</span> constants to work with.<a href="" class="fn-knowl original" data-knowl="./knowl/fn-3-hidden.html" title="Footnote 1.2.1"><sup> 1 </sup></a>  Before we look for the values of the constants <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\text{,}\)</span> we will integrate to make sure this is a better form than the one we started with.</div>
 </div> <div class="para logical">
 <div class="para">An antiderivative of <span class="process-math">\(\frac{A}{x-1}\)</span> is <span class="process-math">\(A\ln|x-1|\text{.}\)</span> We can calculate</div>
 <div class="displaymath process-math">
@@ -110,7 +110,7 @@ x^2+x+4 \amp = A(x^2+1) + (Bx+D)(x-1) \\
 </div>
 </div> <div class="para">Solving this using Gaussian elimination results in <span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 0 \amp 3 \\ 0 \amp 1 \amp 0 \amp -2 \\0 \amp 0 \amp 1 \amp -1 \end{bmatrix}\text{,}\)</span> which does give us the same values of <span class="process-math">\(A=3\text{,}\)</span> <span class="process-math">\(B=-2\text{,}\)</span> and <span class="process-math">\(D=-1\text{.}\)</span>
 </div> <div class="para">However, this matrix form tells us something more: that this system of equations will have a unique solution <em class="alert">regardless of the starting coefficients of the quadratic in the numerator of the integrand.</em>
-</div> <div class="para">Note that we don’t have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: <em class="alert">as long as the numerator of the integrand is less than or equal to degree <span class="process-math">\(2\text{,}\)</span> and the denominator factors into a linear and an irreducible quadratic, we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor and a linear term over the quadratic factor.</em><a href="" class="fn-knowl original" data-knowl="./knowl/fn-3-hidden.html" title="Footnote 1.2.2"><sup> 2 </sup></a>
+</div> <div class="para">Note that we don’t have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: <em class="alert">as long as the numerator of the integrand is less than or equal to degree <span class="process-math">\(2\text{,}\)</span> and the denominator factors into a linear and an irreducible quadratic, we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor and a linear term over the quadratic factor.</em><a href="" class="fn-knowl original" data-knowl="./knowl/fn-4-hidden.html" title="Footnote 1.2.2"><sup> 2 </sup></a>
 </div> <div class="para logical">
 <div class="para">Furthermore, we can see the problem that occurred when we had the wrong form of the partial fraction decomposition.  When we attempted to set <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> and cleared the denominators, we got</div>
 <div class="displaymath process-math">
