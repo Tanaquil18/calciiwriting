@@ -51,10 +51,12 @@
     <chapter xml:id="chap-extra-material">
       <title>Extra Material</title>
 
-      <section xml:id="sec-trigonometric-integrals">
+      <!-- <section xml:id="sec-trigonometric-integrals">
         <title>Trigonometric Integrals</title>
         <p>Nothing here, yet.</p>
-      </section>
+      </section> -->
+
+      <xi:include  href="./sec-trigonometric-ints.ptx" />
 
       <xi:include  href="./sec-partial-fractions.ptx" />
 

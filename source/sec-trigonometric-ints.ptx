@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-trigonometric-ints">
+  <title>Trigonometric Integrals</title>
+  <objectives>
+    <ul>
+      <li>
+        <p>
+          How can the use of trigonometric identities expand the kinds of functions we can integrate?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          How do we recognize which trigonometric identities to use in different integration problems?
+        </p>
+      </li>
+
+      <li>
+        <p>
+          How can we integrate functions which don't appear to involve trigonometry by making use of a trigonometric substitution?
+        </p>
+      </li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      We have learned how to use the integration techniques of substitution and integration-by-parts to build
+      upon basic antiderivatives and greatly increase the kinds of functions we can integrate.  For example, we know that
+      <me>\int \cos(x)\, dx = \sin(x)+C</me> and using substitution, we know that <me>\int \sin^3(x)\cos(x)\, dx = \frac{\sin^4(x)}{4}+C</me>, since we can let
+      <m>u=\sin(x)</m> so that <m>du=\cos(x)\, dx</m>, which transforms the integral into <m>\int u^3\, du = \frac{u^4}{4}+C</m>.
+    </p>
+    <p>
+        But what if we wanted to integrate <me>\int \sin^3(x)\cos^2(x)\, dx</me>?
+    </p>
+
+    <example xml:id="int-with-fund-id"><title>Substitution, with an Additional Step</title>
+      <statement>
+        <p>
+          Evaluate
+          <me>
+            \int \sin^3(x)\cos^2(x)\, dx.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We try finding a function-derivative pair, but things don't look good, since if <m>u=\sin(x)</m> then <m>du=\cos(x)\, dx</m>, 
+          not <m>\cos^2(x)</m>.  Similarly, if <m>u=\cos(x)</m> then <m>du=-\sin(x)\, dx</m>, 
+          not <m>-\sin^3(x)</m>.  Trying combinations of <m>\sin(x)</m> and <m>\cos(x)</m> gets messy quickly, 
+          since we'd need to use product rule to calculate the derivative, and the integrand is not a sum of terms.  
+        </p>
+        <p>
+          However, we do know something about how <m>\sin(x)</m> and <m>\cos(x)</m> are related to each other.  
+          Specifically, the Fundamental Trigonometric Identity says that 
+          <me>
+            \sin^2(x)+\cos^2(x)=1.
+          </me>
+          What if we tried a substitution, and then if we still had either <m>\sin^2(x)</m> or <m>\cos^2(x)</m>
+          in our integral, we used the Fundamental Trigonometric Identity to rewrite it?
+        </p>
+        <p>
+            Let's try <m>u=\cos(x)</m>, so that <m>du=-\sin(x)\, dx</m>.  Then
+          <md>
+            <mrow> \int \sin^3(x)\cos^2(x)\, dx \amp = \int \sin^2(x)\sin(x)\cos^2(x)\, dx </mrow>
+            <mrow>  \amp = \int \sin^2(x)\cos^2(x)\big(\sin(x)\, dx\big) </mrow>
+            <mrow>  \amp = \int \sin^2(x)u^2\big(-du\big) </mrow>
+            <mrow>  \amp = \int -\big(1-\cos^2(x)\big)u^2\, du </mrow>
+            <mrow>  \amp = \int -\big(1-u^2\big)u^2\, du </mrow>
+            <mrow>  \amp = \int (u^4-u^2)\, du </mrow>
+            <mrow>  \amp = \frac{u^5}{5}-\frac{u^3}{3}+C </mrow>
+            <mrow>  \amp = \frac{\cos^5(x)}{5}-\frac{\cos^3(x)}{3}+C </mrow>
+          </md>.
+        </p>
+        <p>
+            It worked! And it was mostly using our familiar technique of substitution, once we recognized when
+            we needed to use a trigonometric identity to rewrite something we had remaining in our integral.  
+        </p>
+      </solution>
+    </example>
+
+  </introduction>
+    
+
+
+  <!-- <xi:include href="./exercises/ez-1-1.xml" /> -->
+</section>
