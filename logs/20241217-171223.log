@@ -1,0 +1,13 @@
+INFO    : Using PreTeXt-CLI version: 2.10.1.  This is the latest available version.
+
+INFO    : PreTeXt project found in `/workspaces/calciiwriting`.
+WARNING : Using CLI version 2.10.1 but project's `requirements.txt`
+WARNING : is configured to use 1.6.0. Consider either installing
+WARNING : CLI version 1.6.0 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.10.1.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Running in a codespace, so using the codespace server instead of the standard python server.
+INFO    : Server will soon be available at https://ideal-space-spoon-57jvqqpx44h47jw-8570.app.github.dev
+INFO    : Opening browser for target `web` at https://ideal-space-spoon-57jvqqpx44h47jw-8570.app.github.dev/output/web in 2 seconds
+INFO    : 

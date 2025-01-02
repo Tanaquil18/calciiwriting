@@ -27,26 +27,34 @@
   <introduction>
     <p>
       We have learned how to use the integration techniques of substitution and integration-by-parts to build
-      upon basic antiderivatives and greatly increase the kinds of functions we can integrate.  For example, we know that
-      <me>\int \cos(x)\, dx = \sin(x)+C</me> and using substitution, we know that <me>\int \sin^3(x)\cos(x)\, dx = \frac{\sin^4(x)}{4}+C</me>, since we can let
-      <m>u=\sin(x)</m> so that <m>du=\cos(x)\, dx</m>, which transforms the integral into <m>\int u^3\, du = \frac{u^4}{4}+C</m>.
+      upon basic antiderivatives and greatly increase the kinds of functions we can integrate.  For example, 
+      we know that
+      <me>\int \cos(x)\, dx = \sin(x)+C</me>, 
+      and we also can calculate that <me>\int \sin^3(x)\cos(x)\, dx = \frac{\sin^4(x)}{4}+C</me>, 
+      using substitution, since we can let <m>u=\sin(x)</m> so that <m>du=\cos(x)\, dx</m>, which transforms 
+      the integral into <me>\int u^3\, du = \frac{u^4}{4}+C</me>.
     </p>
     <p>
-        But what if we wanted to integrate <me>\int \sin^3(x)\cos^2(x)\, dx</me>?
+        But what if we wanted to integrate <me>\int \sin^3(x)\cos^2(x)\, dx</me> or <me>\int \sin^2(x)\cos^2(x)\, dx</me>
+        or <me>\int \sec^3(x)\tan^2(x)\, dx</me>?
+    </p>
+    </introduction>
+
+    <subsection><title>Need title</title>
+
+    <p>
+      Need preview activity here.
     </p>
 
     <example xml:id="int-with-fund-id"><title>Substitution, with an Additional Step</title>
-      <statement>
         <p>
           Evaluate
           <me>
             \int \sin^3(x)\cos^2(x)\, dx.
           </me>
         </p>
-      </statement>
-      <solution>
         <p>
-          We try finding a function-derivative pair, but things don't look good, since if <m>u=\sin(x)</m> then <m>du=\cos(x)\, dx</m>, 
+          <em>Answer:</em> We try finding a function-derivative pair, but things don't look good, since if <m>u=\sin(x)</m> then <m>du=\cos(x)\, dx</m>, 
           not <m>\cos^2(x)</m>.  Similarly, if <m>u=\cos(x)</m> then <m>du=-\sin(x)\, dx</m>, 
           not <m>-\sin^3(x)</m>.  Trying combinations of <m>\sin(x)</m> and <m>\cos(x)</m> gets messy quickly, 
           since we'd need to use product rule to calculate the derivative, and the integrand is not a sum of terms.  
@@ -65,9 +73,8 @@
           <md>
             <mrow> \int \sin^3(x)\cos^2(x)\, dx \amp = \int \sin^2(x)\sin(x)\cos^2(x)\, dx </mrow>
             <mrow>  \amp = \int \sin^2(x)\cos^2(x)\big(\sin(x)\, dx\big) </mrow>
-            <mrow>  \amp = \int \sin^2(x)u^2\big(-du\big) </mrow>
-            <mrow>  \amp = \int -\big(1-\cos^2(x)\big)u^2\, du </mrow>
-            <mrow>  \amp = \int -\big(1-u^2\big)u^2\, du </mrow>
+            <mrow>  \amp = \int \big(1-\cos^2(x)\big)\cdot\cos^2(x)\cdot\big(\sin(x)\, dx\big) </mrow>
+            <mrow>  \amp = \int \big(1-u^2\big)\cdot u^2\cdot(-du) </mrow>
             <mrow>  \amp = \int (u^4-u^2)\, du </mrow>
             <mrow>  \amp = \frac{u^5}{5}-\frac{u^3}{3}+C </mrow>
             <mrow>  \amp = \frac{\cos^5(x)}{5}-\frac{\cos^3(x)}{3}+C </mrow>
@@ -77,10 +84,62 @@
             It worked! And it was mostly using our familiar technique of substitution, once we recognized when
             we needed to use a trigonometric identity to rewrite something we had remaining in our integral.  
         </p>
-      </solution>
     </example>
+    <p>
+      This same strategy works whenever powers of sine and cosine (with the same argument) are multiplied together and one of the 
+      exponents is an odd, positive integer: one power can be factored out to be the <m>du</m>, an odd minus 1 is now even,
+      and so the remaining powers can be turned into an expression of <m>u</m>.
+    </p>
 
-  </introduction>
+    <!-- <example>
+      For an integral of the form $\int \sin^m z \cos^n z \ dz$ }
+\begin{enumerate} 
+\item If the exponent of $\sin z$ or $\cos z$ is an odd positive integer:
+\begin{itemize}
+\item Without loss of generality, the exponent of $\cos z$ is odd.  
+\item Factor out a copy of $\cos z$, and the remaining power of $\cos z$ is even.
+\item Use the identity $\sin^2 \theta + \cos^2 \theta =1$, so $\cos^2 z = 1 - \sin^2 z$.
+\item Then let $u=\sin z$, so $du=\cos z \ dz$ cancels with the copy you factored out, and the remaining factors can all be put in terms of $u$.
+\end{itemize}
+\item If both exponents of $\sin z$ and $\cos z$ are even nonnegative integers:
+\begin{itemize}
+\item We use our half-angle identities, possibly repeatedly:
+\item \hskip .2in$\sin^2 z=\frac{1-\cos (2z)}{2}$
+\hskip .3in $\cos^2 z=\frac{1+\cos (2z)}{2}$
+\end{itemize}
+    </example> -->
+
+    <assemblage xml:id="assemblage-sin-cos-one-odd">
+      <title>Sine and Cosine, at least one of them odd powered</title>
+      <p>
+        Suppose you have an integral of the form <me>\int \sin^m(z)\cos^n(z)\, dz
+        </me>
+        where either <m>m</m> or <m>n</m> (or both) is an odd, positive integer. Without loss of generality,
+        let's say <m>n</m>, the exponent of cosine, is odd and positive.  
+        <ul>
+          <li>
+            <p>
+              Factor out one copy of the trig function with the odd power (in this case <m>\cos(z)</m>) to serve as the <m>du</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Rewrite the remaining powers of <m>\cos(z)</m> (which originally had an odd exponent and will now have an even exponent)
+              in terms of <m>\sin(z)</m> using the Fundamental Identity <m>\cos^2(z)=1-\sin^2(z)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Set <m>u</m> equal to <m>\sin(z)</m>, which we've now rewritten the originally odd exponenent to be in terms of.
+            </p>
+          </li>
+        </ul>
+      </p>
+     
+    </assemblage>
+
+    </subsection>
+
     
 
 

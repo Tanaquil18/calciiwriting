@@ -26,37 +26,16 @@
 
   <introduction>
     <p>
-      The need to integrate rational functions arises in differential equations and in other settings,
-      and so we wonder about how to integrate them.  If we are lucky, we can use substitution or integration by parts, 
-      but sometimes neither of those methods can be used.  
+      The need to integrate rational functions arises in differential equations and in other settings.  If we are lucky, we can use substitution or integration by parts, 
+      but oftentimes neither of those methods can be used.  In this section, we learn how to use algebra together
+      with our past integration techniques to integrate rational functions.
     </p>
+  
 
-    <example xml:id="int-with-sub-ex"><title>Integrating A Rational Function with Substitution</title>
-      <statement>
-        <p>
-          Evaluate
-          <me>
-            \int \frac{5x}{x^2+1} \, dx
-          </me>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          We see a function-derivative pair (up to a constant), since if <m>u=x^2+1</m> then <m>du=2x\, dx</m>.
-          So we rewrite 
-          <md>
-            <mrow> \int \frac{5x}{x^2+1} \, dx \amp = \frac{5}{2}\int \frac{1}{u}\, du </mrow>
-            <mrow>  \amp = \frac{5}{2}\ln|u|+C </mrow>
-            <mrow>  \amp = \frac{5}{2}\ln|x^2+1|+C </mrow>
-          </md>.
-        </p>
-      </solution>
-    </example>
+    
     <!-- <xi:include href="./previews/PA-1-1.xml" />-->
     <!-- Put preview here.  A webwork version, needs to go in a separate file eventually. 
       Also needs to be rewritten as 1 ww problem instead of 4?-->
-
-    <!-- <title>Preview Activity</title>  -->
   
 
     <!-- Also do a non-WeBWorK version? -->
@@ -69,64 +48,138 @@
     <exploration xml:id="PA-5-5a-1">
       <p>
         For each of the indefinite integrals below, decide whether the integral can be evaluated: 
-        immediately because it’s a basic integral, using 
-<m>u</m>-substitution, integration by parts, with multiple techniques, or if none of those will work.
+        immediately because it’s a basic integral; using 
+<m>u</m>-substitution; using integration by parts; using a combination of multiple techniques; or if none of those will work.
       </p>
       <p>
-        <ul>
+        <ol marker="a.">
           <li>
-            <me>\int \frac{1}{1+x^2}dx</me>
+            <m>\int \frac{1}{1+x^2}dx</m>
           </li>
           <li>
-            <me>\int \frac{x}{1+x^2}dx</me>
+            <m>\int \frac{x}{x^2+1}dx</m>
           </li>
           <li>
-            <me>\int \frac{2x+3}{1+x^2}dx</me>
+            <m>\int \frac{2x+3}{x^2+1}dx</m>
           </li>
           <li>
-            <me>\int \frac{1}{x^2-1}dx</me>
+            <m>\int \frac{1}{x^2-1}dx</m>
           </li>
-        </ul>
+        </ol>
       </p>
     </exploration>
+
+    </introduction>
+
+    <subsection xml:id="subsec-pf-building-blocks">
+      <title>The Building Blocks of the Method</title>
+      <p>
+        We are interested in integrating functions which are polynomials divided by polynomials.  
+        There are some functions of this form we already know how to do using previous methods. 
+        Each of these integrals comes up frequently enough that we collect them here for reference.
+      </p>
+
+      <assemblage xml:id="assemblage-partial-fracs-building-blocks">
+        <title>Integrals commonly used in partial fractions problems</title>
+      <p>
+        In all of the following formulas, let <m>A, b</m> and <m>n</m> be numbers, with <m>n \neq 1</m>.
+      <ul>
+        <li>
+          <p>
+            Functions which have a linear term in the denominator and a constant in the numerator can be integrated 
+          without work since they're almost a basic antiderivative.
+          <me>
+            \int \frac{A}{x+b} \, dx = A\ln|x+b|+C
+          </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Functions which have a power of a linear term in the denominator (<m>n\neq 1 </m>) and a constant in the numerator can be integrated using the power rule.
+          <me>
+            \int \frac{A}{(x+b)^n} \, dx = \frac{A}{-n+1}(x+b)^{-n+1}+C
+          </me>
+          </p>
+        </li>
+        <li>
+          <p>
+          Some integrals with a quadratic in the denominator can be done using substitution, since the numerator is a constant
+          multiple of the derivative of the denominator.
+          <me>
+            \int \frac{Ax}{x^2+b} \, dx = \frac{A}{2}\ln|x^2+b|+C
+          </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Some integrals with a quadratic in the denominator and a constant in the numerator can be 
+            done using either trigonometric substitution or regular substitution,
+       leading to the formula
+      <me>\int \frac{A}{x^2+b}dx = \frac{A}{\sqrt{b}}\arctan\left(\frac{x}{\sqrt{b}}\right)+C</me>
+          </p>
+        </li>
+      </ul>
+      </p>
+      </assemblage>
+
+      <remark>
+        <p>
+          The method of partial fractions we learn in this section could be summarized as the following: reduce all functions of the form 
+      <q>polynomial divided by polynomial</q> to sums of functions of the forms above, which we already know how to integrate.
+        </p> 
+      </remark>
+
     
-  </introduction>
+
+
+      
+    </subsection>
+    
+ 
   
     <subsection xml:id="subsec-start-method-part-frac">
       <title>Starting the Method of Partial Fractions</title>
+          <p>
+            We already had the tools to calculate an integral like
+          <me>
+            \int \frac{5x}{x^2+1} \, dx = \frac{5}{2}\ln|x^2+1|+C
+          </me>
+       because there is a function-derivative pair in the integrand. If we let <m>u=x^2+1</m> then <m>du=2x\, dx</m>,
+          and <m>5x</m> is a constant multiple of <m>2x</m>, so we get
+          <md>
+            <mrow> \int \frac{5x}{x^2+1} \, dx \amp = \frac{5}{2}\int \frac{1}{u}\, du </mrow>
+            <mrow>  \amp = \frac{5}{2}\ln|u|+C </mrow>
+            <mrow>  \amp = \frac{5}{2}\ln|x^2+1|+C </mrow>
+          </md>.
+          
+        </p>
 
     <p>
-      In <xref ref="int-with-sub-ex"/>, the derivative of the function in the denominator was sitting in the numerator 
-      (up to a constant multiple).  What if we needed to integrate this instead?
+     However, what if there isn't a function-derivative pair in the integrand? Consider
       <me>
         \int \frac{5x}{x^2-x-2} \, dx
-      </me>?
-    </p>
-    <p>
-      We could try what we did before and pick <m>u=x^2-x-2</m>, but then we calculate that <m>du=(2x-1)\, dx</m>, which does not help
-      us in the numerator.  
-    </p>
-    <p>
-      Instead, we try a completely different strategy.  If we somehow knew that 
-      <me>
+      </me>.
+      Substitution does not help with integrating this function, since if we let <m>u=x^2-x-2</m> then <m>du=(2x-1)\, dx</m>, 
+      which is not a constant multiple of <m>5x \, dx</m>. We need to use a completely different strategy to solve this integral. 
+      </p>
+      <p> 
+      If we somehow knew that 
+      <men xml:id="eqn-part-frac-1">
         \frac{5x}{x^2-x-2} = \frac{10/3}{x-2} + \frac{5/3}{x+1}
-      </me>, 
+      </men>
       then we could integrate both sides of the equation to get 
       <me>
         \int \frac{5x}{x^2-x-2} \, dx = \int \frac{10/3}{x-2} + \frac{5/3}{x+1} \, dx
-      </me>, and the integral on the right is straightforward, giving us
+      </me>, and the integral on the right involves two nearly-basic antiderivatives, giving us
       <me>
         \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3} \ln|x-2| + \frac{5}{3}\ln|x+1| + C
       </me>.
     </p>
     <p>
-      We can verify that 
-      <me>
-        \frac{5x}{x^2-x-2} = \frac{10/3}{x-2} + \frac{5/3}{x+1}
-      </me>
-      is indeed true by recombining the right-hand-side of the equation using a common denominator.  
+      Setting aside the question of where the right-hand-side came from for a brief moment, 
+      we can verify that <xref ref="eqn-part-frac-1"/> is indeed true by recombining the right-hand-side of the equation using a common denominator.  
       <md>
-        <mrow> \frac{\frac{10}{3}}{x-2} + \frac{\frac{5}{3}}{x+1} \amp = \frac{\frac{10}{3}(x+1)}{(x-2)(x+1)} + \frac{\frac{5}{3}(x-2)}{(x+1)(x-2)}</mrow>
+        <mrow> \frac{\frac{10}{3}}{x-2} + \frac{\frac{5}{3}}{x+1} \amp = \frac{\frac{10}{3}\cdot(x+1)}{(x-2)\cdot(x+1)} + \frac{\frac{5}{3}\cdot(x-2)}{(x+1)\cdot(x-2)}</mrow>
         <mrow> \amp =\frac{\frac{10}{3}x+\frac{10}{3}+\frac{5}{3}x-\frac{10}{3} }{(x-2)(x+1)}</mrow>
         <mrow> \amp =\frac{ \frac{15}{3}x}{(x-2)(x+1)}</mrow>
         <mrow> \amp =\frac{5x}{x^2-x-2}</mrow>
@@ -134,11 +187,12 @@
       </md>
     </p>
     <p>
-      The question is: how did we come up with
+      However, we do want to answer the big question: how did we come up with
       <me>
         \frac{5x}{x^2-x-2} = \frac{10/3}{x-2} + \frac{5/3}{x+1}
       </me>
-      in the first place?
+      in the first place?  And how can we do the same thing to other integrals (reduce a function we can't integrate with the method of substitution
+      to a sum of functions we can integrate more easily?)
     </p>
 
     <p>
@@ -146,57 +200,76 @@
         <me>
           x^2-x-2 = (x-2)(x+1)
         </me>,
-        and those are exactly the denominators of the simpler rational functions we used.   
+        and those are exactly the denominators of the simpler rational functions we used.  We will proceed by 
+        assuming there is some expression that is equal to the rational function and then solve for what the exact expression is. 
     </p>
 
+  <example xml:id="ex-pf-linearterms"><title>Two linear terms</title>
+  <p>
+    Show that 
+    <me>
+        \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3} \ln|x-2| + \frac{5}{3}\ln|x+1| + C
+      </me>.
+  </p>
     <p>
-      We suppose that
-          <me>
+     <em>Answer:</em> We first factor the denominator <m>x^2-x-2 = (x-2)(x+1)</m> and then suppose that
+          <men xml:id="eqn-part-fracs-ex-lin1">
             \frac{5x}{(x-2)(x+1)} = \frac{A}{x-2} + \frac{B}{x+1}
-          </me>
-      and then we can look for the constants <m>A</m> and <m>B</m>.
-    </p>
+          </men>
+      for some constants <m>A</m> and <m>B</m>.  If this is true, the integral becomes much 
+      easier to calculate, since we can integrate both sides of <xref ref="eqn-part-fracs-ex-lin1"/> to get
+      <men xml:id="eqn-part-fracs-ex-lin1a">
+        \int \frac{5x}{x^2-x-2} \, dx = A \ln|x-2| + B\ln|x+1| + C
+      </men>.
+      </p>
 
     <p>
-          Multiplying both sides of this equation by <m>(x-2)(x+1)</m>,
+          We now start the process of solving for the values of <m>A</m> and <m>B</m>.  Multiplying both sides of <xref ref="eqn-part-fracs-ex-lin1"/> by the integrand's denominator <m>(x-2)(x+1)</m>,
           we find that
           <me>
             \frac{5x\cancel{(x-2)(x+1)}}{\cancel{(x-2)(x+1)}}= \frac{A(x+1)\cancel{(x-2)}}{\cancel{x-2}} + \frac{B\cancel{(x+1)}(x-2)}{\cancel{x+1}}
           </me>
           which means
-          <me>
+          <men xml:id="eqn-part-fracs-ex-lin2">
             5x = A(x+1) + B(x-2)
-          </me>.
+          </men>.
+    </p>
+    <p>
+        From here, we show one possible method of solving for the values of <m>A</m> and <m>B</m>.
     </p>
 
     <p>
-          Because this equation should hold for <em>every value</em> of <m>x</m>,
+          Because <xref ref="eqn-part-fracs-ex-lin2"/> is true for <em>every value</em> of <m>x</m>,
           we can use inspired choices of <em>specific</em> <m>x</m>-values to help us find <m>A</m> and <m>B</m>.
+    </p>
+    <p>
           Taking <m>x = -1</m>, we have
           <me>
             5(-1) = A(0) + B(-3)
           </me>,
           so <m>B = \frac{5}{3}</m>.
-          Choosing <m>x = 2</m>, it follows
+    </p>
+    <p>
+          Now setting <m>x = 2</m>, it follows that
           <me>
             5(2) = A(3) + B(0)
           </me>,
           so <m>A = \frac{10}{3}</m>.
-          Thus,
+    </p>
+    <p>
+          Thus, substituting the values of <m>A</m> and <m>B</m> into <xref ref="eqn-part-fracs-ex-lin1a"/> we get
           <me>
-            \int \frac{5x}{x^2-x-2} \, dx = \int \frac{10/3}{x-2} + \frac{5/3}{x+1} \, dx
+            \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3}\ln|x-2| + \frac{5}{3}\ln|x+1|+C
           </me>.
     </p>
+    </example>
+
     </subsection>
     <subsection xml:id="subsec-when-method-used">
-    <title>When Can The Methods In This Example Be Used?</title>
+    <title>How the denominator factors matters</title>
     <p>
-      Notice that any terms of the form <m>\frac{A}{ax+b}</m>, a number in the numerator divided by a linear term
-      in the denominator, would be similarly easy to integrate, using <m>u=ax+b</m> so that <m>du=a\, dx</m>. Then
-      <me>
-        \int \frac{A}{ax+b} \, dx = \frac{A}{a}\ln|ax+b|+C
-      </me>
-      The main question to explore in the next activity is: When can we integrate a rational function by rewriting into terms like this?
+      The main questions to explore now are: when can we integrate a rational function by rewriting into terms like those above, 
+      and what does <q>terms like those</q> mean exactly?
     </p>
 
 
@@ -213,13 +286,13 @@
                 <ol marker="i.">
                   <li>
                     <p>
-                      Factor the denominator, and use that factorization to write the general form of the partial fraction decomposition
-                       of the integrand, using letters like <m>A, B, D</m> etc., or <m>A_1, A_2, A_3</m>, etc.
+                      Factor the denominator, and rewrite the integrand as a sum where each addend is a constant divided by a factor of the denominator.  
+                      Use letters like <m>A, B, D</m> etc., or <m>A_1, A_2, A_3</m>, etc.
                     </p>
                   </li>
                   <li>
                     <p>
-                      Calculate the antiderivatives of the partial fraction decomposition while still using 
+                      Calculate the antiderivative of the sum while still using 
                       letters like <m>A, B, D</m> etc., or <m>A_1, A_2, A_3</m>, etc.
                     </p>
                   </li>
@@ -333,22 +406,22 @@
         </p>
       </answer>
     </activity>
-  </subsection>
+  <!-- </subsection>
   <subsection xml:id="subsec-part-frac-2">
-    <title>A Quadratic Term and a Linear Term</title>
+    <title>Quadratic Terms in the Factored Form of the Denominator</title> -->
+    <remark>
     <p>
-      As we saw in the activity, we have to be careful with the form of our partial fraction decomposition
-      if factoring the denominator results in anything other than distinct linear terms.  
+      The form of the partial fraction decomposition depends on how the denominator factors.   
     </p>
+    </remark>
     <p>
-      For example, when we had a numerator of <m>x^2+x+4</m>, there are <m>3</m> numbers: the coefficient
+      When we had a numerator of <m>x^2+x+4</m>, there are <m>3</m> numbers: the coefficient
       of the <m>x^2</m> term, the coefficient of the <m>x</m> term, and the constant term.  Using
       <m>\frac{A}{x-1}+\frac{B}{x^2+1}</m> gave us <m>2</m> numbers to solve for, <m>A</m> and <m>B</m>,
-      and in this case, it was impossible to find values of <m>A</m> and <m>B</m> to make the equality hold.  But we can
+      and in this case, it was impossible to find values of <m>A</m> and <m>B</m> to make the equality hold.  However, we can
       modify the partial fraction form to introduce a third number.
     </p>
-    <example><title>Integrating A Rational Function with Substitution</title>
-      <statement>
+    <example><title>One quadratic and one linear term</title>
         <p>
           Evaluate
           <me>
@@ -356,30 +429,23 @@
           </me>.
         </p>
         <p>
+          <em>Answer:</em> 
           We suppose that
             <me>
             \frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1} + \frac{Bx+D}{x^2+1}
             </me>
           and note that this gives us <m>3</m> constants to work with.<fn>We avoid using <m>C</m> as a coefficient because we
           don't want to get it confused with the <m>+C</m> at the end of an indefinite integral.</fn>  Before we look for the values
-           of the constants <m>A</m>, <m>B</m> and <m>D</m>, we will integrate to make sure this is a better
-           form than the one we started with.  
+           of the constants <m>A</m>, <m>B</m> and <m>D</m>, we will first integrate, using three of the building blocks in
+           <xref ref="assemblage-partial-fracs-building-blocks" text="title"/>.  
+           <mdn>
+            <mrow> \int \frac{x^2+x+4}{(x^2+1)(x-1)}\, dx \amp = \int \left( \frac{A}{x-1} + \frac{Bx+D}{x^2+1}\right)\, dx </mrow>
+            <mrow> \amp = \int \left(\frac{A}{x-1} + \frac{Bx}{x^2+1} + \frac{D}{x^2+1}\right)\, dx </mrow>
+            <mrow xml:id="eqn-pfexample-antiderivs"> \amp = A\ln|x-1| + \frac{B}{2}\ln|x^2+1| + D\arctan(x) +C </mrow>
+           </mdn>
         </p>
         <p>
-          An antiderivative of <m>\frac{A}{x-1}</m> is <m>A\ln|x-1|</m>. We can calculate
-          <me>
-            \int \frac{Bx+D}{x^2+1} \, dx = \int \frac{Bx}{x^2+1} \, dx + \int \frac{D}{x^2+1} \, dx
-          </me>
-          and note that the second integral is one of our basic forms, <m>D\arctan(x)</m>, while the first
-          can be evaluated with substitution taking <m>u=x^2+1</m> so that <m>du=2x\, dx</m>.
-        </p>
-        <p>
-          Thus we see that if we can find such numbers <m>A</m>, <m>B</m> and <m>D</m>, then we can integrate
-          <md>
-            <mrow> \int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx \amp = \int \left(\frac{A}{x-1} + \frac{Bx+D}{x^2+1}\right) dx</mrow>
-            <mrow> \amp = \int \frac{A}{x-1} dx + \int \frac{Bx}{x^2+1}dx + \int \frac{D}{x^2+1}dx</mrow>
-            <mrow> \amp = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C </mrow>
-          </md>
+          We have obtained a general antiderivative, as long as we can find such numbers <m>A</m>, <m>B</m> and <m>D</m>.
         </p>
         <p>
           Now that we've done the calculus part, we turn our attention to the algebra.  
@@ -389,12 +455,13 @@
             \frac{(x^2+x+4)\cancel{(x-1)(x^2+1)}}{\cancel{(x-1)(x^2+1)}}= \frac{A(x^2+1)\cancel{(x-1)}}{\cancel{x-1}} + \frac{(Bx+D)\cancel{(x^2+1)}(x-1)}{\cancel{x^2+1}}
           </me>
           which means
-          <me>
+          <men xml:id="eqn-pf-ex2-coeffs1">
             x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)
-          </me>.
+          </men>.
         </p>
         <p>
-          We have several tools in our toolbox for solving for the unknown numbers.
+          We have several ways of solving for values of <m>A, B</m> and <m>D</m> which make 
+          <xref ref="eqn-pf-ex2-coeffs1"/> true for all values of <m>x</m>.
           We could... 
           <ul>
             <li>
@@ -404,10 +471,9 @@
             </li>
             <li>
               <p>
-                ... set <m>x</m> equal to different values like we've done before.  
-                This is slightly more complicated than when the denominator factored into linear terms, 
-                but we can still do it, taking <m>x=1</m>, then <m>x=0</m>, then <m>x=-1</m>, or any three
-                values of <m>x</m> you choose and find easiest to work with.
+                ... set <m>x</m> equal to different numerical values, as we did in <xref ref="ex-pf-linearterms"/>.
+                We could set <m>x=1</m>, then <m>x=0</m>, and then <m>x=-1</m>, or choose any three
+                values of <m>x</m> that we find easiest to work with.
               </p>
             </li>
             <li>
@@ -418,37 +484,54 @@
           </ul>
         </p>
         <p>
-          Since the first two methods don't give us anything new to discuss, we choose to 
-          demonstrate the last method here.  Recall that we are trying to solve
-          <me>
-            x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)
-          </me>
-          for the unknown values of <m>A</m>, <m>B</m> and <m>D</m> so that the two sides are equal
-          for all possible values of <m>x</m>.  This means the two sides must really be the same function
-          of <m>x</m>, or the same polynomial of <m>x</m>.  Multiplying out the right-hand side and grouping
+          We choose to 
+          demonstrate the last method here.  Multiplying out the right-hand side of <xref ref="eqn-pf-ex2-coeffs1"/> and grouping
           like terms together gives
           <md>
             <mrow> x^2+x+4 \amp = A(x^2+1) + (Bx+D)(x-1) </mrow>
             <mrow> \amp = Ax^2+A + Bx^2-Bx+Dx-D</mrow>
             <mrow> \amp = (A+B)x^2+(-B+D)x+(A-D)</mrow>
           </md>
-          Setting like coefficients equal means that <m>A+B=1</m> (because those are the corresponding
+          Since the two sides must be equal as polynomials, equal for all values of <m>x</m>, this means 
+          that the corresponding coefficients must be equal.  
+          <md>
+            <mrow> x^2 \text{ terms} \amp : 1=A+B  \amp \text{ because } x^2=(A+B)x^2 </mrow>
+            <mrow> x \text{ terms} \amp : 1=-B+D \amp \text{ because } x = (-B+D)x </mrow>
+            <mrow> \text{ constant terms} \amp : 4 = A-D \amp </mrow>
+          </md>
+          We now have a system of linear equations to solve, with three equations and three unknowns, which
+          we can solve using any of the usual tools at our disposal.  The fastest way of solving for <m>A, B</m> and 
+          <m>D</m> by hand is combining this linear system with the method of choosing strategic values of <m>x</m>.
+           <!-- Setting like coefficients equal means that <m>A+B=1</m> (because those are the corresponding
           coefficients of the <m>x^2</m> term) and <m>-B+D=1</m> (because those are the corresponding
-          coefficients of the <m>x</m> term) and <m>A-D=4</m> (because those are the constant terms).
+          coefficients of the <m>x</m> term) and <m>A-D=4</m> (because those are the constant terms). -->
         </p>
         <p>
-          This gives us a system of linear equations, three equations and three unknowns.  Combining this
-          with the second method, of setting <m>x=1</m> to find that <m>1^2+1+4=A(1^2+1)+(Bx+D)(1-1)</m> and so
-          <m>A=3</m> would reduce this to two unknowns and often be the fastest to solve by hand. (Since <m>A=3</m>
-          and <m>A+B=1</m>, this means that <m>B=-2</m>; similarly, since <m>A-D=4</m>, this means that <m>D=-1</m>.)
-          Since we already integrated to find that
-          <me>\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = A\ln|x-1|+\frac{B}{2}\ln|x^2+1|+D\arctan(x) +C</me>
-          we can substitute the values we've found and calculate that
-          <me>\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx = 3\ln|x-1|+\frac{-2}{2}\ln|x^2+1|-1\arctan(x) +C</me>
-          which answers the question we were attempting to solve.
+            Setting <m>x=1</m> in <xref ref="eqn-pf-ex2-coeffs1"/> yields 
+            <md>
+              <mrow> 1^2+1+4 \amp =A(1^2+1)+(B\cdot 1 +D)(1-1)</mrow>
+              <mrow> \amp = 2A+0</mrow>
+            </md>,
+            and thus <m>6=2A</m>, so <me>A=3</me>. 
+            Now the system of equations with three unknowns is reduced to having only two unknowns. 
+          </p>
+          <p> 
+            Also, since <m>A=3</m>, and comparing coefficients of the <m>x^2</m> terms gave us that <m>A+B=1</m>,
+            this means that <m>3+B=1</m>, so <me>B=-2</me>.  
+            Similarly, since comparing the constant terms gave us that <m>A-D=4</m> and we know that <m>A=3</m>, this means that 
+            <me>D=-1</me>.
+          </p>
+          <p>
+            We had already integrated in <xref ref="eqn-pfexample-antiderivs"/>, and so substituting 
+          the values we've just found for <m>A, B</m> and <m>D</m> gives us our final answer of
+          <md>
+            <mrow>\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx \amp = 3\ln|x-1|+\frac{-2}{2}\ln|x^2+1|-1\arctan(x) +C</mrow>
+            <mrow> \amp = 3\ln|x-1|-\ln|x^2+1|-\arctan(x) +C</mrow>.
+          </md>
         </p>
+      </example>
         <p>
-          However, it's worth noting that if we've had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us
+          It's worth noting that if we've had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us
           <md>
             <mrow>\amp A \amp \amp+ B \amp \amp \ \amp \amp=1 </mrow>
             <mrow>\amp  \amp \amp- B \amp \amp+ D \amp \amp=1 </mrow>
@@ -487,8 +570,6 @@
         <p>
           One of the important takeaways from this is that the form of the partial fraction decomposition matters.
         </p>
-      </statement>
-    </example>
     </subsection>
     <subsection xml:id="subsec-part-frac-3">
     <title>General Method of Partial Fractions</title>
@@ -503,7 +584,7 @@
       </p>
             <tabular>
               <row bottom="minor" halign="center">
-                <cell>Denominator Contains</cell>
+                <cell>Factored Denominator Contains</cell>
                 <cell>Partial Fraction Decomposition Contains</cell>
               </row>
               <row>
@@ -523,9 +604,35 @@
                 <cell><m>\frac{A_1x+B_1}{ax^2+bx+c}+\frac{A_2x+B_2}{(ax^2+bx+c)^2}+\cdots + \frac{A_nx+B_n}{(ax^2+bx+c)^n}</m></cell>
               </row>
             </tabular>
+
+        <p>
+          In words, the symbols above say how to rewrite a rational function as a sum based on how the denominator factors:
+
+        <dl>
+              <li>
+                <title>linear factor</title>
+                <p>constant divided by the linear term</p>
+              </li>
+              <li>
+                <title>linear factor raised to an exponent</title>
+                <p>sum of terms consisting of a constant divided by <emph>every power</emph> of that linear term
+      starting at <m>1</m> and going up to the value of the exponent</p>
+              </li>
+              <li>
+                <title>unfactorable quadratic</title>
+                <p>linear expression divided by the quadratic</p>
+              </li>
+              <li>
+                <title>unfactorable quadratic raised to an exponent</title>
+                <p>sum of terms consisting of a linear expression divided by <emph>every power</emph> of that quadratic
+      starting at <m>1</m> and going up to the value of the exponent</p>
+              </li>
+            </dl>
+      </p>
+
     </assemblage>
       
-    <p>
+    <!-- <p>
       This can be stated in words in the following way. 
       <ul>
         <li>
@@ -555,7 +662,7 @@
           </p>
         </li>
       </ul>      
-    </p>
+    </p> -->
   
     <exercise xml:id="multiple-choice-one" label="multiple-choice-factor">
       <title>Don't Forget to Factor</title>
@@ -695,8 +802,8 @@
           </choice>
       </choices>
     </exercise>
-<!-- would be great to have a multiple choice or two or three here as an interactive example. 
-maybe culminate with 1/(x+2)^3? because students in this section don't realize that's already simplified? -->
+
+
     <activity>
       <statement>
         <p>
@@ -803,11 +910,7 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
       The hard part is figuring out how many times the denominator goes into the numerator evenly. 
     </p>
     <video xml:id="yt-poly-div" label="youtube-poly-div" youtube="smsKMWf8ZCs" />
-    <p>
-      One final reminder is that trigonometric substitution can be used to calculate that
-      <me>\int \frac{1}{x^2+a^2}dx = \frac{1}{a}\arctan\left(\frac{x}{a}\right)+C</me>
-      We can just use this a formula now within partial fractions problems. 
-    </p>
+    
 
     <activity>
       <statement>
@@ -820,7 +923,7 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
           <ol marker="a.">
             <li>
               <p>
-                Write a senctence giving the reason why partial fraction decomposition can not be performed on the integrand above in its current form.
+                Write a sentence giving the reason why partial fraction decomposition can not be performed on the integrand above in its current form.
               </p>
             </li>
             <li>
@@ -898,15 +1001,14 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
     </p>
     <p>
       You might also be wondering what happens if the denominator doesn't factor into powers of linear and quadratic terms.
-      It is a theorem beyond the scope of this class, called the Fundamental Theorem of Algebra, that every polynomial over the real numbers factors into
+      It is a theorem beyond the scope of this class that every polynomial whose coefficients are real numbers factors into
       powers of linear and quadratic terms. 
-      <!-- Is it really the FTA or is there another theorem for the real case? -->
     </p>
 
     <p>
       The result is that every rational function, regardless of the degree of the numerator or denominator,
       or how the denominator factors, can be integrated using some combination of the techniques
-      described in this section.  Putting that theory into practice, however, is very often no trivial matter!
+      described in this section.  Putting that theory into practice, however, is often quite difficult!
     </p>
 
     <!-- <xi:include href="./activities/act-1-1-1.xml" /> -->
@@ -943,12 +1045,6 @@ maybe culminate with 1/(x+2)^3? because students in this section don't realize t
             Similar to how every improper fraction can be expressed as an integer plus a proper fraction, every rational function with the degree of the numerator greater than or equal to the degree 
             of the denominator can be expressed as <m>p(x)+\frac{q(x)}{r(x)}</m> where <m>p(x)</m> is a polynomial
             and the degree of <m>q(x)</m> is strictly less than the degree of <m>r(x)</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            This means that every rational function has an antiderivative function we can express without an integral.
           </p>
         </li>
       </ul>

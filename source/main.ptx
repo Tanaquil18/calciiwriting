@@ -17,36 +17,39 @@
     <title>Calc II Extra Material</title>
     <subtitle>Not included in Active Calculus</subtitle>
 
-    <frontmatter xml:id="frontmatter">
-      <titlepage>
-        <author>
-          <personname>Chrissy Safranski</personname>
-          <department>Mathematics and Physical Sciences</department>
-          <institution>Franciscan University of Steubenville</institution>
-        </author>
-        <date>
-          <today />
-        </date>
-      </titlepage>
+  <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <bibinfo>
+  
+    <author>
+      <personname>Chrissy Safranski</personname>
+      <department>Mathematics and Physical Sciences</department>
+      <institution>Franciscan University of Steubenville</institution>
+    </author>
+    <date>
+      <today />
+    </date>
 
-      <colophon>
+    <!-- <website>
+      <url href="https://pretextbook.org">My Website</url>
+    </website> -->
 
-        <website>
-          <name>
-            <c>example.org</c>
-          </name>
-          <address>https://example.org</address>
-        </website>
+    <copyright>
+      <year>2024<ndash />2025</year>
+      <holder>Chrissy Safranski</holder>
+      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      </shortlicense>
+    </copyright>
+  
+  </bibinfo>
 
-        <copyright>
-          <year>2023<ndash />2023</year>
-          <holder>You</holder>
-          <shortlicense> 
-            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-          </shortlicense>
-        </copyright>
-      </colophon>
-    </frontmatter>
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
+
+  <colophon xml:id="front-colophon">
+    <colophon-items/>
+  </colophon>
+  </frontmatter>
 
     <chapter xml:id="chap-extra-material">
       <title>Extra Material</title>
