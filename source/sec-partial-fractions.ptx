@@ -526,7 +526,7 @@
           the values we've just found for <m>A, B</m> and <m>D</m> gives us our final answer of
           <md>
             <mrow>\int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx \amp = 3\ln|x-1|+\frac{-2}{2}\ln|x^2+1|-1\arctan(x) +C</mrow>
-            <mrow> \amp = 3\ln|x-1|-\ln|x^2+1|-\arctan(x) +C</mrow>.
+            <mrow> \amp = 3\ln|x-1|-\ln|x^2+1|-\arctan(x) +C.</mrow>
           </md>
         </p>
       </example>
@@ -615,7 +615,7 @@
               </li>
               <li>
                 <title>linear factor raised to an exponent</title>
-                <p>sum of terms consisting of a constant divided by <emph>every power</emph> of that linear term
+                <p>sum of terms consisting of a constant divided by <em>every power</em> of that linear term
       starting at <m>1</m> and going up to the value of the exponent</p>
               </li>
               <li>
@@ -624,7 +624,7 @@
               </li>
               <li>
                 <title>unfactorable quadratic raised to an exponent</title>
-                <p>sum of terms consisting of a linear expression divided by <emph>every power</emph> of that quadratic
+                <p>sum of terms consisting of a linear expression divided by <em>every power</em> of that quadratic
       starting at <m>1</m> and going up to the value of the exponent</p>
               </li>
             </dl>

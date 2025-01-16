@@ -62,9 +62,10 @@
         <p>
           However, we do know something about how <m>\sin(x)</m> and <m>\cos(x)</m> are related to each other.  
           Specifically, the Fundamental Trigonometric Identity says that 
-          <me>
+          <men xml:id="eqn-fund-trig">
             \sin^2(x)+\cos^2(x)=1.
-          </me>
+          </men>
+          
           What if we tried a substitution, and then if we still had either <m>\sin^2(x)</m> or <m>\cos^2(x)</m>
           in our integral, we used the Fundamental Trigonometric Identity to rewrite it?
         </p>
@@ -86,9 +87,9 @@
         </p>
     </example>
     <p>
-      This same strategy works whenever powers of sine and cosine (with the same argument) are multiplied together and one of the 
+      This same strategy can be used whenever powers of sine and cosine (with the same argument) are multiplied together and one of the 
       exponents is an odd, positive integer: one power can be factored out to be the <m>du</m>, an odd minus 1 is now even,
-      and so the remaining powers can be turned into an expression of <m>u</m>.
+      and so the remaining powers can be turned into an expression of <m>u</m> using the Fundamental Trigonometric Identity.
     </p>
 
     <!-- <example>
@@ -125,12 +126,12 @@
           <li>
             <p>
               Rewrite the remaining powers of <m>\cos(z)</m> (which originally had an odd exponent and will now have an even exponent)
-              in terms of <m>\sin(z)</m> using the Fundamental Identity <m>\cos^2(z)=1-\sin^2(z)</m>.
+              in terms of <m>\sin(z)</m> using the Fundamental Trigonometric Identity <m>\cos^2(z)=1-\sin^2(z)</m>.
             </p>
           </li>
           <li>
             <p>
-              Set <m>u</m> equal to <m>\sin(z)</m>, which we've now rewritten the originally odd exponenent to be in terms of.
+              Set <m>u</m> equal to <m>\sin(z)</m> (because <m>\cos(z)</m> originally had an odd exponent.)
             </p>
           </li>
         </ul>
@@ -139,6 +140,56 @@
     </assemblage>
 
     </subsection>
+
+  <subsection xml:id="subsec-sec-tan-and-csc-cot">
+    <title>More substitution with trig identities</title>
+    <p>
+      The main principle behind <xref ref="assemblage-sin-cos-one-odd" text="title"/> is that we are using substitution
+      to integrate, and the Fundamental Trigonometric Identity to rewrite what remains in terms of the function
+      in the function-derivative pair.
+    </p>
+    <p>
+      We also encounter other pairings besides sine and cosine of a trigonometric function and its derivative (up to a constant); however,
+      the other derivatives are products or powers, so the method is a little more complicated.  Let's recall that
+      the derivative of <m>\tan(x)</m> is <m>\sec^2(x)</m>.  Let's also recall that if we divide both sides of the Fundamental
+      Trigonometric Identity <xref ref="eqn-fund-trig"/> by <m>\cos^2(x)</m>, we get
+      <me>
+        \frac{\sin^2(x)}{\cos^2(x)}+\frac{\cos^2(x)}{\cos^2(x)}=\frac{1}{\cos^2(x)},
+      </me>
+      and rewriting that to be in terms of <m>\tan(x)=\frac{\sin(x)}{\cos(x)}</m> and <m>\sec(x)=\frac{1}{\cos(x)}</m>
+      means we get
+      <men xml:id="eqn-fund-trig-sec-tan">
+            \tan^2(x)+1=\sec^2(x)
+      </men>
+      
+      This means that if we're trying to use substitution in an integral with a product of powers of secant and tangent,
+      we need the exponent of <m>\sec(x)</m> to be <em>even</em>, so that one copy of <m>\sec^2(x)</m> can be the derivative of <m>\tan(x)</m>,
+      and the remaining (even) powers of <m>\sec(x)</m> can be rewritten using <xref ref="eqn-fund-trig-sec-tan"/>.  We can also have an odd
+      exponent of <m>\tan(x)</m>, so that one copy will be part of the derivative of <m>\sec{x}</m>, and the remaining even exponent of <m>\tan(x)</m> can be 
+      rewritten into an expression of <m>\sec(x)</m> using <xref ref="eqn-fund-trig-sec-tan"/>.
+    </p>
+
+    <p>
+      Do two examples, one of each sec-tan type, then an assemblage of the method, then the csc-cot discussion
+       and assemblage. Another example? Where do the activities go?  
+    </p>
+
+    <p>
+      Similarly, dividing both sides of the Fundamental
+      Trigonometric Identity <xref ref="eqn-fund-trig"/> by <m>\sin^2(x)</m> results in
+      <me>
+        \frac{\sin^2(x)}{\sin^2(x)}+\frac{\cos^2(x)}{\sin^2(x)}=\frac{1}{\sin^2(x)},
+      </me>
+      and rewriting that to be in terms of <m>\cot(x)=\frac{\cos(x)}{\sin(x)}</m> and <m>\csc(x)=\frac{1}{\sin(x)}</m>
+      means we get
+      <men xml:id="eqn-fund-trig-csc-cot">
+            1+\cot^2(x)=\csc^2(x)
+      </men>
+    </p>
+    
+  </subsection>
+
+
 
     
 
