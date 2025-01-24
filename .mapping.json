@@ -1,1 +1,1 @@
-{"source/main.ptx": ["my-great-book", "frontmatter", "chap-extra-material", "sec-trigonometric-integrals", "sec-parametric", "sec-polar", "backmatter"], "source/sec-partial-fractions.ptx": ["sec-partial-fractions"]}
+{"source/main.ptx": ["my-great-book", "frontmatter", "front-colophon", "chap-extra-material", "sec-parametric", "sec-polar", "backmatter"], "source/sec-trigonometric-ints.ptx": ["sec-trigonometric-ints"], "source/sec-partial-fractions.ptx": ["sec-partial-fractions"]}
