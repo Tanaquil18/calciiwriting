@@ -40,11 +40,7 @@
     </p>
     </introduction>
 
-    <subsection><title>Need title</title>
-
-    <p>
-      Need preview activity here.
-    </p>
+    <subsection><title>Integrals Involving Sine and Cosine</title>
 
     <example xml:id="int-with-fund-id"><title>Substitution, with an Additional Step</title>
         <p>
@@ -92,24 +88,6 @@
       and so the remaining powers can be turned into an expression of <m>u</m> using the Fundamental Trigonometric Identity.
     </p>
 
-    <!-- <example>
-      For an integral of the form $\int \sin^m z \cos^n z \ dz$ }
-\begin{enumerate} 
-\item If the exponent of $\sin z$ or $\cos z$ is an odd positive integer:
-\begin{itemize}
-\item Without loss of generality, the exponent of $\cos z$ is odd.  
-\item Factor out a copy of $\cos z$, and the remaining power of $\cos z$ is even.
-\item Use the identity $\sin^2 \theta + \cos^2 \theta =1$, so $\cos^2 z = 1 - \sin^2 z$.
-\item Then let $u=\sin z$, so $du=\cos z \ dz$ cancels with the copy you factored out, and the remaining factors can all be put in terms of $u$.
-\end{itemize}
-\item If both exponents of $\sin z$ and $\cos z$ are even nonnegative integers:
-\begin{itemize}
-\item We use our half-angle identities, possibly repeatedly:
-\item \hskip .2in$\sin^2 z=\frac{1-\cos (2z)}{2}$
-\hskip .3in $\cos^2 z=\frac{1+\cos (2z)}{2}$
-\end{itemize}
-    </example> -->
-
     <assemblage xml:id="assemblage-sin-cos-one-odd">
       <title>Sine and Cosine, at least one of them odd powered</title>
       <p>
@@ -139,6 +117,78 @@
      
     </assemblage>
 
+    <p>
+      What if we have an integral involving a product of sines and cosines but neither of the functions has 
+      and odd, positive integer exponent?  We have another method that can be used in the case that both sine and
+      cosine have even, nonnegative integer exponents.
+    </p>
+
+    <example xml:id="int-with-half-angle"><title>Sine and Cosine with Even Exponents</title>
+        <p>
+          Evaluate
+          <me>
+            \int \sin^2(x)\, dx.
+          </me>
+        </p>
+        <p>
+          <em>Answer:</em> If we rewrote <m>\sin^2(x)</m> 
+          in terms of <m>\cos^2(x)</m> using the Fundamental Trigonometric identity, then we wouldn't 
+          have any copy of <m>\sin(x)</m> leftover to serve as the <m>du</m> if we made a <m>u-</m>substitution.   
+        </p>
+        <p>
+          However, there are two more trigonometric identities we can make use of, called the
+           <em>Half-angle identities</em>
+          <mdn>
+            <mrow> \sin^2(x) \amp = \frac{1-\cos(2x)}{2} </mrow>
+            <mrow> \cos^2(x) \amp = \frac{1+\cos(2x)}{2} </mrow>
+          </mdn>
+        </p>
+        <p>
+            Then
+          <md>
+            <mrow> \int \sin^2(x)\, dx \amp = \int \frac{1-\cos(2x)}{2}\, dx </mrow>
+            <mrow>  \amp = \frac{1}{2}\int \big(1-\cos(2x)\big)\, dx </mrow>
+            <mrow>  \amp = \frac{1}{2}\big[x-\frac{\sin(2x)}{2}\big]+C </mrow>
+            <mrow>  \amp = \frac{x}{2}-\frac{\sin(2x)}{4}+C </mrow>
+          </md>.
+        </p>
+        <p>
+            The Half-angle identity helped because it brought the exponent down by 1, and we 
+            know how to calculate antiderivatives for both <m>1</m> and <m>\cos(2x)</m>.
+        </p>
+    </example>
+
+    <assemblage xml:id="assemblage-sin-cos-both-even">
+      <title>Sine and Cosine, both of them even powered</title>
+      <p>
+        Suppose you have an integral of the form <me>\int \sin^m(z)\cos^n(z)\, dz
+        </me>
+        where both <m>m</m> and <m>n</m> are an even, nonnegative integers (one of the exponents could be <m>0</m>).
+        <ul>
+          <li>
+            <p>
+              Use the Half-angle identities
+              <md>
+                <mrow>\sin^2(z) \amp = \frac{1-\cos(2z)}{2} </mrow>
+                <mrow>\cos^2(z) \amp = \frac{1+\cos(2z)}{2} </mrow>
+              </md>
+              to reduce the degree of sine and cosine (this will also double whatever the argument originally was).
+            </p>
+          </li>
+          <li>
+            <p>
+              Multiply out the result and apply the Half-angle identities again, as many times as necessary.
+            </p>
+          </li>
+        </ul>
+      </p>
+     
+    </assemblage>
+
+    <p>
+      First activity in workbook goes here.
+    </p>
+
     </subsection>
 
   <subsection xml:id="subsec-sec-tan-and-csc-cot">
@@ -149,9 +199,7 @@
       in the function-derivative pair.
     </p>
     <p>
-      We also encounter other pairings besides sine and cosine of a trigonometric function and its derivative (up to a constant); however,
-      the other derivatives are products or powers, so the method is a little more complicated.  Let's recall that
-      the derivative of <m>\tan(x)</m> is <m>\sec^2(x)</m>.  Let's also recall that if we divide both sides of the Fundamental
+      We also encounter other pairings besides sine and cosine of a trigonometric function and its derivative (up to a constant).  Let's recall that if we divide both sides of the Fundamental
       Trigonometric Identity <xref ref="eqn-fund-trig"/> by <m>\cos^2(x)</m>, we get
       <me>
         \frac{\sin^2(x)}{\cos^2(x)}+\frac{\cos^2(x)}{\cos^2(x)}=\frac{1}{\cos^2(x)},
@@ -162,17 +210,73 @@
             \tan^2(x)+1=\sec^2(x)
       </men>
       
-      This means that if we're trying to use substitution in an integral with a product of powers of secant and tangent,
-      we need the exponent of <m>\sec(x)</m> to be <em>even</em>, so that one copy of <m>\sec^2(x)</m> can be the derivative of <m>\tan(x)</m>,
-      and the remaining (even) powers of <m>\sec(x)</m> can be rewritten using <xref ref="eqn-fund-trig-sec-tan"/>.  We can also have an odd
-      exponent of <m>\tan(x)</m>, so that one copy will be part of the derivative of <m>\sec{x}</m>, and the remaining even exponent of <m>\tan(x)</m> can be 
-      rewritten into an expression of <m>\sec(x)</m> using <xref ref="eqn-fund-trig-sec-tan"/>.
-    </p>
+      We also recall that the derivative of <m>\tan(x)</m> is <m>\sec^2(x)</m>, and that the derivative
+      of <m>\sec(x)</m> is <m>\sec(x)\tan(x)</m>. If we have an integral with a product of powers of secant and tangent, as long as
+      the exponents of one or the other satisfy certain conditions, we can do the same thing that we did with sine and cosine:
+      make a <m>u-</m>substitution and use the (modified) Fundamental Trigonometric Identity to rewrite the
+      other trig function in terms of the one we called <m>u</m>.
+      </p>
 
-    <p>
-      Do two examples, one of each sec-tan type, then an assemblage of the method, then the csc-cot discussion
-       and assemblage. Another example? Where do the activities go?  
-    </p>
+    
+    <assemblage xml:id="assemblage-sec-tan-sec-even">
+      <title>Secant and Tangent, even power of secant</title>
+      <p>
+        Suppose you have an integral of the form <me>\int \sec^m(z)\tan^n(z)\, dz
+        </me>
+        where <m>m</m> is an even, positive integer.   
+        <ul>
+          <li>
+            <p>
+              Factor out a copy of <m>\sec^2(z)</m> to serve as the <m>du</m> 
+              (because <m>\sec^2(z)</m> is the derivative of <m>\tan(z)</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Rewrite the remaining <em>still even </em> powers of <m>\sec(z)</m> 
+              in terms of <m>\tan(z)</m> using <xref ref="eqn-fund-trig-sec-tan" />. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Set <m>u</m> equal to <m>\tan(z)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+     
+    </assemblage>
+
+
+    <assemblage xml:id="assemblage-sec-tan-tan-odd">
+      <title>Secant and Tangent, odd power of tangent</title>
+      <p>
+        Suppose you have an integral of the form <me>\int \sec^m(z)\tan^n(z)\, dz
+        </me>
+        where <m>n</m> is an odd, positive integer.   
+        <ul>
+          <li>
+            <p>
+              Factor out a copy of <m>\sec(z)\tan(z)</m> to serve as the <m>du</m> 
+              (because <m>\sec(z)\tan(z)</m> is the derivative of <m>\sec{z}</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Rewrite the remaining <em>now even</em> powers of <m>\tan(z)</m> 
+              in terms of <m>\sec(z)</m> using <xref ref="eqn-fund-trig-sec-tan" />. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Set <m>u</m> equal to <m>\sec(z)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+     
+    </assemblage>
+
 
     <p>
       Similarly, dividing both sides of the Fundamental
@@ -185,6 +289,109 @@
       <men xml:id="eqn-fund-trig-csc-cot">
             1+\cot^2(x)=\csc^2(x)
       </men>
+    </p>
+
+    <p>
+      Note that since the derivative of <m>\cot(z)</m> is <m>-\csc^2(z)</m> and
+       the derivative of <m>\csc(z)</m> is <m>-\csc(z)\cot(z)</m>, the relationships between 
+       <m>\csc(z)</m> and <m>\cot(z)</m> are exactly analogous to the relationships
+       between <m>\sec(z)</m> and <m>\tan(z)</m>.  The integrals we consider are of the same forms,
+        and the methods for evaluating them are the same.
+    </p>
+
+    <assemblage xml:id="assemblage-csc-cot-csc-even">
+      <title>Cosecant and Cotangent, even power of cosecant</title>
+      <p>
+        Suppose you have an integral of the form <me>\int \csc^m(z)\cot^n(z)\, dz
+        </me>
+        where <m>m</m> is an even, positive integer.   
+        <ul>
+          <li>
+            <p>
+              Factor out a copy of <m>\csc^2(z)</m> to serve as the <m>du</m> 
+              (because <m>-\csc^2(z)</m> is the derivative of <m>\cot(z)</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Rewrite the remaining <em>still even </em> powers of <m>\csc(z)</m> 
+              in terms of <m>\cot(z)</m> using <xref ref="eqn-fund-trig-csc-cot" />. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Set <m>u</m> equal to <m>\cot(z)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+     
+    </assemblage>
+
+    <assemblage xml:id="assemblage-csc-cot-cot-odd">
+      <title>Cosecant and Cotangent, odd power of cotangent</title>
+      <p>
+        Suppose you have an integral of the form <me>\int \csc^m(z)\cot^n(z)\, dz
+        </me>
+        where <m>n</m> is an odd, positive integer.   
+        <ul>
+          <li>
+            <p>
+              Factor out a copy of <m>\csc(z)\cot(z)</m> to serve as the <m>du</m> 
+              (because <m>-\csc(z)\cot(z)</m> is the derivative of <m>\csc{z}</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Rewrite the remaining <em>now even</em> powers of <m>\cot(z)</m> 
+              in terms of <m>\csc(z)</m> using <xref ref="eqn-fund-trig-csc-cot" />. 
+            </p>
+          </li>
+          <li>
+            <p>
+              Set <m>u</m> equal to <m>\csc(z)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+     
+    </assemblage>
+
+    <p>
+      Not all integrals are of one of the forms discussed above.  Sometimes we still have to rewrite the integrand
+      before we can recognize the form and apply one of our strategies.  Sometimes, there's special case to consider.  
+      Sometimes we will have to use integration by parts rather than <m>u-</m>substitution.
+    </p>
+
+    <p>
+      Second activity in workbook goes here.
+    </p>
+
+  </subsection>
+
+  <subsection xml:id="subsec-trig-substitution">
+    <title>Trigonometric Substitution</title>
+
+    <p>
+      We've been using a lot of substitution to calculate trigonometric integals, and we've greatly expanded the
+      kinds of integrals we can evaluate, as long as they involve trigonometric functions.  There is a saying that 
+      might be especially applicable to mathematicians.
+      </p>
+      <blockquote>
+        <p>
+          If all you have is a hammer, everything looks like a nail.
+        </p>
+      </blockquote>
+      
+    <p>  
+      We try to solve problems using the tools we have. The quote might be implying that a hammer isn't always the best choice,
+      but the following activity is a rather beautiful example of mathematicians figuring out how to use the hammer of 
+      our ability to integrate trigonometric functions, even when the integral starts out not looking like it involves 
+      trigonometry at all.
+    </p>
+
+    <p>
+      Third activity in workbook goes here.
     </p>
     
   </subsection>
