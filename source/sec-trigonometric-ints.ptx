@@ -185,9 +185,30 @@
      
     </assemblage>
 
-    <p>
-      First activity in workbook goes here.
-    </p>
+    <activity>
+    <statement>
+      <p>
+      
+<ol marker="a. " cols="2">
+<li> <p><m>\int \sin^2(x) \cos^2(x) \, dx </m></p></li>
+<li> <p><m>\int \sec^6(x) \, dx </m></p></li>
+<li> <p><m>\int \cos^7 (5x) \tan^3 (5x) \, dx </m></p></li>
+</ol>
+</p>
+
+<p>
+Perform each of the steps below for each of the integrals above:
+</p>
+
+<p>
+<ol marker="i. ">
+<li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, leading to the method of integration we use.</p> </li>
+<li> <p>Write the trigonometric identity we use to solve, and if applicable, what the <m>u</m>-substitution will be. </p></li>
+<li> <p>Calculate the integral. </p></li>
+</ol>
+</p>
+</statement>
+    </activity>
 
     </subsection>
 
@@ -363,9 +384,29 @@
       Sometimes we will have to use integration by parts rather than <m>u-</m>substitution.
     </p>
 
-    <p>
-      Second activity in workbook goes here.
-    </p>
+    <activity>
+    <statement>
+        <p>
+<ol marker="a. " cols="2">
+<li> <p><m>\int \tan^2 x \, dx </m></p></li>
+<li> <p><m>\int \tan^3 x \, dx </m></p></li>
+<li> <p><m>\int \sec x \, dx </m></p></li>
+</ol>
+</p>
+
+<p>
+Perform each of the steps below for each of the integrals above:
+</p>
+<p>
+<ol marker="i. ">
+<li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, then say whether or not this was one of the cases we learned an algorithm for. </p></li>
+<li> <p>Write the trigonometric identity we use to solve, if applicable.</p> </li>
+<li> <p>Calculate the integral.</p> </li>
+</ol>
+
+      </p>
+    </statement>
+    </activity>
 
   </subsection>
 
@@ -387,12 +428,52 @@
       We try to solve problems using the tools we have. The quote might be implying that a hammer isn't always the best choice,
       but the following activity is a rather beautiful example of mathematicians figuring out how to use the hammer of 
       our ability to integrate trigonometric functions, even when the integral starts out not looking like it involves 
-      trigonometry at all.
+      trigonometry at all.  
     </p>
 
-    <p>
-      Third activity in workbook goes here.
-    </p>
+    <activity>
+      <statement>
+        <p>
+          The method demonstrated in this activity is most useful when the integral cannot be calculated in another way, but we 
+      will consider an example which can also be done with <m>u-</m> substitution so that we can verify that we obtain the same answer.
+        </p>
+        <p>
+          <ol marker="a. ">
+<li> <p>State the reason why <m>u</m>-substitution cannot be used on the integral <me>\int \frac{1}{(x^2+4)^2} \, dx</me>. </p></li>
+
+<li> <p>For the remainder of this activity, we consider 
+<me>\int \frac{x}{(x^2+4)^2} \, dx</me>. First, calculate the integral using <m>u</m>-substitution, with <m>u = x^2+4</m>.</p> </li>
+
+<li> <p>We recognize the term <m>x^2+4</m> is of the form <m>x^2+a^2</m>, which reminds us of the hypotenuse of a right triangle, whose legs are <m>x</m> and <m>2</m>. 
+(We previously did something similar in Calculus I <url href="
+https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1">here</url>
+). </p>
+
+
+<image width="60%" source="trianglepic">
+<shortdescription>A right triangle with legs whose lengths are x and a. </shortdescription>
+</image>
+<p>
+  Use the triangle to calculate <m>\tan \theta</m> and <m>\sec \theta</m> in terms of <m>x</m>.
+</p>
+</li>
+
+<li> <p>Use your expression for <m>\tan \theta</m> to solve for <m>x</m>, then differentiate to calculate <m>dx</m>. </p></li>
+
+<li> <p>Use your expression for <m>\sec \theta</m> to solve for <m>x^2+4</m>. </p> </li>
+
+<li> <p> Substitute what you've found into <me>\int \frac{x}{(x^2+4)^2} \, dx</me>, replacing <m>x</m>, <m>dx</m>, and <m>x^2+4</m> with expressions involving <m>\theta</m>. </p></li>
+
+<li> <p>Calculate the trigonometric integral, using the method for when the exponent of <m>\tan</m> is odd. </p></li>
+
+<li> <p>Finally, put the answer back in terms of <m>x</m>, using the triangle shown above, and/or the expressions you already calculated. </p></li>
+</ol>
+
+        </p>
+      </statement>
+    </activity>
+
+    
     
   </subsection>
 
