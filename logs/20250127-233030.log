@@ -1,0 +1,13 @@
+INFO    : Using PreTeXt-CLI version 2.10.1.  The latest stable version available is 2.12.0. Run `pip install pretext --upgrade` to update.
+
+INFO    : PreTeXt project found in `/workspaces/calciiwriting`.
+INFO    : Staging deployment according to strategy default_target
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `/workspaces/calciiwriting/output/web` at `/workspaces/calciiwriting/output/stage`.
+INFO    : 
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+INFO    : Add/committing these changes to local Git repository.
+INFO    : 
