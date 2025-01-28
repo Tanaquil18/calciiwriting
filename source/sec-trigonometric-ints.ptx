@@ -119,7 +119,7 @@
 
     <p>
       What if we have an integral involving a product of sines and cosines but neither of the functions has 
-      and odd, positive integer exponent?  We have another method that can be used in the case that both sine and
+      an odd, positive integer exponent?  We have another method that can be used in the case that both sine and
       cosine have even, nonnegative integer exponents.
     </p>
 
@@ -185,30 +185,7 @@
      
     </assemblage>
 
-    <activity>
-    <statement>
-      <p>
-      
-<ol marker="a. " cols="2">
-<li> <p><m>\int \sin^2(x) \cos^2(x) \, dx </m></p></li>
-<li> <p><m>\int \sec^6(x) \, dx </m></p></li>
-<li> <p><m>\int \cos^7 (5x) \tan^3 (5x) \, dx </m></p></li>
-</ol>
-</p>
-
-<p>
-Perform each of the steps below for each of the integrals above:
-</p>
-
-<p>
-<ol marker="i. ">
-<li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, leading to the method of integration we use.</p> </li>
-<li> <p>Write the trigonometric identity we use to solve, and if applicable, what the <m>u</m>-substitution will be. </p></li>
-<li> <p>Calculate the integral. </p></li>
-</ol>
-</p>
-</statement>
-    </activity>
+    
 
     </subsection>
 
@@ -232,11 +209,47 @@ Perform each of the steps below for each of the integrals above:
       </men>
       
       We also recall that the derivative of <m>\tan(x)</m> is <m>\sec^2(x)</m>, and that the derivative
-      of <m>\sec(x)</m> is <m>\sec(x)\tan(x)</m>. If we have an integral with a product of powers of secant and tangent, as long as
+      of <m>\sec(x)</m> is <m>\sec(x)\tan(x)</m>.  
+      If we have an integral with a product of powers of secant and tangent, as long as
       the exponents of one or the other satisfy certain conditions, we can do the same thing that we did with sine and cosine:
       make a <m>u-</m>substitution and use the (modified) Fundamental Trigonometric Identity to rewrite the
       other trig function in terms of the one we called <m>u</m>.
       </p>
+      
+      <example xml:id="int-with-sec-tan"><title>One Case of Secants and Tangents</title>
+        <p>
+          Evaluate
+          <me>
+            \int \frac{\tan^3(x)}{\sec^2(x)}\, dx.
+          </me>
+        </p>
+        <p>
+          <em>Answer:</em> We know that the derivative of <m>\sec(x)</m> is <m>\sec(x)\tan(x)</m>, and 
+          that even powers of tangent can be rewritten into secants using <xref ref="eqn-fund-trig-sec-tan"/>.
+        </p>
+        <p>
+            Let <m>u=\sec(x)</m>, so that <m>du=\sec(x)\tan(x)\, dx</m>.  We factor out a copy of 
+            <m>\sec(x)\tan(x)</m>, by splitting the tangents in the numerator and also by multiplying by <m>\frac{\sec(x)}{\sec(x)}=1</m>.
+          <md>
+            <mrow> \int \frac{\tan^3(x)}{\sec^2(x)}\, dx \amp = \int \frac{\tan^2(x)\tan(x)}{\sec^2(x)}\cdot\frac{\sec(x)}{\sec(x)}\, dx </mrow>
+            <mrow>  \amp = \int \frac{\tan^2(x)}{\sec^3(x)}\sec(x)\tan(x)\, dx </mrow>
+            <mrow>  \amp = \int \frac{\sec^2(x)-1}{\sec^3(x)}\sec(x)\tan(x)\, dx </mrow>
+            <mrow>  \amp = \int \frac{u^2-1}{u^3}\, du </mrow>
+            <mrow>  \amp = \int \big( \frac{1}{u}-u^{-3}\big)\, du </mrow>
+            <mrow>  \amp = \ln|u|+\frac{u^{-2}}{2}+C </mrow>
+            <mrow>  \amp = \ln|\sec(x)|+\frac{\sec^{-2}(x)}{2}+C </mrow>
+            <mrow>  \amp = \ln|\sec(x)|+\frac{\cos^2(x)}{2}+C</mrow>
+          </md>.
+        </p>
+    </example>
+
+    <p>
+      The key feature in the above example was that the exponent of tangent was odd and positive, so that we could factor out
+      a copy of <m>\sec(x)\tan(x)</m>.  If instead the exponent of secant was even and positive, we could have factored out a 
+      copy of <m>\sec^2(x)</m>.
+    </p>
+      
+  
 
     
     <assemblage xml:id="assemblage-sec-tan-sec-even">
@@ -378,6 +391,31 @@ Perform each of the steps below for each of the integrals above:
      
     </assemblage>
 
+    <activity>
+    <statement>
+      <p>
+      
+<ol marker="a. " cols="2">
+<li> <p><m>\int \sin^2(x) \cos^2(x) \, dx </m></p></li>
+<li> <p><m>\int \sec^6(x) \, dx </m></p></li>
+<li> <p><m>\int \cos^7 (5x) \tan^3 (5x) \, dx </m></p></li>
+</ol>
+</p>
+
+<p>
+Perform each of the steps below for each of the integrals above:
+</p>
+
+<p>
+<ol marker="i. ">
+<li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, leading to the method of integration we use.</p> </li>
+<li> <p>Write the trigonometric identity we use to solve, and if applicable, what the <m>u</m>-substitution will be. </p></li>
+<li> <p>Calculate the integral. </p></li>
+</ol>
+</p>
+</statement>
+    </activity>
+
     <p>
       Not all integrals are of one of the forms discussed above.  Sometimes we still have to rewrite the integrand
       before we can recognize the form and apply one of our strategies.  Sometimes, there's special case to consider.  
@@ -464,7 +502,7 @@ https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1
 
 <li> <p> Substitute what you've found into <me>\int \frac{x}{(x^2+4)^2} \, dx</me>, replacing <m>x</m>, <m>dx</m>, and <m>x^2+4</m> with expressions involving <m>\theta</m>. </p></li>
 
-<li> <p>Calculate the trigonometric integral, using the method for when the exponent of <m>\tan</m> is odd. </p></li>
+<li> <p>Calculate the trigonometric integral, using the method for when the exponent of tangent is odd. </p></li>
 
 <li> <p>Finally, put the answer back in terms of <m>x</m>, using the triangle shown above, and/or the expressions you already calculated. </p></li>
 </ol>
@@ -473,8 +511,75 @@ https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1
       </statement>
     </activity>
 
+    <p>
+      There are three of these trigonometric substitutions we commonly use, depending on what the original integrand is.
+    </p>
+
+    <sidebyside>
+      <figure>
+        <caption><m>x=a\tan(\theta)</m></caption>
+        <image source="trigsub1">
+          <shortdescription>right triangle whose legs have lengths of x and a</shortdescription>
+        </image>
+      </figure>
+      <figure>
+        <caption><m>x=a\sec(\theta)</m></caption>
+        <image source="trigsub2">
+          <shortdescription>right triangle whose hypotenuse is x</shortdescription>
+        </image>
+      </figure>
+      <figure>
+        <caption><m>x=a\sin(\theta)</m></caption>
+        <image source="trigsub3">
+          <shortdescription>right triangle whose hypotenuse is a</shortdescription>
+        </image>
+      </figure>
+    </sidebyside>
+
     
     
+  </subsection>
+
+<subsection>
+    <title>Summary</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            We practice our integration techniques of <m>u-</m>substitution and integration by parts as
+            applied to functions involving products of trigonometric functions.
+          </p>
+        </li>
+        <li>
+          <p>
+            We use the Fundamental Pythagorean Trigonometric Identity, 
+            <me>
+              \sin^2(z)+\cos^2(z)=1
+            </me>
+            its two variations, 
+            <md>
+              <mrow> \tan^2(z)+1 \amp = \sec^2(z) </mrow>
+              <mrow> \cot^2(z)+1 \amp = \csc^2(z) </mrow>
+            </md>
+            and 
+            the two Half-angle Formulas 
+            <md>
+              <mrow> \sin^2(z) \amp = \frac{1-\cos(2z)}{2} </mrow>
+              <mrow> \cos^2(z) \amp = \frac{1+\cos(2z)}{2} </mrow>
+            </md>
+            to enable us to calculate antiderivatives of many functions that are a 
+            product of trigonometric functions.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We see how to
+            use a <em>trigonometric substitution</em> to transform certain non-trigonometric integrals into trigonometric integrals.
+          </p>
+        </li>
+      </ul>
+    </p>
   </subsection>
 
 

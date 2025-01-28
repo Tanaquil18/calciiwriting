@@ -1,0 +1,25 @@
+INFO    : Using PreTeXt-CLI version 2.10.1.  The latest stable version available is 2.12.0. Run `pip install pretext --upgrade` to update.
+
+INFO    : PreTeXt project found in `/workspaces/calciiwriting`.
+INFO    : Building target web
+INFO    : Preparing to build into /workspaces/calciiwriting/output/web.
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.10.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.10.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : discovering source file's directory name: /workspaces/calciiwriting/source
+INFO    : verifying and expanding input directory: /workspaces/calciiwriting/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calciiwriting/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calciiwriting/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calciiwriting/assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.4.4
+INFO    : Runestone Services (using newer, via online CDN query): version 7.5.3
+INFO    : Downloading Runestone Services, version 7.5.3
+INFO    : Extracting Runestone Services from archive file
+INFO    : converting /workspaces/calciiwriting/source/main.ptx to HTML in /tmp/ptx-b3ihxnby
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.10.1/core/xsl/pretext-html.xsl
+INFO    : successful application of /home/codespace/.ptx/2.10.1/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-8sbxjy94
+INFO    : Removing temporary directory /tmp/ptx-b3ihxnby
+INFO    : 
+Success! Run `pretext view` to see the results.
+
+INFO    : 
