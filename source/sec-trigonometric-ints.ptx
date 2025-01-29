@@ -515,6 +515,8 @@ https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1
       There are three of these trigonometric substitutions we commonly use, depending on what the original integrand is.
     </p>
 
+    <figure>
+      <caption>The usual trigonometric substitutions and their corresponding triangles</caption>
     <sidebyside>
       <figure>
         <caption><m>x=a\tan(\theta)</m></caption>
@@ -535,6 +537,7 @@ https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1
         </image>
       </figure>
     </sidebyside>
+    </figure>
 
     
     
