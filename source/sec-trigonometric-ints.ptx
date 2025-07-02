@@ -78,7 +78,7 @@
           </md>.
         </p>
         <p>
-            It worked! And it was mostly using our familiar technique of substitution, once we recognized when
+            Note that this was mostly using our familiar technique of substitution, once we recognized when
             we needed to use a trigonometric identity to rewrite something we had remaining in our integral.  
         </p>
     </example>
@@ -325,15 +325,18 @@
       </men>
     </p>
 
-    <p>
-      Note that since the derivative of <m>\cot(z)</m> is <m>-\csc^2(z)</m> and
-       the derivative of <m>\csc(z)</m> is <m>-\csc(z)\cot(z)</m>, the relationships between 
-       <m>\csc(z)</m> and <m>\cot(z)</m> are exactly analogous to the relationships
-       between <m>\sec(z)</m> and <m>\tan(z)</m>.  The integrals we consider are of the same forms,
-        and the methods for evaluating them are the same.
-    </p>
+    <note>
+      <p>
+      Recall that the derivative of <m>\cot(z)</m> is <m>-\csc^2(z)</m>, which is similar in form to 
+      the derivative of <m>\tan(z)</m> being <m>\sec^2(z)</m>).  Recall also that
+       the derivative of <m>\csc(z)</m> is <m>-\csc(z)\cot(z)</m>, which is similar in form to
+       the derivative of <m>\sec(z)</m> being <m>\sec(z)\tan(z)</m>.  This means that the integrals we consider involving powers of <m>\csc(z)</m> and 
+       <m>\cot(z)</m> are of the same forms as the ones involving powers of <m>\sec(z)</m> and <m>\tan(z)</m>,
+        and the methods for evaluating the integrals are analogous.
+      </p>
+    </note>
 
-    <assemblage xml:id="assemblage-csc-cot-csc-even">
+    <!-- <assemblage xml:id="assemblage-csc-cot-csc-even">
       <title>Cosecant and Cotangent, even power of cosecant</title>
       <p>
         Suppose you have an integral of the form <me>\int \csc^m(z)\cot^n(z)\, dz
@@ -389,31 +392,29 @@
         </ul>
       </p>
      
-    </assemblage>
+    </assemblage> -->
 
     <activity>
-    <statement>
-      <p>
-      
-<ol marker="a. " cols="2">
-<li> <p><m>\int \sin^2(x) \cos^2(x) \, dx </m></p></li>
-<li> <p><m>\int \sec^6(x) \, dx </m></p></li>
-<li> <p><m>\int \cos^7 (5x) \tan^3 (5x) \, dx </m></p></li>
-</ol>
-</p>
+      <statement>
+        <p>
+          <ol marker="a. " cols="2">
+          <li> <p><m>\int \sin^2(x) \cos^2(x) \, dx </m></p></li>
+          <li> <p><m>\int \sec^6(x) \, dx </m></p></li>
+          <li> <p><m>\int \cos^7 (5x) \tan^3 (5x) \, dx </m></p></li>
+          </ol>
+        </p>
+        <p>
+        Perform each of the steps below for each of the integrals above:
+        </p>
 
-<p>
-Perform each of the steps below for each of the integrals above:
-</p>
-
-<p>
-<ol marker="i. ">
-<li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, leading to the method of integration we use.</p> </li>
-<li> <p>Write the trigonometric identity we use to solve, and if applicable, what the <m>u</m>-substitution will be. </p></li>
-<li> <p>Calculate the integral. </p></li>
-</ol>
-</p>
-</statement>
+        <p>
+        <ol marker="i. ">
+        <li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, leading to the method of integration we use.</p> </li>
+        <li> <p>Write the trigonometric identity we use to solve, and if applicable, what the <m>u</m>-substitution will be. </p></li>
+        <li> <p>Calculate the integral. </p></li>
+        </ol>
+        </p>
+      </statement>
     </activity>
 
     <p>
@@ -423,27 +424,25 @@ Perform each of the steps below for each of the integrals above:
     </p>
 
     <activity>
-    <statement>
+      <statement>
         <p>
-<ol marker="a. " cols="2">
-<li> <p><m>\int \tan^2 x \, dx </m></p></li>
-<li> <p><m>\int \tan^3 x \, dx </m></p></li>
-<li> <p><m>\int \sec x \, dx </m></p></li>
-</ol>
-</p>
-
-<p>
-Perform each of the steps below for each of the integrals above:
-</p>
-<p>
-<ol marker="i. ">
-<li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, then say whether or not this was one of the cases we learned an algorithm for. </p></li>
-<li> <p>Write the trigonometric identity we use to solve, if applicable.</p> </li>
-<li> <p>Calculate the integral.</p> </li>
-</ol>
-
-      </p>
-    </statement>
+          <ol marker="a. " cols="2">
+          <li> <p><m>\int \tan^2 x \, dx </m></p></li>
+          <li> <p><m>\int \tan^3 x \, dx </m></p></li>
+          <li> <p><m>\int \sec x \, dx </m></p></li>
+          </ol>
+        </p>
+        <p>
+        Perform each of the steps below for each of the integrals above:
+        </p>
+        <p>
+          <ol marker="i. ">
+          <li> <p>Identify the "key feature" — which exponent of which trigonometric functions are odd or even, then say whether or not this was one of the cases we learned an algorithm for. </p></li>
+          <li> <p>Write the trigonometric identity we use to solve, if applicable.</p> </li>
+          <li> <p>Calculate the integral.</p> </li>
+          </ol>
+        </p>
+      </statement>
     </activity>
 
   </subsection>
@@ -477,35 +476,43 @@ Perform each of the steps below for each of the integrals above:
         </p>
         <p>
           <ol marker="a. ">
-<li> <p>State the reason why <m>u</m>-substitution cannot be used on the integral <me>\int \frac{1}{(x^2+4)^2} \, dx</me>. </p></li>
+            <li>
+              <p>
+                State the reason why <m>u</m>-substitution cannot be used on the integral <me>\int \frac{1}{(x^2+4)^2} \, dx</me>. 
+              </p>
+            </li>
 
-<li> <p>For the remainder of this activity, we consider 
-<me>\int \frac{x}{(x^2+4)^2} \, dx</me>. First, calculate the integral using <m>u</m>-substitution, with <m>u = x^2+4</m>.</p> </li>
+            <li> 
+              <p>
+                For the remainder of this activity, we consider <me>\int \frac{x}{(x^2+4)^2} \, dx</me>. 
+                First, calculate the integral using <m>u</m>-substitution, with <m>u = x^2+4</m>.
+              </p> 
+            </li>
 
-<li> <p>We recognize the term <m>x^2+4</m> is of the form <m>x^2+a^2</m>, which reminds us of the hypotenuse of a right triangle, whose legs are <m>x</m> and <m>2</m>. 
-(We previously did something similar in Calculus I <url href="
-https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1">here</url>
-). </p>
+            <li>
+              <p>
+                We recognize the term <m>x^2+4</m> is of the form <m>x^2+a^2</m>, which reminds us of the 
+                hypotenuse of a right triangle, whose legs are <m>x</m> and <m>2</m>. 
+                (We previously did something similar in Calculus I <url href="https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1">here</url>). 
+              </p>
+              <image width="60%" source="trianglepic">
+              <shortdescription>A right triangle with legs whose lengths are x and a. </shortdescription>
+              </image>
+              <p>
+                Use the triangle to calculate <m>\tan \theta</m> and <m>\sec \theta</m> in terms of <m>x</m>.
+              </p>
+            </li>
 
+            <li> <p>Use your expression for <m>\tan \theta</m> to solve for <m>x</m>, then differentiate to calculate <m>dx</m>. </p></li>
 
-<image width="60%" source="trianglepic">
-<shortdescription>A right triangle with legs whose lengths are x and a. </shortdescription>
-</image>
-<p>
-  Use the triangle to calculate <m>\tan \theta</m> and <m>\sec \theta</m> in terms of <m>x</m>.
-</p>
-</li>
+            <li> <p>Use your expression for <m>\sec \theta</m> to solve for <m>x^2+4</m>. </p> </li>
 
-<li> <p>Use your expression for <m>\tan \theta</m> to solve for <m>x</m>, then differentiate to calculate <m>dx</m>. </p></li>
+            <li> <p> Substitute what you've found into <me>\int \frac{x}{(x^2+4)^2} \, dx</me>, replacing <m>x</m>, <m>dx</m>, and <m>x^2+4</m> with expressions involving <m>\theta</m>. </p></li>
 
-<li> <p>Use your expression for <m>\sec \theta</m> to solve for <m>x^2+4</m>. </p> </li>
+            <li> <p>Calculate the trigonometric integral, using the method for when the exponent of tangent is odd. </p></li>
 
-<li> <p> Substitute what you've found into <me>\int \frac{x}{(x^2+4)^2} \, dx</me>, replacing <m>x</m>, <m>dx</m>, and <m>x^2+4</m> with expressions involving <m>\theta</m>. </p></li>
-
-<li> <p>Calculate the trigonometric integral, using the method for when the exponent of tangent is odd. </p></li>
-
-<li> <p>Finally, put the answer back in terms of <m>x</m>, using the triangle shown above, and/or the expressions you already calculated. </p></li>
-</ol>
+            <li> <p>Finally, put the answer back in terms of <m>x</m>, using the triangle shown above, and/or the expressions you already calculated. </p></li>
+        </ol>
 
         </p>
       </statement>
