@@ -17,7 +17,7 @@
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project). Some examples:                                            -->
     <exercise-inline statement="yes" hint="no" answer="no" solution="no" />
-    <exercise-project statement="yes" hint="no" answer="yes" solution="no" />
+    <exercise-project statement="yes" hint="no" answer="no" solution="no" />
     <exercise-divisional statement="yes" hint="no" />
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
@@ -131,5 +131,9 @@
   </html>
 
   <!-- To use WeBWorK, you need a server.  -->
-  <webwork server="https://webwork-ptx.aimath.org"/>
+  <webwork server="https://webwork-dev.uleth.ca"
+    course="chrissy-playground" userpassword="anonymous"
+    user="anonymous"
+    task-reveal="all"
+  />
 </publication>
