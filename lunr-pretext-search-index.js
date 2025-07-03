@@ -217,22 +217,22 @@ var ptx_lunr_docs = [
   "body": "  In this activity, we will calculate      Write a sentence giving the reason why partial fraction decomposition can not be performed on the integrand above in its current form.    Perform polynomial division to rewrite the integrand.    Integrate the terms that can be integrated, and write the general form of the partial fraction decomposition of the rest, using letters like etc, or , etc. Calculate the integral of the partial fraction decomposition while still using letters like etc, or , etc.    Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.          Partial fraction decomposition can only be performed when the degree of the numerator is strictly less than the degree of the denominator.          which integrates to            "
 },
 {
-  "id": "sec-parametric",
+  "id": "sec-1-5preview",
   "level": "1",
-  "url": "sec-parametric.html",
+  "url": "sec-1-5preview.html",
   "type": "Section",
   "number": "1.3",
-  "title": "Parametric Functions: Derivatives, Area, and Arclength",
-  "body": " Parametric Functions: Derivatives, Area, and Arclength  Nothing here, yet.  "
+  "title": "1-5a Preview",
+  "body": " 1-5a Preview     Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed. The time, (measured in hours), it takes to drive 50 miles depends on the constant rate, (measured in miles per hour) at which you are driving. Since   it follows that   and thus we know that  For instance, observe that so it takes of an hour to drive miles at miles per hour, and the point lies on the graph of    Give three points which lie on the graph of separated by commas.  Which of the following statements and explanations is true about the graph of    The function is concave up because as speed goes up, travel time goes up.    The function is concave down because as speed goes up, travel time goes down.    The function is increasing because as speed goes up, travel time goes up.    The function is decreasing because as speed goes up, travel time goes down.                 What is the value of Include units on your answer.  Which of the following is the best explanation of the meaning of this value in context?    is the speed, mph.    is the distance, miles.    is the time it takes to travel miles at a speed of mph.    is how fast the travel time is changing when the car is traveling at a speed of mph.                 Recall the average rate of change of a function on an interval as stated in [cross-reference to target(s) \"def-1-3-aroc\" missing or not unique] , Determine the average rate of on the interval  Include units on your answer.          The sign of is   positive   negative   This sign makes sense because    is increasing from to mph.    is decreasing from to mph.    is concave up from to mph.    is concave down from to mph.                 Which of the following explains the meaning of the value of    is the amount of hours has changed from to mph.    is the change in speed from to mph.    is the average change in hours the trip takes when the speed changes from to mph.                "
 },
 {
-  "id": "sec-polar",
-  "level": "1",
-  "url": "sec-polar.html",
-  "type": "Section",
-  "number": "1.4",
-  "title": "Polar Functions: Derivatives, Area, and Arclength",
-  "body": " Polar Functions: Derivatives, Area, and Arclength  Nothing here, yet.  "
+  "id": "1-5a_Preview_traveltime_as_functionofspeed",
+  "level": "2",
+  "url": "sec-1-5preview.html#1-5a_Preview_traveltime_as_functionofspeed",
+  "type": "Preview Activity",
+  "number": "1.3.1",
+  "title": "",
+  "body": "   Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed. The time, (measured in hours), it takes to drive 50 miles depends on the constant rate, (measured in miles per hour) at which you are driving. Since   it follows that   and thus we know that  For instance, observe that so it takes of an hour to drive miles at miles per hour, and the point lies on the graph of    Give three points which lie on the graph of separated by commas.  Which of the following statements and explanations is true about the graph of    The function is concave up because as speed goes up, travel time goes up.    The function is concave down because as speed goes up, travel time goes down.    The function is increasing because as speed goes up, travel time goes up.    The function is decreasing because as speed goes up, travel time goes down.                 What is the value of Include units on your answer.  Which of the following is the best explanation of the meaning of this value in context?    is the speed, mph.    is the distance, miles.    is the time it takes to travel miles at a speed of mph.    is how fast the travel time is changing when the car is traveling at a speed of mph.                 Recall the average rate of change of a function on an interval as stated in [cross-reference to target(s) \"def-1-3-aroc\" missing or not unique] , Determine the average rate of on the interval  Include units on your answer.          The sign of is   positive   negative   This sign makes sense because    is increasing from to mph.    is decreasing from to mph.    is concave up from to mph.    is concave down from to mph.                 Which of the following explains the meaning of the value of    is the amount of hours has changed from to mph.    is the change in speed from to mph.    is the average change in hours the trip takes when the speed changes from to mph.               "
 },
 {
   "id": "backmatter-2",
