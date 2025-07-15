@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-1-7preview" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>1.7 Preview</title>
+
+        <exploration label="csafranski__1-7Preview_ver1">
+            <webwork source="csafranski/1.7Preview_prob1.pg"/>
+        </exploration>
+
+        <exploration label="csafranski__1-7Preview_ver2">
+            <webwork source="csafranski/1.7Preview_prob1updated.pg"/>
+        </exploration>
+  
+
+</section>
