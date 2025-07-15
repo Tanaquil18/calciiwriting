@@ -1,0 +1,17 @@
+WARNING : Using CLI version 2.23.0 but project's `requirements.txt`
+WARNING : is configured to use 2.14.0. Consider either installing
+WARNING : CLI version 2.14.0 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.23.0.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+CRITICAL: Opening and ending tag mismatch: exercise line 6 and exploration, line 142, column 19 (sec-8-1exercises.ptx, line 142)
+INFO    : ------------------------
+CRITICAL: Generating assets as failed.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

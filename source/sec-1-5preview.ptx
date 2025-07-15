@@ -4,9 +4,7 @@
     <title>1-5a Preview</title>
 
     <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5a" label="1-5a_Preview_traveltime_as_functionofspeed">
-    <webwork xml:id="webwork-PA-1-5a">
-      <!-- This exercise is very long. It runs the risk of butting up agains a server's URI length -->
-      <!-- cap. So solutions are commented out for now.                                            -->
+    <webwork xml:id="webwork-PA-1-5a">                                            -->
       <pg-code>
         Context("Point");
         $answer = List("(10,5),(50,1),(25,2)");
@@ -153,9 +151,9 @@
       <task>
         <statement>
           <p>
-            Recall the average rate of change of a function on an interval <m>[a,b]</m>, as stated in 
-              <xref ref="def-1-3-aroc">Definition</xref>, <m>AV_{[a,b]}</m>. 
-              Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.  Include units on your answer.
+            Recall the average rate of change of a function <m>f(x)</m> on an interval <m>[a,b]</m> is 
+            <me>AV_{[a,b]}=\frac{f(b)-f(a)}{b-a}</me>. 
+            Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.  Include units on your answer.
           </p>
           <p>
             <var name="$answer3" width="10"/>

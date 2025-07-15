@@ -7,8 +7,40 @@
       \newcommand{\R}{\mathbb R}
     </macros>
     <latex-image-preamble>
-      \usepackage{tikz}
-    </latex-image-preamble>
+    \usepackage{pgfplots}
+    \definecolor{blue}{HTML}{0000FF}
+    \definecolor{darkgreen}{HTML}{008000}
+    \definecolor{darkorange}{HTML}{ff8c00}
+
+    \colorlet{firstcolor}{blue}
+    \colorlet{secondcolor}{darkgreen}
+    \colorlet{thirdcolor}{darkorange}
+
+    \pgfplotsset{firstcurve/.style      = {color=firstcolor,  mark=none, line width=1pt, solid, ultra thick}}
+    \pgfplotsset{secondcurve/.style     = {color=secondcolor, mark=none, line width=1pt, solid, ultra thick}}
+    \pgfplotsset{thirdcurve/.style      = {color=thirdcolor,  mark=none, line width=1pt, solid, ultra thick}}
+
+    \pgfplotscreateplotcyclelist{acplotstyles}{%
+      firstcurve\\%
+      secondcurve\\%
+      thirdcurve\\%
+    }
+
+    \pgfplotsset{every axis/.append style={
+      axis lines=middle,
+      grid = both,
+      cycle list name=acplotstyles,
+    }}
+
+    \pgfplotsset{soliddot/.style        = {fill=darkorange,  mark=*, only marks}}
+    \pgfplotsset{hollowdot/.style       = {mark=*, only marks}}
+
+    \pgfplotsset{guideline/.style       = {color=gray, mark=none, line width=1pt, -}}
+    \tikzset{guideline/.style           = {color=gray, mark=none, line width=1pt, -}}
+  </latex-image-preamble>
+
+  <initialism>AC</initialism>
+
     <!-- <rename element="exploration">Activity</rename> -->
     <rename element="exploration" xml:lang="en-US">Preview Activity</rename>
   </docinfo>
@@ -64,6 +96,8 @@
       <xi:include  href="./sec-partial-fractions.ptx" />
 
       <xi:include  href="./sec-1-5preview.ptx" />
+      
+      <xi:include  href="./sec-8-1exercises.ptx" />
 
       <!-- <section xml:id="sec-parametric">
         <title>Parametric Functions: Derivatives, Area, and Arclength</title>

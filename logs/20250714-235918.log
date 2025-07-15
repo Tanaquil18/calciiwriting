@@ -1,0 +1,110 @@
+WARNING : Using CLI version 2.23.0 but project's `requirements.txt`
+WARNING : is configured to use 2.14.0. Consider either installing
+WARNING : CLI version 2.14.0 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.23.0.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.23', 'publisher': '/workspaces/calciiwriting/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/calciiwriting/source
+INFO    : verifying and expanding input directory: /workspaces/calciiwriting/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calciiwriting/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calciiwriting/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calciiwriting/assets
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/extract-pg.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/extract-pg.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/pretext-ww-problem-sets.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/pretext-ww-problem-sets.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/support/pretext-pg-macros.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/support/pretext-pg-macros.xsl
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/support/pretext-pg-macros.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/support/pretext-pg-macros.xsl
+INFO    : validating, cleaning server URL: https://webwork-dev.uleth.ca
+INFO    : building representations of PTX-authored WeBWorK problem
+INFO    : sending webwork-PA-1-5a to server to save in /workspaces/calciiwriting/generated-assets/webwork/webwork-representations.xml: origin is 'ptx'
+INFO    : building representations of PTX-authored WeBWorK problem
+INFO    : sending webwork-quadapprox-cos to server to save in /workspaces/calciiwriting/generated-assets/webwork/webwork-representations.xml: origin is 'ptx'
+INFO    : building representations of PTX-authored WeBWorK problem
+INFO    : sending webwork-quadapprox-ln1plusx to server to save in /workspaces/calciiwriting/generated-assets/webwork/webwork-representations.xml: origin is 'ptx'
+INFO    : building representations of PTX-authored WeBWorK problem
+INFO    : sending webwork-cubicapprox-sin to server to save in /workspaces/calciiwriting/generated-assets/webwork/webwork-representations.xml: origin is 'ptx'
+INFO    : building representations of server-based WeBWorK problem
+INFO    : sending webwork-5 to server to save in /workspaces/calciiwriting/generated-assets/webwork/webwork-representations.xml: origin is 'server'
+INFO    : saving image file webwork-5-image-1.png  in /workspaces/calciiwriting/generated-assets/webwork/images
+INFO    : building representations of PTX-authored WeBWorK problem
+INFO    : sending webwork-PA-8a-2 to server to save in /workspaces/calciiwriting/generated-assets/webwork/webwork-representations.xml: origin is 'ptx'
+INFO    : Removing temporary directory /tmp/ptx-3eb4iwo6
+INFO    : Removing temporary directory /tmp/ptx-zl6lcbfq
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/calciiwriting/output/web.
+INFO    : discovering source file's directory name: /workspaces/calciiwriting/source
+INFO    : verifying and expanding input directory: /workspaces/calciiwriting/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calciiwriting/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calciiwriting/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calciiwriting/assets
+INFO    : discovering source file's directory name: /workspaces/calciiwriting/source
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.8.5
+INFO    : Downloading Runestone Services, version 7.8.5
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-salem
+INFO    : converting /workspaces/calciiwriting/source/main.ptx to HTML in /tmp/ptx-szw1d6_h
+INFO    : XSL conversion of /workspaces/calciiwriting/source/main.ptx by /home/codespace/.ptx/2.23.0/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+WARNING : * PTX:DEPRECATE: (2025-05-09) the webwork/@coursepassword and @userpassword publication entries have been deprecated. Use @password instead.
+INFO    : * --------------
+INFO    : successful application of /home/codespace/.ptx/2.23.0/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-szw1d6_h
+INFO    : Removing temporary directory /tmp/ptx-6a3egl4n
+INFO    : 
+Success! Run `pretext view web` to see the results.
+
+INFO    : 
