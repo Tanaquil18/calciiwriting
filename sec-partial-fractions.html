@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>The Method of Partial Fractions</title>
+<title>AC The Method of Partial Fractions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.8.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -183,6 +183,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-5preview.html" class="internal"><span class="codenumber">1.3</span> <span class="title">1-5a Preview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-8-1exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">8.1 Exercises and 8.2 Preview</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -193,53 +194,53 @@ eBookConfig.enable_chatcodes =  false;
 <article class="objectives goal-like" id="sec-partial-fractions-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc" id="sec-partial-fractions-2-1">
 <li id="sec-partial-fractions-2-1-1">
-<div class="para" id="sec-partial-fractions-2-1-1-1">How can we integrate rational functions when substitution does not work?<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-partial-fractions-2-1-1-1">How can we integrate rational functions when substitution does not work?<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-partial-fractions-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-partial-fractions-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="sec-partial-fractions-2-1-2">
-<div class="para" id="sec-partial-fractions-2-1-2-1">How do we break a rational function up into the sum of simpler rational functions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-partial-fractions-2-1-2-1">How do we break a rational function up into the sum of simpler rational functions?<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-partial-fractions-2-1-2" title="Copy heading and permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-partial-fractions-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="sec-partial-fractions-2-1-3">
-<div class="para" id="sec-partial-fractions-2-1-3-1">What condition must be met in order to rewrite a rational function in this way? <div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-partial-fractions-2-1-3-1">What condition must be met in order to rewrite a rational function in this way? <div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Objective"><a href="#sec-partial-fractions-2-1-3" title="Copy heading and permalink for Objective">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sec-partial-fractions-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Objectives 1.2"><a href="#sec-partial-fractions-2" title="Copy heading and permalink for Objectives 1.2">🔗</a></div></article><section class="introduction" id="sec-partial-fractions-3"><div class="para" id="sec-partial-fractions-3-1">The need to integrate rational functions arises in differential equations and in other settings.  If we are lucky, we can use substitution or integration by parts, but oftentimes neither of those methods can be used.  In this section, we learn how to use algebra together with our past integration techniques to integrate rational functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Objectives 1.2"><a href="#sec-partial-fractions-2" title="Copy heading and permalink for Objectives 1.2" aria-label="Copy heading and permalink for Objectives 1.2">🔗</a></div></article><section class="introduction" id="sec-partial-fractions-3"><div class="para" id="sec-partial-fractions-3-1">The need to integrate rational functions arises in differential equations and in other settings.  If we are lucky, we can use substitution or integration by parts, but oftentimes neither of those methods can be used.  In this section, we learn how to use algebra together with our past integration techniques to integrate rational functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exploration project-like" id="PA-5-5a-1"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="PA-5-5a-1-1">For each of the indefinite integrals below, decide whether the integral can be evaluated: immediately because it’s a basic integral; using <span class="process-math">\(u\)</span>-substitution; using integration by parts; using a combination of multiple techniques; or if none of those will work.<div class="autopermalink" data-description="Paragraph"><a href="#PA-5-5a-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PA-5-5a-1-1">For each of the indefinite integrals below, decide whether the integral can be evaluated: immediately because it’s a basic integral; using <span class="process-math">\(u\)</span>-substitution; using integration by parts; using a combination of multiple techniques; or if none of those will work.<div class="autopermalink" data-description="Paragraph"><a href="#PA-5-5a-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="PA-5-5a-1-2">
 <ol class="lower-alpha ol-marker-3" id="PA-5-5a-1-2-1">
 <li id="PA-5-5a-1-2-1-1">
 <div class="para" id="p-derived-PA-5-5a-1-2-1-1"><span class="process-math">\(\displaystyle \int \frac{1}{1+x^2}dx\)</span></div>
-<div class="autopermalink" data-description="Item a"><a href="#PA-5-5a-1-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#PA-5-5a-1-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="PA-5-5a-1-2-1-2">
 <div class="para" id="p-derived-PA-5-5a-1-2-1-2"><span class="process-math">\(\displaystyle \int \frac{x}{x^2+1}dx\)</span></div>
-<div class="autopermalink" data-description="Item b"><a href="#PA-5-5a-1-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#PA-5-5a-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="PA-5-5a-1-2-1-3">
 <div class="para" id="p-derived-PA-5-5a-1-2-1-3"><span class="process-math">\(\displaystyle \int \frac{2x+3}{x^2+1}dx\)</span></div>
-<div class="autopermalink" data-description="Item c"><a href="#PA-5-5a-1-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#PA-5-5a-1-2-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="PA-5-5a-1-2-1-4">
 <div class="para" id="p-derived-PA-5-5a-1-2-1-4"><span class="process-math">\(\displaystyle \int \frac{1}{x^2-1}dx\)</span></div>
-<div class="autopermalink" data-description="Item d"><a href="#PA-5-5a-1-2-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#PA-5-5a-1-2-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#PA-5-5a-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#PA-5-5a-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Preview Activity 1.2.1"><a href="#PA-5-5a-1" title="Copy heading and permalink for Preview Activity 1.2.1">🔗</a></div></article></section><section class="subsection" id="subsec-pf-building-blocks"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Preview Activity 1.2.1"><a href="#PA-5-5a-1" title="Copy heading and permalink for Preview Activity 1.2.1" aria-label="Copy heading and permalink for Preview Activity 1.2.1">🔗</a></div></article></section><section class="subsection" id="subsec-pf-building-blocks"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">The Building Blocks of the Method</span>
 </h3>
-<div class="para" id="subsec-pf-building-blocks-2">We are interested in integrating functions which are polynomials divided by polynomials. There are some functions of this form we already know how to do using previous methods. Each of these integrals comes up frequently enough that we collect them here for reference.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-pf-building-blocks-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-pf-building-blocks-2">We are interested in integrating functions which are polynomials divided by polynomials. There are some functions of this form we already know how to do using previous methods. Each of these integrals comes up frequently enough that we collect them here for reference.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-pf-building-blocks-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="assemblage-partial-fracs-building-blocks"><h4 class="heading"><span class="title">Integrals commonly used in partial fractions problems.</span></h4>
 <div class="para logical" id="assemblage-partial-fracs-building-blocks-2">
@@ -254,9 +255,9 @@ eBookConfig.enable_chatcodes =  false;
 \int \frac{A}{x+b} \, dx = A\ln|x+b|+C
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="assemblage-partial-fracs-building-blocks-2-4-2">
 <div class="para logical" id="assemblage-partial-fracs-building-blocks-2-4-2-1">
@@ -266,9 +267,9 @@ eBookConfig.enable_chatcodes =  false;
 \int \frac{A}{(x+b)^n} \, dx = \frac{A}{-n+1}(x+b)^{-n+1}+C
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="assemblage-partial-fracs-building-blocks-2-4-3">
 <div class="para logical" id="assemblage-partial-fracs-building-blocks-2-4-3-1">
@@ -278,9 +279,9 @@ eBookConfig.enable_chatcodes =  false;
 \int \frac{Ax}{x^2+b} \, dx = \frac{A}{2}\ln|x^2+b|+C
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="assemblage-partial-fracs-building-blocks-2-4-4">
 <div class="para logical" id="assemblage-partial-fracs-building-blocks-2-4-4-1">
@@ -290,19 +291,19 @@ eBookConfig.enable_chatcodes =  false;
 \int \frac{A}{x^2+b}dx = \frac{A}{\sqrt{b}}\arctan\left(\frac{x}{\sqrt{b}}\right)+C
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-4" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage-partial-fracs-building-blocks-2-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-partial-fracs-building-blocks-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Integrals commonly used in partial fractions problems"><a href="#assemblage-partial-fracs-building-blocks" title="Copy heading and permalink for Assemblage: Integrals commonly used in partial fractions problems">🔗</a></div></article><article class="remark remark-like" id="subsec-pf-building-blocks-4"><h4 class="heading">
+<div class="autopermalink" data-description="Assemblage: Integrals commonly used in partial fractions problems"><a href="#assemblage-partial-fracs-building-blocks" title="Copy heading and permalink for Assemblage: Integrals commonly used in partial fractions problems" aria-label="Copy heading and permalink for Assemblage: Integrals commonly used in partial fractions problems">🔗</a></div></article><article class="remark remark-like" id="subsec-pf-building-blocks-4"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-pf-building-blocks-4-1">The method of partial fractions we learn in this section could be summarized as the following: reduce all functions of the form “polynomial divided by polynomial” to sums of functions of the forms above, which we already know how to integrate.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-pf-building-blocks-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-pf-building-blocks-4-1">The method of partial fractions we learn in this section could be summarized as the following: reduce all functions of the form “polynomial divided by polynomial” to sums of functions of the forms above, which we already know how to integrate.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-pf-building-blocks-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 1.2.1"><a href="#subsec-pf-building-blocks-4" title="Copy heading and permalink for Remark 1.2.1">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.1: The Building Blocks of the Method"><a href="#subsec-pf-building-blocks" title="Copy heading and permalink for Subsection 1.2.1: The Building Blocks of the Method">🔗</a></div></section><section class="subsection" id="subsec-start-method-part-frac"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Remark 1.2.1"><a href="#subsec-pf-building-blocks-4" title="Copy heading and permalink for Remark 1.2.1" aria-label="Copy heading and permalink for Remark 1.2.1">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.1: The Building Blocks of the Method"><a href="#subsec-pf-building-blocks" title="Copy heading and permalink for Subsection 1.2.1: The Building Blocks of the Method" aria-label="Copy heading and permalink for Subsection 1.2.1: The Building Blocks of the Method">🔗</a></div></section><section class="subsection" id="subsec-start-method-part-frac"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Starting the Method of Partial Fractions</span>
 </h3>
 <div class="para logical" id="subsec-start-method-part-frac-2">
@@ -320,7 +321,7 @@ eBookConfig.enable_chatcodes =  false;
 \amp = \frac{5}{2}\ln|x^2+1|+C \text{.}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-start-method-part-frac-3">
 <div class="para">However, what if there isn’t a function-derivative pair in the integrand? Consider</div>
@@ -330,7 +331,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">Substitution does not help with integrating this function, since if we let <span class="process-math">\(u=x^2-x-2\)</span> then <span class="process-math">\(du=(2x-1)\, dx\text{,}\)</span> which is not a constant multiple of <span class="process-math">\(5x \, dx\text{.}\)</span> We need to use a completely different strategy to solve this integral.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-start-method-part-frac-4">
 <div class="para">If we somehow knew that</div>
@@ -351,7 +352,7 @@ eBookConfig.enable_chatcodes =  false;
 \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3} \ln|x-2| + \frac{5}{3}\ln|x+1| + C\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-start-method-part-frac-5">
 <div class="para">Setting aside the question of where the right-hand-side came from for a brief moment, we can verify that <a href="sec-partial-fractions.html#eqn-part-frac-1" class="xref" data-knowl="./knowl/xref/eqn-part-frac-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.1">(1.2.1)</a> is indeed true by recombining the right-hand-side of the equation using a common denominator.</div>
@@ -363,7 +364,7 @@ eBookConfig.enable_chatcodes =  false;
 \amp =\frac{5x}{x^2-x-2}
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-start-method-part-frac-6">
 <div class="para">However, we do want to answer the big question: how did we come up with</div>
@@ -373,7 +374,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 <div class="para">in the first place?  And how can we do the same thing to other integrals (reduce a function we can’t integrate with the method of substitution to a sum of functions we can integrate more easily?)</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-start-method-part-frac-7">
 <div class="para">One clue is that the denominator of the rational function in the integral factors into two linear terms,</div>
@@ -383,7 +384,7 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 \end{equation*}
 </div>
 <div class="para">and those are exactly the denominators of the simpler rational functions we used.  We will proceed by assuming there is some expression that is equal to the rational function and then solve for what the exact expression is.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-start-method-part-frac-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="ex-pf-linearterms"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Two linear terms.</span>
@@ -395,7 +396,7 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3} \ln|x-2| + \frac{5}{3}\ln|x+1| + C\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-pf-linearterms-3">
 <div class="para">
@@ -411,7 +412,7 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 \int \frac{5x}{x^2-x-2} \, dx = A \ln|x-2| + B\ln|x+1| + C\text{.}\tag{1.2.3}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-pf-linearterms-4">
 <div class="para">We now start the process of solving for the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span>  Multiplying both sides of <a href="sec-partial-fractions.html#eqn-part-fracs-ex-lin1" class="xref" data-knowl="./knowl/xref/eqn-part-fracs-ex-lin1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.2">(1.2.2)</a> by the integrand’s denominator <span class="process-math">\((x-2)(x+1)\text{,}\)</span> we find that</div>
@@ -426,11 +427,11 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 5x = A(x+1) + B(x-2)\text{.}\tag{1.2.4}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-pf-linearterms-5">From here, we show one possible method of solving for the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-pf-linearterms-5">From here, we show one possible method of solving for the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ex-pf-linearterms-6">Because <a href="sec-partial-fractions.html#eqn-part-fracs-ex-lin2" class="xref" data-knowl="./knowl/xref/eqn-part-fracs-ex-lin2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.4">(1.2.4)</a> is true for <em class="emphasis">every value</em> of <span class="process-math">\(x\text{,}\)</span> we can use inspired choices of <em class="emphasis">specific</em> <span class="process-math">\(x\)</span>-values to help us find <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-pf-linearterms-6">Because <a href="sec-partial-fractions.html#eqn-part-fracs-ex-lin2" class="xref" data-knowl="./knowl/xref/eqn-part-fracs-ex-lin2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.4">(1.2.4)</a> is true for <em class="emphasis">every value</em> of <span class="process-math">\(x\text{,}\)</span> we can use inspired choices of <em class="emphasis">specific</em> <span class="process-math">\(x\)</span>-values to help us find <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-pf-linearterms-7">
 <div class="para">Taking <span class="process-math">\(x = -1\text{,}\)</span> we have</div>
@@ -441,7 +442,7 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 </div>
 <div class="para">so <span class="process-math">\(B = \frac{5}{3}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-pf-linearterms-8">
 <div class="para">Now setting <span class="process-math">\(x = 2\text{,}\)</span> it follows that</div>
@@ -452,7 +453,7 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 </div>
 <div class="para">so <span class="process-math">\(A = \frac{10}{3}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ex-pf-linearterms-9">
 <div class="para">Thus, substituting the values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> into <a href="sec-partial-fractions.html#eqn-part-fracs-ex-lin1a" class="xref" data-knowl="./knowl/xref/eqn-part-fracs-ex-lin1a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.3">(1.2.3)</a> we get</div>
@@ -461,12 +462,12 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3}\ln|x-2| + \frac{5}{3}\ln|x+1|+C\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-pf-linearterms-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 1.2.2: Two linear terms"><a href="#ex-pf-linearterms" title="Copy heading and permalink for Example 1.2.2: Two linear terms">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.2: Starting the Method of Partial Fractions"><a href="#subsec-start-method-part-frac" title="Copy heading and permalink for Subsection 1.2.2: Starting the Method of Partial Fractions">🔗</a></div></section><section class="subsection" id="subsec-when-method-used"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 1.2.2: Two linear terms"><a href="#ex-pf-linearterms" title="Copy heading and permalink for Example 1.2.2: Two linear terms" aria-label="Copy heading and permalink for Example 1.2.2: Two linear terms">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.2: Starting the Method of Partial Fractions"><a href="#subsec-start-method-part-frac" title="Copy heading and permalink for Subsection 1.2.2: Starting the Method of Partial Fractions" aria-label="Copy heading and permalink for Subsection 1.2.2: Starting the Method of Partial Fractions">🔗</a></div></section><section class="subsection" id="subsec-when-method-used"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">How the denominator factors matters</span>
 </h3>
-<div class="para" id="subsec-when-method-used-2">The main questions to explore now are: when can we integrate a rational function by rewriting into terms like those above, and what does “terms like those” mean exactly?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-2">The main questions to explore now are: when can we integrate a rational function by rewriting into terms like those above, and what does “terms like those” mean exactly?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="subsec-when-method-used-3"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
@@ -478,63 +479,63 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 <div class="para">Calculate the integral <span class="process-math">\(\displaystyle \int  \frac{2x^2+3x+4}{x^3+x^2-2x}\, dx\)</span> using the steps below.</div>
 <ol class="lower-roman ol-marker-4" id="subsec-when-method-used-3-1-1-1-1-1-2">
 <li id="subsec-when-method-used-3-1-1-1-1-1-2-1">
-<div class="para" id="subsec-when-method-used-3-1-1-1-1-1-2-1-1">Factor the denominator, and rewrite the integrand as a sum where each addend is a constant divided by a factor of the denominator. Use letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-1-1-2-1-1">Factor the denominator, and rewrite the integrand as a sum where each addend is a constant divided by a factor of the denominator. Use letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a.i"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-1" title="Copy heading and permalink for Item a.i">🔗</a></div>
+<div class="autopermalink" data-description="Item a.i"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-1" title="Copy heading and permalink for Item a.i" aria-label="Copy heading and permalink for Item a.i">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-3-1-1-1-1-1-2-2">
-<div class="para" id="subsec-when-method-used-3-1-1-1-1-1-2-2-1">Calculate the antiderivative of the sum while still using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-1-1-2-2-1">Calculate the antiderivative of the sum while still using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a.ii"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-2" title="Copy heading and permalink for Item a.ii">🔗</a></div>
+<div class="autopermalink" data-description="Item a.ii"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-2" title="Copy heading and permalink for Item a.ii" aria-label="Copy heading and permalink for Item a.ii">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-3-1-1-1-1-1-2-3">
-<div class="para" id="subsec-when-method-used-3-1-1-1-1-1-2-3-1">Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-1-1-2-3-1">Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a.iii"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-3" title="Copy heading and permalink for Item a.iii">🔗</a></div>
+<div class="autopermalink" data-description="Item a.iii"><a href="#subsec-when-method-used-3-1-1-1-1-1-2-3" title="Copy heading and permalink for Item a.iii" aria-label="Copy heading and permalink for Item a.iii">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#subsec-when-method-used-3-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#subsec-when-method-used-3-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-3-1-1-1-2">
 <div class="para logical" id="subsec-when-method-used-3-1-1-1-2-1">
 <div class="para">Consider the integral <span class="process-math">\(\displaystyle \int \frac{x^2+x+4}{(x^2+1)(x-1)}\, dx\text{.}\)</span> The denominator is already factored, so we see what happens if we proceed like we did in part a.</div>
 <ol class="lower-roman ol-marker-4" id="subsec-when-method-used-3-1-1-1-2-1-2">
 <li id="subsec-when-method-used-3-1-1-1-2-1-2-1">
-<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-1-1">Calculate <span class="process-math">\(\int \frac{A}{x-1}dx+\int\frac{B}{x^2+1}dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-1-1">Calculate <span class="process-math">\(\int \frac{A}{x-1}dx+\int\frac{B}{x^2+1}dx\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.i"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-1" title="Copy heading and permalink for Item b.i">🔗</a></div>
+<div class="autopermalink" data-description="Item b.i"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-1" title="Copy heading and permalink for Item b.i" aria-label="Copy heading and permalink for Item b.i">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-3-1-1-1-2-1-2-2">
-<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-2-1">Suppose that <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> and multiply both sides of the equation by <span class="process-math">\((x^2+1)(x-1)\)</span> to obtain an equality with no fractions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-2-1">Suppose that <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> and multiply both sides of the equation by <span class="process-math">\((x^2+1)(x-1)\)</span> to obtain an equality with no fractions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.ii"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-2" title="Copy heading and permalink for Item b.ii">🔗</a></div>
+<div class="autopermalink" data-description="Item b.ii"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-2" title="Copy heading and permalink for Item b.ii" aria-label="Copy heading and permalink for Item b.ii">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-3-1-1-1-2-1-2-3">
-<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-3-1">Substitute <span class="process-math">\(x=1\)</span> to solve for the value of <span class="process-math">\(A\text{,}\)</span> and then substitute <span class="process-math">\(x=0\)</span> to solve for the value of <span class="process-math">\(B\text{.}\)</span>  Does this result in an actual equality of the two sides? What equation involving <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> do you get if you substituted <span class="process-math">\(x=-1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-3-1">Substitute <span class="process-math">\(x=1\)</span> to solve for the value of <span class="process-math">\(A\text{,}\)</span> and then substitute <span class="process-math">\(x=0\)</span> to solve for the value of <span class="process-math">\(B\text{.}\)</span>  Does this result in an actual equality of the two sides? What equation involving <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> do you get if you substituted <span class="process-math">\(x=-1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.iii"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-3" title="Copy heading and permalink for Item b.iii">🔗</a></div>
+<div class="autopermalink" data-description="Item b.iii"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-3" title="Copy heading and permalink for Item b.iii" aria-label="Copy heading and permalink for Item b.iii">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-3-1-1-1-2-1-2-4">
-<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-4-1">Why does this show that <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} \neq \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> for any values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{?}\)</span>  How might we change the partial fraction decomposition form to fix this?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-3-1-1-1-2-1-2-4-1">Why does this show that <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} \neq \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> for any values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{?}\)</span>  How might we change the partial fraction decomposition form to fix this?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b.iv"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-4" title="Copy heading and permalink for Item b.iv">🔗</a></div>
+<div class="autopermalink" data-description="Item b.iv"><a href="#subsec-when-method-used-3-1-1-1-2-1-2-4" title="Copy heading and permalink for Item b.iv" aria-label="Copy heading and permalink for Item b.iv">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#subsec-when-method-used-3-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#subsec-when-method-used-3-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.2.2"><a href="#subsec-when-method-used-3" title="Copy heading and permalink for Activity 1.2.2">🔗</a></div></article><article class="remark remark-like" id="subsec-when-method-used-4"><h4 class="heading">
+<div class="autopermalink" data-description="Activity 1.2.2"><a href="#subsec-when-method-used-3" title="Copy heading and permalink for Activity 1.2.2" aria-label="Copy heading and permalink for Activity 1.2.2">🔗</a></div></article><article class="remark remark-like" id="subsec-when-method-used-4"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-when-method-used-4-1">The form of the partial fraction decomposition depends on how the denominator factors.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-4-1">The form of the partial fraction decomposition depends on how the denominator factors.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 1.2.3"><a href="#subsec-when-method-used-4" title="Copy heading and permalink for Remark 1.2.3">🔗</a></div></article><div class="para" id="subsec-when-method-used-5">When we had a numerator of <span class="process-math">\(x^2+x+4\text{,}\)</span> there are <span class="process-math">\(3\)</span> numbers: the coefficient of the <span class="process-math">\(x^2\)</span> term, the coefficient of the <span class="process-math">\(x\)</span> term, and the constant term.  Using <span class="process-math">\(\frac{A}{x-1}+\frac{B}{x^2+1}\)</span> gave us <span class="process-math">\(2\)</span> numbers to solve for, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> and in this case, it was impossible to find values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to make the equality hold.  However, we can modify the partial fraction form to introduce a third number.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Remark 1.2.3"><a href="#subsec-when-method-used-4" title="Copy heading and permalink for Remark 1.2.3" aria-label="Copy heading and permalink for Remark 1.2.3">🔗</a></div></article><div class="para" id="subsec-when-method-used-5">When we had a numerator of <span class="process-math">\(x^2+x+4\text{,}\)</span> there are <span class="process-math">\(3\)</span> numbers: the coefficient of the <span class="process-math">\(x^2\)</span> term, the coefficient of the <span class="process-math">\(x\)</span> term, and the constant term.  Using <span class="process-math">\(\frac{A}{x-1}+\frac{B}{x^2+1}\)</span> gave us <span class="process-math">\(2\)</span> numbers to solve for, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> and in this case, it was impossible to find values of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to make the equality hold.  However, we can modify the partial fraction form to introduce a third number.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="subsec-when-method-used-6"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">One quadratic and one linear term.</span>
@@ -546,7 +547,7 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 \int \frac{x^2+x+4}{(x^2+1)(x-1)} \, dx\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-3">
 <div class="para">
@@ -564,9 +565,9 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 \amp = A\ln|x-1| + \frac{B}{2}\ln|x^2+1| + D\arctan(x) +C \tag{1.2.7}
 \end{align}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-when-method-used-6-4">We have obtained a general antiderivative, as long as we can find such numbers <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-6-4">We have obtained a general antiderivative, as long as we can find such numbers <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\)</span> and <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-5">
 <div class="para">Now that we’ve done the calculus part, we turn our attention to the algebra. Multiplying both sides of the integrand by <span class="process-math">\((x-1)(x^2+1)\text{,}\)</span> we find that</div>
@@ -581,28 +582,28 @@ x^2-x-2 = (x-2)(x+1)\text{,}
 x^2+x+4 = A(x^2+1) + (Bx+D)(x-1)\text{.}\tag{1.2.8}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-6">
 <div class="para">We have several ways of solving for values of <span class="process-math">\(A, B\)</span> and <span class="process-math">\(D\)</span> which make <a href="sec-partial-fractions.html#eqn-pf-ex2-coeffs1" class="xref" data-knowl="./knowl/xref/eqn-pf-ex2-coeffs1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.8">(1.2.8)</a> true for all values of <span class="process-math">\(x\text{.}\)</span> We could...</div>
 <ul class="disc" id="subsec-when-method-used-6-6-5">
 <li id="subsec-when-method-used-6-6-5-1">
-<div class="para" id="subsec-when-method-used-6-6-5-1-1">... use the black box method.  Use a solver like Wolfram Alpha or another computational tool.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-6-6-5-1-1">... use the black box method.  Use a solver like Wolfram Alpha or another computational tool.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-when-method-used-6-6-5-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-when-method-used-6-6-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-6-6-5-2">
-<div class="para" id="subsec-when-method-used-6-6-5-2-1">... set <span class="process-math">\(x\)</span> equal to different numerical values, as we did in <a href="sec-partial-fractions.html#ex-pf-linearterms" class="xref" data-knowl="./knowl/xref/ex-pf-linearterms.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.2.2: Two linear terms">Example 1.2.2</a>. We could set <span class="process-math">\(x=1\text{,}\)</span> then <span class="process-math">\(x=0\text{,}\)</span> and then <span class="process-math">\(x=-1\text{,}\)</span> or choose any three values of <span class="process-math">\(x\)</span> that we find easiest to work with.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-6-6-5-2-1">... set <span class="process-math">\(x\)</span> equal to different numerical values, as we did in <a href="sec-partial-fractions.html#ex-pf-linearterms" class="xref" data-knowl="./knowl/xref/ex-pf-linearterms.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.2.2: Two linear terms">Example 1.2.2</a>. We could set <span class="process-math">\(x=1\text{,}\)</span> then <span class="process-math">\(x=0\text{,}\)</span> and then <span class="process-math">\(x=-1\text{,}\)</span> or choose any three values of <span class="process-math">\(x\)</span> that we find easiest to work with.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-when-method-used-6-6-5-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-when-method-used-6-6-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-when-method-used-6-6-5-3">
-<div class="para" id="subsec-when-method-used-6-6-5-3-1">... compare coefficients of both sides of the equation and get a system of equations to solve.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-6-6-5-3-1">... compare coefficients of both sides of the equation and get a system of equations to solve.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-when-method-used-6-6-5-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-when-method-used-6-6-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-7">
 <div class="para">We choose to demonstrate the last method here.  Multiplying out the right-hand side of <a href="sec-partial-fractions.html#eqn-pf-ex2-coeffs1" class="xref" data-knowl="./knowl/xref/eqn-pf-ex2-coeffs1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.8">(1.2.8)</a> and grouping like terms together gives</div>
@@ -622,7 +623,7 @@ x \text{ terms} \amp : 1=-B+D \amp \text{ because } x = (-B+D)x \\
 \end{align*}
 </div>
 <div class="para">We now have a system of linear equations to solve, with three equations and three unknowns, which we can solve using any of the usual tools at our disposal.  The fastest way of solving for <span class="process-math">\(A, B\)</span> and <span class="process-math">\(D\)</span> by hand is combining this linear system with the method of choosing strategic values of <span class="process-math">\(x\text{.}\)</span> </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-8">
 <div class="para">Setting <span class="process-math">\(x=1\)</span> in <a href="sec-partial-fractions.html#eqn-pf-ex2-coeffs1" class="xref" data-knowl="./knowl/xref/eqn-pf-ex2-coeffs1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.8">(1.2.8)</a> yields</div>
@@ -639,7 +640,7 @@ A=3\text{.}
 \end{equation*}
 </div>
 <div class="para">Now the system of equations with three unknowns is reduced to having only two unknowns.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-9">
 <div class="para">Also, since <span class="process-math">\(A=3\text{,}\)</span> and comparing coefficients of the <span class="process-math">\(x^2\)</span> terms gave us that <span class="process-math">\(A+B=1\text{,}\)</span> this means that <span class="process-math">\(3+B=1\text{,}\)</span> so</div>
@@ -654,7 +655,7 @@ B=-2\text{.}
 D=-1\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-6-10">
 <div class="para">We had already integrated in <a href="sec-partial-fractions.html#subsec-when-method-used-6-3-9" class="xref" data-knowl="./knowl/xref/eqn-pfexample-antiderivs.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.7">(1.2.7)</a>, and so substituting the values we’ve just found for <span class="process-math">\(A, B\)</span> and <span class="process-math">\(D\)</span> gives us our final answer of</div>
@@ -664,9 +665,9 @@ D=-1\text{.}
 \amp = 3\ln|x-1|-\ln|x^2+1|-\arctan(x) +C.
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-6-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 1.2.4: One quadratic and one linear term"><a href="#subsec-when-method-used-6" title="Copy heading and permalink for Example 1.2.4: One quadratic and one linear term">🔗</a></div></article><div class="para logical" id="subsec-when-method-used-7">
+<div class="autopermalink" data-description="Example 1.2.4: One quadratic and one linear term"><a href="#subsec-when-method-used-6" title="Copy heading and permalink for Example 1.2.4: One quadratic and one linear term" aria-label="Copy heading and permalink for Example 1.2.4: One quadratic and one linear term">🔗</a></div></article><div class="para logical" id="subsec-when-method-used-7">
 <div class="para">It’s worth noting that if we’ve had a little bit of matrix theory or linear algebra, we can use matrices to solve a system of linear equations, and that would give us</div>
 <div class="displaymath process-math" id="subsec-when-method-used-7-1">
 \begin{align*}
@@ -677,13 +678,13 @@ D=-1\text{.}
 </div>
 <div class="para">which becomes <span class="process-math">\(\begin{bmatrix} 1 \amp 1 \amp 0 \amp 1 \\ 0 \amp -1 \amp 1 \amp 1 \\1 \amp 0 \amp -1 \amp 4 \end{bmatrix}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-when-method-used-8">Solving this using Gaussian elimination results in <span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 0 \amp 3 \\ 0 \amp 1 \amp 0 \amp -2 \\0 \amp 0 \amp 1 \amp -1 \end{bmatrix}\text{,}\)</span> which does give us the same values of <span class="process-math">\(A=3\text{,}\)</span> <span class="process-math">\(B=-2\text{,}\)</span> and <span class="process-math">\(D=-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-8">Solving this using Gaussian elimination results in <span class="process-math">\(\begin{bmatrix} 1 \amp 0 \amp 0 \amp 3 \\ 0 \amp 1 \amp 0 \amp -2 \\0 \amp 0 \amp 1 \amp -1 \end{bmatrix}\text{,}\)</span> which does give us the same values of <span class="process-math">\(A=3\text{,}\)</span> <span class="process-math">\(B=-2\text{,}\)</span> and <span class="process-math">\(D=-1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-when-method-used-9">However, this matrix form tells us something more: that this system of equations will have a unique solution <em class="alert">regardless of the starting coefficients of the quadratic in the numerator of the integrand.</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-9">However, this matrix form tells us something more: that this system of equations will have a unique solution <em class="alert">regardless of the starting coefficients of the quadratic in the numerator of the integrand.</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-when-method-used-10">Note that we don’t have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: <em class="alert">as long as the numerator of the integrand is less than or equal to degree <span class="process-math">\(2\text{,}\)</span> and the denominator factors into a linear and an irreducible quadratic, we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor and a linear term over the quadratic factor.</em><details class="ptx-footnote" aria-live="polite" id="subsec-when-method-used-10-2"><summary class="ptx-footnote__number" title="Footnote 1.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-when-method-used-10-2">See later for what to do if the degree is greater than or equal to <span class="process-math">\(3\)</span> with this same factored form of the denominator.</div></details><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-10">Note that we don’t have to use matrices at all - we have other tools for solving a system of equations. However, this example generalizes and bears repeating: <em class="alert">as long as the numerator of the integrand is less than or equal to degree <span class="process-math">\(2\text{,}\)</span> and the denominator factors into a linear and an irreducible quadratic, we can find a partial fraction decomposition and calculate the integral by setting it up in this way, with a constant over the linear factor and a linear term over the quadratic factor.</em><details class="ptx-footnote" aria-live="polite" id="subsec-when-method-used-10-2"><summary class="ptx-footnote__number" title="Footnote 1.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-when-method-used-10-2">See later for what to do if the degree is greater than or equal to <span class="process-math">\(3\)</span> with this same factored form of the denominator.</div></details><div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-when-method-used-11">
 <div class="para">Furthermore, we can see the problem that occurred when we had the wrong form of the partial fraction decomposition.  When we attempted to set <span class="process-math">\(\frac{x^2+x+4}{(x^2+1)(x-1)} = \frac{A}{x-1}+\frac{B}{x^2+1}\)</span> and cleared the denominators, we got</div>
@@ -701,17 +702,17 @@ x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.
 \end{align*}
 </div>
 <div class="para">which becomes <span class="process-math">\(\begin{bmatrix} 1 \amp 0  \amp 1 \\ 0 \amp 1  \amp 1 \\1 \amp -1  \amp 4 \end{bmatrix}\text{,}\)</span> which row reduces to <span class="process-math">\(\begin{bmatrix} 1 \amp 0  \amp 1 \\ 0 \amp 1  \amp 1 \\0 \amp 0  \amp 1 \end{bmatrix}\text{,}\)</span> an inconsistent system (no possible solutions for <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span>)</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-when-method-used-12">One of the important takeaways from this is that the form of the partial fraction decomposition matters.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-12" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-when-method-used-12">One of the important takeaways from this is that the form of the partial fraction decomposition matters.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-when-method-used-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.2.3: How the denominator factors matters"><a href="#subsec-when-method-used" title="Copy heading and permalink for Subsection 1.2.3: How the denominator factors matters">🔗</a></div></section><section class="subsection" id="subsec-part-frac-3"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 1.2.3: How the denominator factors matters"><a href="#subsec-when-method-used" title="Copy heading and permalink for Subsection 1.2.3: How the denominator factors matters" aria-label="Copy heading and permalink for Subsection 1.2.3: How the denominator factors matters">🔗</a></div></section><section class="subsection" id="subsec-part-frac-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">General Method of Partial Fractions</span>
 </h3>
-<div class="para" id="subsec-part-frac-3-2">Let’s collect and summarize what we can say about the possible forms of partial fraction decompositions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-3-2">Let’s collect and summarize what we can say about the possible forms of partial fraction decompositions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="subsec-part-frac-3-3"><h4 class="heading"><span class="title">Partial Fraction Decomposition.</span></h4>
-<div class="para" id="subsec-part-frac-3-3-2">Given any rational function with the degree of the numerator strictly less than the degree of the denominator, we can rewrite the function as a sum of simpler terms.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-3-3-2">Given any rational function with the degree of the numerator strictly less than the degree of the denominator, we can rewrite the function as a sum of simpler terms.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
@@ -738,89 +739,89 @@ x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.
 <div class="para logical" id="subsec-part-frac-3-3-4">
 <div class="para">In words, the symbols above say how to rewrite a rational function as a sum based on how the denominator factors:</div>
 <dl class="description-list">
-<dt id="subsec-part-frac-3-3-4-1-1">linear factor<div class="autopermalink" data-description="Item: linear factor"><a href="#subsec-part-frac-3-3-4-1-1" title="Copy heading and permalink for Item: linear factor">🔗</a></div>
+<dt id="subsec-part-frac-3-3-4-1-1">linear factor<div class="autopermalink" data-description="Item: linear factor"><a href="#subsec-part-frac-3-3-4-1-1" title="Copy heading and permalink for Item: linear factor" aria-label="Copy heading and permalink for Item: linear factor">🔗</a></div>
 </dt>
-<dd><div class="para" id="subsec-part-frac-3-3-4-1-1-2">constant divided by the linear term<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<dd><div class="para" id="subsec-part-frac-3-3-4-1-1-2">constant divided by the linear term<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="subsec-part-frac-3-3-4-1-2">linear factor raised to an exponent<div class="autopermalink" data-description="Item: linear factor raised to an exponent"><a href="#subsec-part-frac-3-3-4-1-2" title="Copy heading and permalink for Item: linear factor raised to an exponent">🔗</a></div>
+<dt id="subsec-part-frac-3-3-4-1-2">linear factor raised to an exponent<div class="autopermalink" data-description="Item: linear factor raised to an exponent"><a href="#subsec-part-frac-3-3-4-1-2" title="Copy heading and permalink for Item: linear factor raised to an exponent" aria-label="Copy heading and permalink for Item: linear factor raised to an exponent">🔗</a></div>
 </dt>
-<dd><div class="para" id="subsec-part-frac-3-3-4-1-2-2">sum of terms consisting of a constant divided by <em class="emphasis">every power</em> of that linear term starting at <span class="process-math">\(1\)</span> and going up to the value of the exponent<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<dd><div class="para" id="subsec-part-frac-3-3-4-1-2-2">sum of terms consisting of a constant divided by <em class="emphasis">every power</em> of that linear term starting at <span class="process-math">\(1\)</span> and going up to the value of the exponent<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="subsec-part-frac-3-3-4-1-3">unfactorable quadratic<div class="autopermalink" data-description="Item: unfactorable quadratic"><a href="#subsec-part-frac-3-3-4-1-3" title="Copy heading and permalink for Item: unfactorable quadratic">🔗</a></div>
+<dt id="subsec-part-frac-3-3-4-1-3">unfactorable quadratic<div class="autopermalink" data-description="Item: unfactorable quadratic"><a href="#subsec-part-frac-3-3-4-1-3" title="Copy heading and permalink for Item: unfactorable quadratic" aria-label="Copy heading and permalink for Item: unfactorable quadratic">🔗</a></div>
 </dt>
-<dd><div class="para" id="subsec-part-frac-3-3-4-1-3-2">linear expression divided by the quadratic<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<dd><div class="para" id="subsec-part-frac-3-3-4-1-3-2">linear expression divided by the quadratic<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
-<dt id="subsec-part-frac-3-3-4-1-4">unfactorable quadratic raised to an exponent<div class="autopermalink" data-description="Item: unfactorable quadratic raised to an exponent"><a href="#subsec-part-frac-3-3-4-1-4" title="Copy heading and permalink for Item: unfactorable quadratic raised to an exponent">🔗</a></div>
+<dt id="subsec-part-frac-3-3-4-1-4">unfactorable quadratic raised to an exponent<div class="autopermalink" data-description="Item: unfactorable quadratic raised to an exponent"><a href="#subsec-part-frac-3-3-4-1-4" title="Copy heading and permalink for Item: unfactorable quadratic raised to an exponent" aria-label="Copy heading and permalink for Item: unfactorable quadratic raised to an exponent">🔗</a></div>
 </dt>
-<dd><div class="para" id="subsec-part-frac-3-3-4-1-4-2">sum of terms consisting of a linear expression divided by <em class="emphasis">every power</em> of that quadratic starting at <span class="process-math">\(1\)</span> and going up to the value of the exponent<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-4-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<dd><div class="para" id="subsec-part-frac-3-3-4-1-4-2">sum of terms consisting of a linear expression divided by <em class="emphasis">every power</em> of that quadratic starting at <span class="process-math">\(1\)</span> and going up to the value of the exponent<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></dd>
 </dl>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Partial Fraction Decomposition"><a href="#subsec-part-frac-3-3" title="Copy heading and permalink for Assemblage: Partial Fraction Decomposition">🔗</a></div></article><article class="exercise exercise-like" id="multiple-choice-factor"><h4 class="heading">
+<div class="autopermalink" data-description="Assemblage: Partial Fraction Decomposition"><a href="#subsec-part-frac-3-3" title="Copy heading and permalink for Assemblage: Partial Fraction Decomposition" aria-label="Copy heading and permalink for Assemblage: Partial Fraction Decomposition">🔗</a></div></article><article class="exercise exercise-like" id="multiple-choice-factor"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Don’t Forget to Factor.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
-<div class="exercise-statement"><div class="para" id="multiple-choice-factor-2-1">What is the partial fraction decomposition of <span class="process-math">\(\frac{5x-2}{x^2-1}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="exercise-statement"><div class="para" id="multiple-choice-factor-2-1">What is the partial fraction decomposition of <span class="process-math">\(\frac{5x-2}{x^2-1}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-multiple-choice-factor" data-multipleanswers="false">
 <li data-component="answer" id="rs-multiple-choice-factor_opt_a"><div class="para" id="multiple-choice-factor-3-1-1-1">
-<span class="process-math">\(\frac{A}{x^2-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x^2-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-factor_opt_a"><div class="para" id="multiple-choice-factor-3-1-2-1">This would be true if the denominator was linear instead of quadratic.</div></li>
 <li data-component="answer" id="rs-multiple-choice-factor_opt_b"><div class="para" id="multiple-choice-factor-3-2-1-1">
-<span class="process-math">\(\frac{Ax+B}{x^2-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{Ax+B}{x^2-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-factor_opt_b"><div class="para" id="multiple-choice-factor-3-2-2-1">This would be true if the denominator was an unfactorable quadratic, but the denominator can be factored.</div></li>
 <li data-component="answer" id="rs-multiple-choice-factor_opt_c" data-correct=""><div class="para" id="multiple-choice-factor-3-3-1-1">
-<span class="process-math">\(\frac{A}{x+1}+\frac{B}{x-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x+1}+\frac{B}{x-1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-factor-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-factor_opt_c"><div class="para" id="multiple-choice-factor-3-3-2-1">Correct!</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Checkpoint 1.2.5: Don’t Forget to Factor"><a href="#multiple-choice-factor" title="Copy heading and permalink for Checkpoint 1.2.5: Don’t Forget to Factor">🔗</a></div></article><article class="exercise exercise-like" id="multiple-choice-powers"><h4 class="heading">
+<div class="autopermalink" data-description="Checkpoint 1.2.5: Don’t Forget to Factor"><a href="#multiple-choice-factor" title="Copy heading and permalink for Checkpoint 1.2.5: Don’t Forget to Factor" aria-label="Copy heading and permalink for Checkpoint 1.2.5: Don’t Forget to Factor">🔗</a></div></article><article class="exercise exercise-like" id="multiple-choice-powers"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Powers.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
-<div class="exercise-statement"><div class="para" id="multiple-choice-powers-2-1">What is the partial fraction decomposition of <span class="process-math">\(\frac{5x-2}{(x+1)(x+2)^2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="exercise-statement"><div class="para" id="multiple-choice-powers-2-1">What is the partial fraction decomposition of <span class="process-math">\(\frac{5x-2}{(x+1)(x+2)^2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-multiple-choice-powers" data-multipleanswers="false">
 <li data-component="answer" id="rs-multiple-choice-powers_opt_a"><div class="para" id="multiple-choice-powers-3-1-1-1">
-<span class="process-math">\(\frac{A}{x+1}+\frac{B}{x+2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x+1}+\frac{B}{x+2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-powers_opt_a"><div class="para" id="multiple-choice-powers-3-1-2-1">This would be true if both exponents of the original denominator were 1, but there’s an exponent of 2.</div></li>
 <li data-component="answer" id="rs-multiple-choice-powers_opt_b"><div class="para" id="multiple-choice-powers-3-2-1-1">
-<span class="process-math">\(\frac{A}{x+1}+\frac{Bx+D}{(x+2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x+1}+\frac{Bx+D}{(x+2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-powers_opt_b"><div class="para" id="multiple-choice-powers-3-2-2-1">This would be true if the denominator had an unfactorable quadratic instead of a power of a linear term.</div></li>
 <li data-component="answer" id="rs-multiple-choice-powers_opt_c"><div class="para" id="multiple-choice-powers-3-3-1-1">
-<span class="process-math">\(\frac{A}{x+1}+\frac{B}{(x+2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x+1}+\frac{B}{(x+2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-powers_opt_c"><div class="para" id="multiple-choice-powers-3-3-2-1">This is not enough terms to account for all the possible original numerators when the denominator has a power of a linear term.</div></li>
 <li data-component="answer" id="rs-multiple-choice-powers_opt_d" data-correct=""><div class="para" id="multiple-choice-powers-3-4-1-1">
-<span class="process-math">\(\frac{A}{x+1}+\frac{B}{x+2}+\frac{D}{(x+2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x+1}+\frac{B}{x+2}+\frac{D}{(x+2)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-powers_opt_d"><div class="para" id="multiple-choice-powers-3-4-2-1">Correct!</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Checkpoint 1.2.6: Powers"><a href="#multiple-choice-powers" title="Copy heading and permalink for Checkpoint 1.2.6: Powers">🔗</a></div></article><article class="exercise exercise-like" id="multiple-choice-powers-again"><h4 class="heading">
+<div class="autopermalink" data-description="Checkpoint 1.2.6: Powers"><a href="#multiple-choice-powers" title="Copy heading and permalink for Checkpoint 1.2.6: Powers" aria-label="Copy heading and permalink for Checkpoint 1.2.6: Powers">🔗</a></div></article><article class="exercise exercise-like" id="multiple-choice-powers-again"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Powers again.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
-<div class="exercise-statement"><div class="para" id="multiple-choice-powers-again-2-1">What is the partial fraction decomposition of <span class="process-math">\(\frac{5}{(x+2)^3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-again-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="exercise-statement"><div class="para" id="multiple-choice-powers-again-2-1">What is the partial fraction decomposition of <span class="process-math">\(\frac{5}{(x+2)^3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-again-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" id="rs-multiple-choice-powers-again" data-multipleanswers="false">
 <li data-component="answer" id="rs-multiple-choice-powers-again_opt_a"><div class="para" id="multiple-choice-powers-again-3-1-1-1">
-<span class="process-math">\(\frac{A}{x+2}+\frac{B}{(x+2)^2}+\frac{D}{(x+2)^3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-again-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{x+2}+\frac{B}{(x+2)^2}+\frac{D}{(x+2)^3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-again-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-powers-again_opt_a"><div class="para" id="multiple-choice-powers-again-3-1-2-1">Technically correct, but not the best choice for this particular example.  Look at the original numerator again.</div></li>
 <li data-component="answer" id="rs-multiple-choice-powers-again_opt_b" data-correct=""><div class="para" id="multiple-choice-powers-again-3-2-1-1">
-<span class="process-math">\(\frac{A}{(x+2)^3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-again-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\frac{A}{(x+2)^3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#multiple-choice-powers-again-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></li>
 <li data-component="feedback" id="rs-multiple-choice-powers-again_opt_b"><div class="para" id="multiple-choice-powers-again-3-2-2-1">Correct! Because the original numerator was a constant, and thus in fact, A=5.  (If this needed to be integrated, we can use the power rule straightaway, no partial fractions work is required.)</div></li>
 </ul>
 </div></div>
-<div class="autopermalink" data-description="Checkpoint 1.2.7: Powers again"><a href="#multiple-choice-powers-again" title="Copy heading and permalink for Checkpoint 1.2.7: Powers again">🔗</a></div></article><article class="activity project-like" id="subsec-part-frac-3-7"><h4 class="heading">
+<div class="autopermalink" data-description="Checkpoint 1.2.7: Powers again"><a href="#multiple-choice-powers-again" title="Copy heading and permalink for Checkpoint 1.2.7: Powers again" aria-label="Copy heading and permalink for Checkpoint 1.2.7: Powers again">🔗</a></div></article><article class="activity project-like" id="subsec-part-frac-3-7"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="subsec-part-frac-3-7-1-1">
@@ -828,41 +829,41 @@ x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.
 <ol class="lower-alpha ol-marker-3 cols2" id="subsec-part-frac-3-7-1-1-1">
 <li id="subsec-part-frac-3-7-1-1-1-1">
 <div class="para" id="p-derived-subsec-part-frac-3-7-1-1-1-1"><span class="process-math">\(\displaystyle \int \frac{-x^2-x-3}{x^3+x} \, dx\)</span></div>
-<div class="autopermalink" data-description="Item a"><a href="#subsec-part-frac-3-7-1-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#subsec-part-frac-3-7-1-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="subsec-part-frac-3-7-1-1-1-2">
 <div class="para" id="p-derived-subsec-part-frac-3-7-1-1-1-2"><span class="process-math">\(\displaystyle \int \frac{x^4+1}{x^5+x^4} \, dx\)</span></div>
-<div class="autopermalink" data-description="Item b"><a href="#subsec-part-frac-3-7-1-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#subsec-part-frac-3-7-1-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="subsec-part-frac-3-7-1-2">
 <div class="para">For each of the integrals above,</div>
 <ol class="lower-roman ol-marker-4" id="subsec-part-frac-3-7-1-2-1">
 <li id="subsec-part-frac-3-7-1-2-1-1">
-<div class="para" id="subsec-part-frac-3-7-1-2-1-1-1">Factor the denominator, and use that factorization to write the general form of the partial fraction decomposition of the integrand, using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-3-7-1-2-1-1-1">Factor the denominator, and use that factorization to write the general form of the partial fraction decomposition of the integrand, using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item i"><a href="#subsec-part-frac-3-7-1-2-1-1" title="Copy heading and permalink for Item i">🔗</a></div>
+<div class="autopermalink" data-description="Item i"><a href="#subsec-part-frac-3-7-1-2-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
 </li>
 <li id="subsec-part-frac-3-7-1-2-1-2">
-<div class="para" id="subsec-part-frac-3-7-1-2-1-2-1">Calculate the antiderivatives of the partial fraction decomposition while still using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-3-7-1-2-1-2-1">Calculate the antiderivatives of the partial fraction decomposition while still using letters like <span class="process-math">\(A, B, D\)</span> etc., or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item ii"><a href="#subsec-part-frac-3-7-1-2-1-2" title="Copy heading and permalink for Item ii">🔗</a></div>
+<div class="autopermalink" data-description="Item ii"><a href="#subsec-part-frac-3-7-1-2-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
 </li>
 <li id="subsec-part-frac-3-7-1-2-1-3">
-<div class="para" id="subsec-part-frac-3-7-1-2-1-3-1">Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-3-7-1-2-1-3-1">Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item iii"><a href="#subsec-part-frac-3-7-1-2-1-3" title="Copy heading and permalink for Item iii">🔗</a></div>
+<div class="autopermalink" data-description="Item iii"><a href="#subsec-part-frac-3-7-1-2-1-3" title="Copy heading and permalink for Item iii" aria-label="Copy heading and permalink for Item iii">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-3-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.2.3"><a href="#subsec-part-frac-3-7" title="Copy heading and permalink for Activity 1.2.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.4: General Method of Partial Fractions"><a href="#subsec-part-frac-3" title="Copy heading and permalink for Subsection 1.2.4: General Method of Partial Fractions">🔗</a></div></section><section class="subsection" id="subsec-part-frac-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Activity 1.2.3"><a href="#subsec-part-frac-3-7" title="Copy heading and permalink for Activity 1.2.3" aria-label="Copy heading and permalink for Activity 1.2.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.4: General Method of Partial Fractions"><a href="#subsec-part-frac-3" title="Copy heading and permalink for Subsection 1.2.4: General Method of Partial Fractions" aria-label="Copy heading and permalink for Subsection 1.2.4: General Method of Partial Fractions">🔗</a></div></section><section class="subsection" id="subsec-part-frac-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator</span>
 </h3>
-<div class="para" id="subsec-part-frac-4-2">We noted above that these partial fraction decomposition forms have enough constants to solve for every possible numerator only when the degree of the numerator is strictly less than the degree of the denominator.  What if the degree of the numerator is too large?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-4-2">We noted above that these partial fraction decomposition forms have enough constants to solve for every possible numerator only when the degree of the numerator is strictly less than the degree of the denominator.  What if the degree of the numerator is too large?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-part-frac-4-3">In that case, we use polynomial division to rewrite the original integrand as the sum of a polynomial and a fraction whose numerator does have smaller degree than the denominator.  This is not unlike rewriting <span class="process-math">\(\frac{15}{4}\)</span> (where the numerator is bigger than the denominator) as <span class="process-math">\(3+\frac{3}{4} \)</span> (where not the numerator is smaller than the denominator.) The hard part is figuring out how many times the denominator goes into the numerator evenly.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-4-3">In that case, we use polynomial division to rewrite the original integrand as the sum of a polynomial and a fraction whose numerator does have smaller degree than the denominator.  This is not unlike rewriting <span class="process-math">\(\frac{15}{4}\)</span> (where the numerator is bigger than the denominator) as <span class="process-math">\(3+\frac{3}{4} \)</span> (where not the numerator is smaller than the denominator.) The hard part is figuring out how many times the denominator goes into the numerator evenly.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/smsKMWf8ZCs?&amp;modestbranding=1&amp;rel=0" id="youtube-poly-div"></iframe></div>
 <article class="activity project-like" id="subsec-part-frac-4-5"><h4 class="heading">
@@ -875,46 +876,46 @@ x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.
 \int \frac{x^6-2x^5+3x^4+3x^3-11x^2+44x-52}{x^4-16} \, dx
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="subsec-part-frac-4-5-1-2">
 <ol class="lower-alpha ol-marker-3" id="subsec-part-frac-4-5-1-2-1">
 <li id="subsec-part-frac-4-5-1-2-1-1">
-<div class="para" id="subsec-part-frac-4-5-1-2-1-1-1">Write a sentence giving the reason why partial fraction decomposition can not be performed on the integrand above in its current form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-4-5-1-2-1-1-1">Write a sentence giving the reason why partial fraction decomposition can not be performed on the integrand above in its current form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#subsec-part-frac-4-5-1-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#subsec-part-frac-4-5-1-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="subsec-part-frac-4-5-1-2-1-2">
-<div class="para" id="subsec-part-frac-4-5-1-2-1-2-1">Perform polynomial division to rewrite the integrand.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-4-5-1-2-1-2-1">Perform polynomial division to rewrite the integrand.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#subsec-part-frac-4-5-1-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#subsec-part-frac-4-5-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="subsec-part-frac-4-5-1-2-1-3">
-<div class="para" id="subsec-part-frac-4-5-1-2-1-3-1">Integrate the terms that can be integrated, and write the general form of the partial fraction decomposition of the rest, using letters like <span class="process-math">\(A, B, D\)</span> etc, or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.  Calculate the integral of the partial fraction decomposition while still using letters like <span class="process-math">\(A, B, D\)</span> etc, or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-4-5-1-2-1-3-1">Integrate the terms that can be integrated, and write the general form of the partial fraction decomposition of the rest, using letters like <span class="process-math">\(A, B, D\)</span> etc, or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.  Calculate the integral of the partial fraction decomposition while still using letters like <span class="process-math">\(A, B, D\)</span> etc, or <span class="process-math">\(A_1, A_2, A_3\text{,}\)</span> etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#subsec-part-frac-4-5-1-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#subsec-part-frac-4-5-1-2-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="subsec-part-frac-4-5-1-2-1-4">
-<div class="para" id="subsec-part-frac-4-5-1-2-1-4-1">Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-4-5-1-2-1-4-1">Finally, the least important step for calculus but often the most algebraically intense to do by hand, solve for the values of the letters you used, and write the final answer to the given integral.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#subsec-part-frac-4-5-1-2-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#subsec-part-frac-4-5-1-2-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-4-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.2.4"><a href="#subsec-part-frac-4-5" title="Copy heading and permalink for Activity 1.2.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.5: When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator"><a href="#subsec-part-frac-4" title="Copy heading and permalink for Subsection 1.2.5: When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator">🔗</a></div></section><section class="subsection" id="subsec-part-frac-5"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Activity 1.2.4"><a href="#subsec-part-frac-4-5" title="Copy heading and permalink for Activity 1.2.4" aria-label="Copy heading and permalink for Activity 1.2.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.2.5: When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator"><a href="#subsec-part-frac-4" title="Copy heading and permalink for Subsection 1.2.5: When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator" aria-label="Copy heading and permalink for Subsection 1.2.5: When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator">🔗</a></div></section><section class="subsection" id="subsec-part-frac-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="space"> </span><span class="title">Final Considerations</span>
 </h3>
 <div class="para" id="subsec-part-frac-5-2">An especially astute reader might notice that we said that the denominator can contain terms of the form <span class="process-math">\(ax^2+bx+c\)</span> but we only considered terms of the form <span class="process-math">\(x^2+k\)</span> in our examples and activities. The reason is that every <span class="process-math">\(ax^2+bx+c\)</span> can be written as <span class="process-math">\(a\left( \left(x-\frac{b}{2a}\right)^2+k\right)\)</span> if we recall how to <em class="emphasis">complete the square</em> from algebra class, and then using a substitution<details class="ptx-footnote" aria-live="polite" id="subsec-part-frac-5-2-6"><summary class="ptx-footnote__number" title="Footnote 1.2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="subsec-part-frac-5-2-6">
 <span class="process-math">\(y=x-\frac{b}{2a}\)</span> so that <span class="process-math">\(dy=dx\)</span>
-</div></details> turns this into some constant number multiplied by <span class="process-math">\(y^2+k\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details> turns this into some constant number multiplied by <span class="process-math">\(y^2+k\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-part-frac-5-3">But this turns a calculus problem into even more of an algebra problem, and the focus of this material is integration, not algebra.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-5-3">But this turns a calculus problem into even more of an algebra problem, and the focus of this material is integration, not algebra.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-part-frac-5-4">You might also be wondering what happens if the denominator doesn’t factor into powers of linear and quadratic terms. It is a theorem beyond the scope of this class that every polynomial whose coefficients are real numbers factors into powers of linear and quadratic terms.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-5-4">You might also be wondering what happens if the denominator doesn’t factor into powers of linear and quadratic terms. It is a theorem beyond the scope of this class that every polynomial whose coefficients are real numbers factors into powers of linear and quadratic terms.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-part-frac-5-5">The result is that every rational function, regardless of the degree of the numerator or denominator, or how the denominator factors, can be integrated using some combination of the techniques described in this section.  Putting that theory into practice, however, is often quite difficult!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-part-frac-5-5">The result is that every rational function, regardless of the degree of the numerator or denominator, or how the denominator factors, can be integrated using some combination of the techniques described in this section.  Putting that theory into practice, however, is often quite difficult!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-part-frac-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.2.6: Final Considerations"><a href="#subsec-part-frac-5" title="Copy heading and permalink for Subsection 1.2.6: Final Considerations">🔗</a></div></section><section class="subsection" id="sec-partial-fractions-10"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 1.2.6: Final Considerations"><a href="#subsec-part-frac-5" title="Copy heading and permalink for Subsection 1.2.6: Final Considerations" aria-label="Copy heading and permalink for Subsection 1.2.6: Final Considerations">🔗</a></div></section><section class="subsection" id="sec-partial-fractions-10"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="space"> </span><span class="title">Summary</span>
 </h3>
 <div class="para logical" id="sec-partial-fractions-10-2">
@@ -928,24 +929,24 @@ x^2+x+4 = A(x^2+1)+B(x-1) = Ax^2+Bx+A-B.
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> are real numbers, and <span class="process-math">\(n\)</span> is a natural number.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-10-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-10-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-partial-fractions-10-2-1-2">
-<div class="para" id="sec-partial-fractions-10-2-1-2-1">Which of the forms are included in the decomposition of a rational function depends entirely on the factored form of the denominator, and each of those forms can be integrated using basic integrals, substitution, and/or trigonometric substitution, possibly requiring some algebra.<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-partial-fractions-10-2-1-2-1">Which of the forms are included in the decomposition of a rational function depends entirely on the factored form of the denominator, and each of those forms can be integrated using basic integrals, substitution, and/or trigonometric substitution, possibly requiring some algebra.<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-10-2-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-10-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-partial-fractions-10-2-1-3">
-<div class="para" id="sec-partial-fractions-10-2-1-3-1">Similar to how every improper fraction can be expressed as an integer plus a proper fraction, every rational function with the degree of the numerator greater than or equal to the degree of the denominator can be expressed as <span class="process-math">\(p(x)+\frac{q(x)}{r(x)}\)</span> where <span class="process-math">\(p(x)\)</span> is a polynomial and the degree of <span class="process-math">\(q(x)\)</span> is strictly less than the degree of <span class="process-math">\(r(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-partial-fractions-10-2-1-3-1">Similar to how every improper fraction can be expressed as an integer plus a proper fraction, every rational function with the degree of the numerator greater than or equal to the degree of the denominator can be expressed as <span class="process-math">\(p(x)+\frac{q(x)}{r(x)}\)</span> where <span class="process-math">\(p(x)\)</span> is a polynomial and the degree of <span class="process-math">\(q(x)\)</span> is strictly less than the degree of <span class="process-math">\(r(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-10-2-1-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-partial-fractions-10-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-partial-fractions-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 1.2.7: Summary"><a href="#sec-partial-fractions-10" title="Copy heading and permalink for Subsection 1.2.7: Summary">🔗</a></div></section><div class="autopermalink" data-description="Section 1.2: The Method of Partial Fractions"><a href="#sec-partial-fractions" title="Copy heading and permalink for Section 1.2: The Method of Partial Fractions">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Subsection 1.2.7: Summary"><a href="#sec-partial-fractions-10" title="Copy heading and permalink for Subsection 1.2.7: Summary" aria-label="Copy heading and permalink for Subsection 1.2.7: Summary">🔗</a></div></section><div class="autopermalink" data-description="Section 1.2: The Method of Partial Fractions"><a href="#sec-partial-fractions" title="Copy heading and permalink for Section 1.2: The Method of Partial Fractions" aria-label="Copy heading and permalink for Section 1.2: The Method of Partial Fractions">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-trigonometric-ints.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-1-5preview.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

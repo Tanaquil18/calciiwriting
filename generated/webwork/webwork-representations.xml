@@ -72,7 +72,9 @@
         </answer>
       </task>
       <task>
-        <statement><p>Recall the average rate of change of a function on an interval <m>[a,b]\text{,}</m> as stated in <c>[cross-reference to target(s) "def-1-3-aroc" missing or not unique]</c>, <m>AV_{[a,b]}\text{.}</m> Determine the average rate of <m>T</m> on the interval <m>[60,65]\text{,}</m> <m>AV_{[60, 65]}\text{.}</m>  Include units on your answer.</p>
+        <statement><p>Recall the average rate of change of a function <m>f(x)</m> on an interval <m>[a,b]</m> is</p>
+<p><me>AV_{[a,b]}=\frac{f(b)-f(a)}{b-a}\text{.}</me></p>
+<p>Determine the average rate of <m>T</m> on the interval <m>[60,65]\text{,}</m> <m>AV_{[60, 65]}\text{.}</m>  Include units on your answer.</p>
 <p><fillin characters="10" name="AnSwEr0005"/></p>
 </statement>
         <answer>
@@ -136,11 +138,11 @@
         </answer>
       </task>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJzY2FmZm9sZC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJOdW1iZXJXaXRoVW5pdHMucGwiLCJwYXJzZXJQb3BVcC5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJQb2ludCIpOwokYW5zd2VyID0gTGlzdCgiKDEwLDUpLCg1MCwxKSwoMjUsMikiKTsKJGV2YWx1YXRvciA9ICRhbnN3ZXIgLT5jbXAobGlzdF9jaGVja2VyID0+IHN1YiB7CiAgbXkgKCRjb3JyZWN0LCRzdHVkZW50LCRhbnNIYXNoLCR2YWx1ZSkgPSBAXzsKICBteSAkbiA9IHNjYWxhcihAJHN0dWRlbnQpOyAgIyBudW1iZXIgb2Ygc3R1ZGVudCBhbnN3ZXJzCiAgbXkgJHNjb3JlID0gMDsgICAgICAgICAgICAgICMgbnVtYmVyIG9mIGNvcnJlY3Qgc3R1ZGVudCBhbnN3ZXJzCiAgbXkgQGVycm9ycyA9ICgpOyAgICAgICAgICAgICMgc3RvcmVzIGVycm9yIG1lc3NhZ2VzCiAgbXkgJGksICRqOyAgICAgICAgICAgICAgICAgICMgbG9vcCBjb3VudGVycwoKICAjCiAgIyAgTG9vcCB0aG91Z2ggdGhlIHN0dWRlbnQgYW5zd2VycwogICMjCiAgZm9yICgkaSA9IDA7ICRpIDwgJG47ICRpKyspIHsKICAgIG15ICRpdGggPSBWYWx1ZTo6TGlzdC0+TmFtZUZvck51bWJlcigkaSsxKTsKICAgIG15ICRwID0gJHN0dWRlbnQtPlskaV07ICAgIyBpLXRoIHN0dWRlbnQgYW5zd2VyCiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBzdHVkZW50J3MgYW5zd2VyIGlzIGEgcG9pbnQKICAgICMKICAgIGlmICgkcC0+dHlwZSBuZSAiUG9pbnQiKSB7CiAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIGVudHJ5IGlzIG5vdCBhIHBvaW50Iik7CiAgICAgIG5leHQ7CiAgICB9CiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBwb2ludCBoYXNuJ3QgYmVlbiBnaXZlbiBiZWZvcmUKICAgICMKICAgIGZvciAoJGogPSAwLCAkdXNlZCA9IDA7ICRqIDwgJGk7ICRqKyspIHsKICAgICAgaWYgKCRzdHVkZW50LT5bJGpdLT50eXBlIGVxICJQb2ludCIgJiYgJHN0dWRlbnQtPlskal0gPT0gJHApIHsKICAgICAgICBwdXNoKEBlcnJvcnMsIllvdXIgJGl0aCBwb2ludCBpcyB0aGUgc2FtZSBhcyBhIHByZXZpb3VzIG9uZSIpIHVubGVzcyAkYW5zSGFzaC0+e2lzUHJldmlld307CiAgICAgICAgJHVzZWQgPSAxOyBsYXN0OwogICAgICB9CiAgICB9CiAgICAjCiAgICAjICBJZiBub3QgYWxyZWFkeSB1c2VkLCBjaGVjayB0aGF0IGl0IHNhdGlzZmllcyB0aGUgZXF1YXRpb24KICAgICMgICAgYW5kIGluY3JlYXNlIHRoZSBzY29yZSBpZiBzby4KICAgICMKICAgIGlmICghJHVzZWQpIHsKICAgICAgbXkgKCRhLCRiKSA9ICRwLT52YWx1ZTsKICAgICAgaWYgKCRhICogJGIgPT0gNTAgJiYgJGEgPiAwKSB7JHNjb3JlKyt9IGVsc2UgewogICAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIHBvaW50IGlzIG5vdCBjb3JyZWN0IikgdW5sZXNzICRhbnNIYXNoLT57aXNQcmV2aWV3fQogICAgICB9CiAgICB9CiAgfQogICMKICAjICBDaGVjayB0aGF0IHRoZXJlIGFyZSB0aGUgcmlnaHQgbnVtYmVyIG9mIGFuc3dlcnMKICAjCiAgaWYgKCEkYW5zSGFzaC0+e2lzUHJldmlld30pIHsKICAgIHB1c2goQGVycm9ycywiWW91IG5lZWQgdG8gcHJvdmlkZSBtb3JlIHBvaW50cyIpIGlmICRpIDwgMzsKICAgIHB1c2goQGVycm9ycywiWW91IGhhdmUgZ2l2ZW4gdG9vIG1hbnkgcG9pbnRzIikgaWYgJHNjb3JlID4gMyAmJiAkaSAhPSAkc2NvcmU7CiAgfQogIHJldHVybiAoJHNjb3JlLEBlcnJvcnMpOwp9KTsKCgokcmFkaW8gPSBSYWRpb0J1dHRvbnMoWwogICdUaGUgZnVuY3Rpb24gaXMgY29uY2F2ZSB1cCBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGNvbmNhdmUgZG93biBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgZG93bi4nLAogICdUaGUgZnVuY3Rpb24gaXMgaW5jcmVhc2luZyBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGRlY3JlYXNpbmcgYmVjYXVzZSBhcyBzcGVlZCBnb2VzIHVwLCB0cmF2ZWwgdGltZSBnb2VzIGRvd24uJywKICBdLCAzCik7CkNvbnRleHQoIk51bWVyaWMiKS0+ZmxhZ3MtPnNldCh0b2xUeXBlID0+ICdhYnNvbHV0ZScsIHRvbGVyYW5jZSA9PiAwLjAxKTsKJGFuc3dlcjIgPSBOdW1iZXJXaXRoVW5pdHMoIjUvNiBociIpOwokcmFkaW8yID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSBzcGVlZCwgJHtCTX02MCR7RU19IG1waC4iLAogICIke0JNfVQoNjApJHtFTX0gaXMgdGhlIGRpc3RhbmNlLCAke0JNfTYwJHtFTX0gbWlsZXMuIiwKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSB0aW1lIGl0IHRha2VzIHRvIHRyYXZlbCAke0JNfTUwJHtFTX0gbWlsZXMgYXQgYSBzcGVlZCBvZiAke0JNfTYwJHtFTX0gbXBoLiIsCiAgIiR7Qk19VCg2MCkke0VNfSBpcyBob3cgZmFzdCB0aGUgdHJhdmVsIHRpbWUgaXMgY2hhbmdpbmcgd2hlbiB0aGUgY2FyIGlzIHRyYXZlbGluZyBhdCBhIHNwZWVkIG9mICR7Qk19NjAke0VNfSBtcGguIiwKICBdLCAyCik7CiRhbnN3ZXIzID0gTnVtYmVyV2l0aFVuaXRzKCIoNTAvNjUtNTAvNjApLzUgaHIvbXBoIik7CiRwb3B1cCA9IFBvcFVwKFsKICAiIiwKICAicG9zaXRpdmUiLAogICJuZWdhdGl2ZSIsCiAgXSwgMgopOwokcmFkaW8zID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UJHtFTX0gaXMgaW5jcmVhc2luZyBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19VCR7RU19IGlzIGRlY3JlYXNpbmcgZnJvbSAke0JNfTYwJHtFTX0gdG8gJHtCTX02NSR7RU19IG1waC4iLAogICIke0JNfVQke0VNfSBpcyBjb25jYXZlIHVwIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1UJHtFTX0gaXMgY29uY2F2ZSBkb3duIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICBdLCAxCik7CiRyYWRpbzQgPSBSYWRpb0J1dHRvbnMoWwogICIke0JNfUFWX3tbNjAsIDY1XX0ke0VNfSBpcyB0aGUgYW1vdW50IG9mIGhvdXJzICR7Qk19VCR7RU19IGhhcyBjaGFuZ2VkIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1BVl97WzYwLCA2NV19JHtFTX0gaXMgdGhlIGNoYW5nZSBpbiBzcGVlZCBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19QVZfe1s2MCwgNjVdfSR7RU19IGlzIHRoZSBhdmVyYWdlIGNoYW5nZSBpbiBob3VycyB0aGUgdHJpcCB0YWtlcyB3aGVuIHRoZSBzcGVlZCBjaGFuZ2VzIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICBdLCAyCik7CgpCRUdJTl9QR01MClN1cHBvc2UgdGhhdCB5b3UgYXJlIGRyaXZpbmcgYSBjYXIgb24gdGhlIGhpZ2h3YXkgdXNpbmcgY3J1aXNlIGNvbnRyb2wgc28gdGhhdCB5b3UgZHJpdmUgYXQgYSBjb25zdGFudCBzcGVlZC4gIFRoZSB0aW1lLCBbYFRgXSAobWVhc3VyZWQgaW4gaG91cnMpLCBpdCB0YWtlcyB0byBkcml2ZSA1MCBtaWxlcyBkZXBlbmRzIG9uIHRoZSBjb25zdGFudCByYXRlLCBbYHNgXSAobWVhc3VyZWQgaW4gbWlsZXMgcGVyIGhvdXIpIGF0IHdoaWNoIHlvdSBhcmUgZHJpdmluZy4gIFNpbmNlCgpbYGBgCiAgICAgICAgICAgICAgXG1ib3h7ZGlzdGFuY2V9ID0gXG1ib3h7cmF0ZX0gXGNkb3QgXG1ib3h7dHJhdmVsIHRpbWV9CiAgICAgICAgICAgIFx0ZXh0eyx9YGBgXQoKaXQgZm9sbG93cyB0aGF0CgpbYGBgCiAgICAgICAgICAgICAgXG1ib3h7dHJhdmVsIHRpbWV9ID0gIFxmcmFje1xtYm94e2Rpc3RhbmNlfX17XG1ib3h7cmF0ZX19CiAgICAgICAgICAgIFx0ZXh0eyx9YGBgXQoKYW5kIHRodXMgd2Uga25vdyB0aGF0IFtgVChzKSA9IFxmcmFjezUwfXtzfVx0ZXh0ey59YF0KCkZvciBpbnN0YW5jZSwgb2JzZXJ2ZSB0aGF0IFtgVCg3NSkgPSBcZnJhY3s1MH17NzV9ID0gXGZyYWN7Mn17M31cdGV4dHssfWBdIHNvIGl0IHRha2VzIFtgXGZyYWN7Mn17M31gXSBvZiBhbiBob3VyIHRvIGRyaXZlIFtgNTBgXSBtaWxlcyBhdCBbYDc1YF0gbWlsZXMgcGVyIGhvdXIsIGFuZCB0aGUgcG9pbnQgW2AoNzUsIFxmcmFjezJ9ezN9KWBdIGxpZXMgb24gdGhlIGdyYXBoIG9mIFtgVChzKVx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkdpdmUgdGhyZWUgcG9pbnRzIHdoaWNoIGxpZSBvbiB0aGUgZ3JhcGggb2YgW2BUXHRleHR7LH1gXSBzZXBhcmF0ZWQgYnkgY29tbWFzLgoKW19deyRldmFsdWF0b3J9ezEwfQoKV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIF9hbmQgZXhwbGFuYXRpb25zXyBpcyB0cnVlIGFib3V0IHRoZSBncmFwaCBvZiBbYFQocylcdGV4dHs/fWBdCgpbX117JHJhZGlvfXs1fQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSB2YWx1ZSBvZiBbYFQoNjApXHRleHR7P31gXSBJbmNsdWRlIHVuaXRzIG9uIHlvdXIgYW5zd2VyLgoKW19deyRhbnN3ZXIyfXsxMH0KCldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgaXMgdGhlIGJlc3QgZXhwbGFuYXRpb24gb2YgdGhlIG1lYW5pbmcgb2YgdGhpcyB2YWx1ZSBpbiBjb250ZXh0PwoKW19deyRyYWRpbzJ9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClJlY2FsbCB0aGUgYXZlcmFnZSByYXRlIG9mIGNoYW5nZSBvZiBhIGZ1bmN0aW9uIG9uIGFuIGludGVydmFsIFtgW2EsYl1cdGV4dHssfWBdIGFzIHN0YXRlZCBpbiBbfFtjcm9zcy1yZWZlcmVuY2UgdG8gdGFyZ2V0KHMpICJkZWYtMS0zLWFyb2MiIG1pc3Npbmcgb3Igbm90IHVuaXF1ZV18XSosIFtgQVZfe1thLGJdfVx0ZXh0ey59YF0gRGV0ZXJtaW5lIHRoZSBhdmVyYWdlIHJhdGUgb2YgW2BUYF0gb24gdGhlIGludGVydmFsIFtgWzYwLDY1XVx0ZXh0eyx9YF0gW2BBVl97WzYwLCA2NV19XHRleHR7Ln1gXSAgSW5jbHVkZSB1bml0cyBvbiB5b3VyIGFuc3dlci4KCltfXXskYW5zd2VyM317MTB9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClRoZSBzaWduIG9mIFtgQVZfe1s2MCwgNjVdfWBdIGlzIFtfXXskcG9wdXB9ezV9CgpUaGlzIHNpZ24gbWFrZXMgc2Vuc2UgYmVjYXVzZQoKW19deyRyYWRpbzN9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgZXhwbGFpbnMgdGhlIG1lYW5pbmcgb2YgdGhlIHZhbHVlIG9mIFtgQVZfe1s2MCwgNjVdfVx0ZXh0ez99YF0KCltfXXskcmFkaW80fXs1fQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NjYWZmb2xkOjpFbmQoKTsKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJzY2FmZm9sZC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJOdW1iZXJXaXRoVW5pdHMucGwiLCJwYXJzZXJQb3BVcC5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJQb2ludCIpOwokYW5zd2VyID0gTGlzdCgiKDEwLDUpLCg1MCwxKSwoMjUsMikiKTsKJGV2YWx1YXRvciA9ICRhbnN3ZXIgLT5jbXAobGlzdF9jaGVja2VyID0+IHN1YiB7CiAgbXkgKCRjb3JyZWN0LCRzdHVkZW50LCRhbnNIYXNoLCR2YWx1ZSkgPSBAXzsKICBteSAkbiA9IHNjYWxhcihAJHN0dWRlbnQpOyAgIyBudW1iZXIgb2Ygc3R1ZGVudCBhbnN3ZXJzCiAgbXkgJHNjb3JlID0gMDsgICAgICAgICAgICAgICMgbnVtYmVyIG9mIGNvcnJlY3Qgc3R1ZGVudCBhbnN3ZXJzCiAgbXkgQGVycm9ycyA9ICgpOyAgICAgICAgICAgICMgc3RvcmVzIGVycm9yIG1lc3NhZ2VzCiAgbXkgJGksICRqOyAgICAgICAgICAgICAgICAgICMgbG9vcCBjb3VudGVycwoKICAjCiAgIyAgTG9vcCB0aG91Z2ggdGhlIHN0dWRlbnQgYW5zd2VycwogICMjCiAgZm9yICgkaSA9IDA7ICRpIDwgJG47ICRpKyspIHsKICAgIG15ICRpdGggPSBWYWx1ZTo6TGlzdC0+TmFtZUZvck51bWJlcigkaSsxKTsKICAgIG15ICRwID0gJHN0dWRlbnQtPlskaV07ICAgIyBpLXRoIHN0dWRlbnQgYW5zd2VyCiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBzdHVkZW50J3MgYW5zd2VyIGlzIGEgcG9pbnQKICAgICMKICAgIGlmICgkcC0+dHlwZSBuZSAiUG9pbnQiKSB7CiAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIGVudHJ5IGlzIG5vdCBhIHBvaW50Iik7CiAgICAgIG5leHQ7CiAgICB9CiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBwb2ludCBoYXNuJ3QgYmVlbiBnaXZlbiBiZWZvcmUKICAgICMKICAgIGZvciAoJGogPSAwLCAkdXNlZCA9IDA7ICRqIDwgJGk7ICRqKyspIHsKICAgICAgaWYgKCRzdHVkZW50LT5bJGpdLT50eXBlIGVxICJQb2ludCIgJiYgJHN0dWRlbnQtPlskal0gPT0gJHApIHsKICAgICAgICBwdXNoKEBlcnJvcnMsIllvdXIgJGl0aCBwb2ludCBpcyB0aGUgc2FtZSBhcyBhIHByZXZpb3VzIG9uZSIpIHVubGVzcyAkYW5zSGFzaC0+e2lzUHJldmlld307CiAgICAgICAgJHVzZWQgPSAxOyBsYXN0OwogICAgICB9CiAgICB9CiAgICAjCiAgICAjICBJZiBub3QgYWxyZWFkeSB1c2VkLCBjaGVjayB0aGF0IGl0IHNhdGlzZmllcyB0aGUgZXF1YXRpb24KICAgICMgICAgYW5kIGluY3JlYXNlIHRoZSBzY29yZSBpZiBzby4KICAgICMKICAgIGlmICghJHVzZWQpIHsKICAgICAgbXkgKCRhLCRiKSA9ICRwLT52YWx1ZTsKICAgICAgaWYgKCRhICogJGIgPT0gNTAgJiYgJGEgPiAwKSB7JHNjb3JlKyt9IGVsc2UgewogICAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIHBvaW50IGlzIG5vdCBjb3JyZWN0IikgdW5sZXNzICRhbnNIYXNoLT57aXNQcmV2aWV3fQogICAgICB9CiAgICB9CiAgfQogICMKICAjICBDaGVjayB0aGF0IHRoZXJlIGFyZSB0aGUgcmlnaHQgbnVtYmVyIG9mIGFuc3dlcnMKICAjCiAgaWYgKCEkYW5zSGFzaC0+e2lzUHJldmlld30pIHsKICAgIHB1c2goQGVycm9ycywiWW91IG5lZWQgdG8gcHJvdmlkZSBtb3JlIHBvaW50cyIpIGlmICRpIDwgMzsKICAgIHB1c2goQGVycm9ycywiWW91IGhhdmUgZ2l2ZW4gdG9vIG1hbnkgcG9pbnRzIikgaWYgJHNjb3JlID4gMyAmJiAkaSAhPSAkc2NvcmU7CiAgfQogIHJldHVybiAoJHNjb3JlLEBlcnJvcnMpOwp9KTsKCgokcmFkaW8gPSBSYWRpb0J1dHRvbnMoWwogICdUaGUgZnVuY3Rpb24gaXMgY29uY2F2ZSB1cCBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGNvbmNhdmUgZG93biBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgZG93bi4nLAogICdUaGUgZnVuY3Rpb24gaXMgaW5jcmVhc2luZyBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGRlY3JlYXNpbmcgYmVjYXVzZSBhcyBzcGVlZCBnb2VzIHVwLCB0cmF2ZWwgdGltZSBnb2VzIGRvd24uJywKICBdLCAzCik7CkNvbnRleHQoIk51bWVyaWMiKS0+ZmxhZ3MtPnNldCh0b2xUeXBlID0+ICdhYnNvbHV0ZScsIHRvbGVyYW5jZSA9PiAwLjAxKTsKJGFuc3dlcjIgPSBOdW1iZXJXaXRoVW5pdHMoIjUvNiBociIpOwokcmFkaW8yID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSBzcGVlZCwgJHtCTX02MCR7RU19IG1waC4iLAogICIke0JNfVQoNjApJHtFTX0gaXMgdGhlIGRpc3RhbmNlLCAke0JNfTYwJHtFTX0gbWlsZXMuIiwKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSB0aW1lIGl0IHRha2VzIHRvIHRyYXZlbCAke0JNfTUwJHtFTX0gbWlsZXMgYXQgYSBzcGVlZCBvZiAke0JNfTYwJHtFTX0gbXBoLiIsCiAgIiR7Qk19VCg2MCkke0VNfSBpcyBob3cgZmFzdCB0aGUgdHJhdmVsIHRpbWUgaXMgY2hhbmdpbmcgd2hlbiB0aGUgY2FyIGlzIHRyYXZlbGluZyBhdCBhIHNwZWVkIG9mICR7Qk19NjAke0VNfSBtcGguIiwKICBdLCAyCik7CiRhbnN3ZXIzID0gTnVtYmVyV2l0aFVuaXRzKCIoNTAvNjUtNTAvNjApLzUgaHIvbXBoIik7CiRwb3B1cCA9IFBvcFVwKFsKICAiIiwKICAicG9zaXRpdmUiLAogICJuZWdhdGl2ZSIsCiAgXSwgMgopOwokcmFkaW8zID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UJHtFTX0gaXMgaW5jcmVhc2luZyBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19VCR7RU19IGlzIGRlY3JlYXNpbmcgZnJvbSAke0JNfTYwJHtFTX0gdG8gJHtCTX02NSR7RU19IG1waC4iLAogICIke0JNfVQke0VNfSBpcyBjb25jYXZlIHVwIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1UJHtFTX0gaXMgY29uY2F2ZSBkb3duIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICBdLCAxCik7CiRyYWRpbzQgPSBSYWRpb0J1dHRvbnMoWwogICIke0JNfUFWX3tbNjAsIDY1XX0ke0VNfSBpcyB0aGUgYW1vdW50IG9mIGhvdXJzICR7Qk19VCR7RU19IGhhcyBjaGFuZ2VkIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1BVl97WzYwLCA2NV19JHtFTX0gaXMgdGhlIGNoYW5nZSBpbiBzcGVlZCBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19QVZfe1s2MCwgNjVdfSR7RU19IGlzIHRoZSBhdmVyYWdlIGNoYW5nZSBpbiBob3VycyB0aGUgdHJpcCB0YWtlcyB3aGVuIHRoZSBzcGVlZCBjaGFuZ2VzIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICBdLCAyCik7CgpCRUdJTl9QR01MClN1cHBvc2UgdGhhdCB5b3UgYXJlIGRyaXZpbmcgYSBjYXIgb24gdGhlIGhpZ2h3YXkgdXNpbmcgY3J1aXNlIGNvbnRyb2wgc28gdGhhdCB5b3UgZHJpdmUgYXQgYSBjb25zdGFudCBzcGVlZC4gIFRoZSB0aW1lLCBbYFRgXSAobWVhc3VyZWQgaW4gaG91cnMpLCBpdCB0YWtlcyB0byBkcml2ZSA1MCBtaWxlcyBkZXBlbmRzIG9uIHRoZSBjb25zdGFudCByYXRlLCBbYHNgXSAobWVhc3VyZWQgaW4gbWlsZXMgcGVyIGhvdXIpIGF0IHdoaWNoIHlvdSBhcmUgZHJpdmluZy4gIFNpbmNlCgpbYGBgCiAgICAgICAgICAgICAgXG1ib3h7ZGlzdGFuY2V9ID0gXG1ib3h7cmF0ZX0gXGNkb3QgXG1ib3h7dHJhdmVsIHRpbWV9CiAgICAgICAgICAgIFx0ZXh0eyx9YGBgXQoKaXQgZm9sbG93cyB0aGF0CgpbYGBgCiAgICAgICAgICAgICAgXG1ib3h7dHJhdmVsIHRpbWV9ID0gIFxmcmFje1xtYm94e2Rpc3RhbmNlfX17XG1ib3h7cmF0ZX19CiAgICAgICAgICAgIFx0ZXh0eyx9YGBgXQoKYW5kIHRodXMgd2Uga25vdyB0aGF0IFtgVChzKSA9IFxmcmFjezUwfXtzfVx0ZXh0ey59YF0KCkZvciBpbnN0YW5jZSwgb2JzZXJ2ZSB0aGF0IFtgVCg3NSkgPSBcZnJhY3s1MH17NzV9ID0gXGZyYWN7Mn17M31cdGV4dHssfWBdIHNvIGl0IHRha2VzIFtgXGZyYWN7Mn17M31gXSBvZiBhbiBob3VyIHRvIGRyaXZlIFtgNTBgXSBtaWxlcyBhdCBbYDc1YF0gbWlsZXMgcGVyIGhvdXIsIGFuZCB0aGUgcG9pbnQgW2AoNzUsIFxmcmFjezJ9ezN9KWBdIGxpZXMgb24gdGhlIGdyYXBoIG9mIFtgVChzKVx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkdpdmUgdGhyZWUgcG9pbnRzIHdoaWNoIGxpZSBvbiB0aGUgZ3JhcGggb2YgW2BUXHRleHR7LH1gXSBzZXBhcmF0ZWQgYnkgY29tbWFzLgoKW19deyRldmFsdWF0b3J9ezEwfQoKV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIF9hbmQgZXhwbGFuYXRpb25zXyBpcyB0cnVlIGFib3V0IHRoZSBncmFwaCBvZiBbYFQocylcdGV4dHs/fWBdCgpbX117JHJhZGlvfXs1fQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSB2YWx1ZSBvZiBbYFQoNjApXHRleHR7P31gXSBJbmNsdWRlIHVuaXRzIG9uIHlvdXIgYW5zd2VyLgoKW19deyRhbnN3ZXIyfXsxMH0KCldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgaXMgdGhlIGJlc3QgZXhwbGFuYXRpb24gb2YgdGhlIG1lYW5pbmcgb2YgdGhpcyB2YWx1ZSBpbiBjb250ZXh0PwoKW19deyRyYWRpbzJ9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClJlY2FsbCB0aGUgYXZlcmFnZSByYXRlIG9mIGNoYW5nZSBvZiBhIGZ1bmN0aW9uIFtgZih4KWBdIG9uIGFuIGludGVydmFsIFtgW2EsYl1gXSBpcwoKW2BgYEFWX3tbYSxiXX09XGZyYWN7ZihiKS1mKGEpfXtiLWF9XHRleHR7Ln1gYGBdCgpEZXRlcm1pbmUgdGhlIGF2ZXJhZ2UgcmF0ZSBvZiBbYFRgXSBvbiB0aGUgaW50ZXJ2YWwgW2BbNjAsNjVdXHRleHR7LH1gXSBbYEFWX3tbNjAsIDY1XX1cdGV4dHsufWBdICBJbmNsdWRlIHVuaXRzIG9uIHlvdXIgYW5zd2VyLgoKW19deyRhbnN3ZXIzfXsxMH0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKVGhlIHNpZ24gb2YgW2BBVl97WzYwLCA2NV19YF0gaXMgW19deyRwb3B1cH17NX0KClRoaXMgc2lnbiBtYWtlcyBzZW5zZSBiZWNhdXNlCgpbX117JHJhZGlvM317NX0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBleHBsYWlucyB0aGUgbWVhbmluZyBvZiB0aGUgdmFsdWUgb2YgW2BBVl97WzYwLCA2NV19XHRleHR7P31gXQoKW19deyRyYWRpbzR9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-03T20:22:11Z       
+###       on 2025-07-15T01:13:17Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -346,7 +348,11 @@ Section::End();
 Section::Begin("");
 
 BEGIN_PGML
-Recall the average rate of change of a function on an interval [`[a,b]\text{,}`] as stated in [|[cross-reference to target(s) "def-1-3-aroc" missing or not unique]|]*, [`AV_{[a,b]}\text{.}`] Determine the average rate of [`T`] on the interval [`[60,65]\text{,}`] [`AV_{[60, 65]}\text{.}`]  Include units on your answer.
+Recall the average rate of change of a function [`f(x)`] on an interval [`[a,b]`] is
+
+[```AV_{[a,b]}=\frac{f(b)-f(a)}{b-a}\text{.}```]
+
+Determine the average rate of [`T`] on the interval [`[60,65]\text{,}`] [`AV_{[60, 65]}\text{.}`]  Include units on your answer.
 
 [_]{$answer3}{10}
 
@@ -379,6 +385,1529 @@ BEGIN_PGML
 Which of the following explains the meaning of the value of [`AV_{[60, 65]}\text{?}`]
 
 [_]{$radio4}{5}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-quadapprox-cos" ww-id="webwork-quadapprox-cos">
+    <static seed="2">
+      <introduction><p>Let <m>f(x)=\cos(x)</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>\cos(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
+</introduction>
+      <task>
+        <statement><p>Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>\cos(x)</m> and evaluating them at <m>x=0</m> as directed.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col halign="right"/>
+<col right="minor"/>
+<col halign="right"/>
+<col/>
+<row>
+<cell><m>f(x)=</m></cell>
+<cell><m>\cos(x)</m></cell>
+<cell><m>T_2(x)=</m></cell>
+<cell><m>b_0+b_1x+b_2x^2</m></cell>
+</row>
+<row>
+<cell><m>f'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0001"/>
+</cell>
+<cell><m>T_2'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/>
+</cell>
+</row>
+<row bottom="major">
+<cell><m>f''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0003"/>
+</cell>
+<cell><m>T_2''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/>
+</cell>
+</row>
+<row>
+<cell><m>f(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0005"/>
+</cell>
+<cell><m>T_2(0)=</m></cell>
+<cell><m>b_0</m></cell>
+</row>
+<row>
+<cell><m>f'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0006"/>
+</cell>
+<cell><m>T_2'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0007"/>
+</cell>
+</row>
+<row>
+<cell><m>f''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0008"/>
+</cell>
+<cell><m>T_2''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0009"/>
+</cell>
+</row>
+</tabular>
+</statement>
+        <answer>
+          <p>
+            <m>-\sin\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>b_{1}+2b_{2}x</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>2b_{2}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>b_{1}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>2b_{2}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement><p>Now, since we want <m>T_2(x)</m> and <m>\cos(x)</m> to have the same height at <m>x=0\text{,}</m> set <m>T_2(0)=f(0)\text{.}</m></p>
+<p>This implies <m>b_0={}</m><fillin characters="10" name="AnSwEr0010"/>.</p>
+<p>Since we want <m>T_2(x)</m> and <m>\cos(x)</m> to have the same slope at <m>x=0\text{,}</m> set <m>T_2'(0)=f'(0)\text{.}</m></p>
+<p>This implies <m>b_1={}</m><fillin characters="10" name="AnSwEr0011"/>.</p>
+<p>Finally, since we want <m>T_2(x)</m> and <m>\cos(x)</m> to have the same concavity at <m>x=0\text{,}</m> set <m>T_2''(0)=f''(0)\text{.}</m></p>
+<p>This implies <m>b_2={}</m><fillin characters="10" name="AnSwEr0012"/>.</p>
+<p>Putting everything together, what is the resulting formula for <m>T_2(x)=b_0+b_1x+b_2x^2\text{?}</m></p>
+<p><m>T_2(x)={}</m><fillin characters="20" name="AnSwEr0013"/></p>
+</statement>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-{\frac{1}{2}}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1-{\frac{1}{2}}x^{2}</m>
+          </p>
+        </answer>
+      </task>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoYl8wPT4iUmVhbCIsIGJfMT0+IlJlYWwiLCBiXzI9PiJSZWFsIik7CiRmPUZyYWN0aW9uKC0xLDIpOwokYz1Gb3JtdWxhKCJjb3MoeCkiKTsKJHM9Rm9ybXVsYSgic2luKHgpIik7CiRUMnByaW1lPUZvcm11bGEoImJfMSsyKmJfMip4Iik7CiRUMmRvdWJsZXByaW1lPUZvcm11bGEoIjIqYl8yIik7CgoKCiRjb25zdDE9Rm9ybXVsYSgiYl8xIik7CiRjb25zdDI9Rm9ybXVsYSgiMipiXzIiKTsKJFQyPUZvcm11bGEoIjEtMS8yeF4yIik7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9XGNvcyh4KWBdIGFuZCBsZXQgW2BUXzIoeCk9Yl8wK2JfMXgrYl8yeF4yXHRleHR7Ln1gXSBXZSBmaW5kIHRoZSB2YWx1ZXMgb2YgW2BiXzAsIGJfMWBdIGFuZCBbYGJfMmBdIHRoYXQgbWFrZSB0aGUgZnVuY3Rpb25zIFtgXGNvcyh4KWBdIGFuZCBbYFRfMih4KWBdIGhhdmUgdGhlIHNhbWUgaGVpZ2h0LCBzbG9wZSwgYW5kIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkNvbXBsZXRlIHRoZSB0YWJsZSBiZWxvdyBieSBjb21wdXRpbmcgZGVyaXZhdGl2ZXMgb2YgW2BUXzIoeClgXSBhbmQgW2BcY29zKHgpYF0gYW5kIGV2YWx1YXRpbmcgdGhlbSBhdCBbYHg9MGBdIGFzIGRpcmVjdGVkLgoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIHVuZGVyc2NvcmVzIHRvIGVudGVyIHRoZSBjb2VmZmljaWVudHMuICBGb3IgZXhhbXBsZSwgdG8gZW50ZXIgW2BiXzFcdGV4dHssfWBdIHR5cGUgImJcXzEiLicpQF0qKgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYGYoeCk9YF0nKSxQR01MKCdbYFxjb3MoeClgXScpLFBHTUwoJ1tgVF8yKHgpPWBdJyksUEdNTCgnW2BiXzArYl8xeCtiXzJ4XjJgXScpLF0sW1BHTUwocSJbYGYnKHgpPWBdIiksUEdNTCgnW19dey0kc317MTB9JyksUEdNTChxIltgVF8yJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDJwcmltZX17MTB9JyksXSxbW1BHTUwocSJbYGYnJyh4KT1gXSIpLHJvd2JvdHRvbT0+JzMnLG1pZHJ1bGU9PicxJyxdLFBHTUwoJ1tfXXstJGN9ezEwfScpLFBHTUwocSJbYFRfMicnKHgpPWBdIiksUEdNTCgnW19deyRUMmRvdWJsZXByaW1lfXsxMH0nKSxdLFtQR01MKCdbYGYoMCk9YF0nKSxQR01MKCdbX117MX17MTB9JyksUEdNTCgnW2BUXzIoMCk9YF0nKSxQR01MKCdbYGJfMGBdJyksXSxbUEdNTChxIltgZicoMCk9YF0iKSxQR01MKCdbX117MH17MTB9JyksUEdNTChxIltgVF8yJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QxfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoMCk9YF0iKSxQR01MKCdbX117LTF9ezEwfScpLFBHTUwocSJbYFRfMicnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDJ9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLHRvcD0+JzMnLCk7QF0qIDw8CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCk5vdywgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFxjb3MoeClgXSB0byBoYXZlIHRoZSBzYW1lIGhlaWdodCBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yKDApPWYoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BiXzA9e31gXVtfXXsnMSd9ezEwfS4KClNpbmNlIHdlIHdhbnQgW2BUXzIoeClgXSBhbmQgW2BcY29zKHgpYF0gdG8gaGF2ZSB0aGUgc2FtZSBzbG9wZSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yJygwKT1mJygwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGJfMT17fWBdW19deycwJ317MTB9LgoKRmluYWxseSwgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFxjb3MoeClgXSB0byBoYXZlIHRoZSBzYW1lIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yJycoMCk9ZicnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8yPXt9YF1bX117JGZ9ezEwfS4KClB1dHRpbmcgZXZlcnl0aGluZyB0b2dldGhlciwgd2hhdCBpcyB0aGUgcmVzdWx0aW5nIGZvcm11bGEgZm9yIFtgVF8yKHgpPWJfMCtiXzF4K2JfMnheMlx0ZXh0ez99YF0KCltgVF8yKHgpPXt9YF1bX117JFQyfXsyMH0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-07-15T01:13:17Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction")->variables->add(b_0=>"Real", b_1=>"Real", b_2=>"Real");
+$f=Fraction(-1,2);
+$c=Formula("cos(x)");
+$s=Formula("sin(x)");
+$T2prime=Formula("b_1+2*b_2*x");
+$T2doubleprime=Formula("2*b_2");
+
+$const1=Formula("b_1");
+$const2=Formula("2*b_2");
+$T2=Formula("1-1/2x^2");
+Context("LimitedNumeric");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x)=\cos(x)`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`\cos(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Complete the table below by computing derivatives of [`T_2(x)`] and [`\cos(x)`] and evaluating them at [`x=0`] as directed.
+
+[@KeyboardInstructions('Use underscores to enter the coefficients.  For example, to enter [`b_1\text{,}`] type "b\_1".')@]**
+
+>> [@DataTable(
+  [
+    [PGML('[`f(x)=`]'),
+     PGML('[`\cos(x)`]'),
+     PGML('[`T_2(x)=`]'),
+     PGML('[`b_0+b_1x+b_2x^2`]'),
+    ],
+    [PGML(q"[`f'(x)=`]"),
+     PGML('[_]{-$s}{10}'),
+     PGML(q"[`T_2'(x)=`]"),
+     PGML('[_]{$T2prime}{10}'),
+    ],
+    [[PGML(q"[`f''(x)=`]"),
+      rowbottom => '3',
+      midrule => '1',],
+     PGML('[_]{-$c}{10}'),
+     PGML(q"[`T_2''(x)=`]"),
+     PGML('[_]{$T2doubleprime}{10}'),
+    ],
+    [PGML('[`f(0)=`]'),
+     PGML('[_]{1}{10}'),
+     PGML('[`T_2(0)=`]'),
+     PGML('[`b_0`]'),
+    ],
+    [PGML(q"[`f'(0)=`]"),
+     PGML('[_]{0}{10}'),
+     PGML(q"[`T_2'(0)=`]"),
+     PGML('[_]{$const1}{10}'),
+    ],
+    [PGML(q"[`f''(0)=`]"),
+     PGML('[_]{-1}{10}'),
+     PGML(q"[`T_2''(0)=`]"),
+     PGML('[_]{$const2}{10}'),
+    ],
+  ],
+      align => 'rl|rl',
+      valign => 'middle',
+      top => '3',);@]* <<
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Now, since we want [`T_2(x)`] and [`\cos(x)`] to have the same height at [`x=0\text{,}`] set [`T_2(0)=f(0)\text{.}`]
+
+This implies [`b_0={}`][_]{'1'}{10}.
+
+Since we want [`T_2(x)`] and [`\cos(x)`] to have the same slope at [`x=0\text{,}`] set [`T_2'(0)=f'(0)\text{.}`]
+
+This implies [`b_1={}`][_]{'0'}{10}.
+
+Finally, since we want [`T_2(x)`] and [`\cos(x)`] to have the same concavity at [`x=0\text{,}`] set [`T_2''(0)=f''(0)\text{.}`]
+
+This implies [`b_2={}`][_]{$f}{10}.
+
+Putting everything together, what is the resulting formula for [`T_2(x)=b_0+b_1x+b_2x^2\text{?}`]
+
+[`T_2(x)={}`][_]{$T2}{20}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-quadapprox-ln1plusx" ww-id="webwork-quadapprox-ln1plusx">
+    <static seed="3">
+      <introduction><p>Let <m>f(x)=\ln(1+x)</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>\ln(1+x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
+</introduction>
+      <task>
+        <statement><p>Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>\ln(1+x)</m> and evaluating them at <m>x=0</m> as directed.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col halign="right"/>
+<col right="minor"/>
+<col halign="right"/>
+<col/>
+<row>
+<cell><m>f(x)=</m></cell>
+<cell><m>\ln(1+x)</m></cell>
+<cell><m>T_2(x)=</m></cell>
+<cell><m>b_0+b_1x+b_2x^2</m></cell>
+</row>
+<row>
+<cell><m>f'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0001"/>
+</cell>
+<cell><m>T_2'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/>
+</cell>
+</row>
+<row bottom="major">
+<cell><m>f''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0003"/>
+</cell>
+<cell><m>T_2''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/>
+</cell>
+</row>
+<row>
+<cell><m>f(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0005"/>
+</cell>
+<cell><m>T_2(0)=</m></cell>
+<cell><m>b_0</m></cell>
+</row>
+<row>
+<cell><m>f'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0006"/>
+</cell>
+<cell><m>T_2'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0007"/>
+</cell>
+</row>
+<row>
+<cell><m>f''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0008"/>
+</cell>
+<cell><m>T_2''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0009"/>
+</cell>
+</row>
+</tabular>
+</statement>
+        <answer>
+          <p>
+            <m>\frac{1}{1+x}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>b_{1}+2b_{2}x</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>\frac{-1}{\left(1+x\right)^{2}}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>2b_{2}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>b_{1}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>2b_{2}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement><p>Now, since we want <m>T_2(x)</m> and <m>\ln(1+x)</m> to have the same height at <m>x=0\text{,}</m> set <m>T_2(0)=f(0)\text{.}</m></p>
+<p>This implies <m>b_0={}</m><fillin characters="10" name="AnSwEr0010"/>.</p>
+<p>Since we want <m>T_2(x)</m> and <m>\ln(1+x)</m> to have the same slope at <m>x=0\text{,}</m> set <m>T_2'(0)=f'(0)\text{.}</m></p>
+<p>This implies <m>b_1={}</m><fillin characters="10" name="AnSwEr0011"/>.</p>
+<p>Finally, since we want <m>T_2(x)</m> and <m>\ln(1+x)</m> to have the same concavity at <m>x=0\text{,}</m> set <m>T_2''(0)=f''(0)\text{.}</m></p>
+<p>This implies <m>b_2={}</m><fillin characters="10" name="AnSwEr0012"/>.</p>
+<p>Putting everything together, what is the resulting formula for <m>T_2(x)=b_0+b_1x+b_2x^2\text{?}</m></p>
+<p><m>T_2(x)={}</m><fillin characters="20" name="AnSwEr0013"/></p>
+</statement>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-{\frac{1}{2}}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>x-{\frac{1}{2}}x^{2}</m>
+          </p>
+        </answer>
+      </task>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoYl8wPT4iUmVhbCIsIGJfMT0+IlJlYWwiLCBiXzI9PiJSZWFsIik7CiRmPUZyYWN0aW9uKC0xLDIpOwokZnVuYz1Gb3JtdWxhKCJsbigxK3gpIik7CiRmdW5jcHJpbWU9Rm9ybXVsYSgiMS8oMSt4KSIpOwokZnVuY2RvdWJsZXByaW1lPUZvcm11bGEoIi0xLygxK3gpXjIiKTsKJFQycHJpbWU9Rm9ybXVsYSgiYl8xKzIqYl8yKngiKTsKJFQyZG91YmxlcHJpbWU9Rm9ybXVsYSgiMipiXzIiKTsKCgoKJGNvbnN0MT1Gb3JtdWxhKCJiXzEiKTsKJGNvbnN0Mj1Gb3JtdWxhKCIyKmJfMiIpOwokVDI9Rm9ybXVsYSgieC0xLzIqeF4yIik7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9XGxuKDEreClgXSBhbmQgbGV0IFtgVF8yKHgpPWJfMCtiXzF4K2JfMnheMlx0ZXh0ey59YF0gV2UgZmluZCB0aGUgdmFsdWVzIG9mIFtgYl8wLCBiXzFgXSBhbmQgW2BiXzJgXSB0aGF0IG1ha2UgdGhlIGZ1bmN0aW9ucyBbYFxsbigxK3gpYF0gYW5kIFtgVF8yKHgpYF0gaGF2ZSB0aGUgc2FtZSBoZWlnaHQsIHNsb3BlLCBhbmQgY29uY2F2aXR5IGF0IFtgeD0wXHRleHR7Ln1gXQoKCkVORF9QR01MClNjYWZmb2xkOjpCZWdpbihudW1iZXJlZCA9PiAxLGlzX29wZW4gPT4gImNvcnJlY3Rfb3JfZmlyc3RfaW5jb3JyZWN0IixjYW5fb3BlbiA9PiBhbHdheXMsKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKQ29tcGxldGUgdGhlIHRhYmxlIGJlbG93IGJ5IGNvbXB1dGluZyBkZXJpdmF0aXZlcyBvZiBbYFRfMih4KWBdIGFuZCBbYFxsbigxK3gpYF0gYW5kIGV2YWx1YXRpbmcgdGhlbSBhdCBbYHg9MGBdIGFzIGRpcmVjdGVkLgoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIHVuZGVyc2NvcmVzIHRvIGVudGVyIHRoZSBjb2VmZmljaWVudHMuICBGb3IgZXhhbXBsZSwgdG8gZW50ZXIgW2BiXzFcdGV4dHssfWBdIHR5cGUgImJcXzEiLicpQF0qKgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYGYoeCk9YF0nKSxQR01MKCdbYFxsbigxK3gpYF0nKSxQR01MKCdbYFRfMih4KT1gXScpLFBHTUwoJ1tgYl8wK2JfMXgrYl8yeF4yYF0nKSxdLFtQR01MKHEiW2BmJyh4KT1gXSIpLFBHTUwoJ1tfXXskZnVuY3ByaW1lfXsxMH0nKSxQR01MKHEiW2BUXzInKHgpPWBdIiksUEdNTCgnW19deyRUMnByaW1lfXsxMH0nKSxdLFtbUEdNTChxIltgZicnKHgpPWBdIikscm93Ym90dG9tPT4nMycsbWlkcnVsZT0+JzEnLF0sUEdNTCgnW19deyRmdW5jZG91YmxlcHJpbWV9ezEwfScpLFBHTUwocSJbYFRfMicnKHgpPWBdIiksUEdNTCgnW19deyRUMmRvdWJsZXByaW1lfXsxMH0nKSxdLFtQR01MKCdbYGYoMCk9YF0nKSxQR01MKCdbX117MH17MTB9JyksUEdNTCgnW2BUXzIoMCk9YF0nKSxQR01MKCdbYGJfMGBdJyksXSxbUEdNTChxIltgZicoMCk9YF0iKSxQR01MKCdbX117MX17MTB9JyksUEdNTChxIltgVF8yJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QxfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoMCk9YF0iKSxQR01MKCdbX117LTF9ezEwfScpLFBHTUwocSJbYFRfMicnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDJ9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLHRvcD0+JzMnLCk7QF0qIDw8CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCk5vdywgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFxsbigxK3gpYF0gdG8gaGF2ZSB0aGUgc2FtZSBoZWlnaHQgYXQgW2B4PTBcdGV4dHssfWBdIHNldCBbYFRfMigwKT1mKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8wPXt9YF1bX117JzAnfXsxMH0uCgpTaW5jZSB3ZSB3YW50IFtgVF8yKHgpYF0gYW5kIFtgXGxuKDEreClgXSB0byBoYXZlIHRoZSBzYW1lIHNsb3BlIGF0IFtgeD0wXHRleHR7LH1gXSBzZXQgW2BUXzInKDApPWYnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8xPXt9YF1bX117JzEnfXsxMH0uCgpGaW5hbGx5LCBzaW5jZSB3ZSB3YW50IFtgVF8yKHgpYF0gYW5kIFtgXGxuKDEreClgXSB0byBoYXZlIHRoZSBzYW1lIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yJycoMCk9ZicnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8yPXt9YF1bX117JGZ9ezEwfS4KClB1dHRpbmcgZXZlcnl0aGluZyB0b2dldGhlciwgd2hhdCBpcyB0aGUgcmVzdWx0aW5nIGZvcm11bGEgZm9yIFtgVF8yKHgpPWJfMCtiXzF4K2JfMnheMlx0ZXh0ez99YF0KCltgVF8yKHgpPXt9YF1bX117JFQyfXsyMH0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-07-15T01:13:17Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction")->variables->add(b_0=>"Real", b_1=>"Real", b_2=>"Real");
+$f=Fraction(-1,2);
+$func=Formula("ln(1+x)");
+$funcprime=Formula("1/(1+x)");
+$funcdoubleprime=Formula("-1/(1+x)^2");
+$T2prime=Formula("b_1+2*b_2*x");
+$T2doubleprime=Formula("2*b_2");
+
+$const1=Formula("b_1");
+$const2=Formula("2*b_2");
+$T2=Formula("x-1/2*x^2");
+Context("LimitedNumeric");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x)=\ln(1+x)`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`\ln(1+x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Complete the table below by computing derivatives of [`T_2(x)`] and [`\ln(1+x)`] and evaluating them at [`x=0`] as directed.
+
+[@KeyboardInstructions('Use underscores to enter the coefficients.  For example, to enter [`b_1\text{,}`] type "b\_1".')@]**
+
+>> [@DataTable(
+  [
+    [PGML('[`f(x)=`]'),
+     PGML('[`\ln(1+x)`]'),
+     PGML('[`T_2(x)=`]'),
+     PGML('[`b_0+b_1x+b_2x^2`]'),
+    ],
+    [PGML(q"[`f'(x)=`]"),
+     PGML('[_]{$funcprime}{10}'),
+     PGML(q"[`T_2'(x)=`]"),
+     PGML('[_]{$T2prime}{10}'),
+    ],
+    [[PGML(q"[`f''(x)=`]"),
+      rowbottom => '3',
+      midrule => '1',],
+     PGML('[_]{$funcdoubleprime}{10}'),
+     PGML(q"[`T_2''(x)=`]"),
+     PGML('[_]{$T2doubleprime}{10}'),
+    ],
+    [PGML('[`f(0)=`]'),
+     PGML('[_]{0}{10}'),
+     PGML('[`T_2(0)=`]'),
+     PGML('[`b_0`]'),
+    ],
+    [PGML(q"[`f'(0)=`]"),
+     PGML('[_]{1}{10}'),
+     PGML(q"[`T_2'(0)=`]"),
+     PGML('[_]{$const1}{10}'),
+    ],
+    [PGML(q"[`f''(0)=`]"),
+     PGML('[_]{-1}{10}'),
+     PGML(q"[`T_2''(0)=`]"),
+     PGML('[_]{$const2}{10}'),
+    ],
+  ],
+      align => 'rl|rl',
+      valign => 'middle',
+      top => '3',);@]* <<
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Now, since we want [`T_2(x)`] and [`\ln(1+x)`] to have the same height at [`x=0\text{,}`] set [`T_2(0)=f(0)\text{.}`]
+
+This implies [`b_0={}`][_]{'0'}{10}.
+
+Since we want [`T_2(x)`] and [`\ln(1+x)`] to have the same slope at [`x=0\text{,}`] set [`T_2'(0)=f'(0)\text{.}`]
+
+This implies [`b_1={}`][_]{'1'}{10}.
+
+Finally, since we want [`T_2(x)`] and [`\ln(1+x)`] to have the same concavity at [`x=0\text{,}`] set [`T_2''(0)=f''(0)\text{.}`]
+
+This implies [`b_2={}`][_]{$f}{10}.
+
+Putting everything together, what is the resulting formula for [`T_2(x)=b_0+b_1x+b_2x^2\text{?}`]
+
+[`T_2(x)={}`][_]{$T2}{20}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-cubicapprox-sin" ww-id="webwork-cubicapprox-sin">
+    <static seed="4">
+      <introduction><p>Let <m>f(x)=\sin(x)</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}</m> We find the values of <m>c_0,\ldots,c_3</m> that make the functions <m>\sin(x)</m> and <m>T_3(x)</m> have the same height, slope, concavity, and third derivative value at <m>x=0\text{.}</m></p>
+</introduction>
+      <task>
+        <statement><p>Complete the table below by computing derivatives of <m>T_3(x)</m> and <m>\sin(x)</m> and evaluating them at <m>x=0</m> as directed.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col halign="right"/>
+<col right="minor"/>
+<col halign="right"/>
+<col/>
+<row>
+<cell><m>f(x)=</m></cell>
+<cell><m>\sin(x)</m></cell>
+<cell><m>T_3(x)=</m></cell>
+<cell><m>c_0+c_1x+c_2x^2+c_3x^3</m></cell>
+</row>
+<row>
+<cell><m>f'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0001"/>
+</cell>
+<cell><m>T_3'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/>
+</cell>
+</row>
+<row>
+<cell><m>f''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0003"/>
+</cell>
+<cell><m>T_3''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/>
+</cell>
+</row>
+<row bottom="major">
+<cell><m>f'''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0005"/>
+</cell>
+<cell><m>T_3'''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0006"/>
+</cell>
+</row>
+<row>
+<cell><m>f(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0007"/>
+</cell>
+<cell><m>T_3(0)=</m></cell>
+<cell><m>c_0</m></cell>
+</row>
+<row>
+<cell><m>f'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0008"/>
+</cell>
+<cell><m>T_3'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0009"/>
+</cell>
+</row>
+<row>
+<cell><m>f''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0010"/>
+</cell>
+<cell><m>T_3''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0011"/>
+</cell>
+</row>
+<row>
+<cell><m>f'''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0012"/>
+</cell>
+<cell><m>T_3'''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0013"/>
+</cell>
+</row>
+</tabular>
+</statement>
+        <answer>
+          <p>
+            <m>\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>c_{1}+2c_{2}x+3c_{3}x^{2}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\sin\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>2c_{2}+6c_{3}x</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>6c_{3}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>c_{1}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>2c_{2}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>6c_{3}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement><p>Now, since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same height at <m>x=0\text{,}</m> set <m>T_3(0)=f(0)\text{.}</m></p>
+<p>This implies <m>c_0={}</m><fillin characters="10" name="AnSwEr0014"/>.</p>
+<p>Since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same slope at <m>x=0\text{,}</m> set <m>T_3'(0)=f'(0)\text{.}</m></p>
+<p>This implies <m>c_1={}</m><fillin characters="10" name="AnSwEr0015"/>.</p>
+<p>Since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same concavity at <m>x=0\text{,}</m> set <m>T_3''(0)=f''(0)\text{.}</m></p>
+<p>This implies <m>c_2={}</m><fillin characters="10" name="AnSwEr0016"/>.</p>
+<p>Finally, since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same third derivative value at <m>x=0\text{,}</m> set <m>T_3'''(0)=f'''(0)\text{.}</m></p>
+<p>This implies <m>c_3={}</m><fillin characters="10" name="AnSwEr0017"/>.</p>
+<p>Putting everything together, what is the resulting formula for <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{?}</m></p>
+<p><m>T_3(x)={}</m><fillin characters="20" name="AnSwEr0018"/></p>
+</statement>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-{\frac{1}{6}}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>x-{\frac{1}{6}}x^{3}</m>
+          </p>
+        </answer>
+      </task>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoY18wPT4iUmVhbCIsIGNfMT0+IlJlYWwiLCBjXzI9PiJSZWFsIiwgY18zPT4iUmVhbCIpOwokZj1GcmFjdGlvbigtMSw2KTsKJHM9Rm9ybXVsYSgic2luKHgpIik7CiRUM3ByaW1lPUZvcm11bGEoImNfMSsyKmNfMip4KzMqY18zIHheMiIpOwokVDNkb3VibGVwcmltZT1Gb3JtdWxhKCIyKmNfMis2KmNfMyB4Iik7CiRUM3RyaXBsZXByaW1lPUZvcm11bGEoIjYqY18zIik7CgoKCiRjb25zdDE9Rm9ybXVsYSgiY18xIik7CiRjb25zdDI9Rm9ybXVsYSgiMipjXzIiKTsKJGNvbnN0Mz1Gb3JtdWxhKCI2KmNfMyIpOwokYz0kcy0+RCgneCcpOwokVDM9Rm9ybXVsYSgieC0xLzZ4XjMiKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCkJFR0lOX1BHTUwKTGV0IFtgZih4KT1cc2luKHgpYF0gYW5kIGxldCBbYFRfMyh4KT1jXzArY18xeCtjXzJ4XjIrY18zeF4zXHRleHR7Ln1gXSBXZSBmaW5kIHRoZSB2YWx1ZXMgb2YgW2BjXzAsXGxkb3RzLGNfM2BdIHRoYXQgbWFrZSB0aGUgZnVuY3Rpb25zIFtgXHNpbih4KWBdIGFuZCBbYFRfMyh4KWBdIGhhdmUgdGhlIHNhbWUgaGVpZ2h0LCBzbG9wZSwgY29uY2F2aXR5LCBhbmQgdGhpcmQgZGVyaXZhdGl2ZSB2YWx1ZSBhdCBbYHg9MFx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkNvbXBsZXRlIHRoZSB0YWJsZSBiZWxvdyBieSBjb21wdXRpbmcgZGVyaXZhdGl2ZXMgb2YgW2BUXzMoeClgXSBhbmQgW2Bcc2luKHgpYF0gYW5kIGV2YWx1YXRpbmcgdGhlbSBhdCBbYHg9MGBdIGFzIGRpcmVjdGVkLgoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIHVuZGVyc2NvcmVzIHRvIGVudGVyIHRoZSBjb2VmZmljaWVudHMuICBGb3IgZXhhbXBsZSwgdG8gZW50ZXIgW2BjXzFcdGV4dHssfWBdIHR5cGUgImNcXzEiLicpQF0qKgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYGYoeCk9YF0nKSxQR01MKCdbYFxzaW4oeClgXScpLFBHTUwoJ1tgVF8zKHgpPWBdJyksUEdNTCgnW2BjXzArY18xeCtjXzJ4XjIrY18zeF4zYF0nKSxdLFtQR01MKHEiW2BmJyh4KT1gXSIpLFBHTUwoJ1tfXXskY317MTB9JyksUEdNTChxIltgVF8zJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDNwcmltZX17MTB9JyksXSxbUEdNTChxIltgZicnKHgpPWBdIiksUEdNTCgnW19dey0kc317MTB9JyksUEdNTChxIltgVF8zJycoeCk9YF0iKSxQR01MKCdbX117JFQzZG91YmxlcHJpbWV9ezEwfScpLF0sW1tQR01MKHEiW2BmJycnKHgpPWBdIikscm93Ym90dG9tPT4nMycsbWlkcnVsZT0+JzEnLF0sUEdNTCgnW19dey0kY317MTB9JyksUEdNTChxIltgVF8zJycnKHgpPWBdIiksUEdNTCgnW19deyRUM3RyaXBsZXByaW1lfXsxMH0nKSxdLFtQR01MKCdbYGYoMCk9YF0nKSxQR01MKCdbX117MH17MTB9JyksUEdNTCgnW2BUXzMoMCk9YF0nKSxQR01MKCdbYGNfMGBdJyksXSxbUEdNTChxIltgZicoMCk9YF0iKSxQR01MKCdbX117MX17MTB9JyksUEdNTChxIltgVF8zJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QxfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoMCk9YF0iKSxQR01MKCdbX117MH17MTB9JyksUEdNTChxIltgVF8zJycoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0Mn17MTB9JyksXSxbUEdNTChxIltgZicnJygwKT1gXSIpLFBHTUwoJ1tfXXstMX17MTB9JyksUEdNTChxIltgVF8zJycnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDN9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLHRvcD0+JzMnLCk7QF0qIDw8CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCk5vdywgc2luY2Ugd2Ugd2FudCBbYFRfMyh4KWBdIGFuZCBbYFxzaW4oeClgXSB0byBoYXZlIHRoZSBzYW1lIGhlaWdodCBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8zKDApPWYoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BjXzA9e31gXVtfXXsnMCd9ezEwfS4KClNpbmNlIHdlIHdhbnQgW2BUXzMoeClgXSBhbmQgW2Bcc2luKHgpYF0gdG8gaGF2ZSB0aGUgc2FtZSBzbG9wZSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8zJygwKT1mJygwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGNfMT17fWBdW19deycxJ317MTB9LgoKU2luY2Ugd2Ugd2FudCBbYFRfMyh4KWBdIGFuZCBbYFxzaW4oeClgXSB0byBoYXZlIHRoZSBzYW1lIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8zJycoMCk9ZicnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgY18yPXt9YF1bX117JzAnfXsxMH0uCgpGaW5hbGx5LCBzaW5jZSB3ZSB3YW50IFtgVF8zKHgpYF0gYW5kIFtgXHNpbih4KWBdIHRvIGhhdmUgdGhlIHNhbWUgdGhpcmQgZGVyaXZhdGl2ZSB2YWx1ZSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8zJycnKDApPWYnJycoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BjXzM9e31gXVtfXXskZn17MTB9LgoKUHV0dGluZyBldmVyeXRoaW5nIHRvZ2V0aGVyLCB3aGF0IGlzIHRoZSByZXN1bHRpbmcgZm9ybXVsYSBmb3IgW2BUXzMoeCk9Y18wK2NfMXgrY18yeF4yK2NfM3heM1x0ZXh0ez99YF0KCltgVF8zKHgpPXt9YF1bX117JFQzfXsyMH0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-07-15T01:13:17Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.4.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction")->variables->add(c_0=>"Real", c_1=>"Real", c_2=>"Real", c_3=>"Real");
+$f=Fraction(-1,6);
+$s=Formula("sin(x)");
+$T3prime=Formula("c_1+2*c_2*x+3*c_3 x^2");
+$T3doubleprime=Formula("2*c_2+6*c_3 x");
+$T3tripleprime=Formula("6*c_3");
+
+$const1=Formula("c_1");
+$const2=Formula("2*c_2");
+$const3=Formula("6*c_3");
+$c=$s->D('x');
+$T3=Formula("x-1/6x^3");
+Context("LimitedNumeric");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x)=\sin(x)`] and let [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}`] We find the values of [`c_0,\ldots,c_3`] that make the functions [`\sin(x)`] and [`T_3(x)`] have the same height, slope, concavity, and third derivative value at [`x=0\text{.}`]
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Complete the table below by computing derivatives of [`T_3(x)`] and [`\sin(x)`] and evaluating them at [`x=0`] as directed.
+
+[@KeyboardInstructions('Use underscores to enter the coefficients.  For example, to enter [`c_1\text{,}`] type "c\_1".')@]**
+
+>> [@DataTable(
+  [
+    [PGML('[`f(x)=`]'),
+     PGML('[`\sin(x)`]'),
+     PGML('[`T_3(x)=`]'),
+     PGML('[`c_0+c_1x+c_2x^2+c_3x^3`]'),
+    ],
+    [PGML(q"[`f'(x)=`]"),
+     PGML('[_]{$c}{10}'),
+     PGML(q"[`T_3'(x)=`]"),
+     PGML('[_]{$T3prime}{10}'),
+    ],
+    [PGML(q"[`f''(x)=`]"),
+     PGML('[_]{-$s}{10}'),
+     PGML(q"[`T_3''(x)=`]"),
+     PGML('[_]{$T3doubleprime}{10}'),
+    ],
+    [[PGML(q"[`f'''(x)=`]"),
+      rowbottom => '3',
+      midrule => '1',],
+     PGML('[_]{-$c}{10}'),
+     PGML(q"[`T_3'''(x)=`]"),
+     PGML('[_]{$T3tripleprime}{10}'),
+    ],
+    [PGML('[`f(0)=`]'),
+     PGML('[_]{0}{10}'),
+     PGML('[`T_3(0)=`]'),
+     PGML('[`c_0`]'),
+    ],
+    [PGML(q"[`f'(0)=`]"),
+     PGML('[_]{1}{10}'),
+     PGML(q"[`T_3'(0)=`]"),
+     PGML('[_]{$const1}{10}'),
+    ],
+    [PGML(q"[`f''(0)=`]"),
+     PGML('[_]{0}{10}'),
+     PGML(q"[`T_3''(0)=`]"),
+     PGML('[_]{$const2}{10}'),
+    ],
+    [PGML(q"[`f'''(0)=`]"),
+     PGML('[_]{-1}{10}'),
+     PGML(q"[`T_3'''(0)=`]"),
+     PGML('[_]{$const3}{10}'),
+    ],
+  ],
+      align => 'rl|rl',
+      valign => 'middle',
+      top => '3',);@]* <<
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Now, since we want [`T_3(x)`] and [`\sin(x)`] to have the same height at [`x=0\text{,}`] set [`T_3(0)=f(0)\text{.}`]
+
+This implies [`c_0={}`][_]{'0'}{10}.
+
+Since we want [`T_3(x)`] and [`\sin(x)`] to have the same slope at [`x=0\text{,}`] set [`T_3'(0)=f'(0)\text{.}`]
+
+This implies [`c_1={}`][_]{'1'}{10}.
+
+Since we want [`T_3(x)`] and [`\sin(x)`] to have the same concavity at [`x=0\text{,}`] set [`T_3''(0)=f''(0)\text{.}`]
+
+This implies [`c_2={}`][_]{'0'}{10}.
+
+Finally, since we want [`T_3(x)`] and [`\sin(x)`] to have the same third derivative value at [`x=0\text{,}`] set [`T_3'''(0)=f'''(0)\text{.}`]
+
+This implies [`c_3={}`][_]{$f}{10}.
+
+Putting everything together, what is the resulting formula for [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{?}`]
+
+[`T_3(x)={}`][_]{$T3}{20}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5" source="csafranski/8.1HW_prob1.pg">
+      <statement><p>Suppose that <m>T_2(x)=c_0+c_1x+c_2x^2</m> is the
+second degree Taylor polynomial for the function <m>f</m> about <m>x=0</m>.
+What can you say about the signs of
+<m>c_0</m>, <m>c_1</m>, <m>c_2</m> if <m>f</m> has the graph given below?</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-5-image-1.png" width="25%"/>
+<p><em>(For each, enter <m>+</m> if the term is positive, and <m>-</m> if
+it is negative.  Note that because this is essentially multiple choice
+problem it will not show which parts of your answer are correct or
+incorrect.)</em></p>
+<p><m>c_0</m> is <fillin characters="3" name="AnSwEr0001"/></p>
+<p><m>c_1</m> is <fillin characters="3" name="AnSwEr0002"/></p>
+<p><m>c_2</m> is <fillin characters="3" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{-}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{+}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{+}</m>
+        </p>
+      </answer>
+      <solution><m>T_2(x)</m> is the second degree Taylor polynomial for <m>f(x)</m>
+about <m>x=0</m>, <m>T_2(0)=f(0)</m>, which says <m>c_0=f(0)</m>.  Since
+<m>\frac{d}{dx}T_2(x) \big|_{x=0} = f'(0)</m>,
+<m>c_1=f'(0)</m>; and since
+<m>\frac{d^2}{dx^2} T_2(x) \big|_{x=0} = f''(0)</m>,
+<m>2c_2=f''(0)</m>.  In other words, <m>c_0</m> is the <m>y</m>-intercept of
+<m>f(x)</m>, <m>c_1</m> is the slope of the tangent line to <m>f(x)</m> at
+<m>x=0</m> and <m>c_2</m> tells us the concavity of <m>f(x)</m> near <m>x=0</m>.
+
+
+
+Thus
+<m>c_0 \lt  0</m>; <m>c_1 &gt; 0</m>; and <m>c_2 &gt; 0</m>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/8.1HW_prob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/8.1HW_prob1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-PA-8a-2" ww-id="webwork-PA-8a-2">
+    <static seed="6">
+      <introduction><p>Let <m>f(x)=\sin(x)</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}</m> Our goal is to find the values of <m>c_0,\ldots,c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a=0</m> and to study the resulting degree <m>3</m> approximation of the sine function.</p>
+</introduction>
+      <task>
+        <statement><p>As in previous work, the derivatives of <m>T_3(x)</m> and their respective values at <m>a=0</m> are those shown in the following table. Compute the various derivatives of <m>f(x)=\sin(x)</m> and evaluate them at <m>a=0</m> accordingly, recording your results in the left side of the table.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col halign="right"/>
+<col right="minor"/>
+<col halign="right"/>
+<col/>
+<row>
+<cell><m>f(x)=</m></cell>
+<cell><m>\sin(x)</m></cell>
+<cell><m>T_3(x)=</m></cell>
+<cell><m>c_0+c_1x+c_2x^2+c_3x^3</m></cell>
+</row>
+<row>
+<cell><m>f'(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0001"/>
+</cell>
+<cell><m>T_3'(x)=</m></cell>
+<cell><m>c_1+2c_2x+3c_3x^2</m></cell>
+</row>
+<row>
+<cell><m>f''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0002"/>
+</cell>
+<cell><m>T_3''(x)=</m></cell>
+<cell><m>2c_2+6c_3x</m></cell>
+</row>
+<row>
+<cell><m>f'''(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0003"/>
+</cell>
+<cell><m>T_3'''(x)=</m></cell>
+<cell><m>6c_3</m></cell>
+</row>
+<row>
+<cell><m>f(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0004"/>
+</cell>
+<cell><m>T_3(0)=</m></cell>
+<cell><m>c_0</m></cell>
+</row>
+<row>
+<cell><m>f'(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0005"/>
+</cell>
+<cell><m>T_3'(0)=</m></cell>
+<cell><m>c_1</m></cell>
+</row>
+<row>
+<cell><m>f''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0006"/>
+</cell>
+<cell><m>T_3''(0)=</m></cell>
+<cell><m>2c_2</m></cell>
+</row>
+<row bottom="major">
+<cell><m>f'''(0)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0007"/>
+</cell>
+<cell><m>T_3'''(0)=</m></cell>
+<cell><m>6c_3</m></cell>
+</row>
+</tabular>
+</statement>
+        <answer>
+          <p>
+            <m>\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\sin\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-1</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement><p>Now, set <m>T_3(0)=f(0)\text{,}</m> <m>T_3'(0)=f'(0)\text{,}</m> <m>T_3''(0)=f''(0)\text{,}</m> and <m>T_3'''(0)=f'''(0)\text{.}</m> This implies <m>c_0={}</m><fillin characters="10" name="AnSwEr0008"/>, <m>c_1={}</m><fillin characters="10" name="AnSwEr0009"/>, <m>c_2={}</m><fillin characters="10" name="AnSwEr0010"/>, and <m>c_3={}</m><fillin characters="10" name="AnSwEr0011"/>.</p>
+<p>Putting it all together, what is the resulting formula for <m>T_3(x)\text{?}</m></p>
+<p><fillin characters="20" name="AnSwEr0012"/></p>
+</statement>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>1</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-{\frac{1}{6}}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>x-{\frac{1}{6}}x^{3}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement><p>Recall that the tangent line approximation <m>T_1</m> to <m>f(x)=\sin(x)</m> at <m>a=0</m> is <m>T_1(x)=x\text{,}</m> as plotted below. On the same axes, we<rsq/>ve plotted the cubic approximation <m>T_3</m> you found in part (b).</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-PA-8a-2-image-1" width="47%"/>
+<p>What do you observe about the approximation <m>T_3</m> generates compared to the tangent line approximation <m>T_1\text{?}</m></p>
+<p><ul form="buttons" name="AnSwEr0013">
+<li>
+<p>The cubic approximation is closer to the function for more values of <m>x</m>.</p>
+</li>
+<li>
+<p>The tangent line approximation is closer to the function for more values of <m>x</m>.</p>
+</li>
+<li>
+<p>Both approximate the function equally well.</p>
+</li>
+</ul></p>
+<p>Compute <m>f(1)-T_1(1)={}</m><fillin characters="5" name="AnSwEr0014"/> and <m>f(1)-T_3(1)={}</m><fillin characters="5" name="AnSwEr0015"/>.</p>
+<p>What do you notice about the size and sign of those differences?</p>
+</statement>
+        <answer>
+          <p>
+            <m>\text{Choice 1}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-0.158529</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>0.00813765</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement><p>In our work so far, we<rsq/>ve seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)\text{.}</m>  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)\text{,}</m> we<rsq/>d need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0\text{.}</m></p>
+<p>Fill in the blanks below to determine the next six derivatives of <m>f(x) = \sin(x)\text{,}</m> up to <m>f^{(9)}(x)\text{.}</m></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<col halign="right"/>
+<col right="minor"/>
+<col halign="right"/>
+<col/>
+<row>
+<cell><m>f(x)=</m></cell>
+<cell><m>\sin(x)</m></cell>
+<cell><m>f^{(5)}(x)</m></cell>
+<cell><fillin characters="10" name="AnSwEr0016"/>
+</cell>
+</row>
+<row>
+<cell><m>f'(x)=</m></cell>
+<cell><m>\cos(x)</m></cell>
+<cell><m>f^{(6)}(x)</m></cell>
+<cell><fillin characters="10" name="AnSwEr0017"/>
+</cell>
+</row>
+<row>
+<cell><m>f''(x)=</m></cell>
+<cell><m>-\sin(x)</m></cell>
+<cell><m>f^{(7)}(x)</m></cell>
+<cell><fillin characters="10" name="AnSwEr0018"/>
+</cell>
+</row>
+<row>
+<cell><m>f'''(x)=</m></cell>
+<cell><m>-\cos(x)</m></cell>
+<cell><m>f^{(8)}(x)</m></cell>
+<cell><fillin characters="10" name="AnSwEr0019"/>
+</cell>
+</row>
+<row>
+<cell><m>f^{(4)}(x)=</m></cell>
+<cell><fillin characters="10" name="AnSwEr0020"/>
+</cell>
+<cell><m>f^{(9)}(x)</m></cell>
+<cell><fillin characters="10" name="AnSwEr0021"/>
+</cell>
+</row>
+</tabular>
+<p>What pattern do you notice in the derivatives of <m>f(x)=\sin(x)\text{?}</m></p>
+</statement>
+        <answer>
+          <p>
+            <m>\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\sin\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>-\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>\sin\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>\sin\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>\cos\mathopen{}\left(x\right)</m>
+          </p>
+        </answer>
+      </task>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUEdsYXRleGltYWdlLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJBQy5wbCIsIlBHY291cnNlLnBsIiwpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzSW5lcnQ9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJHY9IiBhcHByb3hpbWF0aW9uIGlzIGNsb3NlciB0byB0aGUgZnVuY3Rpb24gZm9yIG1vcmUgdmFsdWVzIG9mICR7Qk19eCR7RU19LiI7CiRyYWRpbyA9IFJhZGlvQnV0dG9ucyhbIlRoZSBjdWJpYyR2IiwiVGhlIHRhbmdlbnQgbGluZSR2IiwiQm90aCBhcHByb3hpbWF0ZSB0aGUgZnVuY3Rpb24gZXF1YWxseSB3ZWxsLiJdLDApOwpDb250ZXh0KCJJbnRlcnZhbCIpLT5mbGFncy0+c2V0KHRvbFR5cGUsJ2Fic29sdXRlJyx0b2xlcmFuY2UsLjI1KTsKJEkxPUludGVydmFsKC0uOSwuOSk7CiRJMz1JbnRlcnZhbCgtMS43LDEuNyk7CkNvbnRleHQoIkZyYWN0aW9uIik7CiRmPUZyYWN0aW9uKC0xLDYpOwokcz1Gb3JtdWxhKCJzaW4oeCkiKTsKJGM9JHMtPkQoJ3gnKTsKJFQzPUZvcm11bGEoIngtMS82eF4zIik7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgokaW1hZ2VfMSA9IGNyZWF0ZUxhVGVYSW1hZ2UoKTsKJGltYWdlXzEtPmFkZFRvUHJlYW1ibGUobGF0ZXhJbWFnZVByZWFtYmxlKCkpOwokaW1hZ2VfMS0+QkVHSU5fTEFURVhfSU1BR0UKXGJlZ2lue3Rpa3pwaWN0dXJlfQpcYmVnaW57YXhpc31beG1pbj0tMix4bWF4PTIseHRpY2s9ey0xLDF9LG1pbm9yIHh0aWNrPXstMiwtMS43NSwuLi4sMn0seW1pbj0tMix5bWF4PTIseXRpY2s9ey0xLDF9LG1pbm9yIHl0aWNrPXstMiwtMS43NSwuLi4sMn0sbGVnZW5kIHN0eWxlPXthdD17KDAuMDMsMC45Nyl9LGFuY2hvcj1ub3J0aCB3ZXN0fSxkb21haW49LTI6MixzbW9vdGhdClxhZGRwbG90K3tzaW4oZGVnKHgpKX07ClxhZGRsZWdlbmRlbnRyeXtcKGYoeClcKX07ClxhZGRwbG90K3t4fTsKXGFkZGxlZ2VuZGVudHJ5e1woVF8xKHgpXCl9OwpcYWRkcGxvdCt7eC14XjMvNn07ClxhZGRsZWdlbmRlbnRyeXtcKFRfMyh4KVwpfTsKXGVuZHtheGlzfQpcZW5ke3Rpa3pwaWN0dXJlfQoKRU5EX0xBVEVYX0lNQUdFCgpCRUdJTl9QR01MCkxldCBbYGYoeCk9XHNpbih4KWBdIGFuZCBsZXQgW2BUXzMoeCk9Y18wK2NfMXgrY18yeF4yK2NfM3heM1x0ZXh0ey59YF0gT3VyIGdvYWwgaXMgdG8gZmluZCB0aGUgdmFsdWVzIG9mIFtgY18wLFxsZG90cyxjXzNgXSB0aGF0IG1ha2UgdGhlIHNpbmUgZnVuY3Rpb24gYW5kIGl0cyBkZXJpdmF0aXZlIHZhbHVlcyBhZ3JlZSB3aXRoIHRob3NlIG9mIHRoZSBjdWJpYyBwb2x5bm9taWFsIFtgVF8zYF0gYXQgW2BhPTBgXSBhbmQgdG8gc3R1ZHkgdGhlIHJlc3VsdGluZyBkZWdyZWUgW2AzYF0gYXBwcm94aW1hdGlvbiBvZiB0aGUgc2luZSBmdW5jdGlvbi4KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkFzIGluIHByZXZpb3VzIHdvcmssIHRoZSBkZXJpdmF0aXZlcyBvZiBbYFRfMyh4KWBdIGFuZCB0aGVpciByZXNwZWN0aXZlIHZhbHVlcyBhdCBbYGE9MGBdIGFyZSB0aG9zZSBzaG93biBpbiB0aGUgZm9sbG93aW5nIHRhYmxlLiBDb21wdXRlIHRoZSB2YXJpb3VzIGRlcml2YXRpdmVzIG9mIFtgZih4KT1cc2luKHgpYF0gYW5kIGV2YWx1YXRlIHRoZW0gYXQgW2BhPTBgXSBhY2NvcmRpbmdseSwgcmVjb3JkaW5nIHlvdXIgcmVzdWx0cyBpbiB0aGUgbGVmdCBzaWRlIG9mIHRoZSB0YWJsZS4KCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW2BmKHgpPWBdJyksUEdNTCgnW2Bcc2luKHgpYF0nKSxQR01MKCdbYFRfMyh4KT1gXScpLFBHTUwoJ1tgY18wK2NfMXgrY18yeF4yK2NfM3heM2BdJyksXSxbUEdNTChxIltgZicoeCk9YF0iKSxQR01MKCdbX117JGN9ezEwfScpLFBHTUwocSJbYFRfMycoeCk9YF0iKSxQR01MKCdbYGNfMSsyY18yeCszY18zeF4yYF0nKSxdLFtQR01MKHEiW2BmJycoeCk9YF0iKSxQR01MKCdbX117LSRzfXsxMH0nKSxQR01MKHEiW2BUXzMnJyh4KT1gXSIpLFBHTUwoJ1tgMmNfMis2Y18zeGBdJyksXSxbUEdNTChxIltgZicnJyh4KT1gXSIpLFBHTUwoJ1tfXXstJGN9ezEwfScpLFBHTUwocSJbYFRfMycnJyh4KT1gXSIpLFBHTUwoJ1tgNmNfM2BdJyksXSxbUEdNTCgnW2BmKDApPWBdJyksUEdNTCgnW19dezB9ezEwfScpLFBHTUwoJ1tgVF8zKDApPWBdJyksUEdNTCgnW2BjXzBgXScpLF0sW1BHTUwocSJbYGYnKDApPWBdIiksUEdNTCgnW19dezF9ezEwfScpLFBHTUwocSJbYFRfMycoMCk9YF0iKSxQR01MKCdbYGNfMWBdJyksXSxbUEdNTChxIltgZicnKDApPWBdIiksUEdNTCgnW19dezB9ezEwfScpLFBHTUwocSJbYFRfMycnKDApPWBdIiksUEdNTCgnW2AyY18yYF0nKSxdLFtbUEdNTChxIltgZicnJygwKT1gXSIpLHJvd2JvdHRvbT0+JzMnLG1pZHJ1bGU9PicxJyxdLFBHTUwoJ1tfXXstMX17MTB9JyksUEdNTChxIltgVF8zJycnKDApPWBdIiksUEdNTCgnW2A2Y18zYF0nKSxdLF0sYWxpZ249PidybHxybCcsdmFsaWduPT4nbWlkZGxlJyx0b3A9PiczJywpO0BdKiA8PAoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApOb3csIHNldCBbYFRfMygwKT1mKDApXHRleHR7LH1gXSBbYFRfMycoMCk9ZicoMClcdGV4dHssfWBdIFtgVF8zJycoMCk9ZicnKDApXHRleHR7LH1gXSBhbmQgW2BUXzMnJycoMCk9ZicnJygwKVx0ZXh0ey59YF0gVGhpcyBpbXBsaWVzIFtgY18wPXt9YF1bX117JzAnfXsxMH0sIFtgY18xPXt9YF1bX117JzEnfXsxMH0sIFtgY18yPXt9YF1bX117JzAnfXsxMH0sIGFuZCBbYGNfMz17fWBdW19deyRmfXsxMH0uCgpQdXR0aW5nIGl0IGFsbCB0b2dldGhlciwgd2hhdCBpcyB0aGUgcmVzdWx0aW5nIGZvcm11bGEgZm9yIFtgVF8zKHgpXHRleHR7P31gXQoKW19deyRUM317MjB9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClJlY2FsbCB0aGF0IHRoZSB0YW5nZW50IGxpbmUgYXBwcm94aW1hdGlvbiBbYFRfMWBdIHRvIFtgZih4KT1cc2luKHgpYF0gYXQgW2BhPTBgXSBpcyBbYFRfMSh4KT14XHRleHR7LH1gXSBhcyBwbG90dGVkIGJlbG93LiBPbiB0aGUgc2FtZSBheGVzLCB3ZSd2ZSBwbG90dGVkIHRoZSBjdWJpYyBhcHByb3hpbWF0aW9uIFtgVF8zYF0geW91IGZvdW5kIGluIHBhcnQgKGIpLgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkaW1hZ2VfMSksIHdpZHRoPT4yODIpQF0qICA8PAoKV2hhdCBkbyB5b3Ugb2JzZXJ2ZSBhYm91dCB0aGUgYXBwcm94aW1hdGlvbiBbYFRfM2BdIGdlbmVyYXRlcyBjb21wYXJlZCB0byB0aGUgdGFuZ2VudCBsaW5lIGFwcHJveGltYXRpb24gW2BUXzFcdGV4dHs/fWBdCgpbX117JHJhZGlvfXs1fQoKQ29tcHV0ZSBbYGYoMSktVF8xKDEpPXt9YF1bX117c2luKDEpLTF9ezV9IGFuZCBbYGYoMSktVF8zKDEpPXt9YF1bX117c2luKDEpLTUvNn17NX0uCgpXaGF0IGRvIHlvdSBub3RpY2UgYWJvdXQgdGhlIHNpemUgYW5kIHNpZ24gb2YgdGhvc2UgZGlmZmVyZW5jZXM/CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkluIG91ciB3b3JrIHNvIGZhciwgd2UndmUgc2VlbiB0aGF0IHJhaXNpbmcgdGhlIGRlZ3JlZSBvZiBwb2x5bm9taWFsIGltcHJvdmVzIHRoZSBhcHByb3hpbWF0aW9uIG9mIHRoZSBvcmlnaW5hbCBmdW5jdGlvbiBbYGYoeClcdGV4dHsufWBdICBJZiB3ZSBkZWNpZGVkIHdlIHdhbnRlZCB0byBmaW5kIGEgZGVncmVlIFtgOWBdIGFwcHJveGltYXRpb24gdG8gW2BmKHgpID0gXHNpbih4KVx0ZXh0eyx9YF0gd2UnZCBuZWVkIHRvIGZpbmQgYSBwb2x5bm9taWFsIHdob3NlIHZhbHVlIGFuZCBmaXJzdCBbYDlgXSBkZXJpdmF0aXZlcyBtYXRjaCB0aG9zZSBvZiB0aGUgc2luZSBmdW5jdGlvbiBhdCBbYGEgPSAwXHRleHR7Ln1gXQoKRmlsbCBpbiB0aGUgYmxhbmtzIGJlbG93IHRvIGRldGVybWluZSB0aGUgbmV4dCBzaXggZGVyaXZhdGl2ZXMgb2YgW2BmKHgpID0gXHNpbih4KVx0ZXh0eyx9YF0gdXAgdG8gW2BmXnsoOSl9KHgpXHRleHR7Ln1gXQoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYGYoeCk9YF0nKSxQR01MKCdbYFxzaW4oeClgXScpLFBHTUwoJ1tgZl57KDUpfSh4KWBdJyksUEdNTCgnW19deyRjfXsxMH0nKSxdLFtQR01MKHEiW2BmJyh4KT1gXSIpLFBHTUwoJ1tgXGNvcyh4KWBdJyksUEdNTCgnW2BmXnsoNil9KHgpYF0nKSxQR01MKCdbX117LSRzfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoeCk9YF0iKSxQR01MKCdbYC1cc2luKHgpYF0nKSxQR01MKCdbYGZeeyg3KX0oeClgXScpLFBHTUwoJ1tfXXstJGN9ezEwfScpLF0sW1BHTUwocSJbYGYnJycoeCk9YF0iKSxQR01MKCdbYC1cY29zKHgpYF0nKSxQR01MKCdbYGZeeyg4KX0oeClgXScpLFBHTUwoJ1tfXXskc317MTB9JyksXSxbUEdNTCgnW2BmXnsoNCl9KHgpPWBdJyksUEdNTCgnW19deyRzfXsxMH0nKSxQR01MKCdbYGZeeyg5KX0oeClgXScpLFBHTUwoJ1tfXXskY317MTB9JyksXSxdLGFsaWduPT4ncmx8cmwnLHZhbGlnbj0+J21pZGRsZScsdG9wPT4nMycsKTtAXSogPDwKCldoYXQgcGF0dGVybiBkbyB5b3Ugbm90aWNlIGluIHRoZSBkZXJpdmF0aXZlcyBvZiBbYGYoeCk9XHNpbih4KVx0ZXh0ez99YF0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-07-15T01:13:17Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1()
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "parserRadioButtons.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "AC.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$v=" approximation is closer to the function for more values of ${BM}x${EM}.";
+$radio = RadioButtons(["The cubic$v","The tangent line$v","Both approximate the function equally well."],0);
+Context("Interval")->flags->set(tolType,'absolute',tolerance,.25);
+$I1=Interval(-.9,.9);
+$I3=Interval(-1.7,1.7);
+Context("Fraction");
+$f=Fraction(-1,6);
+$s=Formula("sin(x)");
+$c=$s->D('x');
+$T3=Formula("x-1/6x^3");
+Context("LimitedNumeric");
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+\begin{axis}[xmin=-2,xmax=2,xtick={-1,1},minor xtick={-2,-1.75,...,2},ymin=-2,ymax=2,ytick={-1,1},minor ytick={-2,-1.75,...,2},legend style={at={(0.03,0.97)},anchor=north west},domain=-2:2,smooth]
+\addplot+{sin(deg(x))};
+\addlegendentry{\(f(x)\)};
+\addplot+{x};
+\addlegendentry{\(T_1(x)\)};
+\addplot+{x-x^3/6};
+\addlegendentry{\(T_3(x)\)};
+\end{axis}
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x)=\sin(x)`] and let [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}`] Our goal is to find the values of [`c_0,\ldots,c_3`] that make the sine function and its derivative values agree with those of the cubic polynomial [`T_3`] at [`a=0`] and to study the resulting degree [`3`] approximation of the sine function.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+As in previous work, the derivatives of [`T_3(x)`] and their respective values at [`a=0`] are those shown in the following table. Compute the various derivatives of [`f(x)=\sin(x)`] and evaluate them at [`a=0`] accordingly, recording your results in the left side of the table.
+
+>> [@DataTable(
+  [
+    [PGML('[`f(x)=`]'),
+     PGML('[`\sin(x)`]'),
+     PGML('[`T_3(x)=`]'),
+     PGML('[`c_0+c_1x+c_2x^2+c_3x^3`]'),
+    ],
+    [PGML(q"[`f'(x)=`]"),
+     PGML('[_]{$c}{10}'),
+     PGML(q"[`T_3'(x)=`]"),
+     PGML('[`c_1+2c_2x+3c_3x^2`]'),
+    ],
+    [PGML(q"[`f''(x)=`]"),
+     PGML('[_]{-$s}{10}'),
+     PGML(q"[`T_3''(x)=`]"),
+     PGML('[`2c_2+6c_3x`]'),
+    ],
+    [PGML(q"[`f'''(x)=`]"),
+     PGML('[_]{-$c}{10}'),
+     PGML(q"[`T_3'''(x)=`]"),
+     PGML('[`6c_3`]'),
+    ],
+    [PGML('[`f(0)=`]'),
+     PGML('[_]{0}{10}'),
+     PGML('[`T_3(0)=`]'),
+     PGML('[`c_0`]'),
+    ],
+    [PGML(q"[`f'(0)=`]"),
+     PGML('[_]{1}{10}'),
+     PGML(q"[`T_3'(0)=`]"),
+     PGML('[`c_1`]'),
+    ],
+    [PGML(q"[`f''(0)=`]"),
+     PGML('[_]{0}{10}'),
+     PGML(q"[`T_3''(0)=`]"),
+     PGML('[`2c_2`]'),
+    ],
+    [[PGML(q"[`f'''(0)=`]"),
+      rowbottom => '3',
+      midrule => '1',],
+     PGML('[_]{-1}{10}'),
+     PGML(q"[`T_3'''(0)=`]"),
+     PGML('[`6c_3`]'),
+    ],
+  ],
+      align => 'rl|rl',
+      valign => 'middle',
+      top => '3',);@]* <<
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Now, set [`T_3(0)=f(0)\text{,}`] [`T_3'(0)=f'(0)\text{,}`] [`T_3''(0)=f''(0)\text{,}`] and [`T_3'''(0)=f'''(0)\text{.}`] This implies [`c_0={}`][_]{'0'}{10}, [`c_1={}`][_]{'1'}{10}, [`c_2={}`][_]{'0'}{10}, and [`c_3={}`][_]{$f}{10}.
+
+Putting it all together, what is the resulting formula for [`T_3(x)\text{?}`]
+
+[_]{$T3}{20}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Recall that the tangent line approximation [`T_1`] to [`f(x)=\sin(x)`] at [`a=0`] is [`T_1(x)=x\text{,}`] as plotted below. On the same axes, we've plotted the cubic approximation [`T_3`] you found in part (b).
+
+>> [@image(insertGraph($image_1), width=>282)@]*  <<
+
+What do you observe about the approximation [`T_3`] generates compared to the tangent line approximation [`T_1\text{?}`]
+
+[_]{$radio}{5}
+
+Compute [`f(1)-T_1(1)={}`][_]{sin(1)-1}{5} and [`f(1)-T_3(1)={}`][_]{sin(1)-5/6}{5}.
+
+What do you notice about the size and sign of those differences?
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function [`f(x)\text{.}`]  If we decided we wanted to find a degree [`9`] approximation to [`f(x) = \sin(x)\text{,}`] we'd need to find a polynomial whose value and first [`9`] derivatives match those of the sine function at [`a = 0\text{.}`]
+
+Fill in the blanks below to determine the next six derivatives of [`f(x) = \sin(x)\text{,}`] up to [`f^{(9)}(x)\text{.}`]
+
+>> [@DataTable(
+  [
+    [PGML('[`f(x)=`]'),
+     PGML('[`\sin(x)`]'),
+     PGML('[`f^{(5)}(x)`]'),
+     PGML('[_]{$c}{10}'),
+    ],
+    [PGML(q"[`f'(x)=`]"),
+     PGML('[`\cos(x)`]'),
+     PGML('[`f^{(6)}(x)`]'),
+     PGML('[_]{-$s}{10}'),
+    ],
+    [PGML(q"[`f''(x)=`]"),
+     PGML('[`-\sin(x)`]'),
+     PGML('[`f^{(7)}(x)`]'),
+     PGML('[_]{-$c}{10}'),
+    ],
+    [PGML(q"[`f'''(x)=`]"),
+     PGML('[`-\cos(x)`]'),
+     PGML('[`f^{(8)}(x)`]'),
+     PGML('[_]{$s}{10}'),
+    ],
+    [PGML('[`f^{(4)}(x)=`]'),
+     PGML('[_]{$s}{10}'),
+     PGML('[`f^{(9)}(x)`]'),
+     PGML('[_]{$c}{10}'),
+    ],
+  ],
+      align => 'rl|rl',
+      valign => 'middle',
+      top => '3',);@]* <<
+
+What pattern do you notice in the derivatives of [`f(x)=\sin(x)\text{?}`]
 
 END_PGML
 
