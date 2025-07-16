@@ -1,6 +1,6 @@
-openDate          = 07/15/2025 at 12:00am
-dueDate           = 01/15/2026 at 10:00pm
-answerDate        = 01/15/2026 at 10:00pm
+openDate          = 07/16/2025 at 12:00am
+dueDate           = 01/16/2026 at 10:00pm
+answerDate        = 01/16/2026 at 10:00pm
 paperHeaderFile   = Calc_II_Extra_Material/header/1_4-81_Exercises_and_82_Preview.pg
 screenHeaderFile  = Calc_II_Extra_Material/header/1_4-81_Exercises_and_82_Preview.pg
 description       = 8.1 Exercises and 8.2 Preview
@@ -18,10 +18,18 @@ source_file = Calc_II_Extra_Material/1-Extra_Material/1_4-81_Exercises_and_82_Pr
 problem_id = 3
 problem_end
 problem_start
-source_file = csafranski/8.1HW_prob1.pg
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_4-81_Exercises_and_82_Preview/1_4_4.pg
 problem_id = 4
+problem_end
+problem_start
+source_file = csafranski/8.1HW_prob1.pg
+problem_id = 5
 problem_end
 problem_start
 source_file = Calc_II_Extra_Material/1-Extra_Material/1_4-81_Exercises_and_82_Preview/1_4_1.pg
 problem_id = 
+problem_end
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_4-81_Exercises_and_82_Preview/1_4_6.pg
+problem_id = 6
 problem_end

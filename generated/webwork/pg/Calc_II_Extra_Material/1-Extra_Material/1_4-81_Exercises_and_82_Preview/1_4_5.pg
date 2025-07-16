@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:41Z       
+###       on 2025-07-16T12:59:19Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -16,7 +16,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(1.4.2)
+## Problem1(1.4.5)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -48,17 +48,18 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction")->variables->add(b_0=>"Real", b_1=>"Real", b_2=>"Real");
-$f=Fraction(-1,2);
-$func=Formula("ln(1+x)");
-$funcprime=Formula("1/(1+x)");
-$funcdoubleprime=Formula("-1/(1+x)^2");
-$T2prime=Formula("b_1+2*b_2*x");
-$T2doubleprime=Formula("2*b_2");
+Context("Fraction")->variables->add(c_0=>"Real", c_1=>"Real", c_2=>"Real", c_3=>"Real");
+$f=Fraction(-1,6);
+$s=Formula("sin(x)");
+$T3prime=Formula("c_1+2*c_2*x+3*c_3 x^2");
+$T3doubleprime=Formula("2*c_2+6*c_3 x");
+$T3tripleprime=Formula("6*c_3");
 
-$const1=Formula("b_1");
-$const2=Formula("2*b_2");
-$T2=Formula("x-1/2*x^2");
+$const1=Formula("c_1");
+$const2=Formula("2*c_2");
+$const3=Formula("6*c_3");
+$c=$s->D('x');
+$T3=Formula("x-1/6x^3");
 Context("LimitedNumeric");
 
 ############################################################
@@ -66,7 +67,7 @@ Context("LimitedNumeric");
 ############################################################
 
 BEGIN_PGML
-Let [`f(x)=\ln(1+x)`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`\ln(1+x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
+Let [`f(x)=\sin(x)`] and let [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}`] We find the values of [`c_0,\ldots,c_3`] that make the functions [`\sin(x)`] and [`T_3(x)`] have the same height, slope, concavity, and third derivative value at [`x=0\text{.}`]
 
 END_PGML
 
@@ -81,43 +82,53 @@ Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open =
 Section::Begin("");
 
 BEGIN_PGML
-Complete the table below by computing derivatives of [`T_2(x)`] and [`\ln(1+x)`] and evaluating them at [`x=0`] as directed.
+Complete the table below by computing derivatives of [`T_3(x)`] and [`\sin(x)`] and evaluating them at [`x=0`] as directed.
 
-[@KeyboardInstructions('Use underscores to enter the coefficients.  For example, to enter [`b_1\text{,}`] type "b\_1".')@]**
+[@KeyboardInstructions('Use underscores to enter the coefficients.  For example, to enter [`c_1\text{,}`] type "c\_1".')@]**
 
 >> [@DataTable(
   [
     [PGML('[`f(x)=`]'),
-     PGML('[`\ln(1+x)`]'),
-     PGML('[`T_2(x)=`]'),
-     PGML('[`b_0+b_1x+b_2x^2`]'),
+     PGML('[`\sin(x)`]'),
+     PGML('[`T_3(x)=`]'),
+     PGML('[`c_0+c_1x+c_2x^2+c_3x^3`]'),
     ],
     [PGML(q"[`f'(x)=`]"),
-     PGML('[_]{$funcprime}{10}'),
-     PGML(q"[`T_2'(x)=`]"),
-     PGML('[_]{$T2prime}{10}'),
+     PGML('[_]{$c}{10}'),
+     PGML(q"[`T_3'(x)=`]"),
+     PGML('[_]{$T3prime}{10}'),
     ],
-    [[PGML(q"[`f''(x)=`]"),
+    [PGML(q"[`f''(x)=`]"),
+     PGML('[_]{-$s}{10}'),
+     PGML(q"[`T_3''(x)=`]"),
+     PGML('[_]{$T3doubleprime}{10}'),
+    ],
+    [[PGML(q"[`f'''(x)=`]"),
       rowbottom => '3',
       midrule => '1',],
-     PGML('[_]{$funcdoubleprime}{10}'),
-     PGML(q"[`T_2''(x)=`]"),
-     PGML('[_]{$T2doubleprime}{10}'),
+     PGML('[_]{-$c}{10}'),
+     PGML(q"[`T_3'''(x)=`]"),
+     PGML('[_]{$T3tripleprime}{10}'),
     ],
     [PGML('[`f(0)=`]'),
      PGML('[_]{0}{10}'),
-     PGML('[`T_2(0)=`]'),
-     PGML('[`b_0`]'),
+     PGML('[`T_3(0)=`]'),
+     PGML('[`c_0`]'),
     ],
     [PGML(q"[`f'(0)=`]"),
      PGML('[_]{1}{10}'),
-     PGML(q"[`T_2'(0)=`]"),
+     PGML(q"[`T_3'(0)=`]"),
      PGML('[_]{$const1}{10}'),
     ],
     [PGML(q"[`f''(0)=`]"),
-     PGML('[_]{-1}{10}'),
-     PGML(q"[`T_2''(0)=`]"),
+     PGML('[_]{0}{10}'),
+     PGML(q"[`T_3''(0)=`]"),
      PGML('[_]{$const2}{10}'),
+    ],
+    [PGML(q"[`f'''(0)=`]"),
+     PGML('[_]{-1}{10}'),
+     PGML(q"[`T_3'''(0)=`]"),
+     PGML('[_]{$const3}{10}'),
     ],
   ],
       align => 'rl|rl',
@@ -134,21 +145,25 @@ Section::End();
 Section::Begin("");
 
 BEGIN_PGML
-Now, since we want [`T_2(x)`] and [`\ln(1+x)`] to have the same height at [`x=0\text{,}`] set [`T_2(0)=f(0)\text{.}`]
+Now, since we want [`T_3(x)`] and [`\sin(x)`] to have the same height at [`x=0\text{,}`] set [`T_3(0)=f(0)\text{.}`]
 
-This implies [`b_0={}`][_]{'0'}{10}.
+This implies [`c_0={}`][_]{'0'}{10}.
 
-Since we want [`T_2(x)`] and [`\ln(1+x)`] to have the same slope at [`x=0\text{,}`] set [`T_2'(0)=f'(0)\text{.}`]
+Since we want [`T_3(x)`] and [`\sin(x)`] to have the same slope at [`x=0\text{,}`] set [`T_3'(0)=f'(0)\text{.}`]
 
-This implies [`b_1={}`][_]{'1'}{10}.
+This implies [`c_1={}`][_]{'1'}{10}.
 
-Finally, since we want [`T_2(x)`] and [`\ln(1+x)`] to have the same concavity at [`x=0\text{,}`] set [`T_2''(0)=f''(0)\text{.}`]
+Since we want [`T_3(x)`] and [`\sin(x)`] to have the same concavity at [`x=0\text{,}`] set [`T_3''(0)=f''(0)\text{.}`]
 
-This implies [`b_2={}`][_]{$f}{10}.
+This implies [`c_2={}`][_]{'0'}{10}.
 
-Putting everything together, what is the resulting formula for [`T_2(x)=b_0+b_1x+b_2x^2\text{?}`]
+Finally, since we want [`T_3(x)`] and [`\sin(x)`] to have the same third derivative value at [`x=0\text{,}`] set [`T_3'''(0)=f'''(0)\text{.}`]
 
-[`T_2(x)={}`][_]{$T2}{20}
+This implies [`c_3={}`][_]{$f}{10}.
+
+Putting everything together, what is the resulting formula for [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{?}`]
+
+[`T_3(x)={}`][_]{$T3}{20}
 
 END_PGML
 
