@@ -217,7 +217,7 @@
                 </pg-code>
                 <introduction>
                 <p>
-                    Let <m>f(x)=<var name="$a"/> x^2+<var name="$b"/> x+ <var name="$c"/></m> and let <m>T_2(x)=b_0+b_1x+b_2x^2</m>.
+                    Let <m>f(x)=<var name="$func"/></m> and let <m>T_2(x)=b_0+b_1x+b_2x^2</m>.
                     We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m>
                     have the same height, slope, and concavity at <m>x=0</m>.
                 </p>
@@ -429,8 +429,25 @@
     <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-8a-2" label="ajordan_8a-_2_Preview_sine_Taylor">
         <webwork xml:id="webwork-PA-8a-2">                                          
             <pg-code>
-            $v=" approximation is closer to the function for more values of ${BM}x${EM}.";
+            <!-- $v=" approximation is closer to the function for more values of ${BM}x${EM}.";
             $radio = RadioButtons(["The cubic$v","The tangent line$v","Both approximate the function equally well."],0);
+            $v2="What is the value of ${BM}f^{(n)}(0)${EM} (the nth derivative of ${BM}f${EM} evaluated at ${BM}x = 0${EM} when ${BM}n${EM} is "; -->
+            $popup1 = PopUp([
+                "?",
+                "0",
+                "1",
+                "-1",
+                "Either 1 or -1"
+                ], 4
+            );
+            $popup2 = PopUp([
+                "?",
+                "0",
+                "1",
+                "-1",
+                "Either 1 or -1"
+                ], 1
+            );
             Context("Fraction")->variables->add(c_0=>"Real", c_1=>"Real", c_2=>"Real", c_3=>"Real");
             $f=Fraction(-1,6);
             $s=Formula("sin(x)");
@@ -452,75 +469,15 @@
             <p>
                 Let <m>f(x)=\sin(x)</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3</m>.
                 We find the values of <m>c_0,\ldots,c_3</m> that make the sine function and
-                its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a=0</m>,
+                its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>x=0</m>,
                 and observe patterns in the derivatives.
             </p>
             </introduction>
 
             <task>
             <statement>
-                <!-- <p>
-                The derivatives of <m>T_3(x)</m> and their respective values at
-                <m>a=0</m> are those shown in the following table. Compute the various derivatives of
-                <m>f(x)=\sin(x)</m> and evaluate them at <m>x=0</m> accordingly.
-                </p> -->
-
-                <!-- <tabular top="major">
-                <col halign="right"/>
-                <col halign="left" right="minor"/>
-                <col halign="right"/>
-                <col halign="left"/>
-                <row>
-                    <cell><m>f(x)=</m></cell>
-                    <cell><m>\sin(x)</m></cell>
-                    <cell><m>T_3(x)=</m></cell>
-                    <cell><m>c_0+c_1x+c_2x^2+c_3x^3</m></cell>
-                </row>
-                <row>
-                    <cell><m>f'(x)=</m></cell>
-                    <cell><var name="$c" width="10"/></cell>
-                    <cell><m>T_3'(x)=</m></cell>
-                    <cell><m>c_1+2c_2x+3c_3x^2</m></cell>
-                </row>                
-                <row>
-                    <cell><m>f''(x)=</m></cell>
-                    <cell><var name="-$s" width="10"/></cell>
-                    <cell><m>T_3''(x)=</m></cell>
-                    <cell><m>2c_2+6c_3x</m></cell>
-                </row>
-                <row>
-                    <cell><m>f'''(x)=</m></cell>
-                    <cell><var name="-$c" width="10"/></cell>
-                    <cell><m>T_3'''(x)=</m></cell>
-                    <cell><m>6c_3</m></cell>
-                </row>
-                <row>
-                    <cell><m>f(0)=</m></cell>
-                    <cell><var name="0" width="10"/></cell>
-                    <cell><m>T_3(0)=</m></cell>
-                    <cell><m>c_0</m></cell>
-                </row>
-                <row>
-                    <cell><m>f'(0)=</m></cell>
-                    <cell><var name="1" width="10"/></cell>
-                    <cell><m>T_3'(0)=</m></cell>
-                    <cell><m>c_1</m></cell>
-                </row>                
-                <row>
-                    <cell><m>f''(0)=</m></cell>
-                    <cell><var name="0" width="10"/></cell>
-                    <cell><m>T_3''(0)=</m></cell>
-                    <cell><m>2c_2</m></cell>
-                </row>
-                <row bottom="major">
-                    <cell><m>f'''(0)=</m></cell>
-                    <cell><var name="-1" width="10"/></cell>
-                    <cell><m>T_3'''(0)=</m></cell>
-                    <cell><m>6c_3</m></cell>
-                </row>
-                </tabular> -->
                 <p>
-                    Complete the table below by computing derivatives of <m>T_3(x)</m> and evaluating them and the derivatives of <m>\sin(x)</m> at <m>a=0</m> as directed.
+                    Complete the table below by computing derivatives of <m>T_3(x)</m> and evaluating them and the derivatives of <m>\sin(x)</m> at <m>x=0</m> as directed.
                     </p>
                     <instruction>Use underscores to enter the coefficients.  For example, to enter <m>c_1</m>, type <q>c_1</q>.</instruction>
 
@@ -538,21 +495,18 @@
                     <row>
                         <cell><m>f'(x)=</m></cell>
                         <cell><m>\cos(x)</m></cell>
-                        <!-- <cell><var name="$c" width="10"/></cell> -->
                         <cell><m>T_3'(x)=</m></cell>
                         <cell><var name="$T3prime" width="10"/></cell>
                     </row>                
                     <row>
                         <cell><m>f''(x)=</m></cell>
                         <cell><m>-\sin(x)</m></cell>
-                        <!-- <cell><var name="-$s" width="10"/></cell> -->
                         <cell><m>T_3''(x)=</m></cell>
                         <cell><var name="$T3doubleprime" width="10"/></cell>
                     </row>
                     <row bottom="major">
                         <cell><m>f'''(x)=</m></cell>
                         <cell><m>-\cos(x)</m></cell>
-                        <!-- <cell><var name="-$c" width="10"/></cell> -->
                         <cell><m>T_3'''(x)=</m></cell>
                         <cell><var name="$T3tripleprime" width="10"/></cell>
                     </row>
@@ -588,7 +542,8 @@
             <statement>
                 <p>
                 Now, set <m>T_3(0)=f(0)</m>, <m>T_3'(0)=f'(0)</m>, <m>T_3''(0)=f''(0)</m>,
-                and <m>T_3'''(0)=f'''(0)</m>. This implies <m>c_0={}</m><var name="'0'" width="10"/>,
+                and <m>T_3'''(0)=f'''(0)</m>. </p> 
+                <p>This implies <m>c_0={}</m><var name="'0'" width="10"/>,
                 <m>c_1={}</m><var name="'1'" width="10"/>, <m>c_2={}</m><var name="'0'" width="10"/>,
                 and <m>c_3={}</m><var name="$f" width="10"/>.
                 </p>
@@ -596,7 +551,7 @@
                 Putting it all together, what is the resulting formula for <m>T_3(x)</m>?
                 </p>
                 <p>
-                <var name="$T3" width="20"/>
+                <m>T_3(x)={}</m><var name="$T3" width="20"/>
                 </p>
             </statement>
 
@@ -645,12 +600,12 @@
             <task>
             <statement>
                 <p>
-                In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0</m>.
+                In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>x = 0</m>.
                 </p>
                 <p>
                 Fill in the blanks below to determine the next six derivatives of <m>f(x) = \sin(x)</m>, up to <m>f^{(9)}(x)</m>.    
                 </p>
-                <tabular top="major">
+                <tabular>
                 <col halign="right"/>
                 <col halign="left" right="minor"/>
                 <col halign="right"/>
@@ -658,36 +613,39 @@
                 <row>
                     <cell><m>f(x)=</m></cell>
                     <cell><m>\sin(x)</m></cell>
-                    <cell><m>f^{(5)}(x)</m></cell>
+                    <cell><m>f^{(5)}(x)=</m></cell>
                     <cell><var name="$c" width="10"/></cell>
                 </row>
                 <row>
                     <cell><m>f'(x)=</m></cell>
                     <cell><m>\cos(x)</m></cell>
-                    <cell><m>f^{(6)}(x)</m></cell>
+                    <cell><m>f^{(6)}(x)=</m></cell>
                     <cell><var name="-$s" width="10"/></cell>
                 </row>
                 <row>
                     <cell><m>f''(x)=</m></cell>
                     <cell><m>-\sin(x)</m></cell>
-                    <cell><m>f^{(7)}(x)</m></cell>
+                    <cell><m>f^{(7)}(x)=</m></cell>
                     <cell><var name="-$c" width="10"/></cell>
                 </row>
                 <row>
                     <cell><m>f'''(x)=</m></cell>
                     <cell><m>-\cos(x)</m></cell>
-                    <cell><m>f^{(8)}(x)</m></cell>
+                    <cell><m>f^{(8)}(x)=</m></cell>
                     <cell><var name="$s" width="10"/></cell>
                 </row>
                 <row>
                     <cell><m>f^{(4)}(x)=</m></cell>
                     <cell><var name="$s" width="10"/></cell>
-                    <cell><m>f^{(9)}(x)</m></cell>
+                    <cell><m>f^{(9)}(x)=</m></cell>
                     <cell><var name="$c" width="10"/></cell>
                 </row>
                 </tabular>
                 <p>
-                What pattern do you notice in the derivatives of <m>f(x)=\sin(x)</m>?
+                    What is the value of <m>f^{(n)}(0)</m> (the nth derivative of <m>f</m> evaluated at <m>x = 0</m>) when <m>n</m> is even? <var name="$popup2" form="popup"/>
+                </p>
+                <p>
+                    What is the value of <m>f^{(n)}(0)</m> (the nth derivative of <m>f</m> evaluated at <m>x = 0</m>) when <m>n</m> is odd? <var name="$popup1" form="popup"/>
                 </p>
             </statement>
             </task>

@@ -77,7 +77,7 @@
         );
         $answer3 = NumberWithUnits("(50/65-50/60)/5 hr/mph");
         $popup = PopUp([
-          "",
+          "?",
           "positive",
           "negative",
           ], 2
