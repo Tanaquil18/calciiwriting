@@ -85,6 +85,7 @@
       </task>
       <task>
         <statement><p>The sign of <m>AV_{[60, 65]}</m> is <ul form="popup" name="AnSwEr0006"><li>
+<p>?</p>
 </li><li>
 <p>positive</p>
 </li><li>
@@ -138,11 +139,11 @@
         </answer>
       </task>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJzY2FmZm9sZC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJOdW1iZXJXaXRoVW5pdHMucGwiLCJwYXJzZXJQb3BVcC5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJQb2ludCIpOwokYW5zd2VyID0gTGlzdCgiKDEwLDUpLCg1MCwxKSwoMjUsMikiKTsKJGV2YWx1YXRvciA9ICRhbnN3ZXIgLT5jbXAobGlzdF9jaGVja2VyID0+IHN1YiB7CiAgbXkgKCRjb3JyZWN0LCRzdHVkZW50LCRhbnNIYXNoLCR2YWx1ZSkgPSBAXzsKICBteSAkbiA9IHNjYWxhcihAJHN0dWRlbnQpOyAgIyBudW1iZXIgb2Ygc3R1ZGVudCBhbnN3ZXJzCiAgbXkgJHNjb3JlID0gMDsgICAgICAgICAgICAgICMgbnVtYmVyIG9mIGNvcnJlY3Qgc3R1ZGVudCBhbnN3ZXJzCiAgbXkgQGVycm9ycyA9ICgpOyAgICAgICAgICAgICMgc3RvcmVzIGVycm9yIG1lc3NhZ2VzCiAgbXkgJGksICRqOyAgICAgICAgICAgICAgICAgICMgbG9vcCBjb3VudGVycwoKICAjCiAgIyAgTG9vcCB0aG91Z2ggdGhlIHN0dWRlbnQgYW5zd2VycwogICMjCiAgZm9yICgkaSA9IDA7ICRpIDwgJG47ICRpKyspIHsKICAgIG15ICRpdGggPSBWYWx1ZTo6TGlzdC0+TmFtZUZvck51bWJlcigkaSsxKTsKICAgIG15ICRwID0gJHN0dWRlbnQtPlskaV07ICAgIyBpLXRoIHN0dWRlbnQgYW5zd2VyCiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBzdHVkZW50J3MgYW5zd2VyIGlzIGEgcG9pbnQKICAgICMKICAgIGlmICgkcC0+dHlwZSBuZSAiUG9pbnQiKSB7CiAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIGVudHJ5IGlzIG5vdCBhIHBvaW50Iik7CiAgICAgIG5leHQ7CiAgICB9CiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBwb2ludCBoYXNuJ3QgYmVlbiBnaXZlbiBiZWZvcmUKICAgICMKICAgIGZvciAoJGogPSAwLCAkdXNlZCA9IDA7ICRqIDwgJGk7ICRqKyspIHsKICAgICAgaWYgKCRzdHVkZW50LT5bJGpdLT50eXBlIGVxICJQb2ludCIgJiYgJHN0dWRlbnQtPlskal0gPT0gJHApIHsKICAgICAgICBwdXNoKEBlcnJvcnMsIllvdXIgJGl0aCBwb2ludCBpcyB0aGUgc2FtZSBhcyBhIHByZXZpb3VzIG9uZSIpIHVubGVzcyAkYW5zSGFzaC0+e2lzUHJldmlld307CiAgICAgICAgJHVzZWQgPSAxOyBsYXN0OwogICAgICB9CiAgICB9CiAgICAjCiAgICAjICBJZiBub3QgYWxyZWFkeSB1c2VkLCBjaGVjayB0aGF0IGl0IHNhdGlzZmllcyB0aGUgZXF1YXRpb24KICAgICMgICAgYW5kIGluY3JlYXNlIHRoZSBzY29yZSBpZiBzby4KICAgICMKICAgIGlmICghJHVzZWQpIHsKICAgICAgbXkgKCRhLCRiKSA9ICRwLT52YWx1ZTsKICAgICAgaWYgKCRhICogJGIgPT0gNTAgJiYgJGEgPiAwKSB7JHNjb3JlKyt9IGVsc2UgewogICAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIHBvaW50IGlzIG5vdCBjb3JyZWN0IikgdW5sZXNzICRhbnNIYXNoLT57aXNQcmV2aWV3fQogICAgICB9CiAgICB9CiAgfQogICMKICAjICBDaGVjayB0aGF0IHRoZXJlIGFyZSB0aGUgcmlnaHQgbnVtYmVyIG9mIGFuc3dlcnMKICAjCiAgaWYgKCEkYW5zSGFzaC0+e2lzUHJldmlld30pIHsKICAgIHB1c2goQGVycm9ycywiWW91IG5lZWQgdG8gcHJvdmlkZSBtb3JlIHBvaW50cyIpIGlmICRpIDwgMzsKICAgIHB1c2goQGVycm9ycywiWW91IGhhdmUgZ2l2ZW4gdG9vIG1hbnkgcG9pbnRzIikgaWYgJHNjb3JlID4gMyAmJiAkaSAhPSAkc2NvcmU7CiAgfQogIHJldHVybiAoJHNjb3JlLEBlcnJvcnMpOwp9KTsKCgokcmFkaW8gPSBSYWRpb0J1dHRvbnMoWwogICdUaGUgZnVuY3Rpb24gaXMgY29uY2F2ZSB1cCBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGNvbmNhdmUgZG93biBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgZG93bi4nLAogICdUaGUgZnVuY3Rpb24gaXMgaW5jcmVhc2luZyBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGRlY3JlYXNpbmcgYmVjYXVzZSBhcyBzcGVlZCBnb2VzIHVwLCB0cmF2ZWwgdGltZSBnb2VzIGRvd24uJywKICBdLCAzCik7CkNvbnRleHQoIk51bWVyaWMiKS0+ZmxhZ3MtPnNldCh0b2xUeXBlID0+ICdhYnNvbHV0ZScsIHRvbGVyYW5jZSA9PiAwLjAxKTsKJGFuc3dlcjIgPSBOdW1iZXJXaXRoVW5pdHMoIjUvNiBociIpOwokcmFkaW8yID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSBzcGVlZCwgJHtCTX02MCR7RU19IG1waC4iLAogICIke0JNfVQoNjApJHtFTX0gaXMgdGhlIGRpc3RhbmNlLCAke0JNfTYwJHtFTX0gbWlsZXMuIiwKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSB0aW1lIGl0IHRha2VzIHRvIHRyYXZlbCAke0JNfTUwJHtFTX0gbWlsZXMgYXQgYSBzcGVlZCBvZiAke0JNfTYwJHtFTX0gbXBoLiIsCiAgIiR7Qk19VCg2MCkke0VNfSBpcyBob3cgZmFzdCB0aGUgdHJhdmVsIHRpbWUgaXMgY2hhbmdpbmcgd2hlbiB0aGUgY2FyIGlzIHRyYXZlbGluZyBhdCBhIHNwZWVkIG9mICR7Qk19NjAke0VNfSBtcGguIiwKICBdLCAyCik7CiRhbnN3ZXIzID0gTnVtYmVyV2l0aFVuaXRzKCIoNTAvNjUtNTAvNjApLzUgaHIvbXBoIik7CiRwb3B1cCA9IFBvcFVwKFsKICAiIiwKICAicG9zaXRpdmUiLAogICJuZWdhdGl2ZSIsCiAgXSwgMgopOwokcmFkaW8zID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UJHtFTX0gaXMgaW5jcmVhc2luZyBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19VCR7RU19IGlzIGRlY3JlYXNpbmcgZnJvbSAke0JNfTYwJHtFTX0gdG8gJHtCTX02NSR7RU19IG1waC4iLAogICIke0JNfVQke0VNfSBpcyBjb25jYXZlIHVwIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1UJHtFTX0gaXMgY29uY2F2ZSBkb3duIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICBdLCAxCik7CiRyYWRpbzQgPSBSYWRpb0J1dHRvbnMoWwogICIke0JNfUFWX3tbNjAsIDY1XX0ke0VNfSBpcyB0aGUgYW1vdW50IG9mIGhvdXJzICR7Qk19VCR7RU19IGhhcyBjaGFuZ2VkIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1BVl97WzYwLCA2NV19JHtFTX0gaXMgdGhlIGNoYW5nZSBpbiBzcGVlZCBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19QVZfe1s2MCwgNjVdfSR7RU19IGlzIHRoZSBhdmVyYWdlIGNoYW5nZSBpbiBob3VycyB0aGUgdHJpcCB0YWtlcyB3aGVuIHRoZSBzcGVlZCBjaGFuZ2VzIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICBdLCAyCik7CgpCRUdJTl9QR01MClN1cHBvc2UgdGhhdCB5b3UgYXJlIGRyaXZpbmcgYSBjYXIgb24gdGhlIGhpZ2h3YXkgdXNpbmcgY3J1aXNlIGNvbnRyb2wgc28gdGhhdCB5b3UgZHJpdmUgYXQgYSBjb25zdGFudCBzcGVlZC4gIFRoZSB0aW1lLCBbYFRgXSAobWVhc3VyZWQgaW4gaG91cnMpLCBpdCB0YWtlcyB0byBkcml2ZSA1MCBtaWxlcyBkZXBlbmRzIG9uIHRoZSBjb25zdGFudCByYXRlLCBbYHNgXSAobWVhc3VyZWQgaW4gbWlsZXMgcGVyIGhvdXIpIGF0IHdoaWNoIHlvdSBhcmUgZHJpdmluZy4gIFNpbmNlCgpbYGBgCiAgICAgICAgICAgICAgXG1ib3h7ZGlzdGFuY2V9ID0gXG1ib3h7cmF0ZX0gXGNkb3QgXG1ib3h7dHJhdmVsIHRpbWV9CiAgICAgICAgICAgIFx0ZXh0eyx9YGBgXQoKaXQgZm9sbG93cyB0aGF0CgpbYGBgCiAgICAgICAgICAgICAgXG1ib3h7dHJhdmVsIHRpbWV9ID0gIFxmcmFje1xtYm94e2Rpc3RhbmNlfX17XG1ib3h7cmF0ZX19CiAgICAgICAgICAgIFx0ZXh0eyx9YGBgXQoKYW5kIHRodXMgd2Uga25vdyB0aGF0IFtgVChzKSA9IFxmcmFjezUwfXtzfVx0ZXh0ey59YF0KCkZvciBpbnN0YW5jZSwgb2JzZXJ2ZSB0aGF0IFtgVCg3NSkgPSBcZnJhY3s1MH17NzV9ID0gXGZyYWN7Mn17M31cdGV4dHssfWBdIHNvIGl0IHRha2VzIFtgXGZyYWN7Mn17M31gXSBvZiBhbiBob3VyIHRvIGRyaXZlIFtgNTBgXSBtaWxlcyBhdCBbYDc1YF0gbWlsZXMgcGVyIGhvdXIsIGFuZCB0aGUgcG9pbnQgW2AoNzUsIFxmcmFjezJ9ezN9KWBdIGxpZXMgb24gdGhlIGdyYXBoIG9mIFtgVChzKVx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkdpdmUgdGhyZWUgcG9pbnRzIHdoaWNoIGxpZSBvbiB0aGUgZ3JhcGggb2YgW2BUXHRleHR7LH1gXSBzZXBhcmF0ZWQgYnkgY29tbWFzLgoKW19deyRldmFsdWF0b3J9ezEwfQoKV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIF9hbmQgZXhwbGFuYXRpb25zXyBpcyB0cnVlIGFib3V0IHRoZSBncmFwaCBvZiBbYFQocylcdGV4dHs/fWBdCgpbX117JHJhZGlvfXs1fQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSB2YWx1ZSBvZiBbYFQoNjApXHRleHR7P31gXSBJbmNsdWRlIHVuaXRzIG9uIHlvdXIgYW5zd2VyLgoKW19deyRhbnN3ZXIyfXsxMH0KCldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgaXMgdGhlIGJlc3QgZXhwbGFuYXRpb24gb2YgdGhlIG1lYW5pbmcgb2YgdGhpcyB2YWx1ZSBpbiBjb250ZXh0PwoKW19deyRyYWRpbzJ9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClJlY2FsbCB0aGUgYXZlcmFnZSByYXRlIG9mIGNoYW5nZSBvZiBhIGZ1bmN0aW9uIFtgZih4KWBdIG9uIGFuIGludGVydmFsIFtgW2EsYl1gXSBpcwoKW2BgYEFWX3tbYSxiXX09XGZyYWN7ZihiKS1mKGEpfXtiLWF9XHRleHR7Ln1gYGBdCgpEZXRlcm1pbmUgdGhlIGF2ZXJhZ2UgcmF0ZSBvZiBbYFRgXSBvbiB0aGUgaW50ZXJ2YWwgW2BbNjAsNjVdXHRleHR7LH1gXSBbYEFWX3tbNjAsIDY1XX1cdGV4dHsufWBdICBJbmNsdWRlIHVuaXRzIG9uIHlvdXIgYW5zd2VyLgoKW19deyRhbnN3ZXIzfXsxMH0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKVGhlIHNpZ24gb2YgW2BBVl97WzYwLCA2NV19YF0gaXMgW19deyRwb3B1cH17NX0KClRoaXMgc2lnbiBtYWtlcyBzZW5zZSBiZWNhdXNlCgpbX117JHJhZGlvM317NX0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBleHBsYWlucyB0aGUgbWVhbmluZyBvZiB0aGUgdmFsdWUgb2YgW2BBVl97WzYwLCA2NV19XHRleHR7P31gXQoKW19deyRyYWRpbzR9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJzY2FmZm9sZC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJOdW1iZXJXaXRoVW5pdHMucGwiLCJwYXJzZXJQb3BVcC5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJQb2ludCIpOwokYW5zd2VyID0gTGlzdCgiKDEwLDUpLCg1MCwxKSwoMjUsMikiKTsKJGV2YWx1YXRvciA9ICRhbnN3ZXIgLT5jbXAobGlzdF9jaGVja2VyID0+IHN1YiB7CiAgbXkgKCRjb3JyZWN0LCRzdHVkZW50LCRhbnNIYXNoLCR2YWx1ZSkgPSBAXzsKICBteSAkbiA9IHNjYWxhcihAJHN0dWRlbnQpOyAgIyBudW1iZXIgb2Ygc3R1ZGVudCBhbnN3ZXJzCiAgbXkgJHNjb3JlID0gMDsgICAgICAgICAgICAgICMgbnVtYmVyIG9mIGNvcnJlY3Qgc3R1ZGVudCBhbnN3ZXJzCiAgbXkgQGVycm9ycyA9ICgpOyAgICAgICAgICAgICMgc3RvcmVzIGVycm9yIG1lc3NhZ2VzCiAgbXkgJGksICRqOyAgICAgICAgICAgICAgICAgICMgbG9vcCBjb3VudGVycwoKICAjCiAgIyAgTG9vcCB0aG91Z2ggdGhlIHN0dWRlbnQgYW5zd2VycwogICMjCiAgZm9yICgkaSA9IDA7ICRpIDwgJG47ICRpKyspIHsKICAgIG15ICRpdGggPSBWYWx1ZTo6TGlzdC0+TmFtZUZvck51bWJlcigkaSsxKTsKICAgIG15ICRwID0gJHN0dWRlbnQtPlskaV07ICAgIyBpLXRoIHN0dWRlbnQgYW5zd2VyCiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBzdHVkZW50J3MgYW5zd2VyIGlzIGEgcG9pbnQKICAgICMKICAgIGlmICgkcC0+dHlwZSBuZSAiUG9pbnQiKSB7CiAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIGVudHJ5IGlzIG5vdCBhIHBvaW50Iik7CiAgICAgIG5leHQ7CiAgICB9CiAgICAjCiAgICAjICBDaGVjayB0aGF0IHRoZSBwb2ludCBoYXNuJ3QgYmVlbiBnaXZlbiBiZWZvcmUKICAgICMKICAgIGZvciAoJGogPSAwLCAkdXNlZCA9IDA7ICRqIDwgJGk7ICRqKyspIHsKICAgICAgaWYgKCRzdHVkZW50LT5bJGpdLT50eXBlIGVxICJQb2ludCIgJiYgJHN0dWRlbnQtPlskal0gPT0gJHApIHsKICAgICAgICBwdXNoKEBlcnJvcnMsIllvdXIgJGl0aCBwb2ludCBpcyB0aGUgc2FtZSBhcyBhIHByZXZpb3VzIG9uZSIpIHVubGVzcyAkYW5zSGFzaC0+e2lzUHJldmlld307CiAgICAgICAgJHVzZWQgPSAxOyBsYXN0OwogICAgICB9CiAgICB9CiAgICAjCiAgICAjICBJZiBub3QgYWxyZWFkeSB1c2VkLCBjaGVjayB0aGF0IGl0IHNhdGlzZmllcyB0aGUgZXF1YXRpb24KICAgICMgICAgYW5kIGluY3JlYXNlIHRoZSBzY29yZSBpZiBzby4KICAgICMKICAgIGlmICghJHVzZWQpIHsKICAgICAgbXkgKCRhLCRiKSA9ICRwLT52YWx1ZTsKICAgICAgaWYgKCRhICogJGIgPT0gNTAgJiYgJGEgPiAwKSB7JHNjb3JlKyt9IGVsc2UgewogICAgICAgIHB1c2goQGVycm9ycywiWW91ciAkaXRoIHBvaW50IGlzIG5vdCBjb3JyZWN0IikgdW5sZXNzICRhbnNIYXNoLT57aXNQcmV2aWV3fQogICAgICB9CiAgICB9CiAgfQogICMKICAjICBDaGVjayB0aGF0IHRoZXJlIGFyZSB0aGUgcmlnaHQgbnVtYmVyIG9mIGFuc3dlcnMKICAjCiAgaWYgKCEkYW5zSGFzaC0+e2lzUHJldmlld30pIHsKICAgIHB1c2goQGVycm9ycywiWW91IG5lZWQgdG8gcHJvdmlkZSBtb3JlIHBvaW50cyIpIGlmICRpIDwgMzsKICAgIHB1c2goQGVycm9ycywiWW91IGhhdmUgZ2l2ZW4gdG9vIG1hbnkgcG9pbnRzIikgaWYgJHNjb3JlID4gMyAmJiAkaSAhPSAkc2NvcmU7CiAgfQogIHJldHVybiAoJHNjb3JlLEBlcnJvcnMpOwp9KTsKCgokcmFkaW8gPSBSYWRpb0J1dHRvbnMoWwogICdUaGUgZnVuY3Rpb24gaXMgY29uY2F2ZSB1cCBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGNvbmNhdmUgZG93biBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgZG93bi4nLAogICdUaGUgZnVuY3Rpb24gaXMgaW5jcmVhc2luZyBiZWNhdXNlIGFzIHNwZWVkIGdvZXMgdXAsIHRyYXZlbCB0aW1lIGdvZXMgdXAuJywKICAnVGhlIGZ1bmN0aW9uIGlzIGRlY3JlYXNpbmcgYmVjYXVzZSBhcyBzcGVlZCBnb2VzIHVwLCB0cmF2ZWwgdGltZSBnb2VzIGRvd24uJywKICBdLCAzCik7CkNvbnRleHQoIk51bWVyaWMiKS0+ZmxhZ3MtPnNldCh0b2xUeXBlID0+ICdhYnNvbHV0ZScsIHRvbGVyYW5jZSA9PiAwLjAxKTsKJGFuc3dlcjIgPSBOdW1iZXJXaXRoVW5pdHMoIjUvNiBociIpOwokcmFkaW8yID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSBzcGVlZCwgJHtCTX02MCR7RU19IG1waC4iLAogICIke0JNfVQoNjApJHtFTX0gaXMgdGhlIGRpc3RhbmNlLCAke0JNfTYwJHtFTX0gbWlsZXMuIiwKICAiJHtCTX1UKDYwKSR7RU19IGlzIHRoZSB0aW1lIGl0IHRha2VzIHRvIHRyYXZlbCAke0JNfTUwJHtFTX0gbWlsZXMgYXQgYSBzcGVlZCBvZiAke0JNfTYwJHtFTX0gbXBoLiIsCiAgIiR7Qk19VCg2MCkke0VNfSBpcyBob3cgZmFzdCB0aGUgdHJhdmVsIHRpbWUgaXMgY2hhbmdpbmcgd2hlbiB0aGUgY2FyIGlzIHRyYXZlbGluZyBhdCBhIHNwZWVkIG9mICR7Qk19NjAke0VNfSBtcGguIiwKICBdLCAyCik7CiRhbnN3ZXIzID0gTnVtYmVyV2l0aFVuaXRzKCIoNTAvNjUtNTAvNjApLzUgaHIvbXBoIik7CiRwb3B1cCA9IFBvcFVwKFsKICAiPyIsCiAgInBvc2l0aXZlIiwKICAibmVnYXRpdmUiLAogIF0sIDIKKTsKJHJhZGlvMyA9IFJhZGlvQnV0dG9ucyhbCiAgIiR7Qk19VCR7RU19IGlzIGluY3JlYXNpbmcgZnJvbSAke0JNfTYwJHtFTX0gdG8gJHtCTX02NSR7RU19IG1waC4iLAogICIke0JNfVQke0VNfSBpcyBkZWNyZWFzaW5nIGZyb20gJHtCTX02MCR7RU19IHRvICR7Qk19NjUke0VNfSBtcGguIiwKICAiJHtCTX1UJHtFTX0gaXMgY29uY2F2ZSB1cCBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19VCR7RU19IGlzIGNvbmNhdmUgZG93biBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgXSwgMQopOwokcmFkaW80ID0gUmFkaW9CdXR0b25zKFsKICAiJHtCTX1BVl97WzYwLCA2NV19JHtFTX0gaXMgdGhlIGFtb3VudCBvZiBob3VycyAke0JNfVQke0VNfSBoYXMgY2hhbmdlZCBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgIiR7Qk19QVZfe1s2MCwgNjVdfSR7RU19IGlzIHRoZSBjaGFuZ2UgaW4gc3BlZWQgZnJvbSAke0JNfTYwJHtFTX0gdG8gJHtCTX02NSR7RU19IG1waC4iLAogICIke0JNfUFWX3tbNjAsIDY1XX0ke0VNfSBpcyB0aGUgYXZlcmFnZSBjaGFuZ2UgaW4gaG91cnMgdGhlIHRyaXAgdGFrZXMgd2hlbiB0aGUgc3BlZWQgY2hhbmdlcyBmcm9tICR7Qk19NjAke0VNfSB0byAke0JNfTY1JHtFTX0gbXBoLiIsCiAgXSwgMgopOwoKQkVHSU5fUEdNTApTdXBwb3NlIHRoYXQgeW91IGFyZSBkcml2aW5nIGEgY2FyIG9uIHRoZSBoaWdod2F5IHVzaW5nIGNydWlzZSBjb250cm9sIHNvIHRoYXQgeW91IGRyaXZlIGF0IGEgY29uc3RhbnQgc3BlZWQuICBUaGUgdGltZSwgW2BUYF0gKG1lYXN1cmVkIGluIGhvdXJzKSwgaXQgdGFrZXMgdG8gZHJpdmUgNTAgbWlsZXMgZGVwZW5kcyBvbiB0aGUgY29uc3RhbnQgcmF0ZSwgW2BzYF0gKG1lYXN1cmVkIGluIG1pbGVzIHBlciBob3VyKSBhdCB3aGljaCB5b3UgYXJlIGRyaXZpbmcuICBTaW5jZQoKW2BgYAogICAgICAgICAgICAgIFxtYm94e2Rpc3RhbmNlfSA9IFxtYm94e3JhdGV9IFxjZG90IFxtYm94e3RyYXZlbCB0aW1lfQogICAgICAgICAgICBcdGV4dHssfWBgYF0KCml0IGZvbGxvd3MgdGhhdAoKW2BgYAogICAgICAgICAgICAgIFxtYm94e3RyYXZlbCB0aW1lfSA9ICBcZnJhY3tcbWJveHtkaXN0YW5jZX19e1xtYm94e3JhdGV9fQogICAgICAgICAgICBcdGV4dHssfWBgYF0KCmFuZCB0aHVzIHdlIGtub3cgdGhhdCBbYFQocykgPSBcZnJhY3s1MH17c31cdGV4dHsufWBdCgpGb3IgaW5zdGFuY2UsIG9ic2VydmUgdGhhdCBbYFQoNzUpID0gXGZyYWN7NTB9ezc1fSA9IFxmcmFjezJ9ezN9XHRleHR7LH1gXSBzbyBpdCB0YWtlcyBbYFxmcmFjezJ9ezN9YF0gb2YgYW4gaG91ciB0byBkcml2ZSBbYDUwYF0gbWlsZXMgYXQgW2A3NWBdIG1pbGVzIHBlciBob3VyLCBhbmQgdGhlIHBvaW50IFtgKDc1LCBcZnJhY3syfXszfSlgXSBsaWVzIG9uIHRoZSBncmFwaCBvZiBbYFQocylcdGV4dHsufWBdCgoKRU5EX1BHTUwKU2NhZmZvbGQ6OkJlZ2luKG51bWJlcmVkID0+IDEsaXNfb3BlbiA9PiAiY29ycmVjdF9vcl9maXJzdF9pbmNvcnJlY3QiLGNhbl9vcGVuID0+IGFsd2F5cywpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApHaXZlIHRocmVlIHBvaW50cyB3aGljaCBsaWUgb24gdGhlIGdyYXBoIG9mIFtgVFx0ZXh0eyx9YF0gc2VwYXJhdGVkIGJ5IGNvbW1hcy4KCltfXXskZXZhbHVhdG9yfXsxMH0KCldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50cyBfYW5kIGV4cGxhbmF0aW9uc18gaXMgdHJ1ZSBhYm91dCB0aGUgZ3JhcGggb2YgW2BUKHMpXHRleHR7P31gXQoKW19deyRyYWRpb317NX0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKV2hhdCBpcyB0aGUgdmFsdWUgb2YgW2BUKDYwKVx0ZXh0ez99YF0gSW5jbHVkZSB1bml0cyBvbiB5b3VyIGFuc3dlci4KCltfXXskYW5zd2VyMn17MTB9CgpXaGljaCBvZiB0aGUgZm9sbG93aW5nIGlzIHRoZSBiZXN0IGV4cGxhbmF0aW9uIG9mIHRoZSBtZWFuaW5nIG9mIHRoaXMgdmFsdWUgaW4gY29udGV4dD8KCltfXXskcmFkaW8yfXs1fQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApSZWNhbGwgdGhlIGF2ZXJhZ2UgcmF0ZSBvZiBjaGFuZ2Ugb2YgYSBmdW5jdGlvbiBbYGYoeClgXSBvbiBhbiBpbnRlcnZhbCBbYFthLGJdYF0gaXMKCltgYGBBVl97W2EsYl19PVxmcmFje2YoYiktZihhKX17Yi1hfVx0ZXh0ey59YGBgXQoKRGV0ZXJtaW5lIHRoZSBhdmVyYWdlIHJhdGUgb2YgW2BUYF0gb24gdGhlIGludGVydmFsIFtgWzYwLDY1XVx0ZXh0eyx9YF0gW2BBVl97WzYwLCA2NV19XHRleHR7Ln1gXSAgSW5jbHVkZSB1bml0cyBvbiB5b3VyIGFuc3dlci4KCltfXXskYW5zd2VyM317MTB9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClRoZSBzaWduIG9mIFtgQVZfe1s2MCwgNjVdfWBdIGlzIFtfXXskcG9wdXB9ezV9CgpUaGlzIHNpZ24gbWFrZXMgc2Vuc2UgYmVjYXVzZQoKW19deyRyYWRpbzN9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgZXhwbGFpbnMgdGhlIG1lYW5pbmcgb2YgdGhlIHZhbHVlIG9mIFtgQVZfe1s2MCwgNjVdfVx0ZXh0ez99YF0KCltfXXskcmFkaW80fXs1fQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NjYWZmb2xkOjpFbmQoKTsKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -259,7 +260,7 @@ $radio2 = RadioButtons([
 );
 $answer3 = NumberWithUnits("(50/65-50/60)/5 hr/mph");
 $popup = PopUp([
-  "",
+  "?",
   "positive",
   "negative",
   ], 2
@@ -540,7 +541,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -843,7 +844,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1008,7 +1009,7 @@ ENDDOCUMENT();
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-quadapprox-quadratic" ww-id="webwork-quadapprox-quadratic">
     <static seed="4">
-      <introduction><p>Let <m>f(x)=5 x^2+2 x - 1</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
+      <introduction><p>Let <m>f(x)={5x^{2}+2x-1}</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
 </introduction>
       <task>
         <statement><p>Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>{5x^{2}+2x-1}</m> and evaluating them at <m>x=0</m> as directed.</p>
@@ -1144,11 +1145,11 @@ ENDDOCUMENT();
         </answer>
       </task>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoYl8wPT4iUmVhbCIsIGJfMT0+IlJlYWwiLCBiXzI9PiJSZWFsIik7CiRjPW5vbl96ZXJvX3JhbmRvbSgtNSw1KTsKJGI9bm9uX3plcm9fcmFuZG9tKC01LDUpOwokYT1yYW5kb20oMiw4KTsKJGZ1bmM9Rm9ybXVsYSgiJGEgeF4yKyRiIHgrICRjIiktPnJlZHVjZTsKJGZ1bmNwcmltZT0kZnVuYy0+RCgneCcpOwokZnVuY2RvdWJsZXByaW1lPSRmdW5jcHJpbWUtPkQoJ3gnKTsKJFQycHJpbWU9Rm9ybXVsYSgiYl8xKzIqYl8yKngiKTsKJFQyZG91YmxlcHJpbWU9Rm9ybXVsYSgiMipiXzIiKTsKCgoKJGNvbnN0MT1Gb3JtdWxhKCJiXzEiKTsKJGNvbnN0Mj1Gb3JtdWxhKCIyKmJfMiIpOwokVDI9JGZ1bmM7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9WyRhXSB4XjIrWyRiXSB4KyBbJGNdYF0gYW5kIGxldCBbYFRfMih4KT1iXzArYl8xeCtiXzJ4XjJcdGV4dHsufWBdIFdlIGZpbmQgdGhlIHZhbHVlcyBvZiBbYGJfMCwgYl8xYF0gYW5kIFtgYl8yYF0gdGhhdCBtYWtlIHRoZSBmdW5jdGlvbnMgW2BmKHgpYF0gYW5kIFtgVF8yKHgpYF0gaGF2ZSB0aGUgc2FtZSBoZWlnaHQsIHNsb3BlLCBhbmQgY29uY2F2aXR5IGF0IFtgeD0wXHRleHR7Ln1gXQoKCkVORF9QR01MClNjYWZmb2xkOjpCZWdpbihudW1iZXJlZCA9PiAxLGlzX29wZW4gPT4gImNvcnJlY3Rfb3JfZmlyc3RfaW5jb3JyZWN0IixjYW5fb3BlbiA9PiBhbHdheXMsKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKQ29tcGxldGUgdGhlIHRhYmxlIGJlbG93IGJ5IGNvbXB1dGluZyBkZXJpdmF0aXZlcyBvZiBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSBhbmQgZXZhbHVhdGluZyB0aGVtIGF0IFtgeD0wYF0gYXMgZGlyZWN0ZWQuCgpbQEtleWJvYXJkSW5zdHJ1Y3Rpb25zKCdVc2UgdW5kZXJzY29yZXMgdG8gZW50ZXIgdGhlIGNvZWZmaWNpZW50cy4gIEZvciBleGFtcGxlLCB0byBlbnRlciBbYGJfMVx0ZXh0eyx9YF0gdHlwZSAiYlxfMSIuJylAXSoqCgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ1tgZih4KT1gXScpLFBHTUwoJ1tgWyRmdW5jXWBdJyksUEdNTCgnW2BUXzIoeCk9YF0nKSxQR01MKCdbYGJfMCtiXzF4K2JfMnheMmBdJyksXSxbUEdNTChxIltgZicoeCk9YF0iKSxQR01MKCdbX117JGZ1bmNwcmltZX17MTB9JyksUEdNTChxIltgVF8yJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDJwcmltZX17MTB9JyksXSxbW1BHTUwocSJbYGYnJyh4KT1gXSIpLHJvd2JvdHRvbT0+JzMnLG1pZHJ1bGU9PicxJyxdLFBHTUwoJ1tfXXskZnVuY2RvdWJsZXByaW1lfXsxMH0nKSxQR01MKHEiW2BUXzInJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDJkb3VibGVwcmltZX17MTB9JyksXSxbUEdNTCgnW2BmKDApPWBdJyksUEdNTCgnW19deyRjfXsxMH0nKSxQR01MKCdbYFRfMigwKT1gXScpLFBHTUwoJ1tgYl8wYF0nKSxdLFtQR01MKHEiW2BmJygwKT1gXSIpLFBHTUwoJ1tfXXskYn17MTB9JyksUEdNTChxIltgVF8yJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QxfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoMCk9YF0iKSxQR01MKCdbX117MiokYX17MTB9JyksUEdNTChxIltgVF8yJycoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0Mn17MTB9JyksXSxdLGFsaWduPT4ncmx8cmwnLHZhbGlnbj0+J21pZGRsZScsdG9wPT4nMycsKTtAXSogPDwKCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKTm93LCBzaW5jZSB3ZSB3YW50IFtgVF8yKHgpYF0gYW5kIFtgWyRmdW5jXWBdIHRvIGhhdmUgdGhlIHNhbWUgaGVpZ2h0IGF0IFtgeD0wXHRleHR7LH1gXSBzZXQgW2BUXzIoMCk9ZigwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGJfMD17fWBdW19deyRjfXsxMH0uCgpTaW5jZSB3ZSB3YW50IFtgVF8yKHgpYF0gYW5kIFtgWyRmdW5jXWBdIHRvIGhhdmUgdGhlIHNhbWUgc2xvcGUgYXQgW2B4PTBcdGV4dHssfWBdIHNldCBbYFRfMicoMCk9ZicoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BiXzE9e31gXVtfXXskYn17MTB9LgoKRmluYWxseSwgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSB0byBoYXZlIHRoZSBzYW1lIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yJycoMCk9ZicnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8yPXt9YF1bX117JGF9ezEwfS4KClB1dHRpbmcgZXZlcnl0aGluZyB0b2dldGhlciwgd2hhdCBpcyB0aGUgcmVzdWx0aW5nIGZvcm11bGEgZm9yIFtgVF8yKHgpPWJfMCtiXzF4K2JfMnheMlx0ZXh0ez99YF0KCltgVF8yKHgpPXt9YF1bX117JFQyfXsyMH0KCldoYXQgZG9lcyB5b3VyIGFuc3dlciBtZWFuIGFib3V0IHRoZSBxdWFkcmF0aWMgYXBwcm94aW1hdGlvbiB0byBhIHF1YWRyYXRpYyBmdW5jdGlvbj8KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoYl8wPT4iUmVhbCIsIGJfMT0+IlJlYWwiLCBiXzI9PiJSZWFsIik7CiRjPW5vbl96ZXJvX3JhbmRvbSgtNSw1KTsKJGI9bm9uX3plcm9fcmFuZG9tKC01LDUpOwokYT1yYW5kb20oMiw4KTsKJGZ1bmM9Rm9ybXVsYSgiJGEgeF4yKyRiIHgrICRjIiktPnJlZHVjZTsKJGZ1bmNwcmltZT0kZnVuYy0+RCgneCcpOwokZnVuY2RvdWJsZXByaW1lPSRmdW5jcHJpbWUtPkQoJ3gnKTsKJFQycHJpbWU9Rm9ybXVsYSgiYl8xKzIqYl8yKngiKTsKJFQyZG91YmxlcHJpbWU9Rm9ybXVsYSgiMipiXzIiKTsKCgoKJGNvbnN0MT1Gb3JtdWxhKCJiXzEiKTsKJGNvbnN0Mj1Gb3JtdWxhKCIyKmJfMiIpOwokVDI9JGZ1bmM7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9WyRmdW5jXWBdIGFuZCBsZXQgW2BUXzIoeCk9Yl8wK2JfMXgrYl8yeF4yXHRleHR7Ln1gXSBXZSBmaW5kIHRoZSB2YWx1ZXMgb2YgW2BiXzAsIGJfMWBdIGFuZCBbYGJfMmBdIHRoYXQgbWFrZSB0aGUgZnVuY3Rpb25zIFtgZih4KWBdIGFuZCBbYFRfMih4KWBdIGhhdmUgdGhlIHNhbWUgaGVpZ2h0LCBzbG9wZSwgYW5kIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkNvbXBsZXRlIHRoZSB0YWJsZSBiZWxvdyBieSBjb21wdXRpbmcgZGVyaXZhdGl2ZXMgb2YgW2BUXzIoeClgXSBhbmQgW2BbJGZ1bmNdYF0gYW5kIGV2YWx1YXRpbmcgdGhlbSBhdCBbYHg9MGBdIGFzIGRpcmVjdGVkLgoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIHVuZGVyc2NvcmVzIHRvIGVudGVyIHRoZSBjb2VmZmljaWVudHMuICBGb3IgZXhhbXBsZSwgdG8gZW50ZXIgW2BiXzFcdGV4dHssfWBdIHR5cGUgImJcXzEiLicpQF0qKgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYGYoeCk9YF0nKSxQR01MKCdbYFskZnVuY11gXScpLFBHTUwoJ1tgVF8yKHgpPWBdJyksUEdNTCgnW2BiXzArYl8xeCtiXzJ4XjJgXScpLF0sW1BHTUwocSJbYGYnKHgpPWBdIiksUEdNTCgnW19deyRmdW5jcHJpbWV9ezEwfScpLFBHTUwocSJbYFRfMicoeCk9YF0iKSxQR01MKCdbX117JFQycHJpbWV9ezEwfScpLF0sW1tQR01MKHEiW2BmJycoeCk9YF0iKSxyb3dib3R0b209PiczJyxtaWRydWxlPT4nMScsXSxQR01MKCdbX117JGZ1bmNkb3VibGVwcmltZX17MTB9JyksUEdNTChxIltgVF8yJycoeCk9YF0iKSxQR01MKCdbX117JFQyZG91YmxlcHJpbWV9ezEwfScpLF0sW1BHTUwoJ1tgZigwKT1gXScpLFBHTUwoJ1tfXXskY317MTB9JyksUEdNTCgnW2BUXzIoMCk9YF0nKSxQR01MKCdbYGJfMGBdJyksXSxbUEdNTChxIltgZicoMCk9YF0iKSxQR01MKCdbX117JGJ9ezEwfScpLFBHTUwocSJbYFRfMicoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0MX17MTB9JyksXSxbUEdNTChxIltgZicnKDApPWBdIiksUEdNTCgnW19dezIqJGF9ezEwfScpLFBHTUwocSJbYFRfMicnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDJ9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLHRvcD0+JzMnLCk7QF0qIDw8CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCk5vdywgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSB0byBoYXZlIHRoZSBzYW1lIGhlaWdodCBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yKDApPWYoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BiXzA9e31gXVtfXXskY317MTB9LgoKU2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSB0byBoYXZlIHRoZSBzYW1lIHNsb3BlIGF0IFtgeD0wXHRleHR7LH1gXSBzZXQgW2BUXzInKDApPWYnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8xPXt9YF1bX117JGJ9ezEwfS4KCkZpbmFsbHksIHNpbmNlIHdlIHdhbnQgW2BUXzIoeClgXSBhbmQgW2BbJGZ1bmNdYF0gdG8gaGF2ZSB0aGUgc2FtZSBjb25jYXZpdHkgYXQgW2B4PTBcdGV4dHssfWBdIHNldCBbYFRfMicnKDApPWYnJygwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGJfMj17fWBdW19deyRhfXsxMH0uCgpQdXR0aW5nIGV2ZXJ5dGhpbmcgdG9nZXRoZXIsIHdoYXQgaXMgdGhlIHJlc3VsdGluZyBmb3JtdWxhIGZvciBbYFRfMih4KT1iXzArYl8xeCtiXzJ4XjJcdGV4dHs/fWBdCgpbYFRfMih4KT17fWBdW19deyRUMn17MjB9CgpXaGF0IGRvZXMgeW91ciBhbnN3ZXIgbWVhbiBhYm91dCB0aGUgcXVhZHJhdGljIGFwcHJveGltYXRpb24gdG8gYSBxdWFkcmF0aWMgZnVuY3Rpb24/CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1216,7 +1217,7 @@ Context("LimitedNumeric");
 ############################################################
 
 BEGIN_PGML
-Let [`f(x)=[$a] x^2+[$b] x+ [$c]`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`f(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
+Let [`f(x)=[$func]`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`f(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
 
 END_PGML
 
@@ -1499,7 +1500,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1734,10 +1735,10 @@ Thus
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-PA-8a-2" ww-id="webwork-PA-8a-2">
     <static seed="7">
-      <introduction><p>Let <m>f(x)=\sin(x)</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}</m> We find the values of <m>c_0,\ldots,c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a=0\text{,}</m> and observe patterns in the derivatives.</p>
+      <introduction><p>Let <m>f(x)=\sin(x)</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}</m> We find the values of <m>c_0,\ldots,c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>x=0\text{,}</m> and observe patterns in the derivatives.</p>
 </introduction>
       <task>
-        <statement><p>Complete the table below by computing derivatives of <m>T_3(x)</m> and evaluating them and the derivatives of <m>\sin(x)</m> at <m>a=0</m> as directed.</p>
+        <statement><p>Complete the table below by computing derivatives of <m>T_3(x)</m> and evaluating them and the derivatives of <m>\sin(x)</m> at <m>x=0</m> as directed.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
@@ -1856,9 +1857,10 @@ Thus
         </answer>
       </task>
       <task>
-        <statement><p>Now, set <m>T_3(0)=f(0)\text{,}</m> <m>T_3'(0)=f'(0)\text{,}</m> <m>T_3''(0)=f''(0)\text{,}</m> and <m>T_3'''(0)=f'''(0)\text{.}</m> This implies <m>c_0={}</m><fillin characters="10" name="AnSwEr0011"/>, <m>c_1={}</m><fillin characters="10" name="AnSwEr0012"/>, <m>c_2={}</m><fillin characters="10" name="AnSwEr0013"/>, and <m>c_3={}</m><fillin characters="10" name="AnSwEr0014"/>.</p>
+        <statement><p>Now, set <m>T_3(0)=f(0)\text{,}</m> <m>T_3'(0)=f'(0)\text{,}</m> <m>T_3''(0)=f''(0)\text{,}</m> and <m>T_3'''(0)=f'''(0)\text{.}</m></p>
+<p>This implies <m>c_0={}</m><fillin characters="10" name="AnSwEr0011"/>, <m>c_1={}</m><fillin characters="10" name="AnSwEr0012"/>, <m>c_2={}</m><fillin characters="10" name="AnSwEr0013"/>, and <m>c_3={}</m><fillin characters="10" name="AnSwEr0014"/>.</p>
 <p>Putting it all together, what is the resulting formula for <m>T_3(x)\text{?}</m></p>
-<p><fillin characters="20" name="AnSwEr0015"/></p>
+<p><m>T_3(x)={}</m><fillin characters="20" name="AnSwEr0015"/></p>
 </statement>
         <answer>
           <p>
@@ -1887,7 +1889,7 @@ Thus
         </answer>
       </task>
       <task>
-        <statement><p>In our work so far, we<rsq/>ve seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)\text{.}</m>  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)\text{,}</m> we<rsq/>d need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0\text{.}</m></p>
+        <statement><p>In our work so far, we<rsq/>ve seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)\text{.}</m>  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)\text{,}</m> we<rsq/>d need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>x = 0\text{.}</m></p>
 <p>Fill in the blanks below to determine the next six derivatives of <m>f(x) = \sin(x)\text{,}</m> up to <m>f^{(9)}(x)\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
@@ -1898,28 +1900,28 @@ Thus
 <row>
 <cell><m>f(x)=</m></cell>
 <cell><m>\sin(x)</m></cell>
-<cell><m>f^{(5)}(x)</m></cell>
+<cell><m>f^{(5)}(x)=</m></cell>
 <cell><fillin characters="10" name="AnSwEr0016"/>
 </cell>
 </row>
 <row>
 <cell><m>f'(x)=</m></cell>
 <cell><m>\cos(x)</m></cell>
-<cell><m>f^{(6)}(x)</m></cell>
+<cell><m>f^{(6)}(x)=</m></cell>
 <cell><fillin characters="10" name="AnSwEr0017"/>
 </cell>
 </row>
 <row>
 <cell><m>f''(x)=</m></cell>
 <cell><m>-\sin(x)</m></cell>
-<cell><m>f^{(7)}(x)</m></cell>
+<cell><m>f^{(7)}(x)=</m></cell>
 <cell><fillin characters="10" name="AnSwEr0018"/>
 </cell>
 </row>
 <row>
 <cell><m>f'''(x)=</m></cell>
 <cell><m>-\cos(x)</m></cell>
-<cell><m>f^{(8)}(x)</m></cell>
+<cell><m>f^{(8)}(x)=</m></cell>
 <cell><fillin characters="10" name="AnSwEr0019"/>
 </cell>
 </row>
@@ -1927,12 +1929,33 @@ Thus
 <cell><m>f^{(4)}(x)=</m></cell>
 <cell><fillin characters="10" name="AnSwEr0020"/>
 </cell>
-<cell><m>f^{(9)}(x)</m></cell>
+<cell><m>f^{(9)}(x)=</m></cell>
 <cell><fillin characters="10" name="AnSwEr0021"/>
 </cell>
 </row>
 </tabular>
-<p>What pattern do you notice in the derivatives of <m>f(x)=\sin(x)\text{?}</m></p>
+<p>What is the value of <m>f^{(n)}(0)</m> (the nth derivative of <m>f</m> evaluated at <m>x = 0</m>) when <m>n</m> is even? <ul form="popup" name="AnSwEr0022"><li>
+<p>?</p>
+</li><li>
+<p>0</p>
+</li><li>
+<p>1</p>
+</li><li>
+<p>-1</p>
+</li><li>
+<p>Either 1 or -1</p>
+</li></ul></p>
+<p>What is the value of <m>f^{(n)}(0)</m> (the nth derivative of <m>f</m> evaluated at <m>x = 0</m>) when <m>n</m> is odd? <ul form="popup" name="AnSwEr0023"><li>
+<p>?</p>
+</li><li>
+<p>0</p>
+</li><li>
+<p>1</p>
+</li><li>
+<p>-1</p>
+</li><li>
+<p>Either 1 or -1</p>
+</li></ul></p>
 </statement>
         <answer>
           <p>
@@ -1964,13 +1987,23 @@ Thus
             <m>\cos\mathopen{}\left(x\right)</m>
           </p>
         </answer>
+        <answer>
+          <p>
+            <m>\text{0}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>\text{Either 1 or -1}</m>
+          </p>
+        </answer>
       </task>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJHY9IiBhcHByb3hpbWF0aW9uIGlzIGNsb3NlciB0byB0aGUgZnVuY3Rpb24gZm9yIG1vcmUgdmFsdWVzIG9mICR7Qk19eCR7RU19LiI7CiRyYWRpbyA9IFJhZGlvQnV0dG9ucyhbIlRoZSBjdWJpYyR2IiwiVGhlIHRhbmdlbnQgbGluZSR2IiwiQm90aCBhcHByb3hpbWF0ZSB0aGUgZnVuY3Rpb24gZXF1YWxseSB3ZWxsLiJdLDApOwpDb250ZXh0KCJGcmFjdGlvbiIpLT52YXJpYWJsZXMtPmFkZChjXzA9PiJSZWFsIiwgY18xPT4iUmVhbCIsIGNfMj0+IlJlYWwiLCBjXzM9PiJSZWFsIik7CiRmPUZyYWN0aW9uKC0xLDYpOwokcz1Gb3JtdWxhKCJzaW4oeCkiKTsKJGM9JHMtPkQoJ3gnKTsKJFQzcHJpbWU9Rm9ybXVsYSgiY18xKzIqY18yKngrMypjXzMgeF4yIik7CiRUM2RvdWJsZXByaW1lPUZvcm11bGEoIjIqY18yKzYqY18zIHgiKTsKJFQzdHJpcGxlcHJpbWU9Rm9ybXVsYSgiNipjXzMiKTsKCgoKJGNvbnN0MT1Gb3JtdWxhKCJjXzEiKTsKJGNvbnN0Mj1Gb3JtdWxhKCIyKmNfMiIpOwokY29uc3QzPUZvcm11bGEoIjYqY18zIik7CiRUMz1Gb3JtdWxhKCJ4LTEvNnheMyIpOwpDb250ZXh0KCJMaW1pdGVkTnVtZXJpYyIpOwoKQkVHSU5fUEdNTApMZXQgW2BmKHgpPVxzaW4oeClgXSBhbmQgbGV0IFtgVF8zKHgpPWNfMCtjXzF4K2NfMnheMitjXzN4XjNcdGV4dHsufWBdIFdlIGZpbmQgdGhlIHZhbHVlcyBvZiBbYGNfMCxcbGRvdHMsY18zYF0gdGhhdCBtYWtlIHRoZSBzaW5lIGZ1bmN0aW9uIGFuZCBpdHMgZGVyaXZhdGl2ZSB2YWx1ZXMgYWdyZWUgd2l0aCB0aG9zZSBvZiB0aGUgY3ViaWMgcG9seW5vbWlhbCBbYFRfM2BdIGF0IFtgYT0wXHRleHR7LH1gXSBhbmQgb2JzZXJ2ZSBwYXR0ZXJucyBpbiB0aGUgZGVyaXZhdGl2ZXMuCgoKRU5EX1BHTUwKU2NhZmZvbGQ6OkJlZ2luKG51bWJlcmVkID0+IDEsaXNfb3BlbiA9PiAiY29ycmVjdF9vcl9maXJzdF9pbmNvcnJlY3QiLGNhbl9vcGVuID0+IGFsd2F5cywpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApDb21wbGV0ZSB0aGUgdGFibGUgYmVsb3cgYnkgY29tcHV0aW5nIGRlcml2YXRpdmVzIG9mIFtgVF8zKHgpYF0gYW5kIGV2YWx1YXRpbmcgdGhlbSBhbmQgdGhlIGRlcml2YXRpdmVzIG9mIFtgXHNpbih4KWBdIGF0IFtgYT0wYF0gYXMgZGlyZWN0ZWQuCgpbQEtleWJvYXJkSW5zdHJ1Y3Rpb25zKCdVc2UgdW5kZXJzY29yZXMgdG8gZW50ZXIgdGhlIGNvZWZmaWNpZW50cy4gIEZvciBleGFtcGxlLCB0byBlbnRlciBbYGNfMVx0ZXh0eyx9YF0gdHlwZSAiY1xfMSIuJylAXSoqCgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ1tgZih4KT1gXScpLFBHTUwoJ1tgXHNpbih4KWBdJyksUEdNTCgnW2BUXzMoeCk9YF0nKSxQR01MKCdbYGNfMCtjXzF4K2NfMnheMitjXzN4XjNgXScpLF0sW1BHTUwocSJbYGYnKHgpPWBdIiksUEdNTCgnW2BcY29zKHgpYF0nKSxQR01MKHEiW2BUXzMnKHgpPWBdIiksUEdNTCgnW19deyRUM3ByaW1lfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoeCk9YF0iKSxQR01MKCdbYC1cc2luKHgpYF0nKSxQR01MKHEiW2BUXzMnJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDNkb3VibGVwcmltZX17MTB9JyksXSxbW1BHTUwocSJbYGYnJycoeCk9YF0iKSxyb3dib3R0b209PiczJyxtaWRydWxlPT4nMScsXSxQR01MKCdbYC1cY29zKHgpYF0nKSxQR01MKHEiW2BUXzMnJycoeCk9YF0iKSxQR01MKCdbX117JFQzdHJpcGxlcHJpbWV9ezEwfScpLF0sW1BHTUwoJ1tgZigwKT1gXScpLFBHTUwoJ1tfXXswfXsxMH0nKSxQR01MKCdbYFRfMygwKT1gXScpLFBHTUwoJ1tgY18wYF0nKSxdLFtQR01MKHEiW2BmJygwKT1gXSIpLFBHTUwoJ1tfXXsxfXsxMH0nKSxQR01MKHEiW2BUXzMnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDF9ezEwfScpLF0sW1BHTUwocSJbYGYnJygwKT1gXSIpLFBHTUwoJ1tfXXswfXsxMH0nKSxQR01MKHEiW2BUXzMnJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QyfXsxMH0nKSxdLFtQR01MKHEiW2BmJycnKDApPWBdIiksUEdNTCgnW19dey0xfXsxMH0nKSxQR01MKHEiW2BUXzMnJycoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0M317MTB9JyksXSxdLGFsaWduPT4ncmx8cmwnLHZhbGlnbj0+J21pZGRsZScsdG9wPT4nMycsKTtAXSogPDwKCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKTm93LCBzZXQgW2BUXzMoMCk9ZigwKVx0ZXh0eyx9YF0gW2BUXzMnKDApPWYnKDApXHRleHR7LH1gXSBbYFRfMycnKDApPWYnJygwKVx0ZXh0eyx9YF0gYW5kIFtgVF8zJycnKDApPWYnJycoMClcdGV4dHsufWBdIFRoaXMgaW1wbGllcyBbYGNfMD17fWBdW19deycwJ317MTB9LCBbYGNfMT17fWBdW19deycxJ317MTB9LCBbYGNfMj17fWBdW19deycwJ317MTB9LCBhbmQgW2BjXzM9e31gXVtfXXskZn17MTB9LgoKUHV0dGluZyBpdCBhbGwgdG9nZXRoZXIsIHdoYXQgaXMgdGhlIHJlc3VsdGluZyBmb3JtdWxhIGZvciBbYFRfMyh4KVx0ZXh0ez99YF0KCltfXXskVDN9ezIwfQoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApJbiBvdXIgd29yayBzbyBmYXIsIHdlJ3ZlIHNlZW4gdGhhdCByYWlzaW5nIHRoZSBkZWdyZWUgb2YgcG9seW5vbWlhbCBpbXByb3ZlcyB0aGUgYXBwcm94aW1hdGlvbiBvZiB0aGUgb3JpZ2luYWwgZnVuY3Rpb24gW2BmKHgpXHRleHR7Ln1gXSAgSWYgd2UgZGVjaWRlZCB3ZSB3YW50ZWQgdG8gZmluZCBhIGRlZ3JlZSBbYDlgXSBhcHByb3hpbWF0aW9uIHRvIFtgZih4KSA9IFxzaW4oeClcdGV4dHssfWBdIHdlJ2QgbmVlZCB0byBmaW5kIGEgcG9seW5vbWlhbCB3aG9zZSB2YWx1ZSBhbmQgZmlyc3QgW2A5YF0gZGVyaXZhdGl2ZXMgbWF0Y2ggdGhvc2Ugb2YgdGhlIHNpbmUgZnVuY3Rpb24gYXQgW2BhID0gMFx0ZXh0ey59YF0KCkZpbGwgaW4gdGhlIGJsYW5rcyBiZWxvdyB0byBkZXRlcm1pbmUgdGhlIG5leHQgc2l4IGRlcml2YXRpdmVzIG9mIFtgZih4KSA9IFxzaW4oeClcdGV4dHssfWBdIHVwIHRvIFtgZl57KDkpfSh4KVx0ZXh0ey59YF0KCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW2BmKHgpPWBdJyksUEdNTCgnW2Bcc2luKHgpYF0nKSxQR01MKCdbYGZeeyg1KX0oeClgXScpLFBHTUwoJ1tfXXskY317MTB9JyksXSxbUEdNTChxIltgZicoeCk9YF0iKSxQR01MKCdbYFxjb3MoeClgXScpLFBHTUwoJ1tgZl57KDYpfSh4KWBdJyksUEdNTCgnW19dey0kc317MTB9JyksXSxbUEdNTChxIltgZicnKHgpPWBdIiksUEdNTCgnW2AtXHNpbih4KWBdJyksUEdNTCgnW2BmXnsoNyl9KHgpYF0nKSxQR01MKCdbX117LSRjfXsxMH0nKSxdLFtQR01MKHEiW2BmJycnKHgpPWBdIiksUEdNTCgnW2AtXGNvcyh4KWBdJyksUEdNTCgnW2BmXnsoOCl9KHgpYF0nKSxQR01MKCdbX117JHN9ezEwfScpLF0sW1BHTUwoJ1tgZl57KDQpfSh4KT1gXScpLFBHTUwoJ1tfXXskc317MTB9JyksUEdNTCgnW2BmXnsoOSl9KHgpYF0nKSxQR01MKCdbX117JGN9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLHRvcD0+JzMnLCk7QF0qIDw8CgpXaGF0IHBhdHRlcm4gZG8geW91IG5vdGljZSBpbiB0aGUgZGVyaXZhdGl2ZXMgb2YgW2BmKHgpPVxzaW4oeClcdGV4dHs/fWBdCgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwicGFyc2VyUG9wVXAucGwiLCJjb250ZXh0Rm9ybS5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwokcG9wdXAxID0gUG9wVXAoWwogICAgIj8iLAogICAgIjAiLAogICAgIjEiLAogICAgIi0xIiwKICAgICJFaXRoZXIgMSBvciAtMSIKICAgIF0sIDQKKTsKJHBvcHVwMiA9IFBvcFVwKFsKICAgICI/IiwKICAgICIwIiwKICAgICIxIiwKICAgICItMSIsCiAgICAiRWl0aGVyIDEgb3IgLTEiCiAgICBdLCAxCik7CkNvbnRleHQoIkZyYWN0aW9uIiktPnZhcmlhYmxlcy0+YWRkKGNfMD0+IlJlYWwiLCBjXzE9PiJSZWFsIiwgY18yPT4iUmVhbCIsIGNfMz0+IlJlYWwiKTsKJGY9RnJhY3Rpb24oLTEsNik7CiRzPUZvcm11bGEoInNpbih4KSIpOwokYz0kcy0+RCgneCcpOwokVDNwcmltZT1Gb3JtdWxhKCJjXzErMipjXzIqeCszKmNfMyB4XjIiKTsKJFQzZG91YmxlcHJpbWU9Rm9ybXVsYSgiMipjXzIrNipjXzMgeCIpOwokVDN0cmlwbGVwcmltZT1Gb3JtdWxhKCI2KmNfMyIpOwoKCgokY29uc3QxPUZvcm11bGEoImNfMSIpOwokY29uc3QyPUZvcm11bGEoIjIqY18yIik7CiRjb25zdDM9Rm9ybXVsYSgiNipjXzMiKTsKJFQzPUZvcm11bGEoIngtMS82eF4zIik7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9XHNpbih4KWBdIGFuZCBsZXQgW2BUXzMoeCk9Y18wK2NfMXgrY18yeF4yK2NfM3heM1x0ZXh0ey59YF0gV2UgZmluZCB0aGUgdmFsdWVzIG9mIFtgY18wLFxsZG90cyxjXzNgXSB0aGF0IG1ha2UgdGhlIHNpbmUgZnVuY3Rpb24gYW5kIGl0cyBkZXJpdmF0aXZlIHZhbHVlcyBhZ3JlZSB3aXRoIHRob3NlIG9mIHRoZSBjdWJpYyBwb2x5bm9taWFsIFtgVF8zYF0gYXQgW2B4PTBcdGV4dHssfWBdIGFuZCBvYnNlcnZlIHBhdHRlcm5zIGluIHRoZSBkZXJpdmF0aXZlcy4KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkNvbXBsZXRlIHRoZSB0YWJsZSBiZWxvdyBieSBjb21wdXRpbmcgZGVyaXZhdGl2ZXMgb2YgW2BUXzMoeClgXSBhbmQgZXZhbHVhdGluZyB0aGVtIGFuZCB0aGUgZGVyaXZhdGl2ZXMgb2YgW2Bcc2luKHgpYF0gYXQgW2B4PTBgXSBhcyBkaXJlY3RlZC4KCltAS2V5Ym9hcmRJbnN0cnVjdGlvbnMoJ1VzZSB1bmRlcnNjb3JlcyB0byBlbnRlciB0aGUgY29lZmZpY2llbnRzLiAgRm9yIGV4YW1wbGUsIHRvIGVudGVyIFtgY18xXHRleHR7LH1gXSB0eXBlICJjXF8xIi4nKUBdKioKCj4+IFtARGF0YVRhYmxlKFtbUEdNTCgnW2BmKHgpPWBdJyksUEdNTCgnW2Bcc2luKHgpYF0nKSxQR01MKCdbYFRfMyh4KT1gXScpLFBHTUwoJ1tgY18wK2NfMXgrY18yeF4yK2NfM3heM2BdJyksXSxbUEdNTChxIltgZicoeCk9YF0iKSxQR01MKCdbYFxjb3MoeClgXScpLFBHTUwocSJbYFRfMycoeCk9YF0iKSxQR01MKCdbX117JFQzcHJpbWV9ezEwfScpLF0sW1BHTUwocSJbYGYnJyh4KT1gXSIpLFBHTUwoJ1tgLVxzaW4oeClgXScpLFBHTUwocSJbYFRfMycnKHgpPWBdIiksUEdNTCgnW19deyRUM2RvdWJsZXByaW1lfXsxMH0nKSxdLFtbUEdNTChxIltgZicnJyh4KT1gXSIpLHJvd2JvdHRvbT0+JzMnLG1pZHJ1bGU9PicxJyxdLFBHTUwoJ1tgLVxjb3MoeClgXScpLFBHTUwocSJbYFRfMycnJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDN0cmlwbGVwcmltZX17MTB9JyksXSxbUEdNTCgnW2BmKDApPWBdJyksUEdNTCgnW19dezB9ezEwfScpLFBHTUwoJ1tgVF8zKDApPWBdJyksUEdNTCgnW2BjXzBgXScpLF0sW1BHTUwocSJbYGYnKDApPWBdIiksUEdNTCgnW19dezF9ezEwfScpLFBHTUwocSJbYFRfMycoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0MX17MTB9JyksXSxbUEdNTChxIltgZicnKDApPWBdIiksUEdNTCgnW19dezB9ezEwfScpLFBHTUwocSJbYFRfMycnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDJ9ezEwfScpLF0sW1BHTUwocSJbYGYnJycoMCk9YF0iKSxQR01MKCdbX117LTF9ezEwfScpLFBHTUwocSJbYFRfMycnJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QzfXsxMH0nKSxdLF0sYWxpZ249PidybHxybCcsdmFsaWduPT4nbWlkZGxlJyx0b3A9PiczJywpO0BdKiA8PAoKCkVORF9QR01MClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApOb3csIHNldCBbYFRfMygwKT1mKDApXHRleHR7LH1gXSBbYFRfMycoMCk9ZicoMClcdGV4dHssfWBdIFtgVF8zJycoMCk9ZicnKDApXHRleHR7LH1gXSBhbmQgW2BUXzMnJycoMCk9ZicnJygwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGNfMD17fWBdW19deycwJ317MTB9LCBbYGNfMT17fWBdW19deycxJ317MTB9LCBbYGNfMj17fWBdW19deycwJ317MTB9LCBhbmQgW2BjXzM9e31gXVtfXXskZn17MTB9LgoKUHV0dGluZyBpdCBhbGwgdG9nZXRoZXIsIHdoYXQgaXMgdGhlIHJlc3VsdGluZyBmb3JtdWxhIGZvciBbYFRfMyh4KVx0ZXh0ez99YF0KCltgVF8zKHgpPXt9YF1bX117JFQzfXsyMH0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKSW4gb3VyIHdvcmsgc28gZmFyLCB3ZSd2ZSBzZWVuIHRoYXQgcmFpc2luZyB0aGUgZGVncmVlIG9mIHBvbHlub21pYWwgaW1wcm92ZXMgdGhlIGFwcHJveGltYXRpb24gb2YgdGhlIG9yaWdpbmFsIGZ1bmN0aW9uIFtgZih4KVx0ZXh0ey59YF0gIElmIHdlIGRlY2lkZWQgd2Ugd2FudGVkIHRvIGZpbmQgYSBkZWdyZWUgW2A5YF0gYXBwcm94aW1hdGlvbiB0byBbYGYoeCkgPSBcc2luKHgpXHRleHR7LH1gXSB3ZSdkIG5lZWQgdG8gZmluZCBhIHBvbHlub21pYWwgd2hvc2UgdmFsdWUgYW5kIGZpcnN0IFtgOWBdIGRlcml2YXRpdmVzIG1hdGNoIHRob3NlIG9mIHRoZSBzaW5lIGZ1bmN0aW9uIGF0IFtgeCA9IDBcdGV4dHsufWBdCgpGaWxsIGluIHRoZSBibGFua3MgYmVsb3cgdG8gZGV0ZXJtaW5lIHRoZSBuZXh0IHNpeCBkZXJpdmF0aXZlcyBvZiBbYGYoeCkgPSBcc2luKHgpXHRleHR7LH1gXSB1cCB0byBbYGZeeyg5KX0oeClcdGV4dHsufWBdCgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ1tgZih4KT1gXScpLFBHTUwoJ1tgXHNpbih4KWBdJyksUEdNTCgnW2BmXnsoNSl9KHgpPWBdJyksUEdNTCgnW19deyRjfXsxMH0nKSxdLFtQR01MKHEiW2BmJyh4KT1gXSIpLFBHTUwoJ1tgXGNvcyh4KWBdJyksUEdNTCgnW2BmXnsoNil9KHgpPWBdJyksUEdNTCgnW19dey0kc317MTB9JyksXSxbUEdNTChxIltgZicnKHgpPWBdIiksUEdNTCgnW2AtXHNpbih4KWBdJyksUEdNTCgnW2BmXnsoNyl9KHgpPWBdJyksUEdNTCgnW19dey0kY317MTB9JyksXSxbUEdNTChxIltgZicnJyh4KT1gXSIpLFBHTUwoJ1tgLVxjb3MoeClgXScpLFBHTUwoJ1tgZl57KDgpfSh4KT1gXScpLFBHTUwoJ1tfXXskc317MTB9JyksXSxbUEdNTCgnW2BmXnsoNCl9KHgpPWBdJyksUEdNTCgnW19deyRzfXsxMH0nKSxQR01MKCdbYGZeeyg5KX0oeCk9YF0nKSxQR01MKCdbX117JGN9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLCk7QF0qIDw8CgpXaGF0IGlzIHRoZSB2YWx1ZSBvZiBbYGZeeyhuKX0oMClgXSAodGhlIG50aCBkZXJpdmF0aXZlIG9mIFtgZmBdIGV2YWx1YXRlZCBhdCBbYHggPSAwYF0pIHdoZW4gW2BuYF0gaXMgZXZlbj8gW19deyRwb3B1cDJ9ezV9CgpXaGF0IGlzIHRoZSB2YWx1ZSBvZiBbYGZeeyhuKX0oMClgXSAodGhlIG50aCBkZXJpdmF0aXZlIG9mIFtgZmBdIGV2YWx1YXRlZCBhdCBbYHggPSAwYF0pIHdoZW4gW2BuYF0gaXMgb2RkPyBbX117JHBvcHVwMX17NX0KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2003,7 +2036,7 @@ loadMacros(
   "scaffold.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "parserRadioButtons.pl",
+  "parserPopUp.pl",
   "contextForm.pl",
   "contextFraction.pl",
   "PGcourse.pl",
@@ -2019,8 +2052,22 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$v=" approximation is closer to the function for more values of ${BM}x${EM}.";
-$radio = RadioButtons(["The cubic$v","The tangent line$v","Both approximate the function equally well."],0);
+$popup1 = PopUp([
+    "?",
+    "0",
+    "1",
+    "-1",
+    "Either 1 or -1"
+    ], 4
+);
+$popup2 = PopUp([
+    "?",
+    "0",
+    "1",
+    "-1",
+    "Either 1 or -1"
+    ], 1
+);
 Context("Fraction")->variables->add(c_0=>"Real", c_1=>"Real", c_2=>"Real", c_3=>"Real");
 $f=Fraction(-1,6);
 $s=Formula("sin(x)");
@@ -2040,7 +2087,7 @@ Context("LimitedNumeric");
 ############################################################
 
 BEGIN_PGML
-Let [`f(x)=\sin(x)`] and let [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}`] We find the values of [`c_0,\ldots,c_3`] that make the sine function and its derivative values agree with those of the cubic polynomial [`T_3`] at [`a=0\text{,}`] and observe patterns in the derivatives.
+Let [`f(x)=\sin(x)`] and let [`T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}`] We find the values of [`c_0,\ldots,c_3`] that make the sine function and its derivative values agree with those of the cubic polynomial [`T_3`] at [`x=0\text{,}`] and observe patterns in the derivatives.
 
 END_PGML
 
@@ -2055,7 +2102,7 @@ Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open =
 Section::Begin("");
 
 BEGIN_PGML
-Complete the table below by computing derivatives of [`T_3(x)`] and evaluating them and the derivatives of [`\sin(x)`] at [`a=0`] as directed.
+Complete the table below by computing derivatives of [`T_3(x)`] and evaluating them and the derivatives of [`\sin(x)`] at [`x=0`] as directed.
 
 [@KeyboardInstructions('Use underscores to enter the coefficients.  For example, to enter [`c_1\text{,}`] type "c\_1".')@]**
 
@@ -2118,11 +2165,13 @@ Section::End();
 Section::Begin("");
 
 BEGIN_PGML
-Now, set [`T_3(0)=f(0)\text{,}`] [`T_3'(0)=f'(0)\text{,}`] [`T_3''(0)=f''(0)\text{,}`] and [`T_3'''(0)=f'''(0)\text{.}`] This implies [`c_0={}`][_]{'0'}{10}, [`c_1={}`][_]{'1'}{10}, [`c_2={}`][_]{'0'}{10}, and [`c_3={}`][_]{$f}{10}.
+Now, set [`T_3(0)=f(0)\text{,}`] [`T_3'(0)=f'(0)\text{,}`] [`T_3''(0)=f''(0)\text{,}`] and [`T_3'''(0)=f'''(0)\text{.}`]
+
+This implies [`c_0={}`][_]{'0'}{10}, [`c_1={}`][_]{'1'}{10}, [`c_2={}`][_]{'0'}{10}, and [`c_3={}`][_]{$f}{10}.
 
 Putting it all together, what is the resulting formula for [`T_3(x)\text{?}`]
 
-[_]{$T3}{20}
+[`T_3(x)={}`][_]{$T3}{20}
 
 END_PGML
 
@@ -2134,7 +2183,7 @@ Section::End();
 Section::Begin("");
 
 BEGIN_PGML
-In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function [`f(x)\text{.}`]  If we decided we wanted to find a degree [`9`] approximation to [`f(x) = \sin(x)\text{,}`] we'd need to find a polynomial whose value and first [`9`] derivatives match those of the sine function at [`a = 0\text{.}`]
+In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function [`f(x)\text{.}`]  If we decided we wanted to find a degree [`9`] approximation to [`f(x) = \sin(x)\text{,}`] we'd need to find a polynomial whose value and first [`9`] derivatives match those of the sine function at [`x = 0\text{.}`]
 
 Fill in the blanks below to determine the next six derivatives of [`f(x) = \sin(x)\text{,}`] up to [`f^{(9)}(x)\text{.}`]
 
@@ -2142,35 +2191,36 @@ Fill in the blanks below to determine the next six derivatives of [`f(x) = \sin(
   [
     [PGML('[`f(x)=`]'),
      PGML('[`\sin(x)`]'),
-     PGML('[`f^{(5)}(x)`]'),
+     PGML('[`f^{(5)}(x)=`]'),
      PGML('[_]{$c}{10}'),
     ],
     [PGML(q"[`f'(x)=`]"),
      PGML('[`\cos(x)`]'),
-     PGML('[`f^{(6)}(x)`]'),
+     PGML('[`f^{(6)}(x)=`]'),
      PGML('[_]{-$s}{10}'),
     ],
     [PGML(q"[`f''(x)=`]"),
      PGML('[`-\sin(x)`]'),
-     PGML('[`f^{(7)}(x)`]'),
+     PGML('[`f^{(7)}(x)=`]'),
      PGML('[_]{-$c}{10}'),
     ],
     [PGML(q"[`f'''(x)=`]"),
      PGML('[`-\cos(x)`]'),
-     PGML('[`f^{(8)}(x)`]'),
+     PGML('[`f^{(8)}(x)=`]'),
      PGML('[_]{$s}{10}'),
     ],
     [PGML('[`f^{(4)}(x)=`]'),
      PGML('[_]{$s}{10}'),
-     PGML('[`f^{(9)}(x)`]'),
+     PGML('[`f^{(9)}(x)=`]'),
      PGML('[_]{$c}{10}'),
     ],
   ],
       align => 'rl|rl',
-      valign => 'middle',
-      top => '3',);@]* <<
+      valign => 'middle',);@]* <<
 
-What pattern do you notice in the derivatives of [`f(x)=\sin(x)\text{?}`]
+What is the value of [`f^{(n)}(0)`] (the nth derivative of [`f`] evaluated at [`x = 0`]) when [`n`] is even? [_]{$popup2}{5}
+
+What is the value of [`f^{(n)}(0)`] (the nth derivative of [`f`] evaluated at [`x = 0`]) when [`n`] is odd? [_]{$popup1}{5}
 
 END_PGML
 
@@ -2369,7 +2419,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-16T13:27:40Z       
+###       on 2025-07-17T01:02:36Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
