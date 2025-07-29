@@ -163,7 +163,7 @@
           </p>
           <figure xml:id="F-5-2-Act2">
             <caption>Axes for plotting <m>F(x)</m></caption>
-            <image width="60%">
+            <image width="50%">
               <shortdescription>Axes for plotting the graph of F </shortdescription>
               <prefigure xmlns="https://prefigure.org" label="prefigure-act-5-2-Act2">
                 <diagram dimensions="(300,250)" margins="5">
