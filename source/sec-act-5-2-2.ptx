@@ -143,15 +143,38 @@
           </p>
         </hint>
         <answer>
-          <p><m>F(5) \approx 1.64038</m>;
-            <m>F(10) \approx 2.35973</m>.
-          </p>
+          <tabular top="minor" left="minor" halign="center">
+            <col right="medium"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <row header="yes" bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>-10</m></cell>
+              <cell><m>-5</m></cell>
+              <cell><m>0</m></cell>
+              <cell><m>5</m></cell>
+              <cell><m>10</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>F(x)</m></cell>
+              <cell>2.35973 </cell>
+              <cell>1.64038 </cell>
+              <cell>0</cell>
+              <cell>1.64038</cell>
+              <cell>2.35973</cell>
+            </row>
+          </tabular>
         </answer>
         <solution>
           <p><m>F(5) = \int_0^5 \frac{t}{1+t^2} \, dt \approx 1.64038</m>,
             using a midpoint Riemann sum with 10 subintervals.
             Similarly,
-            <m>F(10) = \int_0^{10} \frac{t}{1+t^2} \, dt \approx 2.35973</m>.
+            <m>F(10) = \int_0^{10} \frac{t}{1+t^2} \, dt \approx 2.35973</m>, and 
+            <m>F(-5) = \int_0^{-5} \frac{t}{1+t^2} \, dt \approx 1.64038</m>, and finally
+            <m>F(-10) = \int_0^{-10} \frac{t}{1+t^2} \, dt \approx 2.35973</m>
           </p>
         </solution>
       </task>
@@ -182,18 +205,34 @@
         </statement>
         <hint>
           <p>
-            Don't forget that <m>F(0) = 0</m>.
+            Use the table of values along with the intervals where <m>F</m> is increasing, decreasing,
+            concave up and concave down.
           </p>
         </hint>
         <answer>
-          <p>
-            See the graph at below right.
-          </p>
+          <figure xml:id="F-5-2-Act2sol">
+            <caption>Axes for plotting <m>F(x)</m></caption>
+            <image width="50%">
+              <shortdescription>Axes for plotting the graph of F </shortdescription>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-act-5-2-Act2sol">
+                <diagram dimensions="(300,250)" margins="5">
+                  <definition>f(x)=1/2*log(1+x^2)</definition>
+                  <coordinates bbox="(-11,-5.5,11,5.5)">
+                    <grid-axes xlabel="x" ylabel="y" hticks="(-10,5,10)" hlabels="(-10,5,10)"
+                    vlabels="(-4,2,4)" 
+                    tick-size="(2,2)" spacings="((-10,2,10),(-5,1,5))" bounding-box="yes"
+                    />
+                    <graph function="f"/>
+                  </coordinates>
+                </diagram>
+              </prefigure>       
+            </image>
+          </figure>
         </answer>
         <solution>
           <p>
-            Recalling that <m>F(0) = 0</m> and using the values and information we've found in (b)-(e),
-            we arrive at the graph at below right.
+            Using the values and information we've found in (b)-(d),
+            we arrive at the figure in the answer.
           </p>
         </solution>
       </task>
@@ -207,18 +246,19 @@
         </statement>
         <hint>
           <p>
-            Don't forget that <m>F(0) = 0</m>.
+            Use the chain rule to calculate <m>g'(x)</m>, and note that <m>g(0)=\frac{1}{2}\ln(1+0^2)=\frac{1}{2}\ln(1)=0</m>.
           </p>
         </hint>
         <answer>
           <p>
-            See the graph at below right.
+            <m>g'(x)=\frac{x}{1+x^2}</m> and <m>g(0)=0</m>.  <m>F=g</m> 
           </p>
         </answer>
         <solution>
           <p>
-            Recalling that <m>F(0) = 0</m> and using the values and information we've found in (b)-(e),
-            we arrive at the graph at below right.
+            The function <m>g(x)</m> has derivative <m>g'(x)=\frac{x}{1+x^2}</m> and <m>g(0)=0</m>. 
+            As further confirmed by graphing <m>g(x)</m> and <m>F(x)</m> together, the functions <m>g</m>
+            and <m>F</m> are the same function, described in different ways.  
           </p>
         </solution>
       </task>
@@ -228,6 +268,14 @@
 
 <exercise label="csafranski__2-_5HW_prob1">
             <webwork source="csafranski/2.5HW_prob5.pg"/>
+        </exercise>
+
+<exercise label="csafranski__1-_1HW_prob8">
+            <webwork source="csafranski/1.1HW_prob8.pg"/>
+        </exercise>
+
+<exercise label="csafranski__5-_5HW_prob2">
+            <webwork source="csafranski/5.5HW_prob2.pg"/>
         </exercise>
 
 </section>
