@@ -143,7 +143,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -541,7 +541,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -844,7 +844,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1149,7 +1149,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -1500,7 +1500,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2003,7 +2003,7 @@ Thus
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2419,7 +2419,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-17T01:02:36Z       
+###       on 2025-07-29T11:01:35Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -2852,5 +2852,33 @@ If the derivative does not exist, enter DNE.</p>
     </static>
     <server-data sourceFilePath="csafranski/1.7Preview_prob1updated.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/1.7Preview_prob1updated.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-11" ww-id="webwork-11">
+    <static seed="11" source="csafranski/2.5HW_prob5.pg">
+      <statement><p>If <m>f</m> and <m>g</m> are the functions whose graphs are shown, let <m>u(x)=f(g(x)), v(x)=g(f(x))</m>, and <m>w(x)=g(g(x))</m>.</p>
+<p>Find each of the following derivatives, if they exist. If it does not exist, enter "dne" (without the quotes) below.</p>
+<p>(a) <m>u'(3) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p>(b) <m>v'(3) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p>(c) <m>w'(3) =</m> <fillin characters="10" name="AnSwEr0003"/></p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-11-image-1.png" width="50%"/>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{4}{3}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-1}{6}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="csafranski/2.5HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/2.5HW_prob5.pg"/>
   </webwork-reps>
 </webwork-representations>

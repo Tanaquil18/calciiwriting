@@ -1,0 +1,11 @@
+openDate          = 07/29/2025 at 12:00am
+dueDate           = 01/29/2026 at 10:00pm
+answerDate        = 01/29/2026 at 10:00pm
+paperHeaderFile   = Calc_II_Extra_Material/header/1_6-Proposed_Activity_523.pg
+screenHeaderFile  = Calc_II_Extra_Material/header/1_6-Proposed_Activity_523.pg
+description       = Proposed Activity 5.2.3
+problemListV2
+problem_start
+source_file = csafranski/2.5HW_prob5.pg
+problem_id = 2
+problem_end
