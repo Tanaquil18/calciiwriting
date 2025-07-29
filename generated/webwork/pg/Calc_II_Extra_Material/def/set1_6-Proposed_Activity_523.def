@@ -9,3 +9,11 @@ problem_start
 source_file = csafranski/2.5HW_prob5.pg
 problem_id = 2
 problem_end
+problem_start
+source_file = csafranski/1.1HW_prob8.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = csafranski/5.5HW_prob2.pg
+problem_id = 4
+problem_end
