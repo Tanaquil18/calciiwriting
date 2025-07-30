@@ -379,6 +379,24 @@ var ptx_lunr_docs = [
   "body": "   Calculate the integral:          giving or Solving for and , we find and , so       "
 },
 {
+  "id": "sec-act-8a-5x",
+  "level": "1",
+  "url": "sec-act-8a-5x.html",
+  "type": "Section",
+  "number": "1.7",
+  "title": "Proposed 8a-5x Preview",
+  "body": " Proposed 8a-5x Preview    Consider the alternating geometric series . We want to explore how the partial sums of the series compare to and approximate the exact sum of the series.     Calculate the exact value of by identifying the values of and and using Equation .      Recall that the th partial sum, , is the sum of the first terms of the infinite geometric series . This means that . Recall also that we use for the term with index , so that .  For example, is the sum of the first term, which is , and so .  The first partial sums have been computed for you. Use the sum, , of the geometric series that you found above to compute the difference between the exact value of and each of the first partial sums, and fill in the corresponding blanks below.       What do you notice about the differences between the partial sums and the exact sum of the series as the value of increases? There are at least two important things you can say.     "
+},
+{
+  "id": "PA-8a-5x",
+  "level": "2",
+  "url": "sec-act-8a-5x.html#PA-8a-5x",
+  "type": "Preview Activity",
+  "number": "1.7.1",
+  "title": "",
+  "body": "  Consider the alternating geometric series . We want to explore how the partial sums of the series compare to and approximate the exact sum of the series.     Calculate the exact value of by identifying the values of and and using Equation .      Recall that the th partial sum, , is the sum of the first terms of the infinite geometric series . This means that . Recall also that we use for the term with index , so that .  For example, is the sum of the first term, which is , and so .  The first partial sums have been computed for you. Use the sum, , of the geometric series that you found above to compute the difference between the exact value of and each of the first partial sums, and fill in the corresponding blanks below.       What do you notice about the differences between the partial sums and the exact sum of the series as the value of increases? There are at least two important things you can say.    "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
