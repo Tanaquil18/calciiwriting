@@ -101,6 +101,8 @@
 
       <xi:include  href="./sec-1-7preview.ptx" />
       <xi:include  href="./sec-act-5-2-2.ptx" />
+      <xi:include  href="./sec-act-8a-5x.ptx" />
+
 
       <!-- <section xml:id="sec-parametric">
         <title>Parametric Functions: Derivatives, Area, and Arclength</title>
