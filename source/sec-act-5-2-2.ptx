@@ -266,6 +266,30 @@
    
 </worksheet>
 
+<exercise label="csafranski__8-_6HW_prob3">
+            <webwork source="csafranski/8.6HW_prob3.pg"/>
+        </exercise>
+
+<exercise label="csafranski__8-_6HW_prob4">
+            <webwork source="csafranski/8.6HW_prob4.pg"/>
+        </exercise>
+
+<exercise label="csafranski__8-_6HW_prob5">
+            <webwork source="csafranski/8.6HW_prob5.pg"/>
+        </exercise>
+
+<exercise label="csafranski__8-_6HW_prob5alt">
+            <webwork source="Library/UBC/setTaylor/expon1.pg"/>
+        </exercise>
+
+<exercise label="csafranski__8-_6HW_prob6">
+            <webwork source="Library/Dartmouth/setStewartCh12S10/problem_12.pg"/>
+        </exercise>
+
+<exercise label="csafranski__8-_6HW_prob7">
+            <webwork source="Library/Dartmouth/setStewartCh12S10/problem_11.pg"/>
+        </exercise>
+
 <exercise label="csafranski__2-_5HW_prob1">
             <webwork source="csafranski/2.5HW_prob5.pg"/>
         </exercise>
