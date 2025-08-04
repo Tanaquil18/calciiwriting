@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette: blues                        *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AC 8a-5x WeBWorK Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calc II Extra Material">
+<meta property="book:author" content="Chrissy Safranski">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Calc II Extra Material</span> <span class="subtitle">Not included in Active Calculus</span></a></h1>
+<p class="byline">Chrissy Safranski</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-act-5-2-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap-extra-material.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chap-extra-material.html" class="internal"><span class="codenumber">1</span> <span class="title">Extra Material</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-trigonometric-ints.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Trigonometric Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trigonometric-ints.html#sec-trigonometric-ints-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Integrals Involving Sine and Cosine</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trigonometric-ints.html#subsec-sec-tan-and-csc-cot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">More substitution with trig identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trigonometric-ints.html#subsec-trig-substitution" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Trigonometric Substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-trigonometric-ints.html#sec-trigonometric-ints-7" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-partial-fractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The Method of Partial Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#subsec-pf-building-blocks" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Building Blocks of the Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#subsec-start-method-part-frac" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Starting the Method of Partial Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#subsec-when-method-used" class="internal"><span class="codenumber">1.2.3</span> <span class="title">How the denominator factors matters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#subsec-part-frac-3" class="internal"><span class="codenumber">1.2.4</span> <span class="title">General Method of Partial Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#subsec-part-frac-4" class="internal"><span class="codenumber">1.2.5</span> <span class="title">When The Degree of the Numerator is Greater Than Or Equal to the Degree of the Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#subsec-part-frac-5" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Final Considerations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#sec-partial-fractions-10" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-5preview.html" class="internal"><span class="codenumber">1.3</span> <span class="title">1-5a Preview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-8-1exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">8.1 Exercises and 8.2 Preview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-7preview.html" class="internal"><span class="codenumber">1.5</span> <span class="title">1.7 Preview</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-act-5-2-2.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Proposed Activity 5.2.3</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-act-5-2-2.html#ws-act-5-2-2" class="internal"><span class="codenumber">1.6</span> <span class="title">Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-8a-5x-preview-ww.html" class="internal"><span class="codenumber">1.7</span> <span class="title">8a-5x WeBWorK Preview</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-8a-5x-preview-ww"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.7</span><span class="space"> </span><span class="title">8a-5x WeBWorK Preview</span>
+</h2>
+<article class="exploration project-like" id="8a-5x_Preview-WW_alt-geom-series"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="period">.</span>
+</h3>
+<div id="webwork-PA-8a-5x" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="20" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyQ2hlY2tib3hMaXN0LnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTskbWMyNyA9IENoZWNrYm94TGlzdChbCiAgICBbIiR7Qk19U19uLVMke0VNfSBpcyBnb2luZyBkb3duIGluIGFic29sdXRlIHZhbHVlIGFzICR7Qk19biR7RU19IGluY3JlYXNlcy4kQlIiLAogICAgIiR7Qk19U19uLVMke0VNfSBpcyBnb2luZyB1cCBpbiBhYnNvbHV0ZSB2YWx1ZSBhcyAke0JNfW4ke0VNfSBpbmNyZWFzZXMuJEJSIiwKICAgICIke0JNfVNfbi1TJHtFTX0gaXMgZ29pbmcgdXAgYW5kIGRvd24gaW4gYWJzb2x1dGUgdmFsdWUgYXMgJHtCTX1uJHtFTX0gaW5jcmVhc2VzLiRCUiIsCiAgICAiJHtCTX1TX24tUyR7RU19IGlzIG5lZ2F0aXZlIHdoZW4gdGhlIHBhcnRpYWwgc3VtIGlzIGFuIHVuZGVyZXN0aW1hdGUuJEJSIiwKICAgICIke0JNfVNfbi1TJHtFTX0gaXMgcG9zaXRpdmUgd2hlbiB0aGUgcGFydGlhbCBzdW0gaXMgYW4gdW5kZXJlc3RpbWF0ZS4kQlIiLAogICAgIiR7Qk19U19uLVMke0VNfSBpcyBuZWdhdGl2ZSB3aGVuIHRoZSBwYXJ0aWFsIHN1bSBpcyBhbiBvdmVyZXN0aW1hdGUuJEJSIiwKICAgICIke0JNfVNfbi1TJHtFTX0gaXMgcG9zaXRpdmUgd2hlbiB0aGUgcGFydGlhbCBzdW0gaXMgYW4gb3ZlcmVzdGltYXRlLiRCUiIsCiAgICAiJHtCTX1TX24ke0VNfSBhbHRlcm5hdGVzIGJhY2sgYW5kIGZvcnRoIGJldHdlZW4gb3ZlcmVzdGltYXRlcyBhbmQgdW5kZXJlc3RpbWF0ZXMuJEJSIiwKICAgICIke0JNfVNfbiR7RU19IGlzIGFsd2F5cyBhbiBvdmVyZXN0aW1hdGUuJEJSIiwKICAgICIke0JNfVNfbiR7RU19IGlzIGFsd2F5cyBhbiB1bmRlcmVzdGltYXRlLiRCUiIKICAgIF1dLAogICAgWzAsMyw2LDddCik7CiRtYyA9IENoZWNrYm94TGlzdChbCiAgICBbIlRoZSBhYnNvbHV0ZSB2YWx1ZSBvZiAke0JNfVNfbi1TJHtFTX0gaXMgYWx3YXlzIHNtYWxsZXIgdGhhbiB0aGUgYWJzb2x1dGUgdmFsdWUgb2YgJHtCTX1hX24ke0VNfS4kQlIiLAogICAgIlRoZSBhYnNvbHV0ZSB2YWx1ZSBvZiAke0JNfVNfbi1TJHtFTX0gaXMgc29tZXRpbWVzIHNtYWxsZXIgdGhhbiB0aGUgYWJzb2x1dGUgdmFsdWUgb2YgJHtCTX1hX24ke0VNfS4kQlIiLAogICAgIlRoZSBhYnNvbHV0ZSB2YWx1ZSBvZiAke0JNfVNfbi1TJHtFTX0gaXMgYWx3YXlzIGxhcmdlciB0aGFuIHRoZSBhYnNvbHV0ZSB2YWx1ZSBvZiAke0JNfWFfbiR7RU19LiRCUiIsCiAgICAiV2hlbiAke0JNfVNfbi1TJHtFTX0gaXMgbmVnYXRpdmUsICR7Qk19YV9uJHtFTX0gaXMgcG9zaXRpdmUuJEJSIiwKICAgICJXaGVuICR7Qk19U19uLVMke0VNfSBpcyBwb3NpdGl2ZSwgJHtCTX1hX24ke0VNfSBpcyBwb3NpdGl2ZS4kQlIiLAogICAgIldoZW4gJHtCTX1TX24tUyR7RU19IGlzIG5lZ2F0aXZlLCAke0JNfWFfbiR7RU19IGlzIG5lZ2F0aXZlLiRCUiIsCiAgICAiV2hlbiAke0JNfVNfbi1TJHtFTX0gaXMgcG9zaXRpdmUsICR7Qk19YV9uJHtFTX0gaXMgcG9zaXRpdmUuJEJSIiwKICAgICIke0JNfVNfbithX24gPSBTX3tuKzF9JHtFTX0uJEJSIiwKICAgIF1dLAogICAgWzAsMyw2LDddCik7CgpCRUdJTl9QR01MCkNvbnNpZGVyIHRoZSBhbHRlcm5hdGluZyBnZW9tZXRyaWMgc2VyaWVzCgpbYGBgCiAgICAgICAgICAgICAgICBTID0gXHN1bV97az0wfV57XGluZnR5fSAoLTEpXmsgXGxlZnQoIFxmcmFjezR9ezV9IFxyaWdodCleayA9IDEgLSBcZnJhY3s0fXs1fSArIFxmcmFjezE2fXsyNX0gLSBcY2RvdHMgKyAoLTEpXntuLTF9IFxsZWZ0KCBcZnJhY3s0fXs1fSBccmlnaHQpXntuLTF9ICsgXGNkb3RzCiAgICAgICAgICAgIFx0ZXh0ey59YGBgXQoKV2Ugd2FudCB0byBleHBsb3JlIGhvdyB0aGUgcGFydGlhbCBzdW1zIG9mIHRoZSBzZXJpZXMgY29tcGFyZSB0byBhbmQgYXBwcm94aW1hdGUgdGhlIGV4YWN0IHN1bSBvZiB0aGUgc2VyaWVzLCB3aGljaCBpcwoKW2BgYFMgPSBcZnJhY3thfXsxLXJ9ID0gXGZyYWN7MX17MS1cbGVmdChcZnJhY3stNH17NX1ccmlnaHQpfSA9IFxmcmFjezF9e1xmcmFjezl9ezV9fSA9IFxmcmFjezV9ezl9XHRleHR7Ln1gYGBdCgoKCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MClJlY2FsbCB0aGF0IHRoZSBbYG5gXXRoIHBhcnRpYWwgc3VtLCBbYFNfblx0ZXh0eyx9YF0gaXMgdGhlIHN1bSBvZiB0aGUgZmlyc3QgW2BuYF0gdGVybXMgb2YgdGhlIGluZmluaXRlIGdlb21ldHJpYyBzZXJpZXMgW2BTXHRleHR7Ln1gXSAgVGhpcyBtZWFucyB0aGF0CgpbYGBgCiAgICAgICAgICAgICAgICAgICAgICAgIFNfbiA9IFxzdW1fe2s9MH1ee24tMX0gKC0xKV5rIFxsZWZ0KCBcZnJhY3s0fXs1fSBccmlnaHQpXmsgPSAxIC0gXGZyYWN7NH17NX0gKyBcZnJhY3sxNn17MjV9IC0gXGNkb3RzICsgKC0xKV57bi0xfSBcbGVmdCggXGZyYWN7NH17NX0gXHJpZ2h0KV57bi0xfQogICAgICAgICAgICAgICAgICAgIFx0ZXh0ey59YGBgXQoKTm90ZSB0aGF0IHRoZSBleGFjdCBmcmFjdGlvbmFsIHZhbHVlcyBvZiBbYFNfMVx0ZXh0eyx9YF0gW2BTXzJcdGV4dHssfWBdIFtgXGxkb3RzXHRleHR7LH1gXSBbYFNfNlx0ZXh0eyx9YF0gaGF2ZSBiZWVuIHJlY29yZGVkIGJlbG93IGFsb25nIHdpdGggdGhlaXIgZGVjaW1hbCByZXByZXNlbnRhdGlvbnMuICBZb3VyIHRhc2sgaXMgdG8gdXNlIHRoaXMgaW5mb3JtYXRpb24gdG8gZG8gc29tZSByZWxhdGVkIGNvbXB1dGF0aW9ucyB0aGF0IGhlbHAgdXMgdW5kZXJzdGFuZCB0aGUgYmVoYXZpb3Igb2YgdGhlIHNlcmllcyBhbmQgaXRzIHBhcnRpYWwgc3Vtcy4KCkZpcnN0LCBieSBjb21wdXRpbmcgdGhlIGRpZmZlcmVuY2VzIGJldHdlZW4gW2BTX25gXSBhbmQgW2BTYF0gZm9yIHNldmVyYWwgZGlmZmVyZW50IHZhbHVlcyBvZiBbYG5gXSAocmVjYWxsaW5nIHRoYXQgW2BTID0gXGZyYWN7NX17OX0gPSAwLlxvdmVybGluZXs1fWBdKSwgZmlsbCBpbiB0aGUgZmlyc3QgY29sdW1uIG9mIGJsYW5rIHNwYWNlcyBwcm92aWRlZCBiZWxvdy4gIFRoZW4sIGJ5IHZpZXdpbmcgdGhlIHNlcmllcwoKW2BgYFMgPSAxIC0gXGZyYWN7NH17NX0gKyBcZnJhY3sxNn17MjV9IC0gXGNkb3RzICsgKC0xKV57bi0xfSBcbGVmdCggXGZyYWN7NH17NX0gXHJpZ2h0KV57bi0xfSArIFxjZG90c2BgYF0KCmFzIGJlaW5nIGluIHRoZSBmb3JtCgpbYGBgUyA9IGFfMCArIGFfMSArIGFfMiArIFxjZG90c1x0ZXh0eyx9YGBgXQoKZmlsbCBpbiB0aGUgbGFzdCBjb2x1bW4gb2YgYmxhbmsgc3BhY2VzLgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYG49MWBdJyksUEdNTCgnW2BTXzE9MWBdJyksUEdNTCgnW2BTXzEtUz1gXVtfXXsxLTUvOX17MTB9JyksUEdNTCgnW2BhXzE9LTAuOGBdJyksXSxbUEdNTCgnW2BuPTJgXScpLFBHTUwoJ1tgU18yPVxmcmFjezF9ezV9PTAuMmBdJyksUEdNTCgnW2BTXzItUz1gXVtfXXswLjItNS85fXsxMH0nKSxQR01MKCdbYGFfMj0wLjY0YF0nKSxdLFtQR01MKCdbYG49M2BdJyksUEdNTCgnW2BTXzM9XGZyYWN7MjF9ezI1fT0wLjg0YF0nKSxQR01MKCdbYFNfMy1TPWBdW19dezAuODQtNS85fXsxMH0nKSxQR01MKCdbYGFfMz1gXVtfXXstMC44KiozfXsxMH0nKSxdLFtQR01MKCdbYG49NGBdJyksUEdNTCgnW2BTXzQ9XGZyYWN7NDF9ezEyNX09MC4zMjhgXScpLFBHTUwoJ1tgU180LVM9YF1bX117MC4zMjgtNS85fXsxMH0nKSxQR01MKCdbYGFfND1gXVtfXXswLjgqKjR9ezEwfScpLF0sW1BHTUwoJ1tgbj01YF0nKSxQR01MKCdbYFNfNT1cZnJhY3s0NjF9ezYyNX09MC43Mzc2YF0nKSxQR01MKCdbYFNfNS1TPWBdW19dezAuNzM3Ni01Lzl9ezEwfScpLFBHTUwoJ1tgYV81PWBdW19dey0wLjgqKjV9ezEwfScpLF0sW1BHTUwoJ1tgbj02YF0nKSxQR01MKCdbYFNfNj1cZnJhY3sxMjgxfXszMTI1fT0wLjQwOTkyYF0nKSxQR01MKCdbYFNfNi1TPWBdW19dezAuNDA5OTItNS85fXsxMH0nKSxQR01MKCdbYGFfNj1gXVtfXXswLjgqKjZ9ezEwfScpLF0sXSxhbGlnbj0+Jyp7NH17bH0nLHZhbGlnbj0+J21pZGRsZScsKTtAXSogPDwKCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKV2hhdCBkbyB5b3Ugbm90aWNlIGFib3V0IHRoZSBkaWZmZXJlbmNlcyBiZXR3ZWVuIFtgU19uYF0gYW5kIFtgU2BdIGFzIHRoZSB2YWx1ZSBvZiBbYG5gXSBpbmNyZWFzZXM/ICBUaGVyZSBhcmUgYXQgbGVhc3QgdHdvIGltcG9ydGFudCB0aGluZ3MgeW91IGNhbiBzYXkuCgpbX117JG1jMjd9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCldoYXQgZG8geW91IG5vdGljZSBhYm91dCBob3cgdGhlIGRpZmZlcmVuY2VzIGJldHdlZW4gW2BTX25gXSBhbmQgW2BTYF0gY29tcGFyZSB0byB0aGUgdmFsdWUgb2YgW2BhX25cdGV4dHs/fWBdIFRoZXJlIGFyZSBhdCBsZWFzdCB0d28gaW1wb3J0YW50IHRoaW5ncyB5b3UgY2FuIHNheS4KCltfXXskbWN9ezV9CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw==" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-PA-8a-5x')">Activate</button></div>
+<div class="problem-contents">
+<div class="introduction" id="extracted-webwork-PA-8a-5x-1-1">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-1-1">Consider the alternating geometric series<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-webwork-PA-8a-5x-1-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1} + \cdots
+\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="extracted-webwork-PA-8a-5x-1-1-3">We want to explore how the partial sums of the series compare to and approximate the exact sum of the series, which is<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="extracted-webwork-PA-8a-5x-1-1-4">
+<div class="displaymath process-math">
+\begin{equation*}
+S = \frac{a}{1-r} = \frac{1}{1-\left(\frac{-4}{5}\right)} = \frac{1}{\frac{9}{5}} = \frac{5}{9}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="extracted-webwork-PA-8a-5x-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-1-1">Recall that the <span class="process-math">\(n\)</span>th partial sum, <span class="process-math">\(S_n\text{,}\)</span> is the sum of the first <span class="process-math">\(n\)</span> terms of the infinite geometric series <span class="process-math">\(S\text{.}\)</span>  This means that<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-PA-8a-5x-1-2-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}
+\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-PA-8a-5x-1-2-1-3">Note that the exact fractional values of <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_6\text{,}\)</span> have been recorded below along with their decimal representations.  Your task is to use this information to do some related computations that help us understand the behavior of the series and its partial sums.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-PA-8a-5x-1-2-1-4">First, by computing the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> for several different values of <span class="process-math">\(n\)</span> (recalling that <span class="process-math">\(S = \frac{5}{9} = 0.\overline{5}\)</span>), fill in the first column of blank spaces provided below.  Then, by viewing the series<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-PA-8a-5x-1-2-1-5">
+<div class="displaymath process-math">
+\begin{equation*}
+S = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1} + \cdots
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-PA-8a-5x-1-2-1-6">as being in the form<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-PA-8a-5x-1-2-1-7">
+<div class="displaymath process-math">
+\begin{equation*}
+S = a_0 + a_1 + a_2 + \cdots\text{,}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-PA-8a-5x-1-2-1-8">fill in the last column of blank spaces.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n=1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(S_1=1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(S_1-S=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a_1=-0.8\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n=2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(S_2=\frac{1}{5}=0.2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(S_2-S=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a_2=0.64\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n=3\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(S_3=\frac{21}{25}=0.84\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(S_3-S=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(a_3=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n=4\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(S_4=\frac{41}{125}=0.328\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(S_4-S=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(a_4=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n=5\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(S_5=\frac{461}{625}=0.7376\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(S_5-S=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(a_5=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n=6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(S_6=\frac{1281}{3125}=0.40992\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(S_6-S=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(a_6=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</td>
+</tr>
+</table></div>
+<div class="solutions">
+<details id="extracted-webwork-PA-8a-5x-1-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-2-1">
+<span class="process-math">\(0.444444\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1"><a href="#extracted-webwork-PA-8a-5x-1-2-2" title="Copy heading and permalink for Answer 1" aria-label="Copy heading and permalink for Answer 1">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-3-1">
+<span class="process-math">\(-0.355556\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2"><a href="#extracted-webwork-PA-8a-5x-1-2-3" title="Copy heading and permalink for Answer 2" aria-label="Copy heading and permalink for Answer 2">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-4-1">
+<span class="process-math">\(0.284444\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3"><a href="#extracted-webwork-PA-8a-5x-1-2-4" title="Copy heading and permalink for Answer 3" aria-label="Copy heading and permalink for Answer 3">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-5-1">
+<span class="process-math">\(-0.512\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 4"><a href="#extracted-webwork-PA-8a-5x-1-2-5" title="Copy heading and permalink for Answer 4" aria-label="Copy heading and permalink for Answer 4">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-6" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-6-1">
+<span class="process-math">\(-0.227556\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 5"><a href="#extracted-webwork-PA-8a-5x-1-2-6" title="Copy heading and permalink for Answer 5" aria-label="Copy heading and permalink for Answer 5">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-7" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-7-1">
+<span class="process-math">\(0.4096\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 6"><a href="#extracted-webwork-PA-8a-5x-1-2-7" title="Copy heading and permalink for Answer 6" aria-label="Copy heading and permalink for Answer 6">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-8" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">7</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-8-1">
+<span class="process-math">\(0.182044\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 7"><a href="#extracted-webwork-PA-8a-5x-1-2-8" title="Copy heading and permalink for Answer 7" aria-label="Copy heading and permalink for Answer 7">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-9" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">8</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-9-1">
+<span class="process-math">\(-0.32768\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 8"><a href="#extracted-webwork-PA-8a-5x-1-2-9" title="Copy heading and permalink for Answer 8" aria-label="Copy heading and permalink for Answer 8">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-10" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">9</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-10-1">
+<span class="process-math">\(-0.145636\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 9"><a href="#extracted-webwork-PA-8a-5x-1-2-10" title="Copy heading and permalink for Answer 9" aria-label="Copy heading and permalink for Answer 9">🔗</a></div>
+</div></details><details id="extracted-webwork-PA-8a-5x-1-2-11" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">10</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-2-11-1">
+<span class="process-math">\(0.262144\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-2-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 10"><a href="#extracted-webwork-PA-8a-5x-1-2-11" title="Copy heading and permalink for Answer 10" aria-label="Copy heading and permalink for Answer 10">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task a"><a href="#extracted-webwork-PA-8a-5x-1-2" title="Copy heading and permalink for Task a" aria-label="Copy heading and permalink for Task a">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-PA-8a-5x-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-1">What do you notice about the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> as the value of <span class="process-math">\(n\)</span> increases?  There are at least two important things you can say.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-PA-8a-5x-1-3-1-2">
+<ul class="square" id="extracted-webwork-PA-8a-5x-1-3-1-2-1">
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-1">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-1-1">
+<span class="process-math">\(S_n-S\)</span> is going up and down in absolute value as <span class="process-math">\(n\)</span> increases.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-2">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-2-1">
+<span class="process-math">\(S_n-S\)</span> is going up in absolute value as <span class="process-math">\(n\)</span> increases.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-3">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-3-1">
+<span class="process-math">\(S_n-S\)</span> is going down in absolute value as <span class="process-math">\(n\)</span> increases.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-4">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-4-1">
+<span class="process-math">\(S_n\)</span> alternates back and forth between overestimates and underestimates.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-5">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-5-1">
+<span class="process-math">\(S_n-S\)</span> is positive when the partial sum is an overestimate.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-6">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-6-1">
+<span class="process-math">\(S_n\)</span> is always an underestimate.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-7">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-7-1">
+<span class="process-math">\(S_n-S\)</span> is negative when the partial sum is an underestimate.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-8">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-8-1">
+<span class="process-math">\(S_n-S\)</span> is negative when the partial sum is an overestimate.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-9">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-9-1">
+<span class="process-math">\(S_n\)</span> is always an overestimate.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-9" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-3-1-2-1-10">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-1-2-1-10-1">
+<span class="process-math">\(S_n-S\)</span> is positive when the partial sum is an underestimate.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2-1-10" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="extracted-webwork-PA-8a-5x-1-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-3-2-1">
+<span class="process-math">\(\text{Choice 3, Choice 4, Choice 5, Choice 7}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1"><a href="#extracted-webwork-PA-8a-5x-1-3-2" title="Copy heading and permalink for Answer 1" aria-label="Copy heading and permalink for Answer 1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task b"><a href="#extracted-webwork-PA-8a-5x-1-3" title="Copy heading and permalink for Task b" aria-label="Copy heading and permalink for Task b">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-PA-8a-5x-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-1">What do you notice about how the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> compare to the value of <span class="process-math">\(a_n\text{?}\)</span> There are at least two important things you can say.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-PA-8a-5x-1-4-1-2">
+<ul class="square" id="extracted-webwork-PA-8a-5x-1-4-1-2-1">
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-1">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-1-1">The absolute value of <span class="process-math">\(S_n-S\)</span> is sometimes smaller than the absolute value of <span class="process-math">\(a_n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-2">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-2-1">When <span class="process-math">\(S_n-S\)</span> is positive, <span class="process-math">\(a_n\)</span> is positive.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-3">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-3-1">The absolute value of <span class="process-math">\(S_n-S\)</span> is always smaller than the absolute value of <span class="process-math">\(a_n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-4">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-4-1">The absolute value of <span class="process-math">\(S_n-S\)</span> is always larger than the absolute value of <span class="process-math">\(a_n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-5">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-5-1">When <span class="process-math">\(S_n-S\)</span> is negative, <span class="process-math">\(a_n\)</span> is positive.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-6">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-6-1">When <span class="process-math">\(S_n-S\)</span> is negative, <span class="process-math">\(a_n\)</span> is negative.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-7">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-7-1">
+<span class="process-math">\(S_n+a_n = S_{n+1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="extracted-webwork-PA-8a-5x-1-4-1-2-1-8">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-1-2-1-8-1">When <span class="process-math">\(S_n-S\)</span> is positive, <span class="process-math">\(a_n\)</span> is positive.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2-1-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="extracted-webwork-PA-8a-5x-1-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="extracted-webwork-PA-8a-5x-1-4-2-1">
+<span class="process-math">\(\text{Choice 2, Choice 3, Choice 5, Choice 7}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-PA-8a-5x-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1"><a href="#extracted-webwork-PA-8a-5x-1-4-2" title="Copy heading and permalink for Answer 1" aria-label="Copy heading and permalink for Answer 1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task c"><a href="#extracted-webwork-PA-8a-5x-1-4" title="Copy heading and permalink for Task c" aria-label="Copy heading and permalink for Task c">🔗</a></div></article>
+</div>
+</div>
+<div class="autopermalink" data-description="Preview Activity 1.7.1"><a href="#8a-5x_Preview-WW_alt-geom-series" title="Copy heading and permalink for Preview Activity 1.7.1" aria-label="Copy heading and permalink for Preview Activity 1.7.1">🔗</a></div></article><div class="autopermalink" data-description="Section 1.7: 8a-5x WeBWorK Preview"><a href="#sec-8a-5x-preview-ww" title="Copy heading and permalink for Section 1.7: 8a-5x WeBWorK Preview" aria-label="Copy heading and permalink for Section 1.7: 8a-5x WeBWorK Preview">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-act-5-2-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

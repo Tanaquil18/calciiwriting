@@ -1,0 +1,11 @@
+openDate          = 08/03/2025 at 12:00am
+dueDate           = 02/03/2026 at 10:00pm
+answerDate        = 02/03/2026 at 10:00pm
+paperHeaderFile   = Calc_II_Extra_Material/header/1_7-8a5x_Preview.pg
+screenHeaderFile  = Calc_II_Extra_Material/header/1_7-8a5x_Preview.pg
+description       = 8a-5x Preview
+problemListV2
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_7-8a5x_Preview/1_7_1.pg
+problem_id = 
+problem_end

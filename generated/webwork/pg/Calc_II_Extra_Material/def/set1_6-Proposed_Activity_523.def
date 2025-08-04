@@ -1,19 +1,43 @@
-openDate          = 07/29/2025 at 12:00am
-dueDate           = 01/29/2026 at 10:00pm
-answerDate        = 01/29/2026 at 10:00pm
+openDate          = 08/04/2025 at 12:00am
+dueDate           = 02/04/2026 at 10:00pm
+answerDate        = 02/04/2026 at 10:00pm
 paperHeaderFile   = Calc_II_Extra_Material/header/1_6-Proposed_Activity_523.pg
 screenHeaderFile  = Calc_II_Extra_Material/header/1_6-Proposed_Activity_523.pg
 description       = Proposed Activity 5.2.3
 problemListV2
 problem_start
-source_file = csafranski/2.5HW_prob5.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = csafranski/1.1HW_prob8.pg
+source_file = csafranski/8.6HW_prob3.pg
 problem_id = 3
 problem_end
 problem_start
-source_file = csafranski/5.5HW_prob2.pg
+source_file = csafranski/8.6HW_prob4.pg
 problem_id = 4
+problem_end
+problem_start
+source_file = csafranski/8.6HW_prob5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Library/UBC/setTaylor/expon1.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Library/Dartmouth/setStewartCh12S10/problem_12.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Library/Dartmouth/setStewartCh12S10/problem_11.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = csafranski/2.5HW_prob5.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = csafranski/1.1HW_prob8.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = csafranski/5.5HW_prob2.pg
+problem_id = 11
 problem_end
