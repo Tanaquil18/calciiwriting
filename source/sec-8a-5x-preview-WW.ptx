@@ -32,6 +32,7 @@
             ]],
             [0,3,6,7]
         );
+        Context("LimitedNumeric");
       </pg-code>
       <introduction>
         <p>
@@ -61,6 +62,7 @@
                 as being in the form 
                 <me>S = a_0 + a_1 + a_2 + \cdots</me>, fill in the last column of blank spaces.
             </p>
+            <instruction>Enter your answer in decimal form, using at least 4 digits after the decimal point if applicable.</instruction>
             <tabular>
                 <row>
                     <cell><m>n=1</m></cell>
