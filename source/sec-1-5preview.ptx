@@ -4,7 +4,7 @@
     <title>1-5a Preview</title>
 
     <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5a" label="1-5a_Preview_traveltime_as_functionofspeed">
-    <webwork xml:id="webwork-PA-1-5a">                                            -->
+    <webwork xml:id="webwork-PA-1-5a">
       <pg-code>
         Context("Point");
         $answer = List("(10,5),(50,1),(25,2)");
@@ -60,39 +60,46 @@
 
 
         $radio = RadioButtons([
-          'The function is concave up because as speed goes up, travel time goes up.',
-          'The function is concave down because as speed goes up, travel time goes down.',
           'The function is increasing because as speed goes up, travel time goes up.',
-          'The function is decreasing because as speed goes up, travel time goes down.',
-          ], 3
+          'The function is decreasing and decreasing more quickly, because the travel time decreases as speed increases, and it does so in a way that the decreases get larger.',
+          'The function is decreasing but decreasing more slowly, because the travel time decreases as speed increases, but the amount of decrease is getting smaller.',
+          ], 2
         );
         Context("Numeric")->flags->set(tolType => 'absolute', tolerance => 0.01);
-        $answer2 = NumberWithUnits("5/6 hr");
+        $answer2 = Compute("5/6");
         $radio2 = RadioButtons([
           "${BM}T(60)${EM} is the speed, ${BM}60${EM} mph.",
           "${BM}T(60)${EM} is the distance, ${BM}60${EM} miles.",
-          "${BM}T(60)${EM} is the time it takes to travel ${BM}50${EM} miles at a speed of ${BM}60${EM} mph.",
+          "${BM}T(60)${EM} is the time in hours it takes to travel ${BM}50${EM} miles at a speed of ${BM}60${EM} mph.",
           "${BM}T(60)${EM} is how fast the travel time is changing when the car is traveling at a speed of ${BM}60${EM} mph.",
           ], 2
         );
-        $answer3 = NumberWithUnits("(50/65-50/60)/5 hr/mph");
-        $popup = PopUp([
+        $answer3 = Compute("(50/65-50/60)/5");
+        $popup2 = PopUp([
           "?",
+          "miles",
+          "miles per hour",
+          "hours per mile",
+          "hours per (miles per hour)",
+          "square hours per mile",
+          ], 4
+        );
+        $popup = DropDown([
           "positive",
           "negative",
-          ], 2
+          ], 1
         );
         $radio3 = RadioButtons([
           "${BM}T${EM} is increasing from ${BM}60${EM} to ${BM}65${EM} mph.",
           "${BM}T${EM} is decreasing from ${BM}60${EM} to ${BM}65${EM} mph.",
-          "${BM}T${EM} is concave up from ${BM}60${EM} to ${BM}65${EM} mph.",
-          "${BM}T${EM} is concave down from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is increasing but the amount of increase is smaller from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is decreasing and the amount of decrease is smaller from ${BM}60${EM} to ${BM}65${EM} mph.",
           ], 1
         );
         $radio4 = RadioButtons([
-          "${BM}AV_{[60, 65]}${EM} is the amount of hours ${BM}T${EM} has changed from ${BM}60${EM} to ${BM}65${EM} mph.",
-          "${BM}AV_{[60, 65]}${EM} is the change in speed from ${BM}60${EM} to ${BM}65${EM} mph.",
-          "${BM}AV_{[60, 65]}${EM} is the average change in hours the trip takes when the speed changes from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the average amount of hours ${BM}T${EM} has changed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the average change in speed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the average change in hours the trip takes for each one mph change in speed from ${BM}60${EM} to ${BM}65${EM} mph.",
           ], 2
         );
       </pg-code>
@@ -120,9 +127,8 @@
             Give three points which lie on the graph of <m>T</m>, separated by commas.
           </p>
           <p><var name="$answer" evaluator="$evaluator" width="10" /></p>
-          <!-- how to do this?  list of three points where they can't be the same and y has to be 50/x. restriction on domain?-->
           <p>
-            Which of the following statements <em>and explanations</em> is true about the graph of <m>T(s)</m>?
+            Which of the following statements is true about the graph of <m>T(s)</m>?
           </p>
           <p>
             <var name="$radio" form="buttons"/>
@@ -133,7 +139,7 @@
       <task>
         <statement>
           <p>
-            What is the value of <m>T(60)</m>? Include units on your answer. 
+            What is the value of <m>T(60)</m>? 
           </p>
           <p>
             <var name="$answer2" width="10"/>
@@ -153,10 +159,11 @@
           <p>
             Recall the average rate of change of a function <m>f(x)</m> on an interval <m>[a,b]</m> is 
             <me>AV_{[a,b]}=\frac{f(b)-f(a)}{b-a}</me>. 
-            Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.  Include units on your answer.
+            Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.
           </p>
           <p>
             <var name="$answer3" width="10"/>
+            <var name="$popup2" form="popup"/>
           </p>
         </statement>
       </task>

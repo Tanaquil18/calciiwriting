@@ -105,7 +105,7 @@
     <task>
         <statement>
             <p>
-                What do you notice about the differences between <m>S_n</m> and <m>S</m> as the value of <m>n</m> increases?  There are at least two important things you can say.
+                Which of the following statements is true?  There are at least two true statements among the options listed.
             </p>
             <p>
                 <var name="$mc27" form="checkboxes"/>
@@ -115,7 +115,7 @@
     <task>
         <statement>
             <p>
-                What do you notice about how the differences between <m>S_n</m> and <m>S</m> compare to the value of <m>a_n</m>? There are at least two important things you can say. 
+                Which of the following statements is true?  There are at least two true statements among the options listed.
             </p>
             <p>
                 <var name="$mc" form="checkboxes"/>
