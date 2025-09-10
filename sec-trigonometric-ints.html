@@ -47,24 +47,7 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math",
-    "renderActions": {
-      "findScript": [
-        10,
-        function (doc) {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
-                var display = !!node.type.match(/; *mode=display/);
-                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                var text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = {node: text, delim: '', n: 0};
-                math.end = {node: text, delim: '', n: 0};
-                doc.math.push(math);
-            });
-        },
-        ""
-      ]
-    }
+    "processHtmlClass": "process-math"
   },
   "chtml": {
     "scale": 0.98,
@@ -119,16 +102,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.4';
+eBookConfig.runestone_version = '7.9.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.fea5c754ab3e056b.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.b37c97cbe7a5455b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
-<script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -182,20 +165,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-partial-fractions.html#sec-partial-fractions-10" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Summary</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-5preview.html" class="internal"><span class="codenumber">1.3</span> <span class="title">1-5a Preview</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-8-1exercises.html" class="internal"><span class="codenumber">1.4</span> <span class="title">8.1 Exercises and 8.2 Preview</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-7preview.html" class="internal"><span class="codenumber">1.5</span> <span class="title">1.7 Preview</span></a></div></li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-act-5-2-2.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Proposed Activity 5.2.3</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-act-5-2-2.html#ws-act-5-2-2" class="internal"><span class="codenumber">1.6</span> <span class="title">Worksheet</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-8a-5x-preview-ww.html" class="internal"><span class="codenumber">1.7</span> <span class="title">8a-5x WeBWorK Preview</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-trigonometric-ints"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Trigonometric Integrals</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Trigonometric Integrals</span>
 </h2>
 <article class="objectives goal-like" id="sec-trigonometric-ints-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc" id="sec-trigonometric-ints-2-1">
@@ -257,10 +232,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-trigonometric-ints-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="sec-trigonometric-ints-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Integrals Involving Sine and Cosine</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integrals Involving Sine and Cosine</span>
 </h3>
 <article class="example example-like" id="int-with-fund-id"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Substitution, with an Additional Step.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Substitution, with an Additional Step.</span>
 </h4>
 <div class="para logical" id="int-with-fund-id-2">
 <div class="para">Evaluate</div>
@@ -334,7 +309,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Assemblage: Sine and Cosine, at least one of them odd powered"><a href="#assemblage-sin-cos-one-odd" title="Copy heading and permalink for Assemblage: Sine and Cosine, at least one of them odd powered" aria-label="Copy heading and permalink for Assemblage: Sine and Cosine, at least one of them odd powered">🔗</a></div></article><div class="para" id="sec-trigonometric-ints-4-5">What if we have an integral involving a product of sines and cosines but neither of the functions has an odd, positive integer exponent?  We have another method that can be used in the case that both sine and cosine have even, nonnegative integer exponents.<div class="autopermalink" data-description="Paragraph"><a href="#sec-trigonometric-ints-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="int-with-half-angle"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Sine and Cosine with Even Exponents.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sine and Cosine with Even Exponents.</span>
 </h4>
 <div class="para logical" id="int-with-half-angle-2">
 <div class="para">Evaluate</div>
@@ -406,7 +381,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#assemblage-sin-cos-both-even-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Assemblage: Sine and Cosine, both of them even powered"><a href="#assemblage-sin-cos-both-even" title="Copy heading and permalink for Assemblage: Sine and Cosine, both of them even powered" aria-label="Copy heading and permalink for Assemblage: Sine and Cosine, both of them even powered">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.1.1: Integrals Involving Sine and Cosine"><a href="#sec-trigonometric-ints-4" title="Copy heading and permalink for Subsection 1.1.1: Integrals Involving Sine and Cosine" aria-label="Copy heading and permalink for Subsection 1.1.1: Integrals Involving Sine and Cosine">🔗</a></div></section><section class="subsection" id="subsec-sec-tan-and-csc-cot"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">More substitution with trig identities</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">More substitution with trig identities</span>
 </h3>
 <div class="para" id="subsec-sec-tan-and-csc-cot-2">The main principle behind <a href="sec-trigonometric-ints.html#assemblage-sin-cos-one-odd" class="xref" data-knowl="./knowl/xref/assemblage-sin-cos-one-odd.html" data-reveal-label="Reveal" data-close-label="Close" title="Assemblage: Sine and Cosine, at least one of them odd powered">Sine and Cosine, at least one of them odd powered</a> is that we are using substitution to integrate, and the Fundamental Trigonometric Identity to rewrite what remains in terms of the function in the function-derivative pair.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sec-tan-and-csc-cot-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -428,7 +403,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-sec-tan-and-csc-cot-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="int-with-sec-tan"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">One Case of Secants and Tangents.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">One Case of Secants and Tangents.</span>
 </h4>
 <div class="para logical" id="int-with-sec-tan-2">
 <div class="para">Evaluate</div>
@@ -533,12 +508,12 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-sec-tan-and-csc-cot-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="note remark-like" id="subsec-sec-tan-and-csc-cot-9"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span>
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="subsec-sec-tan-and-csc-cot-9-1">Recall that the derivative of <span class="process-math">\(\cot(z)\)</span> is <span class="process-math">\(-\csc^2(z)\text{,}\)</span> which is similar in form to the derivative of <span class="process-math">\(\tan(z)\)</span> being <span class="process-math">\(\sec^2(z)\)</span>).  Recall also that the derivative of <span class="process-math">\(\csc(z)\)</span> is <span class="process-math">\(-\csc(z)\cot(z)\text{,}\)</span> which is similar in form to the derivative of <span class="process-math">\(\sec(z)\)</span> being <span class="process-math">\(\sec(z)\tan(z)\text{.}\)</span>  This means that the integrals we consider involving powers of <span class="process-math">\(\csc(z)\)</span> and <span class="process-math">\(\cot(z)\)</span> are of the same forms as the ones involving powers of <span class="process-math">\(\sec(z)\)</span> and <span class="process-math">\(\tan(z)\text{,}\)</span> and the methods for evaluating the integrals are analogous.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sec-tan-and-csc-cot-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Note 1.1.4"><a href="#subsec-sec-tan-and-csc-cot-9" title="Copy heading and permalink for Note 1.1.4" aria-label="Copy heading and permalink for Note 1.1.4">🔗</a></div></article><article class="activity project-like" id="subsec-sec-tan-and-csc-cot-10"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="subsec-sec-tan-and-csc-cot-10-1-1">
 <ol class="lower-alpha ol-marker-1 cols2" id="subsec-sec-tan-and-csc-cot-10-1-1-1">
@@ -586,7 +561,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Activity 1.1.1"><a href="#subsec-sec-tan-and-csc-cot-10" title="Copy heading and permalink for Activity 1.1.1" aria-label="Copy heading and permalink for Activity 1.1.1">🔗</a></div></article><div class="para" id="subsec-sec-tan-and-csc-cot-11">Not all integrals are of one of the forms discussed above.  Sometimes we still have to rewrite the integrand before we can recognize the form and apply one of our strategies.  Sometimes, there’s special case to consider. Sometimes we will have to use integration by parts rather than <span class="process-math">\(u-\)</span>substitution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sec-tan-and-csc-cot-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="subsec-sec-tan-and-csc-cot-12"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="subsec-sec-tan-and-csc-cot-12-1-1">
 <ol class="lower-alpha ol-marker-1 cols2" id="subsec-sec-tan-and-csc-cot-12-1-1-1">
@@ -632,7 +607,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-sec-tan-and-csc-cot-12-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Activity 1.1.2"><a href="#subsec-sec-tan-and-csc-cot-12" title="Copy heading and permalink for Activity 1.1.2" aria-label="Copy heading and permalink for Activity 1.1.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.1.2: More substitution with trig identities"><a href="#subsec-sec-tan-and-csc-cot" title="Copy heading and permalink for Subsection 1.1.2: More substitution with trig identities" aria-label="Copy heading and permalink for Subsection 1.1.2: More substitution with trig identities">🔗</a></div></section><section class="subsection" id="subsec-trig-substitution"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="space"> </span><span class="title">Trigonometric Substitution</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Trigonometric Substitution</span>
 </h3>
 <div class="para" id="subsec-trig-substitution-2">We’ve been using a lot of substitution to calculate trigonometric integals, and we’ve greatly expanded the kinds of integrals we can evaluate, as long as they involve trigonometric functions.  There is a saying that might be especially applicable to mathematicians.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -644,7 +619,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-trig-substitution-4">We try to solve problems using the tools we have. The quote might be implying that a hammer isn’t always the best choice, but the following activity is a rather beautiful example of mathematicians figuring out how to use the hammer of our ability to integrate trigonometric functions, even when the integral starts out not looking like it involves trigonometry at all.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="subsec-trig-substitution-5"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="subsec-trig-substitution-5-1-1">The method demonstrated in this activity is most useful when the integral cannot be calculated in another way, but we will consider an example which can also be done with <span class="process-math">\(u-\)</span> substitution so that we can verify that we obtain the same answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="subsec-trig-substitution-5-1-2">
@@ -676,7 +651,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Item b"><a href="#subsec-trig-substitution-5-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li id="subsec-trig-substitution-5-1-2-1-3">
-<div class="para" id="subsec-trig-substitution-5-1-2-1-3-1">We recognize the term <span class="process-math">\(x^2+4\)</span> is of the form <span class="process-math">\(x^2+a^2\text{,}\)</span> which reminds us of the hypotenuse of a right triangle, whose legs are <span class="process-math">\(x\)</span> and <span class="process-math">\(2\text{.}\)</span> (We previously did something similar in Calculus I <a class="external" href="https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1" target="_blank">here</a><details class="ptx-footnote" aria-live="polite" id="subsec-trig-substitution-5-1-2-1-3-1-6"><summary class="ptx-footnote__number" title="Footnote 1.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-trig-substitution-5-1-2-1-3-1-6"><code class="code-inline tex2jax_ignore">activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1</code></div></details>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-5-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-trig-substitution-5-1-2-1-3-1">We recognize the term <span class="process-math">\(x^2+4\)</span> is of the form <span class="process-math">\(x^2+a^2\text{,}\)</span> which reminds us of the hypotenuse of a right triangle, whose legs are <span class="process-math">\(x\)</span> and <span class="process-math">\(2\text{.}\)</span> (We previously did something similar in Calculus I <a class="external" href="https://activecalculus.org/single-alt/sec-2-6-inverse.html#sec-2-6-inverse-6-9-1" target="_blank">here</a>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-5-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/trianglepic.svg" role="img" class="contained" alt="A right triangle with legs whose lengths are x and a."></div>
 <div class="para" id="subsec-trig-substitution-5-1-2-1-3-3">Use the triangle to calculate <span class="process-math">\(\tan \theta\)</span> and <span class="process-math">\(\sec \theta\)</span> in terms of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-5-1-2-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -722,13 +697,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Activity 1.1.3"><a href="#subsec-trig-substitution-5" title="Copy heading and permalink for Activity 1.1.3" aria-label="Copy heading and permalink for Activity 1.1.3">🔗</a></div></article><div class="para" id="subsec-trig-substitution-6">There are three of these trigonometric substitutions we commonly use, depending on what the original integrand is.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-trig-substitution-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="subsec-trig-substitution-7"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="subsec-trig-substitution-7-2-1"><img src="external/trigsub1.svg" role="img" class="contained" alt="right triangle whose legs have lengths of x and a"><figcaption><span class="codenumber">(a)</span><span class="space"> </span><span class="process-math">\(x=a\tan(\theta)\)</span><div class="autopermalink" data-description="Figure 1.1.5.(a)"><a href="#subsec-trig-substitution-7-2-1" title="Copy heading and permalink for Figure 1.1.5.(a)" aria-label="Copy heading and permalink for Figure 1.1.5.(a)">🔗</a></div></figcaption></figure></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="subsec-trig-substitution-7-2-2"><img src="external/trigsub2.svg" role="img" class="contained" alt="right triangle whose hypotenuse is x"><figcaption><span class="codenumber">(b)</span><span class="space"> </span><span class="process-math">\(x=a\sec(\theta)\)</span><div class="autopermalink" data-description="Figure 1.1.5.(b)"><a href="#subsec-trig-substitution-7-2-2" title="Copy heading and permalink for Figure 1.1.5.(b)" aria-label="Copy heading and permalink for Figure 1.1.5.(b)">🔗</a></div></figcaption></figure></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="subsec-trig-substitution-7-2-3"><img src="external/trigsub3.svg" role="img" class="contained" alt="right triangle whose hypotenuse is a"><figcaption><span class="codenumber">(c)</span><span class="space"> </span><span class="process-math">\(x=a\sin(\theta)\)</span><div class="autopermalink" data-description="Figure 1.1.5.(c)"><a href="#subsec-trig-substitution-7-2-3" title="Copy heading and permalink for Figure 1.1.5.(c)" aria-label="Copy heading and permalink for Figure 1.1.5.(c)">🔗</a></div></figcaption></figure></div>
+<figure class="figure figure-like" id="subsec-trig-substitution-7"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33.3333333333333% 33.3333333333333% 33.3333333333333%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="subsec-trig-substitution-7-2-1"><img src="external/trigsub1.svg" role="img" class="contained" alt="right triangle whose legs have lengths of x and a"><figcaption><span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(x=a\tan(\theta)\)</span><div class="autopermalink" data-description="Figure 1.1.5.(a)"><a href="#subsec-trig-substitution-7-2-1" title="Copy heading and permalink for Figure 1.1.5.(a)" aria-label="Copy heading and permalink for Figure 1.1.5.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="subsec-trig-substitution-7-2-2"><img src="external/trigsub2.svg" role="img" class="contained" alt="right triangle whose hypotenuse is x"><figcaption><span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(x=a\sec(\theta)\)</span><div class="autopermalink" data-description="Figure 1.1.5.(b)"><a href="#subsec-trig-substitution-7-2-2" title="Copy heading and permalink for Figure 1.1.5.(b)" aria-label="Copy heading and permalink for Figure 1.1.5.(b)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="subsec-trig-substitution-7-2-3"><img src="external/trigsub3.svg" role="img" class="contained" alt="right triangle whose hypotenuse is a"><figcaption><span class="codenumber">(c)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(x=a\sin(\theta)\)</span><div class="autopermalink" data-description="Figure 1.1.5.(c)"><a href="#subsec-trig-substitution-7-2-3" title="Copy heading and permalink for Figure 1.1.5.(c)" aria-label="Copy heading and permalink for Figure 1.1.5.(c)">🔗</a></div></figcaption></figure></div>
 </div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.5<span class="period">.</span></span><span class="space"> </span>The usual trigonometric substitutions and their corresponding triangles<div class="autopermalink" data-description="Figure 1.1.5"><a href="#subsec-trig-substitution-7" title="Copy heading and permalink for Figure 1.1.5" aria-label="Copy heading and permalink for Figure 1.1.5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Subsection 1.1.3: Trigonometric Substitution"><a href="#subsec-trig-substitution" title="Copy heading and permalink for Subsection 1.1.3: Trigonometric Substitution" aria-label="Copy heading and permalink for Subsection 1.1.3: Trigonometric Substitution">🔗</a></div></section><section class="subsection" id="sec-trigonometric-ints-7"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="space"> </span><span class="title">Summary</span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The usual trigonometric substitutions and their corresponding triangles<div class="autopermalink" data-description="Figure 1.1.5"><a href="#subsec-trig-substitution-7" title="Copy heading and permalink for Figure 1.1.5" aria-label="Copy heading and permalink for Figure 1.1.5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Subsection 1.1.3: Trigonometric Substitution"><a href="#subsec-trig-substitution" title="Copy heading and permalink for Subsection 1.1.3: Trigonometric Substitution" aria-label="Copy heading and permalink for Subsection 1.1.3: Trigonometric Substitution">🔗</a></div></section><section class="subsection" id="sec-trigonometric-ints-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
 </h3>
 <div class="para logical" id="sec-trigonometric-ints-7-2">
 <ul class="disc" id="sec-trigonometric-ints-7-2-1">

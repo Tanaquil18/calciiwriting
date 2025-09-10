@@ -1,0 +1,31 @@
+openDate          = 08/12/2025 at 12:00am
+dueDate           = 02/12/2026 at 10:00pm
+answerDate        = 02/12/2026 at 10:00pm
+paperHeaderFile   = Calc_II_Extra_Material/header/1_5-81_Exercises_and_82_Preview.pg
+screenHeaderFile  = Calc_II_Extra_Material/header/1_5-81_Exercises_and_82_Preview.pg
+description       = 8.1 Exercises and 8.2 Preview
+problemListV2
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_5-81_Exercises_and_82_Preview/1_5_1.pg
+problem_id = 1
+problem_end
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_5-81_Exercises_and_82_Preview/1_5_2.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_5-81_Exercises_and_82_Preview/1_5_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_5-81_Exercises_and_82_Preview/1_5_4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = csafranski/8.1HW_prob1.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Calc_II_Extra_Material/1-Extra_Material/1_5-81_Exercises_and_82_Preview/1_5_6.pg
+problem_id = 6
+problem_end
